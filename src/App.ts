@@ -51,6 +51,7 @@ export class App {
 			failIfMajorPerformanceCaveat: false,
 		});
 
+		// OPTION 1: Lowers internal pixel resolution to save mobile GPU cycles
 		this._engine.setHardwareScalingLevel(1.35);
 
 		this._scene = new Scene(this._engine);
@@ -83,26 +84,6 @@ export class App {
 			quality: "high",
 		});
 
-		// FIX: Force clear out pre-baked inputs on the active camera and assign clean inverted touch properties
-		const activeCam = this._scene.activeCamera as any;
-		if (activeCam) {
-			if (activeCam.inputs) {
-				// Strip existing cursor/touch bindings to prevent conflicts
-				activeCam.inputs.removeByType("FreeCameraTouchInput");
-				activeCam.inputs.removeByType("ArcRotateCameraPointersInput");
-
-				// Re-inject a clean pointers map with explicit inverse sensitivity rules
-				if (activeCam.inputs.addPointers) {
-					activeCam.inputs.addPointers();
-				}
-			}
-
-			// Force-apply explicit inverse multipliers to camera manipulation internals
-			if (activeCam.angularSensibilityX !== undefined) activeCam.angularSensibilityX = -2000;
-			if (activeCam.angularSensibilityY !== undefined) activeCam.angularSensibilityY = -2000;
-			if (activeCam.pinchPrecision !== undefined) activeCam.pinchPrecision = 12; 
-		}
-
 		// WebXR Immersive AR Configuration
 		try {
 			const xrSupported = await WebXRSessionManager.IsSessionSupportedAsync("immersive-ar");
@@ -121,43 +102,69 @@ export class App {
 				}
 
 				let splatMesh: any = null;
+				let frameCounter = 0;
 
-				xrHelper.baseExperience.onStateChangedObservable.add((state) => {
+				// Particle Size Adaptive Loop
+				this._scene.onBeforeRenderObservable.add(() => {
 					if (!splatMesh && this._scene) {
 						splatMesh = this._scene.meshes.find(m => m.className === "SplatMesh" || m.name.includes("splat"));
 					}
 
-					if (state === 2) { // WebXRState.IN_XR
-						const xrCamera = xrHelper.baseExperience.camera;
-						if (xrCamera && this._scene) {
-							xrCamera.backgroundReceiver = false;
-							this._scene.autoClear = true;
-							this._scene.autoClearDepthAndStencil = true;
-							this._scene.clearColor = new Color4(0.1, 0.1, 0.1, 1.0);
+					const camera = this._scene?.activeCamera;
+					if (splatMesh && camera) {
+						frameCounter++;
+						const currentDistance = Vector3.Distance(camera.globalPosition, splatMesh.getAbsolutePosition());
 
-							// FIX THE TRACKING MISMATCH: 
-							// If you walk several meters physically but move barely at all virtually, 
-							// we scale the XR tracking node container itself instead of the mesh.
-							// Setting this scaling factor tells WebXR to amplify your real-world steps.
-							const trackingMultiplier = 4.0; 
-							xrCamera.scaling.set(trackingMultiplier, trackingMultiplier, trackingMultiplier);
+						// Dynamic particle thinning up close
+						if (currentDistance < 1.5) {
+							const targetSize = Math.max(0.02, currentDistance * 0.05);
+							splatMesh.forcedSize = targetSize;
+						} else {
+							splatMesh.forcedSize = 0; 
 						}
 
-						if (splatMesh) {
-							splatMesh.position.set(0, 1.5, -1.0);
-							console.log(">>> Entering AR: Camera rotation fixed, tracking space scaled.");
-						}
-					} else if (state === 3) { // WebXRState.EXITING_XR
-						if (splatMesh) {
-							splatMesh.position.set(0, 0, 0);
-						}
-						if (xrHelper.baseExperience.camera) {
-							xrHelper.baseExperience.camera.scaling.set(1, 1, 1);
+						// Throttle heavy CPU index sorting when near the object
+						if (currentDistance < 1.0) {
+							if (frameCounter % 5 !== 0) {
+								splatMesh.freezeWorldMatrix();
+							} else {
+								splatMesh.unfreezeWorldMatrix();
+							}
+						} else {
+							splatMesh.unfreezeWorldMatrix();
 						}
 					}
 				});
 
-				console.log(">>> WebXR AR initialized with interactive and tracking overrides.");
+				xrHelper.baseExperience.onStateChangedObservable.add((state) => {
+					if (state === 2) { // WebXRState.IN_XR
+						const xrCamera = xrHelper.baseExperience.camera;
+						if (xrCamera && this._scene) {
+							// Block the hardware pass-through layer
+							xrCamera.backgroundReceiver = false;
+							
+							// Keep autoClear active to forcefully paint over the camera buffer loop
+							this._scene.autoClear = true;
+							this._scene.autoClearDepthAndStencil = true;
+							
+							// Enforce the solid dark grey fill color
+							this._scene.clearColor = new Color4(0.1, 0.1, 0.1, 1.0);
+						}
+
+						if (splatMesh) {
+							splatMesh.position.set(0, 1.5, -1.0);
+							console.log(">>> Camera hidden. Dark grey backdrop active with resolution downscaling.");
+						}
+					} else if (state === 3) { // WebXRState.EXITING_XR
+						if (splatMesh) {
+							splatMesh.position.set(0, 0, 0);
+							splatMesh.forcedSize = 0;
+							splatMesh.unfreezeWorldMatrix();
+						}
+					}
+				});
+
+				console.log(">>> WebXR AR pipeline configured with background controls.");
 			} else {
 				console.warn(">>> WebXR Immersive AR is not supported on this browser/device.");
 			}
@@ -166,7 +173,7 @@ export class App {
 		}
 
 		if (this._scene.activeCamera) {
-			this._scene.activeCamera.attachControl(this._canvas, true);
+			this._scene.activeCamera.attachControl();
 		}
 	}
 
