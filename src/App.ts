@@ -52,8 +52,6 @@ export class App {
 		});
 
 		this._scene = new Scene(this._engine);
-		
-		// Set dark grey background immediately
 		this._scene.clearColor = new Color4(0.1, 0.1, 0.1, 1.0);
 
 		await this._handleLoad();
@@ -100,9 +98,46 @@ export class App {
 					xrHelper.baseExperience.camera.isStereoscopicSideBySide = false;
 				}
 
-				xrHelper.baseExperience.onStateChangedObservable.add((state) => {
-					const splatMesh = this._scene?.meshes.find(m => m.className === "SplatMesh" || m.name.includes("splat"));
+				// Global tracking references for our runtime loop
+				let splatMesh: any = null;
+				let frameCounter = 0;
 
+				// Distance-Based Pruning Loop (Triggers before every frame render)
+				this._scene.onBeforeRenderObservable.add(() => {
+					// Cache the splat mesh reference once it finishes streaming in
+					if (!splatMesh && this._scene) {
+						splatMesh = this._scene.meshes.find(m => m.className === "SplatMesh" || m.name.includes("splat"));
+					}
+
+					const camera = this._scene?.activeCamera;
+					if (splatMesh && camera) {
+						frameCounter++;
+
+						// Optimization: Only compute distance calculation every 2 frames to save CPU cycles
+						if (frameCounter % 2 === 0) {
+							const currentDistance = Vector3.Distance(camera.globalPosition, splatMesh.getAbsolutePosition());
+
+							// Define boundary thresholds (in meters)
+							const closeLimit = 0.5; // Point where thinning is maximum
+							const farLimit = 2.0;   // Point where the splat renders at full original density
+
+							if (currentDistance < farLimit) {
+								// Calculate linear interpolation factor between 0.0 and 1.0
+								const factor = (currentDistance - closeLimit) / (farLimit - closeLimit);
+								const clampedFactor = Math.max(0.3, Math.min(1.0, factor)); // Clamp scale floor at 30% density minimum
+
+								splatMesh.scaling.set(clampedFactor, clampedFactor, clampedFactor);
+							} else {
+								// Restore normal scale when standing further away
+								if (splatMesh.scaling.x !== 1.0) {
+									splatMesh.scaling.set(1.0, 1.0, 1.0);
+								}
+							}
+						}
+					}
+				});
+
+				xrHelper.baseExperience.onStateChangedObservable.add((state) => {
 					if (state === 2) { // WebXRState.IN_XR
 						const xrCamera = xrHelper.baseExperience.camera;
 						if (xrCamera && this._scene) {
@@ -112,18 +147,18 @@ export class App {
 						}
 
 						if (splatMesh) {
-							// Positions splat 1.5 meters up and 1 meter closer to initial position
 							splatMesh.position.set(0, 1.5, -1.0);
 							console.log(">>> Splat position shifted up and closer for single-view AR.");
 						}
 					} else if (state === 3) { // WebXRState.EXITING_XR
 						if (splatMesh) {
 							splatMesh.position.set(0, 0, 0);
+							splatMesh.scaling.set(1.0, 1.0, 1.0); // Reset scaling bounds
 						}
 					}
 				});
 
-				console.log(">>> WebXR AR initialized successfully.");
+				console.log(">>> WebXR AR initialized with runtime density pruning.");
 			} else {
 				console.warn(">>> WebXR Immersive AR is not supported on this browser/device.");
 			}
