@@ -98,13 +98,11 @@ export class App {
 					xrHelper.baseExperience.camera.isStereoscopicSideBySide = false;
 				}
 
-				// Global tracking references for our runtime loop
 				let splatMesh: any = null;
 				let frameCounter = 0;
 
-				// Distance-Based Pruning Loop (Triggers before every frame render)
+				// Deep Optimization Render Loop
 				this._scene.onBeforeRenderObservable.add(() => {
-					// Cache the splat mesh reference once it finishes streaming in
 					if (!splatMesh && this._scene) {
 						splatMesh = this._scene.meshes.find(m => m.className === "SplatMesh" || m.name.includes("splat"));
 					}
@@ -113,26 +111,28 @@ export class App {
 					if (splatMesh && camera) {
 						frameCounter++;
 
-						// Optimization: Only compute distance calculation every 2 frames to save CPU cycles
-						if (frameCounter % 2 === 0) {
-							const currentDistance = Vector3.Distance(camera.globalPosition, splatMesh.getAbsolutePosition());
+						const currentDistance = Vector3.Distance(camera.globalPosition, splatMesh.getAbsolutePosition());
 
-							// Define boundary thresholds (in meters)
-							const closeLimit = 0.5; // Point where thinning is maximum
-							const farLimit = 2.0;   // Point where the splat renders at full original density
+						// 1. DYNAMIC INDIVIDUAL SPLAT THINNING (Relieves GPU Fill-rate)
+						if (currentDistance < 1.5) {
+							// Shrink individual particle sizing dynamically down to a minimum floor
+							const targetSize = Math.max(0.02, currentDistance * 0.05);
+							splatMesh.forcedSize = targetSize;
+						} else {
+							// Reset to natural engine evaluation size when back at normal distance
+							splatMesh.forcedSize = 0; 
+						}
 
-							if (currentDistance < farLimit) {
-								// Calculate linear interpolation factor between 0.0 and 1.0
-								const factor = (currentDistance - closeLimit) / (farLimit - closeLimit);
-								const clampedFactor = Math.max(0.3, Math.min(1.0, factor)); // Clamp scale floor at 30% density minimum
-
-								splatMesh.scaling.set(clampedFactor, clampedFactor, clampedFactor);
+						// 2. THROTTLE CPU SORTING FREQUENCY (Relieves CPU frame spikes)
+						// If user is too close, only re-sort point arrays every 5th frame instead of every frame
+						if (currentDistance < 1.0) {
+							if (frameCounter % 5 !== 0) {
+								splatMesh.freezeWorldMatrix();
 							} else {
-								// Restore normal scale when standing further away
-								if (splatMesh.scaling.x !== 1.0) {
-									splatMesh.scaling.set(1.0, 1.0, 1.0);
-								}
+								splatMesh.unfreezeWorldMatrix();
 							}
+						} else {
+							splatMesh.unfreezeWorldMatrix();
 						}
 					}
 				});
@@ -153,12 +153,13 @@ export class App {
 					} else if (state === 3) { // WebXRState.EXITING_XR
 						if (splatMesh) {
 							splatMesh.position.set(0, 0, 0);
-							splatMesh.scaling.set(1.0, 1.0, 1.0); // Reset scaling bounds
+							splatMesh.forcedSize = 0;
+							splatMesh.unfreezeWorldMatrix();
 						}
 					}
 				});
 
-				console.log(">>> WebXR AR initialized with runtime density pruning.");
+				console.log(">>> WebXR AR initialized with micro-particle size adaptations.");
 			} else {
 				console.warn(">>> WebXR Immersive AR is not supported on this browser/device.");
 			}
