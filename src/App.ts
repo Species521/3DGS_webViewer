@@ -1,9 +1,8 @@
 import { Scene } from "@babylonjs/core/scene";
 import { Engine } from "@babylonjs/core/Engines/engine";
-import { Vector3 } from "@babylonjs/core/Maths/math.vector";
+import { Vector3, Color4 } from "@babylonjs/core/Maths/math.vector";
 import { SceneLoaderFlags } from "@babylonjs/core/Loading/sceneLoaderFlags";
 import { HavokPlugin } from "@babylonjs/core/Physics/v2/Plugins/havokPlugin";
-import { TransformNode } from "@babylonjs/core/Meshes/transformNode";
 
 import HavokPhysics from "@babylonjs/havok";
 
@@ -30,7 +29,6 @@ export class App {
 	private _canvas: HTMLCanvasElement;
 	private _engine: Engine | null = null;
 	private _scene: Scene | null = null;
-	private _worldRoot: TransformNode | null = null;
 
 	public constructor() {
 		const canvasElement = document.getElementById("canvas") as HTMLCanvasElement;
@@ -53,6 +51,10 @@ export class App {
 		});
 
 		this._scene = new Scene(this._engine);
+		
+		// Overwrite the default Babylon violet color with a clean dark grey background
+		// Parameters are RGBA normalized between 0.0 and 1.0
+		this._scene.clearColor = new Color4(0.1, 0.1, 0.1, 1.0);
 
 		await this._handleLoad();
 
@@ -77,18 +79,6 @@ export class App {
 
 		SceneLoaderFlags.ForceFullSceneLoadingForIncremental = true;
 		
-		// 1. Create the parent world node first
-		this._worldRoot = new TransformNode("worldRoot", this._scene);
-
-		// 2. Automatically catch and parent any mesh added to the scene at any point
-		this._scene.onNewMeshAddedObservable.add((mesh) => {
-			// Avoid parenting the root node to itself
-			if (mesh !== this._worldRoot && !mesh.parent) {
-				mesh.setParent(this._worldRoot);
-			}
-		});
-
-		// 3. Load the scene assets
 		await loadScene("./scene/", "example.babylon", this._scene, scriptsMap, {
 			quality: "high",
 		});
@@ -111,28 +101,32 @@ export class App {
 				}
 
 				xrHelper.baseExperience.onStateChangedObservable.add((state) => {
-					if (state === 2) { // WebXRState.IN_XR
+					// Locate the gaussian splat mesh within the collection
+					const splatMesh = this._scene?.meshes.find(m => m.className === "SplatMesh" || m.name.includes("splat"));
+
+					if (state === 2) { // WebXRState.IN_XR (Entering AR)
 						const xrCamera = xrHelper.baseExperience.camera;
 						if (xrCamera && this._scene) {
-							// Kill the actual hardware camera texture feed completely
+							// Block the hardware camera frame loop from drawing behind the 3D canvas
 							xrCamera.backgroundReceiver = false;
-							
-							// Force the scene background canvas routine to clear every frame
 							this._scene.autoClear = true;
-							this._scene.clearColor = this._scene.clearColor.clone();
+							
+							// Re-enforce our custom dark grey background inside the AR session viewport
+							this._scene.clearColor = new Color4(0.1, 0.1, 0.1, 1.0);
 						}
 
-						// Pull the environment closer to your physical position by sliding 
-						// the entire virtual world transform forward on the Z axis.
-						if (this._worldRoot) {
-							this._worldRoot.position.set(0, 1.2, 1.5);
-							console.log(">>> World content brought 2.5m closer on AR enter.");
+						// Adjust spatial location relative to camera starting point (0,0,0)
+						if (splatMesh) {
+							// Y: Moves up 1.5 meters closer to device eye level
+							// Z: Positioned 1.0 meter right in front of your starting orientation point
+							splatMesh.position.set(0, 1.5, -1.0);
+							console.log(">>> Splat position shifted up and closer for single-view AR.");
 						}
 					} 
 					else if (state === 3) { // WebXRState.EXITING_XR
-						// Reset world position back to the default origin for regular screen browsing
-						if (this._worldRoot) {
-							this._worldRoot.position.set(0, 0, 0);
+						// Reset the target coordinates back to scene zero for desktop display layout
+						if (splatMesh) {
+							splatMesh.position.set(0, 0, 0);
 						}
 					}
 				});
