@@ -10,7 +10,6 @@ import "@babylonjs/core/Loading/loadingScreen";
 import "@babylonjs/core/Loading/Plugins/babylonFileLoader";
 
 import "@babylonjs/core/Cameras/universalCamera";
-
 import "@babylonjs/core/Meshes/groundMesh";
 
 import "@babylonjs/core/Lights/directionalLight";
@@ -18,18 +17,17 @@ import "@babylonjs/core/Lights/Shadows/shadowGeneratorSceneComponent";
 
 import "@babylonjs/core/Materials/PBR/pbrMaterial";
 import "@babylonjs/core/Materials/standardMaterial";
-import "@babylonjs/core/XR/features/WebXRDepthSensing";
 
 import "@babylonjs/core/Rendering/depthRendererSceneComponent";
 import "@babylonjs/core/Rendering/prePassRendererSceneComponent";
-
 import "@babylonjs/core/Materials/Textures/Loaders/envTextureLoader";
 
 import "@babylonjs/core/Physics";
-
 import "@babylonjs/materials/sky";
 
-import { WebXRSessionManager } from "@babylonjs/core/XR/webXRSessionManager";
+// Import the specific hardware sensor camera
+import { DeviceOrientationCamera } from "@babylonjs/core/Cameras/deviceOrientationCamera";
+
 import { loadScene } from "babylonjs-editor-tools";
 import { scriptsMap } from "./scripts";
 
@@ -87,40 +85,36 @@ export class App {
 			quality: "high",
 		});
 
-		// WebXR Handheld Magic Window Initialization
+		// Setup Handheld Magic Window Tracking (No Headsets, No Stereo, No Camera Pass-through)
 		try {
-			const xrSupported = await WebXRSessionManager.IsSessionSupportedAsync("immersive-vr");
+			console.log(">>> Setting up full-screen device sensor camera...");
 			
-			if (xrSupported) {
-				const xrHelper = await this._scene.createDefaultXRExperienceAsync({
-					uiOptions: {
-						sessionMode: "immersive-vr",
-						referenceSpaceType: "local-floor"
-					},
-					disableDefaultUI: false
-				});
+			// Replace default camera with a device-orientation responsive camera
+			const originalTarget = this._scene.activeCamera ? this._scene.activeCamera.position.clone() : new Vector3(0, 0, 0);
+			const motionCamera = new DeviceOrientationCamera(
+				"HandheldMotionCamera", 
+				new Vector3(0, 2, -10), 
+				this._scene
+			);
+			
+			motionCamera.setTarget(originalTarget);
+			
+			// Sensitivity configurations for a steady tablet hold
+			motionCamera.angularSensibility = 1000;
+			motionCamera.moveSensibility = 1000;
 
-				// Force a single full-screen camera view instead of side-by-side stereo loops
-				if (xrHelper.baseExperience.camera) {
-					xrHelper.baseExperience.camera.isStereoscopicSideBySide = false;
-				}
-
-				console.log(">>> WebXR Handheld VR Magic Window initialized successfully.");
-				
-				xrHelper.baseExperience.onStateChangedObservable.add((state) => {
-					if (state === 2) { 
-						console.log(">>> Player entered Handheld Tracking mode.");
-					}
-				});
-			} else {
-				console.warn(">>> WebXR Immersive VR is not supported on this browser/device.");
-			}
-		} catch (xrError) {
-			console.error(">>> Error setting up WebXR:", xrError);
+			// Replace active system camera completely
+			this._scene.activeCamera = motionCamera;
+			this._scene.activeCamera.attachControl(this._canvas, true);
+			
+			console.log(">>> Single-screen magic window configuration active.");
+		} catch (cameraError) {
+			console.error(">>> Error setting up motion camera control:", cameraError);
 		}
 
-		if (this._scene.activeCamera) {
-			this._scene.activeCamera.attachControl();
+		// Fallback backup validation
+		if (this._scene.activeCamera && this._scene.activeCamera.name !== "HandheldMotionCamera") {
+			this._scene.activeCamera.attachControl(this._canvas, true);
 		}
 	}
 
