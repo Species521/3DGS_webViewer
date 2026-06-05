@@ -83,21 +83,24 @@ export class App {
 			quality: "high",
 		});
 
-		// Configure the pre-AR starting scene camera controls
-		const defaultCamera = this._scene.activeCamera as any;
-		if (defaultCamera) {
-			// Invert left-right (X axis) and up-down (Y axis) rotation sensitivity
-			if (defaultCamera.angularSensibilityX !== undefined) {
-				defaultCamera.angularSensibilityX = -Math.abs(defaultCamera.angularSensibilityX);
-			}
-			if (defaultCamera.angularSensibilityY !== undefined) {
-				defaultCamera.angularSensibilityY = -Math.abs(defaultCamera.angularSensibilityY);
+		// FIX: Force clear out pre-baked inputs on the active camera and assign clean inverted touch properties
+		const activeCam = this._scene.activeCamera as any;
+		if (activeCam) {
+			if (activeCam.inputs) {
+				// Strip existing cursor/touch bindings to prevent conflicts
+				activeCam.inputs.removeByType("FreeCameraTouchInput");
+				activeCam.inputs.removeByType("ArcRotateCameraPointersInput");
+
+				// Re-inject a clean pointers map with explicit inverse sensitivity rules
+				if (activeCam.inputs.addPointers) {
+					activeCam.inputs.addPointers();
+				}
 			}
 
-			// For Target/Universal Cameras that use speed variants for dragging directions
-			if (defaultCamera.inertia !== undefined) {
-				// Ensures smooth deceleration curves remain intact while swapping orientation inputs
-			}
+			// Force-apply explicit inverse multipliers to camera manipulation internals
+			if (activeCam.angularSensibilityX !== undefined) activeCam.angularSensibilityX = -2000;
+			if (activeCam.angularSensibilityY !== undefined) activeCam.angularSensibilityY = -2000;
+			if (activeCam.pinchPrecision !== undefined) activeCam.pinchPrecision = 12; 
 		}
 
 		// WebXR Immersive AR Configuration
@@ -117,7 +120,6 @@ export class App {
 					xrHelper.baseExperience.camera.isStereoscopicSideBySide = false;
 				}
 
-				const correctiveScale = 0.25;
 				let splatMesh: any = null;
 
 				xrHelper.baseExperience.onStateChangedObservable.add((state) => {
@@ -132,22 +134,30 @@ export class App {
 							this._scene.autoClear = true;
 							this._scene.autoClearDepthAndStencil = true;
 							this._scene.clearColor = new Color4(0.1, 0.1, 0.1, 1.0);
+
+							// FIX THE TRACKING MISMATCH: 
+							// If you walk several meters physically but move barely at all virtually, 
+							// we scale the XR tracking node container itself instead of the mesh.
+							// Setting this scaling factor tells WebXR to amplify your real-world steps.
+							const trackingMultiplier = 4.0; 
+							xrCamera.scaling.set(trackingMultiplier, trackingMultiplier, trackingMultiplier);
 						}
 
 						if (splatMesh) {
 							splatMesh.position.set(0, 1.5, -1.0);
-							splatMesh.scaling.set(correctiveScale, correctiveScale, correctiveScale);
-							console.log(">>> Entering AR: Corrective layout applied.");
+							console.log(">>> Entering AR: Camera rotation fixed, tracking space scaled.");
 						}
 					} else if (state === 3) { // WebXRState.EXITING_XR
 						if (splatMesh) {
 							splatMesh.position.set(0, 0, 0);
-							splatMesh.scaling.set(1.0, 1.0, 1.0);
+						}
+						if (xrHelper.baseExperience.camera) {
+							xrHelper.baseExperience.camera.scaling.set(1, 1, 1);
 						}
 					}
 				});
 
-				console.log(">>> WebXR AR initialized with tracking configurations.");
+				console.log(">>> WebXR AR initialized with interactive and tracking overrides.");
 			} else {
 				console.warn(">>> WebXR Immersive AR is not supported on this browser/device.");
 			}
