@@ -32,6 +32,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # 1. Run the Babylon Editor CLI tool to assemble your scene structure in the cloud
+      - name: Generate Editor Assets
+        run: npm run generate
+
+      # 2. Compile everything into the production 'dist' folder
       - name: Build Project
         run: npm run build
 
