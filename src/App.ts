@@ -51,6 +51,11 @@ export class App {
 			failIfMajorPerformanceCaveat: false,
 		});
 
+		// OPTION 1: Reduce internal hardware scaling level.
+		// 1.0 is full native resolution. Setting this to 1.35 or 1.5 relaxes the total 
+		// pixel rasterization workload, allowing upscaling to save heavy mobile GPU cycles.
+		this._engine.setHardwareScalingLevel(1.35);
+
 		this._scene = new Scene(this._engine);
 		this._scene.clearColor = new Color4(0.1, 0.1, 0.1, 1.0);
 
@@ -101,7 +106,7 @@ export class App {
 				let splatMesh: any = null;
 				let frameCounter = 0;
 
-				// Deep Optimization Render Loop
+				// Fine-tuned Particle Size Adaptive Loop
 				this._scene.onBeforeRenderObservable.add(() => {
 					if (!splatMesh && this._scene) {
 						splatMesh = this._scene.meshes.find(m => m.className === "SplatMesh" || m.name.includes("splat"));
@@ -110,21 +115,17 @@ export class App {
 					const camera = this._scene?.activeCamera;
 					if (splatMesh && camera) {
 						frameCounter++;
-
 						const currentDistance = Vector3.Distance(camera.globalPosition, splatMesh.getAbsolutePosition());
 
-						// 1. DYNAMIC INDIVIDUAL SPLAT THINNING (Relieves GPU Fill-rate)
+						// Dynamic micro-particle thinning up close
 						if (currentDistance < 1.5) {
-							// Shrink individual particle sizing dynamically down to a minimum floor
 							const targetSize = Math.max(0.02, currentDistance * 0.05);
 							splatMesh.forcedSize = targetSize;
 						} else {
-							// Reset to natural engine evaluation size when back at normal distance
 							splatMesh.forcedSize = 0; 
 						}
 
-						// 2. THROTTLE CPU SORTING FREQUENCY (Relieves CPU frame spikes)
-						// If user is too close, only re-sort point arrays every 5th frame instead of every frame
+						// Throttle heavy CPU index sorting operations when near the object
 						if (currentDistance < 1.0) {
 							if (frameCounter % 5 !== 0) {
 								splatMesh.freezeWorldMatrix();
@@ -142,13 +143,19 @@ export class App {
 						const xrCamera = xrHelper.baseExperience.camera;
 						if (xrCamera && this._scene) {
 							xrCamera.backgroundReceiver = false;
-							this._scene.autoClear = true;
+							
+							// OPTION 3: Strip continuous buffer clear actions to free memory paths.
+							// Since we manually manage the grey clear color and blocked pass-through,
+							// turning off autoClear minimizes costly pipeline resets every frame.
+							this._scene.autoClear = false;
+							this._scene.autoClearDepthAndStencil = false;
+							
 							this._scene.clearColor = new Color4(0.1, 0.1, 0.1, 1.0);
 						}
 
 						if (splatMesh) {
 							splatMesh.position.set(0, 1.5, -1.0);
-							console.log(">>> Splat position shifted up and closer for single-view AR.");
+							console.log(">>> Splat positioned closer. Hardware scaling and clear optimizations active.");
 						}
 					} else if (state === 3) { // WebXRState.EXITING_XR
 						if (splatMesh) {
@@ -156,10 +163,16 @@ export class App {
 							splatMesh.forcedSize = 0;
 							splatMesh.unfreezeWorldMatrix();
 						}
+						
+						// Restore standard clear cycles for desktop previewing
+						if (this._scene) {
+							this._scene.autoClear = true;
+							this._scene.autoClearDepthAndStencil = true;
+						}
 					}
 				});
 
-				console.log(">>> WebXR AR initialized with micro-particle size adaptations.");
+				console.log(">>> WebXR AR pipeline configured with high-performance overrides.");
 			} else {
 				console.warn(">>> WebXR Immersive AR is not supported on this browser/device.");
 			}
