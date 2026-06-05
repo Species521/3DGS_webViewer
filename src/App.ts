@@ -51,7 +51,6 @@ export class App {
 			failIfMajorPerformanceCaveat: false,
 		});
 
-		// OPTION 1: Lowers internal pixel resolution to save mobile GPU cycles
 		this._engine.setHardwareScalingLevel(1.35);
 
 		this._scene = new Scene(this._engine);
@@ -84,6 +83,23 @@ export class App {
 			quality: "high",
 		});
 
+		// Configure the pre-AR starting scene camera controls
+		const defaultCamera = this._scene.activeCamera as any;
+		if (defaultCamera) {
+			// Invert left-right (X axis) and up-down (Y axis) rotation sensitivity
+			if (defaultCamera.angularSensibilityX !== undefined) {
+				defaultCamera.angularSensibilityX = -Math.abs(defaultCamera.angularSensibilityX);
+			}
+			if (defaultCamera.angularSensibilityY !== undefined) {
+				defaultCamera.angularSensibilityY = -Math.abs(defaultCamera.angularSensibilityY);
+			}
+
+			// For Target/Universal Cameras that use speed variants for dragging directions
+			if (defaultCamera.inertia !== undefined) {
+				// Ensures smooth deceleration curves remain intact while swapping orientation inputs
+			}
+		}
+
 		// WebXR Immersive AR Configuration
 		try {
 			const xrSupported = await WebXRSessionManager.IsSessionSupportedAsync("immersive-ar");
@@ -101,70 +117,37 @@ export class App {
 					xrHelper.baseExperience.camera.isStereoscopicSideBySide = false;
 				}
 
+				const correctiveScale = 0.25;
 				let splatMesh: any = null;
-				let frameCounter = 0;
 
-				// Particle Size Adaptive Loop
-				this._scene.onBeforeRenderObservable.add(() => {
+				xrHelper.baseExperience.onStateChangedObservable.add((state) => {
 					if (!splatMesh && this._scene) {
 						splatMesh = this._scene.meshes.find(m => m.className === "SplatMesh" || m.name.includes("splat"));
 					}
 
-					const camera = this._scene?.activeCamera;
-					if (splatMesh && camera) {
-						frameCounter++;
-						const currentDistance = Vector3.Distance(camera.globalPosition, splatMesh.getAbsolutePosition());
-
-						// Dynamic particle thinning up close
-						if (currentDistance < 1.5) {
-							const targetSize = Math.max(0.02, currentDistance * 0.05);
-							splatMesh.forcedSize = targetSize;
-						} else {
-							splatMesh.forcedSize = 0; 
-						}
-
-						// Throttle heavy CPU index sorting when near the object
-						if (currentDistance < 1.0) {
-							if (frameCounter % 5 !== 0) {
-								splatMesh.freezeWorldMatrix();
-							} else {
-								splatMesh.unfreezeWorldMatrix();
-							}
-						} else {
-							splatMesh.unfreezeWorldMatrix();
-						}
-					}
-				});
-
-				xrHelper.baseExperience.onStateChangedObservable.add((state) => {
 					if (state === 2) { // WebXRState.IN_XR
 						const xrCamera = xrHelper.baseExperience.camera;
 						if (xrCamera && this._scene) {
-							// Block the hardware pass-through layer
 							xrCamera.backgroundReceiver = false;
-							
-							// Keep autoClear active to forcefully paint over the camera buffer loop
 							this._scene.autoClear = true;
 							this._scene.autoClearDepthAndStencil = true;
-							
-							// Enforce the solid dark grey fill color
 							this._scene.clearColor = new Color4(0.1, 0.1, 0.1, 1.0);
 						}
 
 						if (splatMesh) {
 							splatMesh.position.set(0, 1.5, -1.0);
-							console.log(">>> Camera hidden. Dark grey backdrop active with resolution downscaling.");
+							splatMesh.scaling.set(correctiveScale, correctiveScale, correctiveScale);
+							console.log(">>> Entering AR: Corrective layout applied.");
 						}
 					} else if (state === 3) { // WebXRState.EXITING_XR
 						if (splatMesh) {
 							splatMesh.position.set(0, 0, 0);
-							splatMesh.forcedSize = 0;
-							splatMesh.unfreezeWorldMatrix();
+							splatMesh.scaling.set(1.0, 1.0, 1.0);
 						}
 					}
 				});
 
-				console.log(">>> WebXR AR pipeline configured with background controls.");
+				console.log(">>> WebXR AR initialized with tracking configurations.");
 			} else {
 				console.warn(">>> WebXR Immersive AR is not supported on this browser/device.");
 			}
@@ -173,7 +156,7 @@ export class App {
 		}
 
 		if (this._scene.activeCamera) {
-			this._scene.activeCamera.attachControl();
+			this._scene.activeCamera.attachControl(this._canvas, true);
 		}
 	}
 
