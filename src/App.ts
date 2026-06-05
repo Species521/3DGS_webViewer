@@ -29,7 +29,6 @@ import "@babylonjs/core/Physics";
 
 import "@babylonjs/materials/sky";
 
-// Import the manager required for checking XR hardware capabilities
 import { WebXRSessionManager } from "@babylonjs/core/XR/webXRSessionManager";
 import { loadScene } from "babylonjs-editor-tools";
 import { scriptsMap } from "./scripts";
@@ -88,29 +87,28 @@ export class App {
 			quality: "high",
 		});
 
-		// WebXR Immersive AR Initialization
+		// WebXR Immersive VR Initialization (Tracks movement, keeps original virtual environment)
 		try {
-			// Corrected static method call to evaluate system capabilities
-			const xrSupported = await WebXRSessionManager.IsSessionSupportedAsync("immersive-ar");
+			const xrSupported = await WebXRSessionManager.IsSessionSupportedAsync("immersive-vr");
 			
 			if (xrSupported) {
 				const xrHelper = await this._scene.createDefaultXRExperienceAsync({
 					uiOptions: {
-						sessionMode: "immersive-ar",
+						sessionMode: "immersive-vr",
 						referenceSpaceType: "local-floor"
 					},
-					disableDefaultUI: false
+					disableDefaultUI: false // Renders the "VR" button overlay on screen
 				});
 
-				console.log(">>> WebXR AR initialized successfully.");
+				console.log(">>> WebXR Immersive VR initialized successfully.");
 				
 				xrHelper.baseExperience.onStateChangedObservable.add((state) => {
 					if (state === 2) { 
-						console.log(">>> Player entered AR mode.");
+						console.log(">>> Player entered XR mode.");
 					}
 				});
 			} else {
-				console.warn(">>> WebXR Immersive AR is not supported on this browser/device.");
+				console.warn(">>> WebXR Immersive VR is not supported on this browser/device.");
 			}
 		} catch (xrError) {
 			console.error(">>> Error setting up WebXR:", xrError);
