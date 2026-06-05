@@ -125,7 +125,7 @@ export class App {
 						// Pull the environment closer to your physical position by sliding 
 						// the entire virtual world transform forward on the Z axis.
 						if (this._worldRoot) {
-							this._worldRoot.position.set(0, 0, 2.5);
+							this._worldRoot.position.set(0, 1.2, 1.5);
 							console.log(">>> World content brought 2.5m closer on AR enter.");
 						}
 					} 
