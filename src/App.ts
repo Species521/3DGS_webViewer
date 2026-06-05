@@ -29,13 +29,9 @@ import "@babylonjs/core/Physics";
 
 import "@babylonjs/materials/sky";
 
+// Import the manager required for checking XR hardware capabilities
+import { WebXRSessionManager } from "@babylonjs/core/XR/webXRSessionManager";
 import { loadScene } from "babylonjs-editor-tools";
-
-/**
- * We import the map of all scripts attached to objects in the editor.
- * This will allow the loader from `babylonjs-editor-tools` to attach the scripts to the
- * loaded objects (scene, meshes, transform nodes, lights, cameras, etc.).
- */
 import { scriptsMap } from "./scripts";
 
 export class App {
@@ -67,14 +63,12 @@ export class App {
 
 		await this._handleLoad();
 
-		// Handle window resize
 		const handleResize = () => {
 			this._engine?.resize();
 		};
 
 		window.addEventListener("resize", handleResize);
 
-		// Start render loop
 		this._engine.runRenderLoop(() => {
 			this._scene?.render();
 		});
@@ -90,14 +84,14 @@ export class App {
 
 		SceneLoaderFlags.ForceFullSceneLoadingForIncremental = true;
 		
-		// 1. Target relative path so it loads correctly inside the GitHub subfolder
 		await loadScene("./scene/", "example.babylon", this._scene, scriptsMap, {
 			quality: "high",
 		});
 
-		// 2. WebXR Immersive AR Hook
+		// WebXR Immersive AR Initialization
 		try {
-			const xrSupported = await this._engine.isXRSupportedAsync("immersive-ar");
+			// Corrected static method call to evaluate system capabilities
+			const xrSupported = await WebXRSessionManager.IsSessionSupportedAsync("immersive-ar");
 			
 			if (xrSupported) {
 				const xrHelper = await this._scene.createDefaultXRExperienceAsync({
@@ -105,13 +99,13 @@ export class App {
 						sessionMode: "immersive-ar",
 						referenceSpaceType: "local-floor"
 					},
-					disableDefaultUI: false // Automatically adds the "Enter AR" button overlay
+					disableDefaultUI: false
 				});
 
 				console.log(">>> WebXR AR initialized successfully.");
 				
 				xrHelper.baseExperience.onStateChangedObservable.add((state) => {
-					if (state === 2) { // WebXRState.IN_XR
+					if (state === 2) { 
 						console.log(">>> Player entered AR mode.");
 					}
 				});
