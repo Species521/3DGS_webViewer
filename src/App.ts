@@ -89,7 +89,7 @@ export class App {
 		this._scene.enablePhysics(new Vector3(0, -981, 0), new HavokPlugin(true, havok));
 
 		SceneLoaderFlags.ForceFullSceneLoadingForIncremental = true;
-		await loadScene("/scene/", "example.babylon", this._scene, scriptsMap, {
+		await loadScene("./scene/", "example.babylon", this._scene, scriptsMap, {
 			quality: "high",
 		});
 
