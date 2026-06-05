@@ -1,6 +1,7 @@
 import { Scene } from "@babylonjs/core/scene";
 import { Engine } from "@babylonjs/core/Engines/engine";
-import { Vector3, Color4 } from "@babylonjs/core/Maths/math.vector";
+import { Vector3 } from "@babylonjs/core/Maths/math.vector";
+import { Color4 } from "@babylonjs/core/Maths/math.color";
 import { SceneLoaderFlags } from "@babylonjs/core/Loading/sceneLoaderFlags";
 import { HavokPlugin } from "@babylonjs/core/Physics/v2/Plugins/havokPlugin";
 
@@ -52,8 +53,7 @@ export class App {
 
 		this._scene = new Scene(this._engine);
 		
-		// Overwrite the default Babylon violet color with a clean dark grey background
-		// Parameters are RGBA normalized between 0.0 and 1.0
+		// Set dark grey background immediately
 		this._scene.clearColor = new Color4(0.1, 0.1, 0.1, 1.0);
 
 		await this._handleLoad();
@@ -101,30 +101,22 @@ export class App {
 				}
 
 				xrHelper.baseExperience.onStateChangedObservable.add((state) => {
-					// Locate the gaussian splat mesh within the collection
 					const splatMesh = this._scene?.meshes.find(m => m.className === "SplatMesh" || m.name.includes("splat"));
 
-					if (state === 2) { // WebXRState.IN_XR (Entering AR)
+					if (state === 2) { // WebXRState.IN_XR
 						const xrCamera = xrHelper.baseExperience.camera;
 						if (xrCamera && this._scene) {
-							// Block the hardware camera frame loop from drawing behind the 3D canvas
 							xrCamera.backgroundReceiver = false;
 							this._scene.autoClear = true;
-							
-							// Re-enforce our custom dark grey background inside the AR session viewport
 							this._scene.clearColor = new Color4(0.1, 0.1, 0.1, 1.0);
 						}
 
-						// Adjust spatial location relative to camera starting point (0,0,0)
 						if (splatMesh) {
-							// Y: Moves up 1.5 meters closer to device eye level
-							// Z: Positioned 1.0 meter right in front of your starting orientation point
+							// Positions splat 1.5 meters up and 1 meter closer to initial position
 							splatMesh.position.set(0, 1.5, -1.0);
 							console.log(">>> Splat position shifted up and closer for single-view AR.");
 						}
-					} 
-					else if (state === 3) { // WebXRState.EXITING_XR
-						// Reset the target coordinates back to scene zero for desktop display layout
+					} else if (state === 3) { // WebXRState.EXITING_XR
 						if (splatMesh) {
 							splatMesh.position.set(0, 0, 0);
 						}
