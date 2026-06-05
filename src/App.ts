@@ -87,7 +87,7 @@ export class App {
 			quality: "high",
 		});
 
-		// WebXR Immersive AR with Blocked Camera Feed
+		// WebXR Immersive AR - Non See-Through Tracking Setup
 		try {
 			const xrSupported = await WebXRSessionManager.IsSessionSupportedAsync("immersive-ar");
 			
@@ -100,25 +100,38 @@ export class App {
 					disableDefaultUI: false
 				});
 
-				// Force single camera layout on handheld devices
+				// 1. Force single camera format
 				if (xrHelper.baseExperience.camera) {
 					xrHelper.baseExperience.camera.isStereoscopicSideBySide = false;
 				}
 
-				// Intercept the session start to kill the camera background feed
+				// 2. Adjust distance: Place the user closer to the object on start
+				xrHelper.baseExperience.onInitialXRPoseSetObservable.add((xrCamera) => {
+					// Adjust these coordinates to change your starting proximity.
+					// Placing the camera at Z = -3 moves it much closer to the center object (0,0,0) than the default fallback.
+					xrCamera.position.set(0, 1.5, -3); 
+					console.log(">>> AR Camera position adjusted closer to center.");
+				});
+
+				// 3. Strip the camera view completely when the tracking session goes active
 				xrHelper.baseExperience.onStateChangedObservable.add((state) => {
-					// State 2 equals WebXRState.IN_XR (Session active)
-					if (state === 2) {
+					if (state === 2) { // WebXRState.IN_XR
 						const xrCamera = xrHelper.baseExperience.camera;
 						if (xrCamera) {
-							// Disable the hardware video stream pass-through layer
+							// Disconnect the device's actual video textures from the camera background
 							xrCamera.backgroundReceiver = false;
-							console.log(">>> Camera pass-through disabled. Virtual environment retained.");
 						}
+						
+						// Re-enable clear color rendering so your background environment stays visible
+						if (this._scene) {
+							this._scene.clearColor = this._scene.clearColor.clone();
+							this._scene.autoClear = true;
+						}
+						console.log(">>> Camera pass-through cut. Retaining original engine environment.");
 					}
 				});
 
-				console.log(">>> WebXR AR initialized successfully.");
+				console.log(">>> WebXR AR Pipeline configured.");
 			} else {
 				console.warn(">>> WebXR Immersive AR is not supported on this browser/device.");
 			}
