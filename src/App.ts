@@ -3,30 +3,23 @@ import { Engine } from "@babylonjs/core/Engines/engine";
 import { Vector3 } from "@babylonjs/core/Maths/math.vector";
 import { SceneLoaderFlags } from "@babylonjs/core/Loading/sceneLoaderFlags";
 import { HavokPlugin } from "@babylonjs/core/Physics/v2/Plugins/havokPlugin";
+import { TransformNode } from "@babylonjs/core/Meshes/transformNode";
 
 import HavokPhysics from "@babylonjs/havok";
 
 import "@babylonjs/core/Loading/loadingScreen";
 import "@babylonjs/core/Loading/Plugins/babylonFileLoader";
-
 import "@babylonjs/core/Cameras/universalCamera";
-
 import "@babylonjs/core/Meshes/groundMesh";
-
 import "@babylonjs/core/Lights/directionalLight";
 import "@babylonjs/core/Lights/Shadows/shadowGeneratorSceneComponent";
-
 import "@babylonjs/core/Materials/PBR/pbrMaterial";
 import "@babylonjs/core/Materials/standardMaterial";
 import "@babylonjs/core/XR/features/WebXRDepthSensing";
-
 import "@babylonjs/core/Rendering/depthRendererSceneComponent";
 import "@babylonjs/core/Rendering/prePassRendererSceneComponent";
-
 import "@babylonjs/core/Materials/Textures/Loaders/envTextureLoader";
-
 import "@babylonjs/core/Physics";
-
 import "@babylonjs/materials/sky";
 
 import { WebXRSessionManager } from "@babylonjs/core/XR/webXRSessionManager";
@@ -37,6 +30,7 @@ export class App {
 	private _canvas: HTMLCanvasElement;
 	private _engine: Engine | null = null;
 	private _scene: Scene | null = null;
+	private _worldRoot: TransformNode | null = null;
 
 	public constructor() {
 		const canvasElement = document.getElementById("canvas") as HTMLCanvasElement;
@@ -83,11 +77,23 @@ export class App {
 
 		SceneLoaderFlags.ForceFullSceneLoadingForIncremental = true;
 		
+		// 1. Create the parent world node first
+		this._worldRoot = new TransformNode("worldRoot", this._scene);
+
+		// 2. Automatically catch and parent any mesh added to the scene at any point
+		this._scene.onNewMeshAddedObservable.add((mesh) => {
+			// Avoid parenting the root node to itself
+			if (mesh !== this._worldRoot && !mesh.parent) {
+				mesh.setParent(this._worldRoot);
+			}
+		});
+
+		// 3. Load the scene assets
 		await loadScene("./scene/", "example.babylon", this._scene, scriptsMap, {
 			quality: "high",
 		});
 
-		// WebXR Immersive AR with Blocked Camera Feed and Close Start Proximity
+		// WebXR Immersive AR Configuration
 		try {
 			const xrSupported = await WebXRSessionManager.IsSessionSupportedAsync("immersive-ar");
 			
@@ -100,25 +106,33 @@ export class App {
 					disableDefaultUI: false
 				});
 
-				// Force single camera layout on handheld devices
 				if (xrHelper.baseExperience.camera) {
 					xrHelper.baseExperience.camera.isStereoscopicSideBySide = false;
 				}
 
-				// Intercept the session start to kill the camera background feed and adjust distance
 				xrHelper.baseExperience.onStateChangedObservable.add((state) => {
-					// State 2 equals WebXRState.IN_XR (Session active)
-					if (state === 2) {
+					if (state === 2) { // WebXRState.IN_XR
 						const xrCamera = xrHelper.baseExperience.camera;
-						if (xrCamera) {
-							// Disable the hardware video stream pass-through layer
+						if (xrCamera && this._scene) {
+							// Kill the actual hardware camera texture feed completely
 							xrCamera.backgroundReceiver = false;
 							
-							// Pull the camera right up to the object. 
-							// X=0 (Centered), Y=1.5 (Average eye height in meters), Z=-3 (Close proximity)
-							xrCamera.position.set(0, 1.5, -3);
-							
-							console.log(">>> Camera pass-through disabled. Position pulled closer to target.");
+							// Force the scene background canvas routine to clear every frame
+							this._scene.autoClear = true;
+							this._scene.clearColor = this._scene.clearColor.clone();
+						}
+
+						// Pull the environment closer to your physical position by sliding 
+						// the entire virtual world transform forward on the Z axis.
+						if (this._worldRoot) {
+							this._worldRoot.position.set(0, 0, 2.5);
+							console.log(">>> World content brought 2.5m closer on AR enter.");
+						}
+					} 
+					else if (state === 3) { // WebXRState.EXITING_XR
+						// Reset world position back to the default origin for regular screen browsing
+						if (this._worldRoot) {
+							this._worldRoot.position.set(0, 0, 0);
 						}
 					}
 				});
