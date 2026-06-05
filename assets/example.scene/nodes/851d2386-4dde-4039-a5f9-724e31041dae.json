@@ -1,0 +1,58 @@
+{
+    "tags": null,
+    "position": [
+        0,
+        0,
+        0
+    ],
+    "rotation": [
+        0,
+        0,
+        0
+    ],
+    "scaling": [
+        1,
+        1,
+        1
+    ],
+    "billboardMode": 0,
+    "scalingDeterminant": 1,
+    "infiniteDistance": false,
+    "ignoreNonUniformScaling": false,
+    "reIntegrateRotationIntoRotationQuaternion": false,
+    "name": "SplatLoader_initial",
+    "id": "851d2386-4dde-4039-a5f9-724e31041dae",
+    "state": "",
+    "metadata": {
+        "scripts": [
+            {
+                "enabled": true,
+                "key": "scripts/splat_loader_script_001.ts",
+                "_id": "d577772e-7037-4690-9ff6-eff7639d6bb5"
+            }
+        ]
+    },
+    "type": "TransformNode",
+    "uniqueId": 1780578030597,
+    "localMatrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+    ],
+    "isEnabled": true,
+    "animations": [],
+    "ranges": []
+}

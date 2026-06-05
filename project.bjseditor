@@ -1,0 +1,16 @@
+{
+    "plugins": [],
+    "version": "5.4.1",
+    "packageManager": "npm",
+    "lastOpenedScene": "/assets/example.scene",
+    "compressedTexturesEnabled": false,
+    "compressedTexturesEnabledInPreview": false,
+    "gizmoSnap": {
+        "translationEnabled": false,
+        "translationStep": 1,
+        "rotationEnabled": false,
+        "rotationStepDegrees": 15,
+        "scaleEnabled": false,
+        "scaleStep": 0.25
+    }
+}
