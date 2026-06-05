@@ -89,9 +89,38 @@ export class App {
 		this._scene.enablePhysics(new Vector3(0, -981, 0), new HavokPlugin(true, havok));
 
 		SceneLoaderFlags.ForceFullSceneLoadingForIncremental = true;
+		
+		// 1. Target relative path so it loads correctly inside the GitHub subfolder
 		await loadScene("./scene/", "example.babylon", this._scene, scriptsMap, {
 			quality: "high",
 		});
+
+		// 2. WebXR Immersive AR Hook
+		try {
+			const xrSupported = await this._engine.isXRSupportedAsync("immersive-ar");
+			
+			if (xrSupported) {
+				const xrHelper = await this._scene.createDefaultXRExperienceAsync({
+					uiOptions: {
+						sessionMode: "immersive-ar",
+						referenceSpaceType: "local-floor"
+					},
+					disableDefaultUI: false // Automatically adds the "Enter AR" button overlay
+				});
+
+				console.log(">>> WebXR AR initialized successfully.");
+				
+				xrHelper.baseExperience.onStateChangedObservable.add((state) => {
+					if (state === 2) { // WebXRState.IN_XR
+						console.log(">>> Player entered AR mode.");
+					}
+				});
+			} else {
+				console.warn(">>> WebXR Immersive AR is not supported on this browser/device.");
+			}
+		} catch (xrError) {
+			console.error(">>> Error setting up WebXR:", xrError);
+		}
 
 		if (this._scene.activeCamera) {
 			this._scene.activeCamera.attachControl();

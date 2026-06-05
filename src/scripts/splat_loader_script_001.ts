@@ -32,6 +32,7 @@ export default class SplatLoaderScript {
                 
                 // --- Fix 1: Scale the Splat 5x Bigger ---
                 splatMesh.scaling.setAll(5);
+		splatMesh.rotation.x = Vector3.ToRadians(180);
                 
                 console.log(">>> Fly splat spawned at 5x scale at (0, 0, 2).");
             }
