@@ -87,7 +87,7 @@ export class App {
 			quality: "high",
 		});
 
-		// WebXR Immersive VR Initialization (Tracks movement, keeps original virtual environment)
+		// WebXR Handheld Magic Window Initialization
 		try {
 			const xrSupported = await WebXRSessionManager.IsSessionSupportedAsync("immersive-vr");
 			
@@ -97,14 +97,19 @@ export class App {
 						sessionMode: "immersive-vr",
 						referenceSpaceType: "local-floor"
 					},
-					disableDefaultUI: false // Renders the "VR" button overlay on screen
+					disableDefaultUI: false
 				});
 
-				console.log(">>> WebXR Immersive VR initialized successfully.");
+				// Force a single full-screen camera view instead of side-by-side stereo loops
+				if (xrHelper.baseExperience.camera) {
+					xrHelper.baseExperience.camera.isStereoscopicSideBySide = false;
+				}
+
+				console.log(">>> WebXR Handheld VR Magic Window initialized successfully.");
 				
 				xrHelper.baseExperience.onStateChangedObservable.add((state) => {
 					if (state === 2) { 
-						console.log(">>> Player entered XR mode.");
+						console.log(">>> Player entered Handheld Tracking mode.");
 					}
 				});
 			} else {
