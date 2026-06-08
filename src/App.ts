@@ -4,7 +4,6 @@ import { Vector3 } from "@babylonjs/core/Maths/math.vector";
 import { Color4 } from "@babylonjs/core/Maths/math.color";
 import { SceneLoaderFlags } from "@babylonjs/core/Loading/sceneLoaderFlags";
 import { HavokPlugin } from "@babylonjs/core/Physics/v2/Plugins/havokPlugin";
-import { WebXRDomOverlay } from "@babylonjs/core/XR/features/WebXRDOMOverlay";
 
 import HavokPhysics from "@babylonjs/havok";
 
@@ -52,6 +51,7 @@ export class App {
 			failIfMajorPerformanceCaveat: false,
 		});
 
+		// OPTION 1: Lowers internal pixel resolution to save mobile GPU cycles
 		this._engine.setHardwareScalingLevel(1.35);
 
 		this._scene = new Scene(this._engine);
@@ -59,7 +59,11 @@ export class App {
 
 		await this._handleLoad();
 
-		window.addEventListener("resize", () => this._engine?.resize());
+		const handleResize = () => {
+			this._engine?.resize();
+		};
+
+		window.addEventListener("resize", handleResize);
 
 		this._engine.runRenderLoop(() => {
 			this._scene?.render();
@@ -80,26 +84,19 @@ export class App {
 			quality: "high",
 		});
 
+		// WebXR Immersive AR Configuration
 		try {
 			const xrSupported = await WebXRSessionManager.IsSessionSupportedAsync("immersive-ar");
 			
 			if (xrSupported) {
 				const xrHelper = await this._scene.createDefaultXRExperienceAsync({
-					uiOptions: {
-						sessionMode: "immersive-ar",
-						referenceSpaceType: "local-floor"
-					},
-					optionalFeatures: true
+    					uiOptions: {
+        					sessionMode: "immersive-ar",
+        					referenceSpaceType: "local-floor"
+    					},
+    					optionalFeatures: true,
+    					domOverlayElement: document.body
 				});
-
-				// Enable DOM overlay so HTML elements stay visible in AR
-				xrHelper.baseExperience.featuresManager.enableFeature(
-					WebXRDomOverlay,
-					"latest",
-					{ element: document.body },
-					undefined,
-					true // optional — won't block AR if unsupported
-				);
 
 				if (xrHelper.baseExperience.camera) {
 					xrHelper.baseExperience.camera.isStereoscopicSideBySide = false;
@@ -108,6 +105,7 @@ export class App {
 				let splatMesh: any = null;
 				let frameCounter = 0;
 
+				// Particle Size Adaptive Loop
 				this._scene.onBeforeRenderObservable.add(() => {
 					if (!splatMesh && this._scene) {
 						splatMesh = this._scene.meshes.find(m => m.className === "SplatMesh" || m.name.includes("splat"));
@@ -118,6 +116,7 @@ export class App {
 						frameCounter++;
 						const currentDistance = Vector3.Distance(camera.globalPosition, splatMesh.getAbsolutePosition());
 
+						// Dynamic particle thinning up close
 						if (currentDistance < 1.5) {
 							const targetSize = Math.max(0.02, currentDistance * 0.05);
 							splatMesh.forcedSize = targetSize;
@@ -125,6 +124,7 @@ export class App {
 							splatMesh.forcedSize = 0; 
 						}
 
+						// Throttle heavy CPU index sorting when near the object
 						if (currentDistance < 1.0) {
 							if (frameCounter % 5 !== 0) {
 								splatMesh.freezeWorldMatrix();
@@ -141,12 +141,20 @@ export class App {
 					if (state === 2) { // WebXRState.IN_XR
 						const xrCamera = xrHelper.baseExperience.camera;
 						if (xrCamera && this._scene) {
+							// Block the hardware pass-through layer
+							xrCamera.backgroundReceiver = false;
+							
+							// Keep autoClear active to forcefully paint over the camera buffer loop
 							this._scene.autoClear = true;
 							this._scene.autoClearDepthAndStencil = true;
+							
+							// Enforce the solid dark grey fill color
 							this._scene.clearColor = new Color4(0.1, 0.1, 0.1, 1.0);
 						}
+
 						if (splatMesh) {
 							splatMesh.position.set(0, 1.5, -1.0);
+							console.log(">>> Camera hidden. Dark grey backdrop active with resolution downscaling.");
 						}
 					} else if (state === 3) { // WebXRState.EXITING_XR
 						if (splatMesh) {
@@ -157,7 +165,7 @@ export class App {
 					}
 				});
 
-				console.log(">>> WebXR AR pipeline configured.");
+				console.log(">>> WebXR AR pipeline configured with background controls.");
 			} else {
 				console.warn(">>> WebXR Immersive AR is not supported on this browser/device.");
 			}
