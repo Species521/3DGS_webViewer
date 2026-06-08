@@ -1,5 +1,4 @@
-import { TransformNode, Vector3 } from "@babylonjs/core";
-import { GaussianSplattingMesh } from "@babylonjs/core/Meshes/GaussianSplatting/gaussianSplattingMesh";
+import { TransformNode, ImportMeshAsync, Vector3 } from "@babylonjs/core";
 import "@babylonjs/loaders/SPLAT/splatFileLoader";
 
 export default class SplatLoaderScript {
@@ -15,7 +14,7 @@ export default class SplatLoaderScript {
         const targetUrl = "https://species521.github.io/3DGS_storage/clusterFly_M.ply";
         const scene = this._attachedNode.getScene();
 
-        // FPS counter setup
+        // FPS counter
         this._fpsLabel = document.createElement("div");
         this._fpsLabel.style.cssText = "position:fixed;top:10px;left:10px;color:white;font-size:16px;font-family:monospace;z-index:999;";
         document.body.appendChild(this._fpsLabel);
@@ -26,34 +25,27 @@ export default class SplatLoaderScript {
             }
         });
 
-        // Configure pre-AR View Camera (Pinch and Inverted Rotations)
-        const activeCam = scene.activeCamera as any;
-        if (activeCam) {
-            activeCam.speed = 0.1;
-
-            // Invert touch/drag dragging orientations
-            if (activeCam.angularSensibilityX !== undefined) activeCam.angularSensibilityX = -Math.abs(activeCam.angularSensibilityX);
-            if (activeCam.angularSensibilityY !== undefined) activeCam.angularSensibilityY = -Math.abs(activeCam.angularSensibilityY);
-            
-            // Adjust zoom sensitivity for mobile pinching
-            if (activeCam.pinchPrecision !== undefined) activeCam.pinchPrecision = 12;
-
-            console.log(">>> Desktop/Mobile flat screen camera interactions configured.");
+        // Camera speed
+        if (scene.activeCamera) {
+            scene.activeCamera.speed = 0.1;
+            console.log(`>>> Camera speed reduced to: ${scene.activeCamera.speed}`);
         }
 
-        // Load Splat using native constructor to avoid the asset collection invisibility bug
+        // Load splat
         try {
-            const splatMesh = new GaussianSplattingMesh("ClusterFly_Splat", targetUrl, scene);
-            
-            // Wait safely for internal asynchronous buffers to build
-            await splatMesh.loadFileAsync(targetUrl);
+            // Fixed parameter order: task name, target file URL string, mesh names to load, scene instance, progress callback, file extension override
+            const result = await ImportMeshAsync("", targetUrl, null, scene, null, ".splat");
+            const splatMesh = result.meshes[0];
 
-            splatMesh.parent = this._attachedNode;
-            splatMesh.position = new Vector3(0, 0, 2);
-            splatMesh.scaling.setAll(5);
-            splatMesh.rotation.x = Math.PI;
-            
-            console.log(">>> Fly splat spawned successfully at 5x scale via Native GS Class.");
+            if (splatMesh) {
+                // Must be named identically to the string target inside App.ts tracking loop
+                splatMesh.name = "ClusterFly_Splat";
+                splatMesh.parent = this._attachedNode;
+                splatMesh.position = new Vector3(0, 0, 2);
+                splatMesh.scaling.setAll(5);
+                splatMesh.rotation.x = Math.PI;
+                console.log(">>> Fly splat spawned at 5x scale at (0, 0, 2).");
+            }
         } catch (error) {
             console.error(">>> Runtime error during configuration:", error);
         }

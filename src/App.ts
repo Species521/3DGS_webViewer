@@ -92,6 +92,7 @@ export class App {
 					optionalFeatures: true
 				});
 
+				// Enable DOM overlay so HTML/CSS elements (like the FPS label) stay visible in AR
 				xrHelper.baseExperience.featuresManager.enableFeature(
 					WebXRDomOverlay,
 					"latest",
@@ -109,10 +110,10 @@ export class App {
 
 				this._scene.onBeforeRenderObservable.add(() => {
 					if (!splatMesh && this._scene) {
-						// Accessing via global scene lookup map
 						splatMesh = this._scene.getMeshByName("ClusterFly_Splat");
 					}
 
+					// Safety Guard: Stop execution if the mesh hasn't downloaded from GitHub yet
 					if (!splatMesh || !this._scene?.activeCamera) {
 						return;
 					}
@@ -148,12 +149,11 @@ export class App {
 						if (this._scene) {
 							this._scene.autoClear = true;
 							this._scene.autoClearDepthAndStencil = true;
+							// Clear color alpha must be 0.0 to show the real-world camera feed behind the canvas
 							this._scene.clearColor = new Color4(0.0, 0.0, 0.0, 0.0);
 						}
 						if (splatMesh) {
 							splatMesh.position.set(0, 1.5, -1.0);
-							// Compensate tracking mismatch by pulling scale back to native 1:1 units
-							splatMesh.scaling.setAll(1.0); 
 						}
 					} else if (state === 3) { // WebXRState.EXITING_XR
 						if (this._scene) {
@@ -161,7 +161,6 @@ export class App {
 						}
 						if (splatMesh) {
 							splatMesh.position.set(0, 0, 2);
-							splatMesh.scaling.setAll(5.0); 
 							splatMesh.forcedSize = 0;
 							splatMesh.unfreezeWorldMatrix();
 						}
