@@ -90,12 +90,11 @@ export class App {
 			
 			if (xrSupported) {
 				const xrHelper = await this._scene.createDefaultXRExperienceAsync({
-    					uiOptions: {
-        					sessionMode: "immersive-ar",
-        					referenceSpaceType: "local-floor"
-    					},
-    					optionalFeatures: true,
-    					domOverlayElement: document.body
+					uiOptions: {
+						sessionMode: "immersive-ar",
+						referenceSpaceType: "local-floor"
+					},
+					disableDefaultUI: false
 				});
 
 				if (xrHelper.baseExperience.camera) {
