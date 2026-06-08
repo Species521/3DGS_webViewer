@@ -41,7 +41,7 @@ export default class SplatLoaderScript {
                 splatMesh.parent = this._attachedNode;
                 splatMesh.position = new Vector3(0, 0, 2);
                 splatMesh.scaling.setAll(5);
-                // splatMesh.rotation.x = Math.PI;
+                splatMesh.rotation.x = Math.PI;
                 console.log(">>> Fly splat spawned at 5x scale at (0, 0, 2).");
             }
         } catch (error) {
