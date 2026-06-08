@@ -11,7 +11,7 @@ export default class SplatLoaderScript {
     public async onStart(): Promise<void> {
         console.log(">>> Splat loader initialized.");
 
-        const targetUrl = "https://species521.github.io/3DGS_storage/clusterFly_M.compressed.ply";
+        const targetUrl = "https://species521.github.io/3DGS_storage/clusterFly_M.spz";
         const scene = this._attachedNode.getScene();
 
         // --- Fix 2: Tame the Player/Camera Movement Speed ---
