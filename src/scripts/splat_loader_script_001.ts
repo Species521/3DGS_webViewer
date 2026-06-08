@@ -16,7 +16,7 @@ export default class SplatLoaderScript {
         console.log(">>> Splat loader initialized.");
 
         const targetUrl =
-            "https://species521.github.io/3DGS_storage/clusterFly_M.ply";
+            "https://species521.github.io/3DGS_storage/clusterFly_M.spz";
 
         const scene = this._attachedNode.getScene();
 
