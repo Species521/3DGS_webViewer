@@ -92,13 +92,13 @@ export class App {
 					optionalFeatures: true
 				});
 
-				// Enable DOM overlay so HTML/CSS elements (like the FPS label) stay visible in AR
+				// Enable DOM overlay so HTML elements stay visible in AR
 				xrHelper.baseExperience.featuresManager.enableFeature(
 					WebXRDomOverlay,
 					"latest",
 					{ element: document.body },
 					undefined,
-					true 
+					true // optional — won't block AR if unsupported
 				);
 
 				if (xrHelper.baseExperience.camera) {
@@ -110,57 +110,47 @@ export class App {
 
 				this._scene.onBeforeRenderObservable.add(() => {
 					if (!splatMesh && this._scene) {
-						splatMesh = this._scene.getMeshByName("ClusterFly_Splat");
+						splatMesh = this._scene.meshes.find(m => m.className === "SplatMesh" || m.name.includes("splat"));
 					}
 
-					// Safety Guard: Stop execution if the mesh hasn't downloaded from GitHub yet
-					if (!splatMesh || !this._scene?.activeCamera) {
-						return;
-					}
+					const camera = this._scene?.activeCamera;
+					if (splatMesh && camera) {
+						frameCounter++;
+						const currentDistance = Vector3.Distance(camera.globalPosition, splatMesh.getAbsolutePosition());
 
-					const camera = this._scene.activeCamera;
-					frameCounter++;
-					const currentDistance = Vector3.Distance(camera.globalPosition, splatMesh.absolutePosition);
+						if (currentDistance < 1.5) {
+							const targetSize = Math.max(0.02, currentDistance * 0.05);
+							splatMesh.forcedSize = targetSize;
+						} else {
+							splatMesh.forcedSize = 0; 
+						}
 
-					if (currentDistance < 1.5) {
-						const targetSize = Math.max(0.02, currentDistance * 0.05);
-						splatMesh.forcedSize = targetSize;
-					} else {
-						splatMesh.forcedSize = 0; 
-					}
-
-					if (currentDistance < 1.0) {
-						if (frameCounter % 5 !== 0) {
-							splatMesh.freezeWorldMatrix();
+						if (currentDistance < 1.0) {
+							if (frameCounter % 5 !== 0) {
+								splatMesh.freezeWorldMatrix();
+							} else {
+								splatMesh.unfreezeWorldMatrix();
+							}
 						} else {
 							splatMesh.unfreezeWorldMatrix();
 						}
-					} else {
-						splatMesh.unfreezeWorldMatrix();
 					}
 				});
 
 				xrHelper.baseExperience.onStateChangedObservable.add((state) => {
-					if (!splatMesh && this._scene) {
-						splatMesh = this._scene.getMeshByName("ClusterFly_Splat");
-					}
-
 					if (state === 2) { // WebXRState.IN_XR
-						if (this._scene) {
+						const xrCamera = xrHelper.baseExperience.camera;
+						if (xrCamera && this._scene) {
 							this._scene.autoClear = true;
 							this._scene.autoClearDepthAndStencil = true;
-							// Clear color alpha must be 0.0 to show the real-world camera feed behind the canvas
-							this._scene.clearColor = new Color4(0.0, 0.0, 0.0, 0.0);
+							this._scene.clearColor = new Color4(0.1, 0.1, 0.1, 1.0);
 						}
 						if (splatMesh) {
 							splatMesh.position.set(0, 1.5, -1.0);
 						}
 					} else if (state === 3) { // WebXRState.EXITING_XR
-						if (this._scene) {
-							this._scene.clearColor = new Color4(0.1, 0.1, 0.1, 1.0);
-						}
 						if (splatMesh) {
-							splatMesh.position.set(0, 0, 2);
+							splatMesh.position.set(0, 0, 0);
 							splatMesh.forcedSize = 0;
 							splatMesh.unfreezeWorldMatrix();
 						}

@@ -33,12 +33,10 @@ export default class SplatLoaderScript {
 
         // Load splat
         try {
-            // Fixed parameter order: task name, target file URL string, mesh names to load, scene instance, progress callback, file extension override
-            const result = await ImportMeshAsync("", targetUrl, null, scene, null, ".splat");
+            const result = await ImportMeshAsync(targetUrl, scene, null, ".splat");
             const splatMesh = result.meshes[0];
 
             if (splatMesh) {
-                // Must be named identically to the string target inside App.ts tracking loop
                 splatMesh.name = "ClusterFly_Splat";
                 splatMesh.parent = this._attachedNode;
                 splatMesh.position = new Vector3(0, 0, 2);
