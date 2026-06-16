@@ -5,11 +5,9 @@
 
 import { loadScene, scriptsDictionary, scriptAssetsCache, _applyScriptsForObject, _removeRegisteredScriptInstance, _preloadScriptsAssets } from "babylonjs-editor-tools";
 import * as scripts_splat_loader_script_001 from "./scripts/splat_loader_script_001";
-import * as scripts_box from "./scripts/box";
 
 export const scriptsMap = {
-    "scripts/splat_loader_script_001.ts": scripts_splat_loader_script_001,
-	"scripts/box.ts": scripts_box
+    "scripts/splat_loader_script_001.ts": scripts_splat_loader_script_001
 };
 
 export { loadScene, scriptsDictionary, scriptAssetsCache, _applyScriptsForObject, _removeRegisteredScriptInstance, _preloadScriptsAssets };

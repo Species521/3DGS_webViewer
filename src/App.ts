@@ -66,7 +66,10 @@ export class App {
 		window.addEventListener("resize", handleResize);
 
 		this._engine.runRenderLoop(() => {
-			this._scene?.render();
+			if (this._scene) {
+				this._scene.clearColor = new Color4(0.1, 0.1, 0.1, 1.0);
+				this._scene?.render();
+			}
 		});
 	}
 

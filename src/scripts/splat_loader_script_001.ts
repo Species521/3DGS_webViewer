@@ -1,4 +1,4 @@
-import { TransformNode, ImportMeshAsync, Vector3 } from "@babylonjs/core";
+﻿import { TransformNode, ImportMeshAsync, Vector3 } from "@babylonjs/core";
 import "@babylonjs/loaders/SPLAT/splatFileLoader";
 
 import { AdvancedDynamicTexture } from "@babylonjs/gui/2D/advancedDynamicTexture";
@@ -15,10 +15,10 @@ export default class SplatLoaderScript {
     public async onStart(): Promise<void> {
         console.log(">>> Splat loader initialized.");
 
+        const scene = this._attachedNode.getScene();
+
         const targetUrl =
             "https://species521.github.io/3DGS_storage/clusterFly_S.ply";
-
-        const scene = this._attachedNode.getScene();
 
         // --------------------------------------------------
         // FPS UI
@@ -35,8 +35,6 @@ export default class SplatLoaderScript {
         this._fpsText.fontSize = 24;
         this._fpsText.top = "-45%";
         this._fpsText.left = "-40%";
-        this._fpsText.textHorizontalAlignment = 0;
-        this._fpsText.textVerticalAlignment = 0;
 
         gui.addControl(this._fpsText);
 
@@ -48,14 +46,19 @@ export default class SplatLoaderScript {
         });
 
         // --------------------------------------------------
-        // Camera speed tweak (unchanged)
+        // Camera tweak (unchanged)
         // --------------------------------------------------
         if (scene.activeCamera) {
             scene.activeCamera.speed = 0.1;
-            console.log(
-                `>>> Camera speed reduced to: ${scene.activeCamera.speed}`
-            );
         }
+
+        // --------------------------------------------------
+        // FIX: Create a neutral world-space container
+        // --------------------------------------------------
+        const worldRoot = new TransformNode("SplatWorldRoot", scene);
+        worldRoot.position = Vector3.Zero();
+        worldRoot.rotation = Vector3.Zero();
+        worldRoot.scaling.setAll(1); // 🔥 critical: keep XR space stable
 
         // --------------------------------------------------
         // Load Splat
@@ -73,29 +76,19 @@ export default class SplatLoaderScript {
             if (splatMesh) {
                 splatMesh.name = "ClusterFly_Splat";
 
-                // --------------------------------------------------
-                // IMPORTANT: create an independent world container
-                // --------------------------------------------------
-                const splatRoot = new TransformNode("SplatRoot", scene);
+                // attach ONLY to neutral root
+                splatMesh.parent = worldRoot;
 
-                splatRoot.position = new Vector3(0, 0, 2);
-                // splatRoot.rotation.x = Math.PI;
+                // position in XR space (meters)
+                splatMesh.position = new Vector3(0, 0, 2);
 
-                // scale ONLY the splat container (safe)
-                splatMesh.scaling = new Vector3(5, 5, 5);
+                // scale ONLY the splat (safe now)
+                splatMesh.scaling.setAll(5);
 
-                // attach splat under it
-                splatMesh.parent = splatRoot;
-
-                console.log(
-                    ">>> Splat spawned safely at 5x scale in world space."
-                );
+                console.log(">>> Splat loaded with isolated world root.");
             }
         } catch (error) {
-            console.error(
-                ">>> Runtime error during configuration:",
-                error
-            );
+            console.error(">>> Runtime error:", error);
         }
     }
 }
