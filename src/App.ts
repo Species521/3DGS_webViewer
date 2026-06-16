@@ -125,7 +125,7 @@ export class App {
     }
 
     public setMovementGain(value: number) {
-        this._movementGain = 2.5;
+        this._movementGain = 0.3;
         console.log("Movement gain set to:", value);
     }
 
