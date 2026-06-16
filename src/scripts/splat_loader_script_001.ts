@@ -79,7 +79,7 @@ export default class SplatLoaderScript {
                 splatMesh.parent = this._attachedNode;
 
                 splatMesh.position = new Vector3(0, 0, 2);
-                splatMesh.scaling.setAll(5);
+                splatMesh.scaling.setAll(1);
                 splatMesh.rotation.x = Math.PI;
 
                 console.log(

@@ -28,10 +28,10 @@ var __decorateClass = (decorators, target, key, kind) => {
   return result;
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.constants.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.constants.js
 var ToGammaSpace, ToLinearSpace, PHI, Epsilon;
 var init_math_constants = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.constants.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.constants.js"() {
     ToGammaSpace = 1 / 2.2;
     ToLinearSpace = 2.2;
     PHI = (1 + Math.sqrt(5)) / 2;
@@ -39,7 +39,7 @@ var init_math_constants = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/arrayTools.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/arrayTools.js
 function BuildArray(size, itemBuilder) {
   const a = [];
   for (let i = 0; i < size; ++i) {
@@ -93,7 +93,7 @@ function _ObserveArray(array, callback) {
 }
 var observedArrayFunctions;
 var init_arrayTools = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/arrayTools.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/arrayTools.js"() {
     __name(BuildArray, "BuildArray");
     __name(BuildTuple, "BuildTuple");
     __name(ObserveArrayFunction, "ObserveArrayFunction");
@@ -102,10 +102,10 @@ var init_arrayTools = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/performanceConfigurator.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/performanceConfigurator.js
 var PerformanceConfigurator;
 var init_performanceConfigurator = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/performanceConfigurator.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/performanceConfigurator.js"() {
     PerformanceConfigurator = class _PerformanceConfigurator {
       static {
         __name(this, "PerformanceConfigurator");
@@ -139,7 +139,7 @@ var init_performanceConfigurator = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/devTools.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/devTools.js
 function _WarnImport(name287, warnOnce = false) {
   if (warnOnce && WarnedMap[name287]) {
     return;
@@ -196,7 +196,7 @@ function _MissingSideEffectProperty(className2, propName) {
 }
 var WarnedMap, _StubWarnedMap, _MissingSideEffectWarningsEnabled, _MissingSideEffectWarningsSuppressionDepth;
 var init_devTools = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/devTools.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/devTools.js"() {
     WarnedMap = {};
     __name(_WarnImport, "_WarnImport");
     _StubWarnedMap = {};
@@ -210,10 +210,10 @@ var init_devTools = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/observable.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/observable.pure.js
 var _a, _b, _c, IsWeakRefSupported, EventState, Observer, Observable;
 var init_observable_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/observable.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/observable.pure.js"() {
     init_devTools();
     IsWeakRefSupported = typeof WeakRef !== "undefined";
     EventState = class {
@@ -557,17 +557,17 @@ var init_observable_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/observable.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/observable.js
 var init_observable = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/observable.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/observable.js"() {
     init_observable_pure();
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/engineStore.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/engineStore.js
 var EngineStore;
 var init_engineStore = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/engineStore.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/engineStore.js"() {
     init_observable();
     EngineStore = class {
       static {
@@ -597,7 +597,7 @@ var init_engineStore = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.scalar.functions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.scalar.functions.js
 function ExtractAsInt(value) {
   return parseInt(value.toString().replace(/\W/g, ""));
 }
@@ -742,7 +742,7 @@ function HighestCommonFactor(a, b) {
   return HighestCommonFactor(b, r);
 }
 var init_math_scalar_functions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.scalar.functions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.scalar.functions.js"() {
     __name(ExtractAsInt, "ExtractAsInt");
     __name(WithinEpsilon, "WithinEpsilon");
     __name(OutsideRange, "OutsideRange");
@@ -770,7 +770,7 @@ var init_math_scalar_functions = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/ThinMaths/thinMath.matrix.functions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/ThinMaths/thinMath.matrix.functions.js
 function SetMatrixData(result, m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15) {
   const mat = result.asArray();
   mat[0] = m0;
@@ -930,7 +930,7 @@ function InvertMatrixToArray(source, target) {
 }
 var MatrixManagement;
 var init_thinMath_matrix_functions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/ThinMaths/thinMath.matrix.functions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/ThinMaths/thinMath.matrix.functions.js"() {
     MatrixManagement = class {
       static {
         __name(this, "MatrixManagement");
@@ -951,7 +951,7 @@ var init_thinMath_matrix_functions = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/typeStore.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/typeStore.js
 function RegisterClass(className2, type) {
   RegisteredTypes[className2] = type;
 }
@@ -968,7 +968,7 @@ function GetClassName(obj) {
 }
 var RegisteredTypes;
 var init_typeStore = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/typeStore.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/typeStore.js"() {
     RegisteredTypes = {};
     __name(RegisterClass, "RegisterClass");
     __name(GetClass, "GetClass");
@@ -976,7 +976,7 @@ var init_typeStore = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.vector.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.vector.pure.js
 function RegisterMathVector() {
   if (_Registered) {
     return;
@@ -1009,7 +1009,7 @@ function RegisterMathVector() {
 }
 var ExtractAsInt2, Vector2, Vector3, Vector4, Quaternion, Matrix, MathTmp, TmpVectors, mtxConvertNDCToHalfZRange, _Registered;
 var init_math_vector_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.vector.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.vector.pure.js"() {
     init_math_constants();
     init_arrayTools();
     init_performanceConfigurator();
@@ -8381,16 +8381,16 @@ ${this.m[12]}, ${this.m[13]}, ${this.m[14]}, ${this.m[15]}}`;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.vector.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.vector.js
 var init_math_vector = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.vector.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.vector.js"() {
     init_math_vector_pure();
     init_math_vector_pure();
     RegisterMathVector();
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/domManagement.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/domManagement.js
 function IsWindowObjectExist() {
   return typeof window !== "undefined";
 }
@@ -8413,7 +8413,7 @@ function GetDOMTextContent(element) {
 }
 var DomManagement;
 var init_domManagement = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/domManagement.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/domManagement.js"() {
     __name(IsWindowObjectExist, "IsWindowObjectExist");
     __name(IsNavigatorAvailable, "IsNavigatorAvailable");
     __name(IsDocumentAvailable, "IsDocumentAvailable");
@@ -8444,10 +8444,10 @@ var init_domManagement = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/logger.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/logger.js
 var Logger;
 var init_logger = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/logger.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/logger.js"() {
     Logger = class _Logger {
       static {
         __name(this, "Logger");
@@ -8552,7 +8552,7 @@ var init_logger = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/deepCopier.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/deepCopier.js
 function GetAllPropertyNames(obj) {
   const props = [];
   do {
@@ -8567,7 +8567,7 @@ function GetAllPropertyNames(obj) {
 }
 var CloneValue, DeepCopier;
 var init_deepCopier = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/deepCopier.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/deepCopier.js"() {
     init_logger();
     CloneValue = /* @__PURE__ */ __name((source, destinationObject, shallowCopyValues) => {
       if (!source) {
@@ -8651,10 +8651,10 @@ var init_deepCopier = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/precisionDate.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/precisionDate.js
 var PrecisionDate;
 var init_precisionDate = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/precisionDate.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/precisionDate.js"() {
     init_domManagement();
     PrecisionDate = class {
       static {
@@ -8673,7 +8673,7 @@ var init_precisionDate = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/webRequest.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/webRequest.js
 function createXMLHttpRequest() {
   if (typeof _native !== "undefined" && _native.XMLHttpRequest) {
     return new _native.XMLHttpRequest();
@@ -8683,7 +8683,7 @@ function createXMLHttpRequest() {
 }
 var WebRequest;
 var init_webRequest = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/webRequest.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/webRequest.js"() {
     __name(createXMLHttpRequest, "createXMLHttpRequest");
     WebRequest = class _WebRequest {
       static {
@@ -8919,10 +8919,10 @@ var init_webRequest = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/filesInputStore.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/filesInputStore.js
 var FilesInputStore;
 var init_filesInputStore = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/filesInputStore.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/filesInputStore.js"() {
     FilesInputStore = class {
       static {
         __name(this, "FilesInputStore");
@@ -8932,10 +8932,10 @@ var init_filesInputStore = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/retryStrategy.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/retryStrategy.js
 var RetryStrategy;
 var init_retryStrategy = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/retryStrategy.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/retryStrategy.js"() {
     RetryStrategy = class {
       static {
         __name(this, "RetryStrategy");
@@ -8958,10 +8958,10 @@ var init_retryStrategy = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/error.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/error.js
 var BaseError, ErrorCodes, RuntimeError, AbortError;
 var init_error = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/error.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/error.js"() {
     BaseError = class extends Error {
       static {
         __name(this, "BaseError");
@@ -9023,7 +9023,7 @@ var init_error = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/stringTools.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/stringTools.js
 function JsEncodeArrayBufferToBase64(bytes) {
   const keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
   let output = "";
@@ -9057,7 +9057,7 @@ function JsDecodeBase64ToBinary(base64Data) {
 }
 var EndsWith, StartsWith, Decode, EncodeArrayBufferToBase64, DecodeBase64ToString, DecodeBase64ToBinary, PadNumber, StringTools;
 var init_stringTools = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/stringTools.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/stringTools.js"() {
     EndsWith = /* @__PURE__ */ __name((str, suffix) => {
       return str.endsWith(suffix);
     }, "EndsWith");
@@ -9108,7 +9108,7 @@ var init_stringTools = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/timingTools.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/timingTools.js
 function RunWithCondition(condition, onSuccess, onError) {
   try {
     if (condition()) {
@@ -9123,7 +9123,7 @@ function RunWithCondition(condition, onSuccess, onError) {
 }
 var ImmediateQueue, TimingTools, _RetryWithInterval;
 var init_timingTools = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/timingTools.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/timingTools.js"() {
     ImmediateQueue = [];
     TimingTools = class {
       static {
@@ -9169,7 +9169,7 @@ var init_timingTools = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Buffers/bufferUtils.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Buffers/bufferUtils.js
 function GetFloatValue(dataView, type, byteOffset, normalized) {
   switch (type) {
     case 5120: {
@@ -9492,7 +9492,7 @@ function GetBlobBufferSource(view) {
   return unsharedBuffer;
 }
 var init_bufferUtils = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Buffers/bufferUtils.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Buffers/bufferUtils.js"() {
     init_logger();
     __name(GetFloatValue, "GetFloatValue");
     __name(SetFloatValue, "SetFloatValue");
@@ -9508,7 +9508,7 @@ var init_bufferUtils = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/fileTools.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/fileTools.pure.js
 function DecodeBase64UrlToBinary(uri) {
   return DecodeBase64ToBinary(uri.split(",")[1]);
 }
@@ -9521,7 +9521,7 @@ function RegisterFileTools() {
 }
 var Base64DataUrlRegEx, LoadFileError, RequestFileError, ReadFileError, CleanUrl, FileToolsOptions, SetCorsBehavior, LoadImageConfiguration, LoadImage, ReadFile, LoadFile, RequestFile, GetMimeType, IsFileURL, IsBase64DataUrl, TestBase64DataUrl, DecodeBase64UrlToString, FileTools, _injectLTSFileTools, _Registered2;
 var init_fileTools_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/fileTools.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/fileTools.pure.js"() {
     init_webRequest();
     init_domManagement();
     init_observable_pure();
@@ -10130,10 +10130,10 @@ var init_fileTools_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/instantiationTools.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/instantiationTools.js
 var InstantiationTools;
 var init_instantiationTools = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/instantiationTools.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/instantiationTools.js"() {
     init_logger();
     init_typeStore();
     InstantiationTools = class {
@@ -10169,7 +10169,7 @@ var init_instantiationTools = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/guid.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/guid.js
 function RandomGUID() {
   return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (c) => {
     const r = Math.random() * 16 | 0, v = c === "x" ? r : r & 3 | 8;
@@ -10178,7 +10178,7 @@ function RandomGUID() {
 }
 var GUID;
 var init_guid = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/guid.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/guid.js"() {
     __name(RandomGUID, "RandomGUID");
     GUID = {
       /**
@@ -10193,7 +10193,7 @@ var init_guid = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/tools.functions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/tools.functions.js
 function IsExponentOfTwo(value) {
   let count = 1;
   do {
@@ -10244,7 +10244,7 @@ function GetExponentOfTwo(value, max, mode = 2) {
   return Math.min(pot, max);
 }
 var init_tools_functions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/tools.functions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/tools.functions.js"() {
     __name(IsExponentOfTwo, "IsExponentOfTwo");
     __name(Mix, "Mix");
     __name(NearestPOT, "NearestPOT");
@@ -10254,7 +10254,7 @@ var init_tools_functions = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/tools.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/tools.pure.js
 function className(name287, module2) {
   return (target) => {
     target["__bjsclassName__"] = name287;
@@ -10272,7 +10272,7 @@ function RegisterTools() {
 }
 var _a2, Tools, AsyncLoop, _Registered3;
 var init_tools_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/tools.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/tools.pure.js"() {
     init_observable_pure();
     init_domManagement();
     init_logger();
@@ -11539,19 +11539,19 @@ var init_tools_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/tools.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/tools.js
 var init_tools = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/tools.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/tools.js"() {
     init_tools_pure();
     init_tools_pure();
     RegisterTools();
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/smartArray.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/smartArray.js
 var SmartArray, SmartArrayNoDuplicate;
 var init_smartArray = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/smartArray.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/smartArray.js"() {
     SmartArray = class _SmartArray {
       static {
         __name(this, "SmartArray");
@@ -11704,10 +11704,10 @@ var init_smartArray = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/stringDictionary.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/stringDictionary.js
 var StringDictionary;
 var init_stringDictionary = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/stringDictionary.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/stringDictionary.js"() {
     StringDictionary = class {
       static {
         __name(this, "StringDictionary");
@@ -11878,10 +11878,10 @@ var init_stringDictionary = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/andOrNotEvaluator.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/andOrNotEvaluator.js
 var AndOrNotEvaluator;
 var init_andOrNotEvaluator = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/andOrNotEvaluator.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/andOrNotEvaluator.js"() {
     AndOrNotEvaluator = class _AndOrNotEvaluator {
       static {
         __name(this, "AndOrNotEvaluator");
@@ -11971,10 +11971,10 @@ var init_andOrNotEvaluator = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/tags.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/tags.js
 var Tags;
 var init_tags = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/tags.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/tags.js"() {
     init_andOrNotEvaluator();
     Tags = class _Tags {
       static {
@@ -12120,7 +12120,7 @@ var init_tags = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/tslib.es6.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/tslib.es6.js
 function __extends(d, b) {
   if (typeof b !== "function" && b !== null)
     throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
@@ -12424,7 +12424,7 @@ function __classPrivateFieldIn(state, receiver) {
 }
 var extendStatics, __assign, __createBinding, __setModuleDefault;
 var init_tslib_es6 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/tslib.es6.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/tslib.es6.js"() {
     extendStatics = /* @__PURE__ */ __name(function(d, b) {
       extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
         d2.__proto__ = b2;
@@ -12488,7 +12488,7 @@ var init_tslib_es6 = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/decorators.functions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/decorators.functions.js
 function GetDirectStore(target) {
   const classKey = target.getClassName();
   if (!DecoratorInitialStore[classKey]) {
@@ -12533,7 +12533,7 @@ function GetMergedStore(target) {
 }
 var MergedStore, DecoratorInitialStore;
 var init_decorators_functions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/decorators.functions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/decorators.functions.js"() {
     MergedStore = {};
     DecoratorInitialStore = {};
     __name(GetDirectStore, "GetDirectStore");
@@ -12541,7 +12541,7 @@ var init_decorators_functions = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/decorators.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/decorators.js
 function generateSerializableMember(type, sourceName) {
   return (target, propertyKey) => {
     const classStore = GetDirectStore(target);
@@ -12658,7 +12658,7 @@ function addAccessorsForMaterialProperty(setCallback, targetKey = null) {
   };
 }
 var init_decorators = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/decorators.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/decorators.js"() {
     init_decorators_functions();
     __name(generateSerializableMember, "generateSerializableMember");
     __name(generateExpandMember, "generateExpandMember");
@@ -12684,7 +12684,7 @@ var init_decorators = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.color.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.color.pure.js
 function ColorChannelToLinearSpace(color) {
   return Math.pow(color, ToLinearSpace);
 }
@@ -12721,7 +12721,7 @@ function RegisterMathColor() {
 }
 var Color3, Color4, TmpColors, _Registered4;
 var init_math_color_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.color.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.color.pure.js"() {
     init_arrayTools();
     init_math_constants();
     init_math_scalar_functions();
@@ -14349,19 +14349,19 @@ var init_math_color_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.color.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.color.js
 var init_math_color = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.color.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.color.js"() {
     init_math_color_pure();
     init_math_color_pure();
     RegisterMathColor();
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/decorators.serialization.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/decorators.serialization.js
 var CopySource, SerializationHelper;
 var init_decorators_serialization = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/decorators.serialization.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/decorators.serialization.js"() {
     init_devTools();
     init_tags();
     init_math_color();
@@ -14630,17 +14630,17 @@ var init_decorators_serialization = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/colorCurves.functions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/colorCurves.functions.js
 function PrepareUniformsForColorCurves(uniformsList) {
   uniformsList.push("vCameraColorCurveNeutral", "vCameraColorCurvePositive", "vCameraColorCurveNegative");
 }
 var init_colorCurves_functions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/colorCurves.functions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/colorCurves.functions.js"() {
     __name(PrepareUniformsForColorCurves, "PrepareUniformsForColorCurves");
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/colorCurves.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/colorCurves.pure.js
 function ColorCurvesParse(source) {
   return SerializationHelper.Parse(() => new ColorCurves(), source, null, null);
 }
@@ -14658,7 +14658,7 @@ function RegisterColorCurves() {
 }
 var ColorCurves, _Registered5;
 var init_colorCurves_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/colorCurves.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/colorCurves.pure.js"() {
     init_tslib_es6();
     init_decorators();
     init_math_color_pure();
@@ -15138,7 +15138,7 @@ var init_colorCurves_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/imageProcessingConfiguration.functions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/imageProcessingConfiguration.functions.js
 function PrepareUniformsForImageProcessing(uniforms, defines) {
   if (defines.EXPOSURE) {
     uniforms.push("exposureLinear");
@@ -15169,14 +15169,14 @@ function PrepareSamplersForImageProcessing(samplersList, defines) {
   }
 }
 var init_imageProcessingConfiguration_functions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/imageProcessingConfiguration.functions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/imageProcessingConfiguration.functions.js"() {
     init_colorCurves_functions();
     __name(PrepareUniformsForImageProcessing, "PrepareUniformsForImageProcessing");
     __name(PrepareSamplersForImageProcessing, "PrepareSamplersForImageProcessing");
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/imageProcessingConfiguration.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/imageProcessingConfiguration.pure.js
 function ImageProcessingConfigurationParse(source) {
   const parsed = SerializationHelper.Parse(() => new ImageProcessingConfiguration(), source, null, null);
   if (source.vignetteCentreX !== void 0) {
@@ -15198,7 +15198,7 @@ function RegisterImageProcessingConfiguration() {
 }
 var ImageProcessingConfiguration, _Registered6;
 var init_imageProcessingConfiguration_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/imageProcessingConfiguration.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/imageProcessingConfiguration.pure.js"() {
     init_tslib_es6();
     init_decorators();
     init_observable_pure();
@@ -15754,10 +15754,10 @@ var init_imageProcessingConfiguration_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/uniformBuffer.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/uniformBuffer.js
 var UniformBuffer;
 var init_uniformBuffer = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/uniformBuffer.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/uniformBuffer.js"() {
     init_logger();
     init_tools();
     UniformBuffer = class _UniformBuffer {
@@ -16639,10 +16639,10 @@ var init_uniformBuffer = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Buffers/dataBuffer.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Buffers/dataBuffer.js
 var DataBuffer;
 var init_dataBuffer = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Buffers/dataBuffer.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Buffers/dataBuffer.js"() {
     DataBuffer = class _DataBuffer {
       static {
         __name(this, "DataBuffer");
@@ -16667,10 +16667,10 @@ var init_dataBuffer = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/shaderStore.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/shaderStore.js
 var ShaderStore;
 var init_shaderStore = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/shaderStore.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/shaderStore.js"() {
     ShaderStore = class _ShaderStore {
       static {
         __name(this, "ShaderStore");
@@ -16709,10 +16709,10 @@ var init_shaderStore = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/WebGL/webGLPipelineContext.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/WebGL/webGLPipelineContext.js
 var WebGLPipelineContext;
 var init_webGLPipelineContext = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/WebGL/webGLPipelineContext.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/WebGL/webGLPipelineContext.js"() {
     WebGLPipelineContext = class {
       static {
         __name(this, "WebGLPipelineContext");
@@ -17280,7 +17280,7 @@ var init_webGLPipelineContext = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/abstractEngine.functions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/abstractEngine.functions.js
 function _ConcatenateShader(source, defines, shaderVersion = "") {
   return shaderVersion + (defines ? defines + "\n" : "") + source;
 }
@@ -17402,7 +17402,7 @@ function allocateAndCopyTypedBuffer(type, sizeOrDstBuffer, sizeInBytes = false, 
 }
 var EngineFunctionContext;
 var init_abstractEngine_functions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/abstractEngine.functions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/abstractEngine.functions.js"() {
     init_domManagement();
     init_fileTools_pure();
     EngineFunctionContext = {};
@@ -17414,7 +17414,7 @@ var init_abstractEngine_functions = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/thinEngine.functions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/thinEngine.functions.js
 function getStateObject(context) {
   let state = StateObject.get(context);
   if (!state) {
@@ -17596,7 +17596,7 @@ function _executeWhenRenderingStateIsCompiled(pipelineContext, action) {
 }
 var StateObject, SingleStateObject;
 var init_thinEngine_functions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/thinEngine.functions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/thinEngine.functions.js"() {
     init_webGLPipelineContext();
     init_abstractEngine_functions();
     StateObject = /* @__PURE__ */ new WeakMap();
@@ -17620,10 +17620,10 @@ var init_thinEngine_functions = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Processors/shaderCodeNode.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Processors/shaderCodeNode.js
 var DefaultAttributeKeywordName, DefaultVaryingKeywordName, ShaderCodeNode;
 var init_shaderCodeNode = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Processors/shaderCodeNode.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Processors/shaderCodeNode.js"() {
     DefaultAttributeKeywordName = "attribute";
     DefaultVaryingKeywordName = "varying";
     ShaderCodeNode = class {
@@ -17698,10 +17698,10 @@ var init_shaderCodeNode = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Processors/shaderCodeCursor.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Processors/shaderCodeCursor.js
 var ShaderCodeCursor;
 var init_shaderCodeCursor = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Processors/shaderCodeCursor.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Processors/shaderCodeCursor.js"() {
     ShaderCodeCursor = class {
       static {
         __name(this, "ShaderCodeCursor");
@@ -17760,10 +17760,10 @@ var init_shaderCodeCursor = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Processors/shaderCodeConditionNode.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Processors/shaderCodeConditionNode.js
 var ShaderCodeConditionNode;
 var init_shaderCodeConditionNode = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Processors/shaderCodeConditionNode.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Processors/shaderCodeConditionNode.js"() {
     init_shaderCodeNode();
     ShaderCodeConditionNode = class extends ShaderCodeNode {
       static {
@@ -17782,10 +17782,10 @@ var init_shaderCodeConditionNode = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Processors/shaderCodeTestNode.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Processors/shaderCodeTestNode.js
 var ShaderCodeTestNode;
 var init_shaderCodeTestNode = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Processors/shaderCodeTestNode.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Processors/shaderCodeTestNode.js"() {
     init_shaderCodeNode();
     ShaderCodeTestNode = class extends ShaderCodeNode {
       static {
@@ -17798,10 +17798,10 @@ var init_shaderCodeTestNode = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Processors/Expressions/shaderDefineExpression.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Processors/Expressions/shaderDefineExpression.js
 var ShaderDefineExpression;
 var init_shaderDefineExpression = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Processors/Expressions/shaderDefineExpression.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Processors/Expressions/shaderDefineExpression.js"() {
     ShaderDefineExpression = class _ShaderDefineExpression {
       static {
         __name(this, "ShaderDefineExpression");
@@ -17925,10 +17925,10 @@ var init_shaderDefineExpression = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Processors/Expressions/Operators/shaderDefineIsDefinedOperator.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Processors/Expressions/Operators/shaderDefineIsDefinedOperator.js
 var ShaderDefineIsDefinedOperator;
 var init_shaderDefineIsDefinedOperator = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Processors/Expressions/Operators/shaderDefineIsDefinedOperator.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Processors/Expressions/Operators/shaderDefineIsDefinedOperator.js"() {
     init_shaderDefineExpression();
     ShaderDefineIsDefinedOperator = class extends ShaderDefineExpression {
       static {
@@ -17950,10 +17950,10 @@ var init_shaderDefineIsDefinedOperator = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Processors/Expressions/Operators/shaderDefineOrOperator.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Processors/Expressions/Operators/shaderDefineOrOperator.js
 var ShaderDefineOrOperator;
 var init_shaderDefineOrOperator = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Processors/Expressions/Operators/shaderDefineOrOperator.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Processors/Expressions/Operators/shaderDefineOrOperator.js"() {
     init_shaderDefineExpression();
     ShaderDefineOrOperator = class extends ShaderDefineExpression {
       static {
@@ -17966,10 +17966,10 @@ var init_shaderDefineOrOperator = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Processors/Expressions/Operators/shaderDefineAndOperator.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Processors/Expressions/Operators/shaderDefineAndOperator.js
 var ShaderDefineAndOperator;
 var init_shaderDefineAndOperator = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Processors/Expressions/Operators/shaderDefineAndOperator.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Processors/Expressions/Operators/shaderDefineAndOperator.js"() {
     init_shaderDefineExpression();
     ShaderDefineAndOperator = class extends ShaderDefineExpression {
       static {
@@ -17982,10 +17982,10 @@ var init_shaderDefineAndOperator = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Processors/Expressions/Operators/shaderDefineArithmeticOperator.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Processors/Expressions/Operators/shaderDefineArithmeticOperator.js
 var ShaderDefineArithmeticOperator;
 var init_shaderDefineArithmeticOperator = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Processors/Expressions/Operators/shaderDefineArithmeticOperator.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Processors/Expressions/Operators/shaderDefineArithmeticOperator.js"() {
     init_shaderDefineExpression();
     ShaderDefineArithmeticOperator = class extends ShaderDefineExpression {
       static {
@@ -18033,7 +18033,7 @@ var init_shaderDefineArithmeticOperator = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Processors/shaderProcessor.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Processors/shaderProcessor.js
 function Initialize(options) {
   if (options.processor && options.processor.initializeShaders) {
     options.processor.initializeShaders(options.processingContext);
@@ -18379,7 +18379,7 @@ function ProcessIncludes(sourceCode, options, callback) {
 }
 var RegexSe, RegexSeRevert, RegexShaderInclude, RegexShaderDecl, RegexLightX, RegexX, ReusableMatches, MoveCursorRegex, _FunctionContainer;
 var init_shaderProcessor = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Processors/shaderProcessor.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Processors/shaderProcessor.js"() {
     init_shaderCodeNode();
     init_shaderCodeCursor();
     init_shaderCodeConditionNode();
@@ -18420,7 +18420,7 @@ var init_shaderProcessor = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/effect.functions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/effect.functions.js
 function getCachedPipeline(name287, context) {
   const stateObject = getStateObject(context);
   return stateObject.cachedPipelines[name287];
@@ -18555,7 +18555,7 @@ function UseFinalCode(migratedVertexCode, migratedFragmentCode, baseName, shader
 }
 var createAndPreparePipelineContext;
 var init_effect_functions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/effect.functions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/effect.functions.js"() {
     init_domManagement();
     init_thinEngine_functions();
     init_shaderStore();
@@ -18592,10 +18592,10 @@ var init_effect_functions = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/effect.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/effect.pure.js
 var _a3, _b2, _c2, Effect;
 var init_effect_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/effect.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/effect.pure.js"() {
     init_observable_pure();
     init_logger();
     init_shaderStore();
@@ -19746,10 +19746,10 @@ var init_effect_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/States/depthCullingState.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/States/depthCullingState.js
 var DepthCullingState;
 var init_depthCullingState = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/States/depthCullingState.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/States/depthCullingState.js"() {
     DepthCullingState = class {
       static {
         __name(this, "DepthCullingState");
@@ -19920,10 +19920,10 @@ var init_depthCullingState = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/States/stencilStateComposer.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/States/stencilStateComposer.js
 var StencilStateComposer;
 var init_stencilStateComposer = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/States/stencilStateComposer.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/States/stencilStateComposer.js"() {
     StencilStateComposer = class {
       static {
         __name(this, "StencilStateComposer");
@@ -20116,10 +20116,10 @@ var init_stencilStateComposer = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/States/stencilState.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/States/stencilState.js
 var StencilState;
 var init_stencilState = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/States/stencilState.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/States/stencilState.js"() {
     StencilState = class _StencilState {
       static {
         __name(this, "StencilState");
@@ -20220,10 +20220,10 @@ var init_stencilState = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/States/alphaCullingState.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/States/alphaCullingState.js
 var AlphaState;
 var init_alphaCullingState = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/States/alphaCullingState.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/States/alphaCullingState.js"() {
     AlphaState = class {
       static {
         __name(this, "AlphaState");
@@ -20438,10 +20438,10 @@ var init_alphaCullingState = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/textureSampler.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/textureSampler.js
 var TextureSampler;
 var init_textureSampler = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/textureSampler.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/textureSampler.js"() {
     TextureSampler = class {
       static {
         __name(this, "TextureSampler");
@@ -20558,10 +20558,10 @@ var init_textureSampler = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/internalTexture.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/internalTexture.js
 var InternalTextureSource, InternalTexture;
 var init_internalTexture = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/internalTexture.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/internalTexture.js"() {
     init_observable();
     init_textureSampler();
     (function(InternalTextureSource2) {
@@ -20892,7 +20892,7 @@ var init_internalTexture = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/abstractEngine.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/abstractEngine.pure.js
 function QueueNewFrame(func, requester) {
   if (!IsWindowObjectExist()) {
     if (typeof requestAnimationFrame === "function") {
@@ -20908,7 +20908,7 @@ function QueueNewFrame(func, requester) {
 }
 var _a4, _b3, _c3, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17, _18, _19, _20, _21, _22, _23, _24, _25, _26, _27, _28, _29, _30, _31, _32, _33, _34, _35, _36, _37, _38, _39, _40, _41, _42, _43, _44, _45, _46, _47, _48, _49, _50, _51, _52, _53, _54, _55, _56, _57, _58, _59, _60, _61, _62, _63, _64, _65, _66, _67, _68, _69, _70, _71, _72, _73, _74, _75, _76, _77, _78, _79, AbstractEngine;
 var init_abstractEngine_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/abstractEngine.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/abstractEngine.pure.js"() {
     init_observable_pure();
     init_effect_pure();
     init_fileTools_pure();
@@ -22368,20 +22368,20 @@ var init_abstractEngine_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/drawWrapper.functions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/drawWrapper.functions.js
 function IsWrapper(effect) {
   return effect.getPipelineContext === void 0;
 }
 var init_drawWrapper_functions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/drawWrapper.functions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/drawWrapper.functions.js"() {
     __name(IsWrapper, "IsWrapper");
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/WebGL/webGLShaderProcessors.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/WebGL/webGLShaderProcessors.js
 var WebGLShaderProcessor;
 var init_webGLShaderProcessors = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/WebGL/webGLShaderProcessors.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/WebGL/webGLShaderProcessors.js"() {
     WebGLShaderProcessor = class {
       static {
         __name(this, "WebGLShaderProcessor");
@@ -22400,10 +22400,10 @@ var init_webGLShaderProcessors = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/WebGL/webGL2ShaderProcessors.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/WebGL/webGL2ShaderProcessors.js
 var VaryingRegex, WebGL2ShaderProcessor;
 var init_webGL2ShaderProcessors = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/WebGL/webGL2ShaderProcessors.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/WebGL/webGL2ShaderProcessors.js"() {
     VaryingRegex = /(flat\s)?\s*varying\s*.*/;
     WebGL2ShaderProcessor = class {
       static {
@@ -22455,10 +22455,10 @@ var init_webGL2ShaderProcessors = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Meshes/WebGL/webGLDataBuffer.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Meshes/WebGL/webGLDataBuffer.js
 var WebGLDataBuffer;
 var init_webGLDataBuffer = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Meshes/WebGL/webGLDataBuffer.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Meshes/WebGL/webGLDataBuffer.js"() {
     init_dataBuffer();
     WebGLDataBuffer = class extends DataBuffer {
       static {
@@ -22477,10 +22477,10 @@ var init_webGLDataBuffer = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/WebGL/webGLHardwareTexture.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/WebGL/webGLHardwareTexture.js
 var WebGLHardwareTexture;
 var init_webGLHardwareTexture = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/WebGL/webGLHardwareTexture.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/WebGL/webGLHardwareTexture.js"() {
     WebGLHardwareTexture = class {
       static {
         __name(this, "WebGLHardwareTexture");
@@ -22536,7 +22536,7 @@ var init_webGLHardwareTexture = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/textureHelper.functions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/textureHelper.functions.js
 function IsDepthTexture(format) {
   return format === 13 || format === 14 || format === 15 || format === 16 || format === 17 || format === 18 || format === 19;
 }
@@ -22559,17 +22559,17 @@ function HasStencilAspect(format) {
   return format === 13 || format === 17 || format === 18 || format === 19;
 }
 var init_textureHelper_functions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/textureHelper.functions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/textureHelper.functions.js"() {
     __name(IsDepthTexture, "IsDepthTexture");
     __name(GetTypeForDepthTexture, "GetTypeForDepthTexture");
     __name(HasStencilAspect, "HasStencilAspect");
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/thinEngine.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/thinEngine.pure.js
 var _a5, _b4, _c4, _d2, _e2, _f2, _g2, _h2, BufferPointer, ThinEngine;
 var init_thinEngine_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/thinEngine.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/thinEngine.pure.js"() {
     init_effect_pure();
     init_thinEngine_functions();
     init_abstractEngine_pure();
@@ -26244,7 +26244,7 @@ var init_thinEngine_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.dynamicBuffer.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.dynamicBuffer.pure.js
 function RegisterEngineDynamicBuffer() {
   if (_Registered7) {
     return;
@@ -26291,14 +26291,14 @@ function RegisterEngineDynamicBuffer() {
 }
 var _Registered7;
 var init_engine_dynamicBuffer_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.dynamicBuffer.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.dynamicBuffer.pure.js"() {
     init_thinEngine_pure();
     _Registered7 = false;
     __name(RegisterEngineDynamicBuffer, "RegisterEngineDynamicBuffer");
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Buffers/buffer.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Buffers/buffer.pure.js
 function VertexBufferDeduceStride(kind) {
   switch (kind) {
     case VertexBuffer.UVKind:
@@ -26366,7 +26366,7 @@ function RegisterVertexBuffer() {
 }
 var Buffer2, VertexBuffer, _Registered8;
 var init_buffer_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Buffers/buffer.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Buffers/buffer.pure.js"() {
     init_dataBuffer();
     init_logger();
     init_bufferUtils();
@@ -26849,15 +26849,15 @@ var init_buffer_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Buffers/buffer.types.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Buffers/buffer.types.js
 var init_buffer_types = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Buffers/buffer.types.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Buffers/buffer.types.js"() {
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Buffers/buffer.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Buffers/buffer.js
 var init_buffer = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Buffers/buffer.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Buffers/buffer.js"() {
     init_buffer_pure();
     init_buffer_types();
     init_buffer_pure();
@@ -26865,10 +26865,10 @@ var init_buffer = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Collisions/pickingInfo.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Collisions/pickingInfo.js
 var PickingInfo;
 var init_pickingInfo = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Collisions/pickingInfo.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Collisions/pickingInfo.js"() {
     init_math_vector();
     init_buffer();
     PickingInfo = class {
@@ -26994,10 +26994,10 @@ var init_pickingInfo = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Actions/actionEvent.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Actions/actionEvent.js
 var ActionEvent;
 var init_actionEvent = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Actions/actionEvent.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Actions/actionEvent.js"() {
     ActionEvent = class _ActionEvent {
       static {
         __name(this, "ActionEvent");
@@ -27065,10 +27065,10 @@ var init_actionEvent = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/postProcessManager.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/postProcessManager.js
 var PostProcessManager;
 var init_postProcessManager = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/postProcessManager.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/postProcessManager.js"() {
     init_buffer();
     init_observable();
     PostProcessManager = class {
@@ -27255,14 +27255,14 @@ var init_postProcessManager = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/effect.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/effect.js
 var init_effect = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/effect.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/effect.js"() {
     init_effect_pure();
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/floatingOriginMatrixOverrides.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/floatingOriginMatrixOverrides.js
 function OffsetWorldToRef(offset, world, ref) {
   const refArray = ref.asArray();
   const worldArray = world.asArray();
@@ -27392,7 +27392,7 @@ function OverrideMatrixFunctions() {
 }
 var TempFinalMat, TempMat1, TempMat2, FloatingOriginCurrentScene, UniformBufferInternal, EffectInternal, OriginalUpdateMatrixForUniform, OriginalSetMatrix;
 var init_floatingOriginMatrixOverrides = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/floatingOriginMatrixOverrides.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/floatingOriginMatrixOverrides.js"() {
     init_effect();
     init_math_vector();
     init_thinMath_matrix_functions();
@@ -27424,10 +27424,10 @@ var init_floatingOriginMatrixOverrides = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Rendering/renderingGroup.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Rendering/renderingGroup.js
 var RenderingGroup;
 var init_renderingGroup = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Rendering/renderingGroup.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Rendering/renderingGroup.js"() {
     init_smartArray();
     init_math_vector();
     RenderingGroup = class _RenderingGroup {
@@ -27800,10 +27800,10 @@ var init_renderingGroup = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Rendering/renderingManager.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Rendering/renderingManager.js
 var RenderingGroupInfo, RenderingManager;
 var init_renderingManager = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Rendering/renderingManager.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Rendering/renderingManager.js"() {
     init_renderingGroup();
     RenderingGroupInfo = class {
       static {
@@ -28090,10 +28090,10 @@ var init_renderingManager = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/sceneComponent.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/sceneComponent.js
 var SceneComponentConstants, Stage;
 var init_sceneComponent = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/sceneComponent.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/sceneComponent.js"() {
     SceneComponentConstants = class {
       static {
         __name(this, "SceneComponentConstants");
@@ -28210,10 +28210,10 @@ var init_sceneComponent = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Events/pointerEvents.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Events/pointerEvents.js
 var PointerEventTypes, PointerInfoBase, PointerInfoPre, PointerInfo;
 var init_pointerEvents = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Events/pointerEvents.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Events/pointerEvents.js"() {
     init_math_vector();
     PointerEventTypes = class {
       static {
@@ -28300,10 +28300,10 @@ var init_pointerEvents = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Actions/abstractActionManager.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Actions/abstractActionManager.js
 var AbstractActionManager;
 var init_abstractActionManager = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Actions/abstractActionManager.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Actions/abstractActionManager.js"() {
     AbstractActionManager = class _AbstractActionManager {
       static {
         __name(this, "AbstractActionManager");
@@ -28360,10 +28360,10 @@ var init_abstractActionManager = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Events/keyboardEvents.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Events/keyboardEvents.js
 var KeyboardEventTypes, KeyboardInfo, KeyboardInfoPre;
 var init_keyboardEvents = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Events/keyboardEvents.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Events/keyboardEvents.js"() {
     KeyboardEventTypes = class {
       static {
         __name(this, "KeyboardEventTypes");
@@ -28416,10 +28416,10 @@ var init_keyboardEvents = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/DeviceInput/InputDevices/deviceEnums.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/DeviceInput/InputDevices/deviceEnums.js
 var DeviceType, PointerInput, NativePointerInput, DualShockInput, DualSenseInput, XboxInput, SwitchInput;
 var init_deviceEnums = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/DeviceInput/InputDevices/deviceEnums.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/DeviceInput/InputDevices/deviceEnums.js"() {
     (function(DeviceType2) {
       DeviceType2[DeviceType2["Generic"] = 0] = "Generic";
       DeviceType2[DeviceType2["Keyboard"] = 1] = "Keyboard";
@@ -28555,10 +28555,10 @@ var init_deviceEnums = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Events/deviceInputEvents.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Events/deviceInputEvents.js
 var DeviceInputEventType, EventConstants;
 var init_deviceInputEvents = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Events/deviceInputEvents.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Events/deviceInputEvents.js"() {
     (function(DeviceInputEventType2) {
       DeviceInputEventType2[DeviceInputEventType2["PointerMove"] = 0] = "PointerMove";
       DeviceInputEventType2[DeviceInputEventType2["PointerDown"] = 1] = "PointerDown";
@@ -28575,10 +28575,10 @@ var init_deviceInputEvents = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/DeviceInput/eventFactory.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/DeviceInput/eventFactory.js
 var DeviceEventFactory;
 var init_eventFactory = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/DeviceInput/eventFactory.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/DeviceInput/eventFactory.js"() {
     init_deviceInputEvents();
     init_deviceEnums();
     DeviceEventFactory = class {
@@ -28775,10 +28775,10 @@ var init_eventFactory = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/DeviceInput/nativeDeviceInputSystem.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/DeviceInput/nativeDeviceInputSystem.js
 var NativeDeviceInputSystem;
 var init_nativeDeviceInputSystem = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/DeviceInput/nativeDeviceInputSystem.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/DeviceInput/nativeDeviceInputSystem.js"() {
     init_eventFactory();
     init_deviceEnums();
     NativeDeviceInputSystem = class {
@@ -28837,10 +28837,10 @@ var init_nativeDeviceInputSystem = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/DeviceInput/webDeviceInputSystem.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/DeviceInput/webDeviceInputSystem.js
 var MAX_KEYCODES, MAX_POINTER_INPUTS, WebDeviceInputSystem;
 var init_webDeviceInputSystem = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/DeviceInput/webDeviceInputSystem.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/DeviceInput/webDeviceInputSystem.js"() {
     init_domManagement();
     init_tools();
     init_eventFactory();
@@ -29513,10 +29513,10 @@ var init_webDeviceInputSystem = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/DeviceInput/InputDevices/deviceSource.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/DeviceInput/InputDevices/deviceSource.js
 var DeviceSource;
 var init_deviceSource = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/DeviceInput/InputDevices/deviceSource.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/DeviceInput/InputDevices/deviceSource.js"() {
     init_observable();
     DeviceSource = class {
       static {
@@ -29546,10 +29546,10 @@ var init_deviceSource = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/DeviceInput/internalDeviceSourceManager.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/DeviceInput/internalDeviceSourceManager.pure.js
 var InternalDeviceSourceManager;
 var init_internalDeviceSourceManager_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/DeviceInput/internalDeviceSourceManager.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/DeviceInput/internalDeviceSourceManager.pure.js"() {
     init_deviceEnums();
     init_nativeDeviceInputSystem();
     init_webDeviceInputSystem();
@@ -29619,24 +29619,24 @@ var init_internalDeviceSourceManager_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/DeviceInput/internalDeviceSourceManager.types.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/DeviceInput/internalDeviceSourceManager.types.js
 var init_internalDeviceSourceManager_types = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/DeviceInput/internalDeviceSourceManager.types.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/DeviceInput/internalDeviceSourceManager.types.js"() {
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/DeviceInput/internalDeviceSourceManager.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/DeviceInput/internalDeviceSourceManager.js
 var init_internalDeviceSourceManager = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/DeviceInput/internalDeviceSourceManager.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/DeviceInput/internalDeviceSourceManager.js"() {
     init_internalDeviceSourceManager_pure();
     init_internalDeviceSourceManager_types();
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/DeviceInput/InputDevices/deviceSourceManager.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/DeviceInput/InputDevices/deviceSourceManager.js
 var DeviceSourceManager;
 var init_deviceSourceManager = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/DeviceInput/InputDevices/deviceSourceManager.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/DeviceInput/InputDevices/deviceSourceManager.js"() {
     init_deviceEnums();
     init_observable();
     init_internalDeviceSourceManager();
@@ -29789,10 +29789,10 @@ var init_deviceSourceManager = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/import.helper.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/import.helper.js
 var _ImportHelper;
 var init_import_helper = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/import.helper.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/import.helper.js"() {
     _ImportHelper = class {
       static {
         __name(this, "_ImportHelper");
@@ -29802,10 +29802,10 @@ var init_import_helper = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Inputs/scene.inputManager.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Inputs/scene.inputManager.js
 var _ClickInfo, InputManager;
 var init_scene_inputManager = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Inputs/scene.inputManager.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Inputs/scene.inputManager.js"() {
     init_pointerEvents();
     init_abstractActionManager();
     init_pickingInfo();
@@ -30685,10 +30685,10 @@ var init_scene_inputManager = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/perfCounter.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/perfCounter.js
 var PerfCounter;
 var init_perfCounter = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/perfCounter.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/perfCounter.js"() {
     init_precisionDate();
     PerfCounter = class _PerfCounter {
       static {
@@ -30828,10 +30828,10 @@ var init_perfCounter = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.plane.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.plane.js
 var Plane;
 var init_math_plane = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.plane.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.plane.js"() {
     init_math_vector();
     Plane = class _Plane {
       static {
@@ -31029,10 +31029,10 @@ var init_math_plane = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.frustum.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.frustum.js
 var Frustum;
 var init_math_frustum = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.frustum.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.frustum.js"() {
     init_math_plane();
     Frustum = class _Frustum {
       static {
@@ -31160,10 +31160,10 @@ var init_math_frustum = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/uniqueIdGenerator.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/uniqueIdGenerator.js
 var UniqueIdGenerator;
 var init_uniqueIdGenerator = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/uniqueIdGenerator.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/uniqueIdGenerator.js"() {
     UniqueIdGenerator = class {
       static {
         __name(this, "UniqueIdGenerator");
@@ -31181,10 +31181,10 @@ var init_uniqueIdGenerator = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Lights/lightConstants.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Lights/lightConstants.js
 var LightConstants;
 var init_lightConstants = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Lights/lightConstants.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Lights/lightConstants.js"() {
     LightConstants = class {
       static {
         __name(this, "LightConstants");
@@ -31223,10 +31223,10 @@ var init_lightConstants = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Inputs/pointerPickingConfiguration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Inputs/pointerPickingConfiguration.js
 var PointerPickingConfiguration;
 var init_pointerPickingConfiguration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Inputs/pointerPickingConfiguration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Inputs/pointerPickingConfiguration.js"() {
     PointerPickingConfiguration = class {
       static {
         __name(this, "PointerPickingConfiguration");
@@ -31243,7 +31243,7 @@ var init_pointerPickingConfiguration = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/scene.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/scene.pure.js
 function RegisterScene() {
   if (_Registered9) {
     return;
@@ -31253,7 +31253,7 @@ function RegisterScene() {
 }
 var _a6, _b5, _c5, _d3, _e3, _f3, _g3, _h3, _j2, _k2, _l2, _m2, _o2, _p2, _q2, _r2, _s2, _t2, _u2, _v2, _w2, _x2, _y2, _z2, _02, _110, _210, _310, _410, _510, _610, _710, _82, _92, _102, _112, _122, _132, _142, _152, _162, _172, _182, _192, _202, _212, _222, _232, _242, _252, _262, _272, _282, TempVect1, TempVect2, ScenePerformancePriority, Scene, _Registered9;
 var init_scene_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/scene.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/scene.pure.js"() {
     init_tools_pure();
     init_timingTools();
     init_precisionDate();
@@ -36061,31 +36061,31 @@ var init_scene_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/renderTargetTexture.types.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/renderTargetTexture.types.js
 var init_renderTargetTexture_types = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/renderTargetTexture.types.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/renderTargetTexture.types.js"() {
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/thinEngine.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/thinEngine.js
 var thinEngine_exports = {};
 __export(thinEngine_exports, {
   ThinEngine: () => ThinEngine
 });
 var init_thinEngine = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/thinEngine.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/thinEngine.js"() {
     init_thinEngine_pure();
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/pass.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/pass.fragment.js
 var pass_fragment_exports = {};
 __export(pass_fragment_exports, {
   passPixelShader: () => passPixelShader
 });
 var name, shader, passPixelShader;
 var init_pass_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/pass.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/pass.fragment.js"() {
     init_shaderStore();
     name = "passPixelShader";
     shader = `varying vec2 vUV;uniform sampler2D textureSampler;
@@ -36099,10 +36099,10 @@ void main(void)
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.viewport.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.viewport.js
 var Viewport;
 var init_math_viewport = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.viewport.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.viewport.js"() {
     Viewport = class _Viewport {
       static {
         __name(this, "Viewport");
@@ -36154,10 +36154,10 @@ var init_math_viewport = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/drawWrapper.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/drawWrapper.js
 var DrawWrapper;
 var init_drawWrapper = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/drawWrapper.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/drawWrapper.js"() {
     init_timingTools();
     DrawWrapper = class {
       static {
@@ -36228,10 +36228,10 @@ var init_drawWrapper = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/effectRenderer.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/effectRenderer.pure.js
 var DefaultOptions, EffectRenderer, EffectWrapper;
 var init_effectRenderer_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/effectRenderer.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/effectRenderer.pure.js"() {
     init_buffer_pure();
     init_math_viewport();
     init_observable_pure();
@@ -36604,7 +36604,7 @@ var init_effectRenderer_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/dumpTools.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/dumpTools.pure.js
 async function _CreateDumpResourcesAsync() {
   const canvas = EngineStore.LastCreatedEngine?.createCanvas(100, 100) ?? new OffscreenCanvas(100, 100);
   if (canvas instanceof OffscreenCanvas) {
@@ -36718,7 +36718,7 @@ function RegisterDumpTools() {
 }
 var ResourcesPromise, EncodingHelper, EncodeImageAsync, DumpTools, _Registered10;
 var init_dumpTools_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/dumpTools.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/dumpTools.pure.js"() {
     init_tslib_es6();
     init_effectRenderer_pure();
     init_tools_pure();
@@ -36783,7 +36783,7 @@ var init_dumpTools_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/dumpTools.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/dumpTools.js
 var dumpTools_exports = {};
 __export(dumpTools_exports, {
   Dispose: () => Dispose,
@@ -36795,17 +36795,17 @@ __export(dumpTools_exports, {
   RegisterDumpTools: () => RegisterDumpTools
 });
 var init_dumpTools = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/dumpTools.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/dumpTools.js"() {
     init_dumpTools_pure();
     init_dumpTools_pure();
     RegisterDumpTools();
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.size.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.size.js
 var Size;
 var init_math_size = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.size.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.size.js"() {
     Size = class _Size {
       static {
         __name(this, "Size");
@@ -36952,10 +36952,10 @@ var init_math_size = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/thinTexture.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/thinTexture.js
 var ThinTexture;
 var init_thinTexture = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/thinTexture.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/thinTexture.js"() {
     init_math_size();
     ThinTexture = class _ThinTexture {
       static {
@@ -37203,10 +37203,10 @@ var init_thinTexture = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/baseTexture.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/baseTexture.pure.js
 var _a7, BaseTexture;
 var init_baseTexture_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/baseTexture.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/baseTexture.pure.js"() {
     init_tslib_es6();
     init_decorators();
     init_observable_pure();
@@ -37969,7 +37969,7 @@ var init_baseTexture_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/copyTools.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/copyTools.js
 function GenerateBase64StringFromPixelData(pixels, size, invertY = false) {
   const width = size.width;
   const height = size.height;
@@ -38037,7 +38037,7 @@ async function GenerateBase64StringFromTextureAsync(texture, faceIndex = 0, leve
 }
 var CopyTools;
 var init_copyTools = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/copyTools.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/copyTools.js"() {
     __name(GenerateBase64StringFromPixelData, "GenerateBase64StringFromPixelData");
     __name(GenerateBase64StringFromTexture, "GenerateBase64StringFromTexture");
     __name(GenerateBase64StringFromTextureAsync, "GenerateBase64StringFromTextureAsync");
@@ -38070,13 +38070,13 @@ var init_copyTools = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Compat/compatibilityOptions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Compat/compatibilityOptions.js
 function setOpenGLOrientationForUV(value) {
   useOpenGLOrientationForUV = value;
 }
 var useOpenGLOrientationForUV, CompatibilityOptions;
 var init_compatibilityOptions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Compat/compatibilityOptions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Compat/compatibilityOptions.js"() {
     useOpenGLOrientationForUV = false;
     __name(setOpenGLOrientationForUV, "setOpenGLOrientationForUV");
     CompatibilityOptions = {
@@ -38092,7 +38092,7 @@ var init_compatibilityOptions = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/texture.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/texture.pure.js
 function RegisterTexture() {
   if (_Registered11) {
     return;
@@ -38103,7 +38103,7 @@ function RegisterTexture() {
 }
 var Texture, _Registered11;
 var init_texture_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/texture.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/texture.pure.js"() {
     init_tslib_es6();
     init_decorators();
     init_observable_pure();
@@ -38884,10 +38884,10 @@ var init_texture_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Rendering/objectRenderer.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Rendering/objectRenderer.js
 var ObjectRenderer;
 var init_objectRenderer = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Rendering/objectRenderer.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Rendering/objectRenderer.js"() {
     init_uniformBuffer();
     init_observable();
     init_renderingManager();
@@ -39624,7 +39624,7 @@ var init_objectRenderer = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/renderTargetTexture.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/renderTargetTexture.pure.js
 function RegisterRenderTargetTexture() {
   if (_Registered12) {
     return;
@@ -39639,7 +39639,7 @@ function RegisterRenderTargetTexture() {
 }
 var RenderTargetTexture, _Registered12;
 var init_renderTargetTexture_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/renderTargetTexture.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/renderTargetTexture.pure.js"() {
     init_observable_pure();
     init_math_vector_pure();
     init_texture_pure();
@@ -40576,9 +40576,9 @@ var init_renderTargetTexture_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/renderTargetTexture.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/renderTargetTexture.js
 var init_renderTargetTexture = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/renderTargetTexture.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/renderTargetTexture.js"() {
     init_renderTargetTexture_types();
     init_renderTargetTexture_pure();
     init_renderTargetTexture_pure();
@@ -40586,16 +40586,16 @@ var init_renderTargetTexture = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/texture.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/texture.js
 var init_texture = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/texture.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/texture.js"() {
     init_texture_pure();
     init_texture_pure();
     RegisterTexture();
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/bitArray.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/bitArray.js
 function GetByteIndex(bitIndex) {
   return Math.floor(bitIndex / 8);
 }
@@ -40604,7 +40604,7 @@ function GetBitMask(bitIndex) {
 }
 var BitArray;
 var init_bitArray = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/bitArray.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/bitArray.js"() {
     __name(GetByteIndex, "GetByteIndex");
     __name(GetBitMask, "GetBitMask");
     BitArray = class {
@@ -40653,7 +40653,7 @@ var init_bitArray = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Meshes/mesh.vertexData.functions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Meshes/mesh.vertexData.functions.js
 var mesh_vertexData_functions_exports = {};
 __export(mesh_vertexData_functions_exports, {
   OptimizeIndices: () => OptimizeIndices
@@ -40712,16 +40712,16 @@ function OptimizeIndices(indices) {
   }
 }
 var init_mesh_vertexData_functions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Meshes/mesh.vertexData.functions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Meshes/mesh.vertexData.functions.js"() {
     init_bitArray();
     __name(OptimizeIndices, "OptimizeIndices");
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.axis.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.axis.js
 var Space, Axis, Coordinate;
 var init_math_axis = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.axis.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.axis.js"() {
     init_math_vector();
     (function(Space2) {
       Space2[Space2["LOCAL"] = 0] = "LOCAL";
@@ -40744,10 +40744,10 @@ var init_math_axis = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/sceneUboDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/sceneUboDeclaration.js
 var name2, shader2, sceneUboDeclarationWGSL;
 var init_sceneUboDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/sceneUboDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/sceneUboDeclaration.js"() {
     init_shaderStore();
     name2 = "sceneUboDeclaration";
     shader2 = `struct Scene {viewProjection : mat4x4<f32>,
@@ -40768,10 +40768,10 @@ var<uniform> scene : Scene;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/meshUboDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/meshUboDeclaration.js
 var name3, shader3, meshUboDeclarationWGSL;
 var init_meshUboDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/meshUboDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/meshUboDeclaration.js"() {
     init_shaderStore();
     name3 = "meshUboDeclaration";
     shader3 = `struct Mesh {world : mat4x4<f32>,
@@ -40785,10 +40785,10 @@ visibility : f32,};var<uniform> mesh : Mesh;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/defaultUboDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/defaultUboDeclaration.js
 var name4, shader4, defaultUboDeclarationWGSL;
 var init_defaultUboDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/defaultUboDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/defaultUboDeclaration.js"() {
     init_shaderStore();
     init_sceneUboDeclaration();
     init_meshUboDeclaration();
@@ -40805,10 +40805,10 @@ var init_defaultUboDeclaration = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/uvAttributeDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/uvAttributeDeclaration.js
 var name5, shader5, uvAttributeDeclarationWGSL;
 var init_uvAttributeDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/uvAttributeDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/uvAttributeDeclaration.js"() {
     init_shaderStore();
     name5 = "uvAttributeDeclaration";
     shader5 = `#if defined(UV{X}) && !defined(USE_VERTEX_PULLING)
@@ -40822,10 +40822,10 @@ attribute uv{X}: vec2f;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/helperFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/helperFunctions.js
 var name6, shader6, helperFunctionsWGSL;
 var init_helperFunctions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/helperFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/helperFunctions.js"() {
     init_shaderStore();
     name6 = "helperFunctions";
     shader6 = `const PI: f32=3.1415926535897932384626433832795;const TWO_PI: f32=6.283185307179586;const HALF_PI: f32=1.5707963267948966;const RECIPROCAL_PI: f32=0.3183098861837907;const RECIPROCAL_PI2: f32=0.15915494309189535;const RECIPROCAL_PI4: f32=0.07957747154594767;const HALF_MIN: f32=5.96046448e-08; 
@@ -40922,10 +40922,10 @@ uint2float(rstate*2447445414u));}
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bonesDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bonesDeclaration.js
 var name7, shader7, bonesDeclarationWGSL;
 var init_bonesDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bonesDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bonesDeclaration.js"() {
     init_shaderStore();
     name7 = "bonesDeclaration";
     shader7 = `#if NUM_BONE_INFLUENCERS>0
@@ -40959,10 +40959,10 @@ let textureWidth=i32(uniforms.boneTextureInfo.x);let y=offset/textureWidth;let x
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bakedVertexAnimationDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bakedVertexAnimationDeclaration.js
 var name8, shader8, bakedVertexAnimationDeclarationWGSL;
 var init_bakedVertexAnimationDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bakedVertexAnimationDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bakedVertexAnimationDeclaration.js"() {
     init_shaderStore();
     name8 = "bakedVertexAnimationDeclaration";
     shader8 = `#ifdef BAKED_VERTEX_ANIMATION_TEXTURE
@@ -40981,10 +40981,10 @@ fn readMatrixFromRawSamplerVAT(smp : texture_2d<f32>,index : f32,frame : f32)->m
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/instancesDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/instancesDeclaration.js
 var name9, shader9, instancesDeclarationWGSL;
 var init_instancesDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/instancesDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/instancesDeclaration.js"() {
     init_shaderStore();
     name9 = "instancesDeclaration";
     shader9 = `#ifdef INSTANCES
@@ -41017,10 +41017,10 @@ uniform previousWorld : mat4x4<f32>;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/prePassVertexDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/prePassVertexDeclaration.js
 var name10, shader10, prePassVertexDeclarationWGSL;
 var init_prePassVertexDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/prePassVertexDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/prePassVertexDeclaration.js"() {
     init_shaderStore();
     name10 = "prePassVertexDeclaration";
     shader10 = `#ifdef PREPASS
@@ -41045,10 +41045,10 @@ uniform previousViewProjection: mat4x4f;varying vCurrentPosition: vec4f;varying 
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/mainUVVaryingDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/mainUVVaryingDeclaration.js
 var name11, shader11, mainUVVaryingDeclarationWGSL;
 var init_mainUVVaryingDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/mainUVVaryingDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/mainUVVaryingDeclaration.js"() {
     init_shaderStore();
     name11 = "mainUVVaryingDeclaration";
     shader11 = `#ifdef MAINUV{X}
@@ -41062,10 +41062,10 @@ varying vMainUV{X}: vec2f;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/samplerVertexDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/samplerVertexDeclaration.js
 var name12, shader12, samplerVertexDeclarationWGSL;
 var init_samplerVertexDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/samplerVertexDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/samplerVertexDeclaration.js"() {
     init_shaderStore();
     name12 = "samplerVertexDeclaration";
     shader12 = `#if defined(_DEFINENAME_) && _DEFINENAME_DIRECTUV==0
@@ -41079,10 +41079,10 @@ varying v_VARYINGNAME_UV: vec2f;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bumpVertexDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bumpVertexDeclaration.js
 var name13, shader13, bumpVertexDeclarationWGSL;
 var init_bumpVertexDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bumpVertexDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bumpVertexDeclaration.js"() {
     init_shaderStore();
     name13 = "bumpVertexDeclaration";
     shader13 = `#if defined(BUMP) || defined(PARALLAX) || defined(CLEARCOAT_BUMP) || defined(ANISOTROPIC)
@@ -41098,10 +41098,10 @@ varying vTBN0: vec3f;varying vTBN1: vec3f;varying vTBN2: vec3f;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/clipPlaneVertexDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/clipPlaneVertexDeclaration.js
 var name14, shader14, clipPlaneVertexDeclarationWGSL;
 var init_clipPlaneVertexDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/clipPlaneVertexDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/clipPlaneVertexDeclaration.js"() {
     init_shaderStore();
     name14 = "clipPlaneVertexDeclaration";
     shader14 = `#ifdef CLIPPLANE
@@ -41130,10 +41130,10 @@ uniform vClipPlane6: vec4<f32>;varying fClipDistance6: f32;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/fogVertexDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/fogVertexDeclaration.js
 var name15, shader15, fogVertexDeclarationWGSL;
 var init_fogVertexDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/fogVertexDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/fogVertexDeclaration.js"() {
     init_shaderStore();
     name15 = "fogVertexDeclaration";
     shader15 = `#ifdef FOG
@@ -41147,10 +41147,10 @@ varying vFogDistance: vec3f;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/lightVxFragmentDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/lightVxFragmentDeclaration.js
 var name16, shader16, lightVxFragmentDeclarationWGSL;
 var init_lightVxFragmentDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/lightVxFragmentDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/lightVxFragmentDeclaration.js"() {
     init_shaderStore();
     name16 = "lightVxFragmentDeclaration";
     shader16 = `#ifdef LIGHT{X}
@@ -41188,10 +41188,10 @@ uniform vLightWidth{X}: vec4f;uniform vLightHeight{X}: vec4f;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/lightVxUboDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/lightVxUboDeclaration.js
 var name17, shader17, lightVxUboDeclarationWGSL;
 var init_lightVxUboDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/lightVxUboDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/lightVxUboDeclaration.js"() {
     init_shaderStore();
     name17 = "lightVxUboDeclaration";
     shader17 = `#ifdef LIGHT{X}
@@ -41233,10 +41233,10 @@ varying vPositionFromLight{X}: vec4f;varying vDepthMetric{X}: f32;uniform lightM
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/morphTargetsVertexGlobalDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/morphTargetsVertexGlobalDeclaration.js
 var name18, shader18, morphTargetsVertexGlobalDeclarationWGSL;
 var init_morphTargetsVertexGlobalDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/morphTargetsVertexGlobalDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/morphTargetsVertexGlobalDeclaration.js"() {
     init_shaderStore();
     name18 = "morphTargetsVertexGlobalDeclaration";
     shader18 = `#ifdef MORPHTARGETS
@@ -41259,10 +41259,10 @@ let y: i32=i32(vertexIndex)/textureWidth;let x: i32=i32(vertexIndex) % textureWi
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/morphTargetsVertexDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/morphTargetsVertexDeclaration.js
 var name19, shader19, morphTargetsVertexDeclarationWGSL;
 var init_morphTargetsVertexDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/morphTargetsVertexDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/morphTargetsVertexDeclaration.js"() {
     init_shaderStore();
     name19 = "morphTargetsVertexDeclaration";
     shader19 = `#ifdef MORPHTARGETS
@@ -41297,10 +41297,10 @@ uniform morphTargetCount: f32;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/logDepthDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/logDepthDeclaration.js
 var name20, shader20, logDepthDeclarationWGSL;
 var init_logDepthDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/logDepthDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/logDepthDeclaration.js"() {
     init_shaderStore();
     name20 = "logDepthDeclaration";
     shader20 = `#ifdef LOGARITHMICDEPTH
@@ -41314,10 +41314,10 @@ uniform logarithmicDepthConstant: f32;varying vFragmentDepth: f32;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/vertexPullingDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/vertexPullingDeclaration.js
 var name21, shader21, vertexPullingDeclarationWGSL;
 var init_vertexPullingDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/vertexPullingDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/vertexPullingDeclaration.js"() {
     init_shaderStore();
     name21 = "vertexPullingDeclaration";
     shader21 = `#ifdef USE_VERTEX_PULLING
@@ -41506,10 +41506,10 @@ vp_readMatrixWeightExtraValue(offset+cs*3u,dataType,normalized)
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/vertexPullingVertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/vertexPullingVertex.js
 var name22, shader22, vertexPullingVertexWGSL;
 var init_vertexPullingVertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/vertexPullingVertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/vertexPullingVertex.js"() {
     init_shaderStore();
     name22 = "vertexPullingVertex";
     shader22 = `#ifdef USE_VERTEX_PULLING
@@ -41574,10 +41574,10 @@ var vp_matricesIndicesExtra: vec4f=vp_readBoneIndicesExtra(uniforms.vp_matricesI
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/morphTargetsVertexGlobal.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/morphTargetsVertexGlobal.js
 var name23, shader23, morphTargetsVertexGlobalWGSL;
 var init_morphTargetsVertexGlobal = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/morphTargetsVertexGlobal.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/morphTargetsVertexGlobal.js"() {
     init_shaderStore();
     name23 = "morphTargetsVertexGlobal";
     shader23 = `#ifdef MORPHTARGETS
@@ -41593,10 +41593,10 @@ var vertexID : f32;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/morphTargetsVertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/morphTargetsVertex.js
 var name24, shader24, morphTargetsVertexWGSL;
 var init_morphTargetsVertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/morphTargetsVertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/morphTargetsVertex.js"() {
     init_shaderStore();
     name24 = "morphTargetsVertex";
     shader24 = `#ifdef MORPHTARGETS
@@ -41717,10 +41717,10 @@ colorUpdated=colorUpdated+(vertexInputs.color{X}-vertexInputs.color)*uniforms.mo
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/instancesVertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/instancesVertex.js
 var name25, shader25, instancesVertexWGSL;
 var init_instancesVertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/instancesVertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/instancesVertex.js"() {
     init_shaderStore();
     name25 = "instancesVertex";
     shader25 = `#ifdef INSTANCES
@@ -41758,10 +41758,10 @@ var finalPreviousWorld=uniforms.previousWorld;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bonesVertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bonesVertex.js
 var name26, shader26, bonesVertexWGSL;
 var init_bonesVertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bonesVertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bonesVertex.js"() {
     init_shaderStore();
     name26 = "bonesVertex";
     shader26 = `#ifndef BAKED_VERTEX_ANIMATION_TEXTURE
@@ -41825,10 +41825,10 @@ finalWorld=finalWorld*influence;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bakedVertexAnimation.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bakedVertexAnimation.js
 var name27, shader27, bakedVertexAnimationWGSL;
 var init_bakedVertexAnimation = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bakedVertexAnimation.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bakedVertexAnimation.js"() {
     init_shaderStore();
     name27 = "bakedVertexAnimation";
     shader27 = `#ifdef BAKED_VERTEX_ANIMATION_TEXTURE
@@ -41870,10 +41870,10 @@ finalWorld=finalWorld*VATInfluence;}
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/prePassVertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/prePassVertex.js
 var name28, shader28, prePassVertexWGSL;
 var init_prePassVertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/prePassVertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/prePassVertex.js"() {
     init_shaderStore();
     name28 = "prePassVertex";
     shader28 = `#ifdef PREPASS_DEPTH
@@ -41923,10 +41923,10 @@ vertexOutputs.vPreviousPosition=uniforms.previousViewProjection*finalPreviousWor
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/uvVariableDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/uvVariableDeclaration.js
 var name29, shader29, uvVariableDeclarationWGSL;
 var init_uvVariableDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/uvVariableDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/uvVariableDeclaration.js"() {
     init_shaderStore();
     name29 = "uvVariableDeclaration";
     shader29 = `#ifdef MAINUV{X}
@@ -41947,10 +41947,10 @@ vertexOutputs.vMainUV{X}=uv{X};
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/samplerVertexImplementation.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/samplerVertexImplementation.js
 var name30, shader30, samplerVertexImplementationWGSL;
 var init_samplerVertexImplementation = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/samplerVertexImplementation.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/samplerVertexImplementation.js"() {
     init_shaderStore();
     name30 = "samplerVertexImplementation";
     shader30 = `#if defined(_DEFINENAME_) && _DEFINENAME_DIRECTUV==0
@@ -41985,10 +41985,10 @@ else if (uniforms.v_INFONAME_==5.)
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bumpVertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bumpVertex.js
 var name31, shader31, bumpVertexWGSL;
 var init_bumpVertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bumpVertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bumpVertex.js"() {
     init_shaderStore();
     name31 = "bumpVertex";
     shader31 = `#if defined(BUMP) || defined(PARALLAX) || defined(CLEARCOAT_BUMP) || defined(ANISOTROPIC)
@@ -42004,10 +42004,10 @@ var tbnNormal: vec3f=normalize(normalUpdated);var tbnTangent: vec3f=normalize(ta
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/clipPlaneVertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/clipPlaneVertex.js
 var name32, shader32, clipPlaneVertexWGSL;
 var init_clipPlaneVertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/clipPlaneVertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/clipPlaneVertex.js"() {
     init_shaderStore();
     name32 = "clipPlaneVertex";
     shader32 = `#ifdef CLIPPLANE
@@ -42036,10 +42036,10 @@ vertexOutputs.fClipDistance6=dot(worldPos,uniforms.vClipPlane6);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/fogVertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/fogVertex.js
 var name33, shader33, fogVertexWGSL;
 var init_fogVertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/fogVertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/fogVertex.js"() {
     init_shaderStore();
     name33 = "fogVertex";
     shader33 = `#ifdef FOG
@@ -42057,10 +42057,10 @@ vertexOutputs.vFogDistance=(uniforms.view*worldPos).xyz;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowsVertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowsVertex.js
 var name34, shader34, shadowsVertexWGSL;
 var init_shadowsVertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowsVertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowsVertex.js"() {
     init_shaderStore();
     name34 = "shadowsVertex";
     shader34 = `#ifdef SHADOWS
@@ -42119,10 +42119,10 @@ vertexOutputs.vDepthMetric{X}=(vertexOutputs.vPositionFromLight{X}.z+light{X}.de
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/vertexColorMixing.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/vertexColorMixing.js
 var name35, shader35, vertexColorMixingWGSL;
 var init_vertexColorMixing = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/vertexColorMixing.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/vertexColorMixing.js"() {
     init_shaderStore();
     name35 = "vertexColorMixing";
     shader35 = `#if defined(VERTEXCOLOR) || defined(INSTANCESCOLOR) && defined(INSTANCES)
@@ -42146,10 +42146,10 @@ vertexOutputs.vColor*=vertexInputs.instanceColor;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/logDepthVertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/logDepthVertex.js
 var name36, shader36, logDepthVertexWGSL;
 var init_logDepthVertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/logDepthVertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/logDepthVertex.js"() {
     init_shaderStore();
     name36 = "logDepthVertex";
     shader36 = `#ifdef LOGARITHMICDEPTH
@@ -42163,14 +42163,14 @@ vertexOutputs.vFragmentDepth=1.0+vertexOutputs.position.w;vertexOutputs.position
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/default.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/default.vertex.js
 var default_vertex_exports = {};
 __export(default_vertex_exports, {
   defaultVertexShaderWGSL: () => defaultVertexShaderWGSL
 });
 var name37, shader37, includes, defaultVertexShaderWGSL;
 var init_default_vertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/default.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/default.vertex.js"() {
     init_shaderStore();
     init_sceneUboDeclaration();
     init_meshUboDeclaration();
@@ -42403,10 +42403,10 @@ vertexOutputs.vMainUV2=uv2Updated;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/prePassDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/prePassDeclaration.js
 var name38, shader38, prePassDeclarationWGSL;
 var init_prePassDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/prePassDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/prePassDeclaration.js"() {
     init_shaderStore();
     name38 = "prePassDeclaration";
     shader38 = `#ifdef PREPASS
@@ -42431,10 +42431,10 @@ varying vCurrentPosition: vec4f;varying vPreviousPosition: vec4f;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/oitDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/oitDeclaration.js
 var name39, shader39, oitDeclarationWGSL;
 var init_oitDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/oitDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/oitDeclaration.js"() {
     init_shaderStore();
     name39 = "oitDeclaration";
     shader39 = `#ifdef ORDER_INDEPENDENT_TRANSPARENCY
@@ -42449,10 +42449,10 @@ var oitDepthSamplerSampler: sampler;var oitDepthSampler: texture_2d<f32>;var oit
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/lightUboDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/lightUboDeclaration.js
 var name40, shader40, lightUboDeclarationWGSL;
 var init_lightUboDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/lightUboDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/lightUboDeclaration.js"() {
     init_shaderStore();
     name40 = "lightUboDeclaration";
     shader40 = `#ifdef LIGHT{X}
@@ -42540,10 +42540,10 @@ uniform lightMatrix{X}: mat4x4f;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/ltcHelperFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/ltcHelperFunctions.js
 var name41, shader41, ltcHelperFunctionsWGSL;
 var init_ltcHelperFunctions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/ltcHelperFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/ltcHelperFunctions.js"() {
     init_shaderStore();
     name41 = "ltcHelperFunctions";
     shader41 = `fn LTCUv(N: vec3f,V: vec3f,roughness: f32)->vec2f {var LUTSIZE: f32=64.0;var LUTSCALE: f32=( LUTSIZE-1.0 )/LUTSIZE;var LUTBIAS:f32=0.5/LUTSIZE;var dotNV:f32=saturate( dot( N,V ) );var uv:vec2f=vec2f( roughness,sqrt( 1.0-dotNV ) );uv=uv*LUTSCALE+LUTBIAS;return uv;}
@@ -42598,10 +42598,10 @@ vec3f(0,0,1)
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/clusteredLightingFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/clusteredLightingFunctions.js
 var name42, shader42, clusteredLightingFunctionsWGSL;
 var init_clusteredLightingFunctions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/clusteredLightingFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/clusteredLightingFunctions.js"() {
     init_shaderStore();
     name42 = "clusteredLightingFunctions";
     shader42 = `struct ClusteredLight {vLightData: vec4f,
@@ -42625,10 +42625,10 @@ fn getClusteredSliceIndex(sliceData: vec2f,viewDepth: f32)->i32 {return i32(log(
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/lightsFragmentFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/lightsFragmentFunctions.js
 var name43, shader43, lightsFragmentFunctionsWGSL;
 var init_lightsFragmentFunctions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/lightsFragmentFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/lightsFragmentFunctions.js"() {
     init_shaderStore();
     init_ltcHelperFunctions();
     init_clusteredLightingFunctions();
@@ -42738,10 +42738,10 @@ return result;}
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowsFragmentFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowsFragmentFunctions.js
 var name44, shader44, shadowsFragmentFunctionsWGSL;
 var init_shadowsFragmentFunctions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowsFragmentFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowsFragmentFunctions.js"() {
     init_shaderStore();
     name44 = "shadowsFragmentFunctions";
     shader44 = `#ifdef SHADOWS
@@ -43044,10 +43044,10 @@ fn computeShadowWithCSMPCSS64(layer: i32,vPositionFromLight: vec4f,depthMetric: 
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/samplerFragmentDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/samplerFragmentDeclaration.js
 var name45, shader45, samplerFragmentDeclarationWGSL;
 var init_samplerFragmentDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/samplerFragmentDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/samplerFragmentDeclaration.js"() {
     init_shaderStore();
     name45 = "samplerFragmentDeclaration";
     shader45 = `#ifdef _DEFINENAME_
@@ -43076,10 +43076,10 @@ var _SAMPLERNAME_SamplerSampler: sampler;var _SAMPLERNAME_Sampler: texture_2d<f3
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/fresnelFunction.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/fresnelFunction.js
 var name46, shader46, fresnelFunctionWGSL;
 var init_fresnelFunction = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/fresnelFunction.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/fresnelFunction.js"() {
     init_shaderStore();
     name46 = "fresnelFunction";
     shader46 = `#ifdef FRESNEL
@@ -43094,10 +43094,10 @@ fn computeFresnelTerm(viewDirection: vec3f,worldNormal: vec3f,bias: f32,power: f
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/reflectionFunction.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/reflectionFunction.js
 var name47, shader47, reflectionFunctionWGSL;
 var init_reflectionFunction = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/reflectionFunction.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/reflectionFunction.js"() {
     init_shaderStore();
     name47 = "reflectionFunction";
     shader47 = `fn computeFixedEquirectangularCoords(worldPos: vec4f,worldNormal: vec3f,direction: vec3f)->vec3f
@@ -43172,10 +43172,10 @@ return vec3f(0,0,0);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/imageProcessingDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/imageProcessingDeclaration.js
 var name48, shader48, imageProcessingDeclarationWGSL;
 var init_imageProcessingDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/imageProcessingDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/imageProcessingDeclaration.js"() {
     init_shaderStore();
     name48 = "imageProcessingDeclaration";
     shader48 = `#ifdef EXPOSURE
@@ -43212,10 +43212,10 @@ uniform ditherIntensity: f32;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/imageProcessingFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/imageProcessingFunctions.js
 var name49, shader49, imageProcessingFunctionsWGSL;
 var init_imageProcessingFunctions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/imageProcessingFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/imageProcessingFunctions.js"() {
     init_shaderStore();
     name49 = "imageProcessingFunctions";
     shader49 = `#if TONEMAPPING==3
@@ -43288,10 +43288,10 @@ return vec4f(rgb,result.a);}`;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/textureRepetitionFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/textureRepetitionFunctions.js
 var name50, shader50, textureRepetitionFunctionsWGSL;
 var init_textureRepetitionFunctions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/textureRepetitionFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/textureRepetitionFunctions.js"() {
     init_shaderStore();
     name50 = "textureRepetitionFunctions";
     shader50 = `#if TEXTURE_REPETITION_MODE>0
@@ -43343,10 +43343,10 @@ fn TEXRD(t: texture_2d<f32>,ts: sampler,uv: vec2f)->vec4f {return textureSample(
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bumpFragmentMainFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bumpFragmentMainFunctions.js
 var name51, shader51, bumpFragmentMainFunctionsWGSL;
 var init_bumpFragmentMainFunctions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bumpFragmentMainFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bumpFragmentMainFunctions.js"() {
     init_shaderStore();
     name51 = "bumpFragmentMainFunctions";
     shader51 = `#ifndef TEXRD_DEFINED
@@ -43401,10 +43401,10 @@ fn cotangent_frame(normal: vec3f,p: vec3f,uv: vec2f,tangentSpaceParams: vec2f)->
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bumpFragmentFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bumpFragmentFunctions.js
 var name52, shader52, bumpFragmentFunctionsWGSL;
 var init_bumpFragmentFunctions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bumpFragmentFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bumpFragmentFunctions.js"() {
     init_shaderStore();
     init_samplerFragmentDeclaration();
     name52 = "bumpFragmentFunctions";
@@ -43446,10 +43446,10 @@ return -texCoordOffset;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/clipPlaneFragmentDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/clipPlaneFragmentDeclaration.js
 var name53, shader53, clipPlaneFragmentDeclarationWGSL;
 var init_clipPlaneFragmentDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/clipPlaneFragmentDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/clipPlaneFragmentDeclaration.js"() {
     init_shaderStore();
     name53 = "clipPlaneFragmentDeclaration";
     shader53 = `#ifdef CLIPPLANE
@@ -43478,10 +43478,10 @@ varying fClipDistance6: f32;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/fogFragmentDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/fogFragmentDeclaration.js
 var name54, shader54, fogFragmentDeclarationWGSL;
 var init_fogFragmentDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/fogFragmentDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/fogFragmentDeclaration.js"() {
     init_shaderStore();
     name54 = "fogFragmentDeclaration";
     shader54 = `#ifdef FOG
@@ -43506,10 +43506,10 @@ return clamp(fogCoeff,0.0,1.0);}
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/clipPlaneFragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/clipPlaneFragment.js
 var name55, shader55, clipPlaneFragmentWGSL;
 var init_clipPlaneFragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/clipPlaneFragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/clipPlaneFragment.js"() {
     init_shaderStore();
     name55 = "clipPlaneFragment";
     shader55 = `#if defined(CLIPPLANE) || defined(CLIPPLANE2) || defined(CLIPPLANE3) || defined(CLIPPLANE4) || defined(CLIPPLANE5) || defined(CLIPPLANE6)
@@ -43547,10 +43547,10 @@ else if (fragmentInputs.fClipDistance6>0.0)
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bumpFragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bumpFragment.js
 var name56, shader56, bumpFragmentWGSL;
 var init_bumpFragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bumpFragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bumpFragment.js"() {
     init_shaderStore();
     name56 = "bumpFragment";
     shader56 = `var uvOffset: vec2f= vec2f(0.0,0.0);
@@ -43613,10 +43613,10 @@ detailNormal=vec3f(detailNormal.xy*uniforms.vDetailInfos.z,detailNormal.z);norma
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/decalFragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/decalFragment.js
 var name57, shader57, decalFragmentWGSL;
 var init_decalFragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/decalFragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/decalFragment.js"() {
     init_shaderStore();
     name57 = "decalFragment";
     shader57 = `#ifdef DECAL
@@ -43637,10 +43637,10 @@ surfaceAlbedo=mix(surfaceAlbedo.rgb,decalTempColor,decalTempAlpha);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/depthPrePass.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/depthPrePass.js
 var name58, shader58, depthPrePassWGSL;
 var init_depthPrePass = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/depthPrePass.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/depthPrePass.js"() {
     init_shaderStore();
     name58 = "depthPrePass";
     shader58 = `#ifdef DEPTHPREPASS
@@ -43657,10 +43657,10 @@ return fragmentOutputs;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/lightFragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/lightFragment.js
 var name59, shader59, lightFragmentWGSL;
 var init_lightFragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/lightFragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/lightFragment.js"() {
     init_shaderStore();
     name59 = "lightFragment";
     shader59 = `#ifdef LIGHT{X}
@@ -44058,10 +44058,10 @@ sheenBase+=info.sheen.rgb*shadow;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/logDepthFragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/logDepthFragment.js
 var name60, shader60, logDepthFragmentWGSL;
 var init_logDepthFragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/logDepthFragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/logDepthFragment.js"() {
     init_shaderStore();
     name60 = "logDepthFragment";
     shader60 = `#ifdef LOGARITHMICDEPTH
@@ -44075,10 +44075,10 @@ fragmentOutputs.fragDepth=log2(fragmentInputs.vFragmentDepth)*uniforms.logarithm
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/fogFragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/fogFragment.js
 var name61, shader61, fogFragmentWGSL;
 var init_fogFragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/fogFragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/fogFragment.js"() {
     init_shaderStore();
     name61 = "fogFragment";
     shader61 = `#ifdef FOG
@@ -44096,10 +44096,10 @@ color= vec4f(mix(uniforms.vFogColor,color.rgb,fog),color.a);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/oitFragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/oitFragment.js
 var name62, shader62, oitFragmentWGSL;
 var init_oitFragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/oitFragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/oitFragment.js"() {
     init_shaderStore();
     name62 = "oitFragment";
     shader62 = `#ifdef ORDER_INDEPENDENT_TRANSPARENCY
@@ -44135,14 +44135,14 @@ fragmentOutputs.depth=vec2f(-fragDepth,fragDepth);return fragmentOutputs;}
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/default.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/default.fragment.js
 var default_fragment_exports = {};
 __export(default_fragment_exports, {
   defaultPixelShaderWGSL: () => defaultPixelShaderWGSL
 });
 var name63, shader63, includes2, defaultPixelShaderWGSL;
 var init_default_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/default.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/default.fragment.js"() {
     init_shaderStore();
     init_sceneUboDeclaration();
     init_meshUboDeclaration();
@@ -44557,10 +44557,10 @@ if (fragDepth==nearestDepth) {fragmentOutputs.frontColor=vec4f(fragmentOutputs.f
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/decalVertexDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/decalVertexDeclaration.js
 var name64, shader64, decalVertexDeclaration;
 var init_decalVertexDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/decalVertexDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/decalVertexDeclaration.js"() {
     init_shaderStore();
     name64 = "decalVertexDeclaration";
     shader64 = `#ifdef DECAL
@@ -44574,10 +44574,10 @@ uniform vec4 vDecalInfos;uniform mat4 decalMatrix;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/defaultVertexDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/defaultVertexDeclaration.js
 var name65, shader65, defaultVertexDeclaration;
 var init_defaultVertexDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/defaultVertexDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/defaultVertexDeclaration.js"() {
     init_shaderStore();
     init_decalVertexDeclaration();
     name65 = "defaultVertexDeclaration";
@@ -44627,10 +44627,10 @@ uniform vec4 cameraInfo;uniform vec4 vTextureRepetitionHexTilingParams;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/sceneUboDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/sceneUboDeclaration.js
 var name66, shader66, sceneUboDeclaration;
 var init_sceneUboDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/sceneUboDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/sceneUboDeclaration.js"() {
     init_shaderStore();
     name66 = "sceneUboDeclaration";
     shader66 = `layout(std140,column_major) uniform;uniform Scene {mat4 viewProjection;
@@ -44646,10 +44646,10 @@ mat4 view;mat4 projection;vec4 vEyePosition;mat4 inverseProjection;};
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/meshUboDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/meshUboDeclaration.js
 var name67, shader67, meshUboDeclaration;
 var init_meshUboDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/meshUboDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/meshUboDeclaration.js"() {
     init_shaderStore();
     name67 = "meshUboDeclaration";
     shader67 = `#ifdef WEBGL2
@@ -44667,10 +44667,10 @@ layout(std140,column_major) uniform;uniform Mesh
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/defaultUboDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/defaultUboDeclaration.js
 var name68, shader68, defaultUboDeclaration;
 var init_defaultUboDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/defaultUboDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/defaultUboDeclaration.js"() {
     init_shaderStore();
     init_sceneUboDeclaration2();
     init_meshUboDeclaration2();
@@ -44689,10 +44689,10 @@ var init_defaultUboDeclaration2 = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/uvAttributeDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/uvAttributeDeclaration.js
 var name69, shader69, uvAttributeDeclaration;
 var init_uvAttributeDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/uvAttributeDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/uvAttributeDeclaration.js"() {
     init_shaderStore();
     name69 = "uvAttributeDeclaration";
     shader69 = `#ifdef UV{X}
@@ -44706,10 +44706,10 @@ attribute vec2 uv{X};
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/helperFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/helperFunctions.js
 var name70, shader70, helperFunctions;
 var init_helperFunctions2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/helperFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/helperFunctions.js"() {
     init_shaderStore();
     name70 = "helperFunctions";
     shader70 = `const float PI=3.1415926535897932384626433832795;const float TWO_PI=6.283185307179586;const float HALF_PI=1.5707963267948966;const float RECIPROCAL_PI=0.3183098861837907;const float RECIPROCAL_PI2=0.15915494309189535;const float RECIPROCAL_PI4=0.07957747154594767;const float HALF_MIN=5.96046448e-08; 
@@ -44838,10 +44838,10 @@ uint2float(rstate*2447445414u));}
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/bonesDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/bonesDeclaration.js
 var name71, shader71, bonesDeclaration;
 var init_bonesDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/bonesDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/bonesDeclaration.js"() {
     init_shaderStore();
     name71 = "bonesDeclaration";
     shader71 = `#if NUM_BONE_INFLUENCERS>0
@@ -44881,10 +44881,10 @@ return mat4(m0,m1,m2,m3);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/bakedVertexAnimationDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/bakedVertexAnimationDeclaration.js
 var name72, shader72, bakedVertexAnimationDeclaration;
 var init_bakedVertexAnimationDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/bakedVertexAnimationDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/bakedVertexAnimationDeclaration.js"() {
     init_shaderStore();
     name72 = "bakedVertexAnimationDeclaration";
     shader72 = `#ifdef BAKED_VERTEX_ANIMATION_TEXTURE
@@ -44914,10 +44914,10 @@ float offset=index*4.0;float frameUV=(frame+0.5)*bakedVertexAnimationTextureSize
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/instancesDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/instancesDeclaration.js
 var name73, shader73, instancesDeclaration;
 var init_instancesDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/instancesDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/instancesDeclaration.js"() {
     init_shaderStore();
     name73 = "instancesDeclaration";
     shader73 = `#ifdef INSTANCES
@@ -44950,10 +44950,10 @@ uniform mat4 previousWorld;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/prePassVertexDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/prePassVertexDeclaration.js
 var name74, shader74, prePassVertexDeclaration;
 var init_prePassVertexDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/prePassVertexDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/prePassVertexDeclaration.js"() {
     init_shaderStore();
     name74 = "prePassVertexDeclaration";
     shader74 = `#ifdef PREPASS
@@ -44978,10 +44978,10 @@ uniform mat4 previousViewProjection;varying vec4 vCurrentPosition;varying vec4 v
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/mainUVVaryingDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/mainUVVaryingDeclaration.js
 var name75, shader75, mainUVVaryingDeclaration;
 var init_mainUVVaryingDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/mainUVVaryingDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/mainUVVaryingDeclaration.js"() {
     init_shaderStore();
     name75 = "mainUVVaryingDeclaration";
     shader75 = `#ifdef MAINUV{X}
@@ -44995,10 +44995,10 @@ varying vec2 vMainUV{X};
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/samplerVertexDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/samplerVertexDeclaration.js
 var name76, shader76, samplerVertexDeclaration;
 var init_samplerVertexDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/samplerVertexDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/samplerVertexDeclaration.js"() {
     init_shaderStore();
     name76 = "samplerVertexDeclaration";
     shader76 = `#if defined(_DEFINENAME_) && _DEFINENAME_DIRECTUV==0
@@ -45012,10 +45012,10 @@ varying vec2 v_VARYINGNAME_UV;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/bumpVertexDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/bumpVertexDeclaration.js
 var name77, shader77, bumpVertexDeclaration;
 var init_bumpVertexDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/bumpVertexDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/bumpVertexDeclaration.js"() {
     init_shaderStore();
     name77 = "bumpVertexDeclaration";
     shader77 = `#if defined(BUMP) || defined(PARALLAX) || defined(CLEARCOAT_BUMP) || defined(ANISOTROPIC)
@@ -45031,10 +45031,10 @@ varying mat3 vTBN;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/clipPlaneVertexDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/clipPlaneVertexDeclaration.js
 var name78, shader78, clipPlaneVertexDeclaration;
 var init_clipPlaneVertexDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/clipPlaneVertexDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/clipPlaneVertexDeclaration.js"() {
     init_shaderStore();
     name78 = "clipPlaneVertexDeclaration";
     shader78 = `#ifdef CLIPPLANE
@@ -45063,10 +45063,10 @@ uniform vec4 vClipPlane6;varying float fClipDistance6;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/fogVertexDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/fogVertexDeclaration.js
 var name79, shader79, fogVertexDeclaration;
 var init_fogVertexDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/fogVertexDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/fogVertexDeclaration.js"() {
     init_shaderStore();
     name79 = "fogVertexDeclaration";
     shader79 = `#ifdef FOG
@@ -45080,10 +45080,10 @@ varying vec3 vFogDistance;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightVxFragmentDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightVxFragmentDeclaration.js
 var name80, shader80, lightVxFragmentDeclaration;
 var init_lightVxFragmentDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightVxFragmentDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightVxFragmentDeclaration.js"() {
     init_shaderStore();
     name80 = "lightVxFragmentDeclaration";
     shader80 = `#ifdef LIGHT{X}
@@ -45121,10 +45121,10 @@ uniform vec4 vLightWidth{X};uniform vec4 vLightHeight{X};
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightVxUboDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightVxUboDeclaration.js
 var name81, shader81, lightVxUboDeclaration;
 var init_lightVxUboDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightVxUboDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightVxUboDeclaration.js"() {
     init_shaderStore();
     name81 = "lightVxUboDeclaration";
     shader81 = `#ifdef LIGHT{X}
@@ -45160,10 +45160,10 @@ varying vec4 vPositionFromLight{X};varying float vDepthMetric{X};uniform mat4 li
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/morphTargetsVertexGlobalDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/morphTargetsVertexGlobalDeclaration.js
 var name82, shader82, morphTargetsVertexGlobalDeclaration;
 var init_morphTargetsVertexGlobalDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/morphTargetsVertexGlobalDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/morphTargetsVertexGlobalDeclaration.js"() {
     init_shaderStore();
     name82 = "morphTargetsVertexGlobalDeclaration";
     shader82 = `#ifdef MORPHTARGETS
@@ -45195,10 +45195,10 @@ float y=floor(vertexIndex/morphTargetTextureInfo.y);float x=vertexIndex-y*morphT
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/morphTargetsVertexDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/morphTargetsVertexDeclaration.js
 var name83, shader83, morphTargetsVertexDeclaration;
 var init_morphTargetsVertexDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/morphTargetsVertexDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/morphTargetsVertexDeclaration.js"() {
     init_shaderStore();
     name83 = "morphTargetsVertexDeclaration";
     shader83 = `#ifdef MORPHTARGETS
@@ -45233,10 +45233,10 @@ uniform float morphTargetCount;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/logDepthDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/logDepthDeclaration.js
 var name84, shader84, logDepthDeclaration;
 var init_logDepthDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/logDepthDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/logDepthDeclaration.js"() {
     init_shaderStore();
     name84 = "logDepthDeclaration";
     shader84 = `#ifdef LOGARITHMICDEPTH
@@ -45250,10 +45250,10 @@ uniform float logarithmicDepthConstant;varying float vFragmentDepth;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/morphTargetsVertexGlobal.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/morphTargetsVertexGlobal.js
 var name85, shader85, morphTargetsVertexGlobal;
 var init_morphTargetsVertexGlobal2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/morphTargetsVertexGlobal.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/morphTargetsVertexGlobal.js"() {
     init_shaderStore();
     name85 = "morphTargetsVertexGlobal";
     shader85 = `#ifdef MORPHTARGETS
@@ -45269,10 +45269,10 @@ float vertexID;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/morphTargetsVertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/morphTargetsVertex.js
 var name86, shader86, morphTargetsVertex;
 var init_morphTargetsVertex2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/morphTargetsVertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/morphTargetsVertex.js"() {
     init_shaderStore();
     name86 = "morphTargetsVertex";
     shader86 = `#ifdef MORPHTARGETS
@@ -45343,10 +45343,10 @@ colorUpdated+=(color{X}-color)*morphTargetInfluences[{X}];
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/instancesVertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/instancesVertex.js
 var name87, shader87, instancesVertex;
 var init_instancesVertex2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/instancesVertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/instancesVertex.js"() {
     init_shaderStore();
     name87 = "instancesVertex";
     shader87 = `#ifdef INSTANCES
@@ -45375,10 +45375,10 @@ mat4 finalPreviousWorld=previousWorld;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/bonesVertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/bonesVertex.js
 var name88, shader88, bonesVertex;
 var init_bonesVertex2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/bonesVertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/bonesVertex.js"() {
     init_shaderStore();
     name88 = "bonesVertex";
     shader88 = `#ifndef BAKED_VERTEX_ANIMATION_TEXTURE
@@ -45442,10 +45442,10 @@ finalWorld=finalWorld*influence;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/bakedVertexAnimation.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/bakedVertexAnimation.js
 var name89, shader89, bakedVertexAnimation;
 var init_bakedVertexAnimation2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/bakedVertexAnimation.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/bakedVertexAnimation.js"() {
     init_shaderStore();
     name89 = "bakedVertexAnimation";
     shader89 = `#ifdef BAKED_VERTEX_ANIMATION_TEXTURE
@@ -45487,10 +45487,10 @@ finalWorld=finalWorld*VATInfluence;}
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/prePassVertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/prePassVertex.js
 var name90, shader90, prePassVertex;
 var init_prePassVertex2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/prePassVertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/prePassVertex.js"() {
     init_shaderStore();
     name90 = "prePassVertex";
     shader90 = `#ifdef PREPASS_DEPTH
@@ -45540,10 +45540,10 @@ vPreviousPosition=previousViewProjection*finalPreviousWorld*vec4(positionUpdated
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/uvVariableDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/uvVariableDeclaration.js
 var name91, shader91, uvVariableDeclaration;
 var init_uvVariableDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/uvVariableDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/uvVariableDeclaration.js"() {
     init_shaderStore();
     name91 = "uvVariableDeclaration";
     shader91 = `#if !defined(UV{X}) && defined(MAINUV{X})
@@ -45560,10 +45560,10 @@ vMainUV{X}=uv{X};
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/samplerVertexImplementation.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/samplerVertexImplementation.js
 var name92, shader92, samplerVertexImplementation;
 var init_samplerVertexImplementation2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/samplerVertexImplementation.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/samplerVertexImplementation.js"() {
     init_shaderStore();
     name92 = "samplerVertexImplementation";
     shader92 = `#if defined(_DEFINENAME_) && _DEFINENAME_DIRECTUV==0
@@ -45598,10 +45598,10 @@ else if (v_INFONAME_==5.)
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/bumpVertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/bumpVertex.js
 var name93, shader93, bumpVertex;
 var init_bumpVertex2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/bumpVertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/bumpVertex.js"() {
     init_shaderStore();
     name93 = "bumpVertex";
     shader93 = `#if defined(BUMP) || defined(PARALLAX) || defined(CLEARCOAT_BUMP) || defined(ANISOTROPIC)
@@ -45617,10 +45617,10 @@ vec3 tbnNormal=normalize(normalUpdated);vec3 tbnTangent=normalize(tangentUpdated
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/clipPlaneVertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/clipPlaneVertex.js
 var name94, shader94, clipPlaneVertex;
 var init_clipPlaneVertex2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/clipPlaneVertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/clipPlaneVertex.js"() {
     init_shaderStore();
     name94 = "clipPlaneVertex";
     shader94 = `#ifdef CLIPPLANE
@@ -45649,10 +45649,10 @@ fClipDistance6=dot(worldPos,vClipPlane6);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/fogVertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/fogVertex.js
 var name95, shader95, fogVertex;
 var init_fogVertex2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/fogVertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/fogVertex.js"() {
     init_shaderStore();
     name95 = "fogVertex";
     shader95 = `#ifdef FOG
@@ -45666,10 +45666,10 @@ vFogDistance=(view*worldPos).xyz;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowsVertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowsVertex.js
 var name96, shader96, shadowsVertex;
 var init_shadowsVertex2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowsVertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowsVertex.js"() {
     init_shaderStore();
     name96 = "shadowsVertex";
     shader96 = `#ifdef SHADOWS
@@ -45698,10 +45698,10 @@ vDepthMetric{X}=(vPositionFromLight{X}.z+light{X}.depthValues.x)/light{X}.depthV
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/vertexColorMixing.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/vertexColorMixing.js
 var name97, shader97, vertexColorMixing;
 var init_vertexColorMixing2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/vertexColorMixing.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/vertexColorMixing.js"() {
     init_shaderStore();
     name97 = "vertexColorMixing";
     shader97 = `#if defined(VERTEXCOLOR) || defined(INSTANCESCOLOR) && defined(INSTANCES)
@@ -45725,10 +45725,10 @@ vColor*=instanceColor;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/pointCloudVertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/pointCloudVertex.js
 var name98, shader98, pointCloudVertex;
 var init_pointCloudVertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/pointCloudVertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/pointCloudVertex.js"() {
     init_shaderStore();
     name98 = "pointCloudVertex";
     shader98 = `#if defined(POINTSIZE) && !defined(WEBGPU)
@@ -45742,10 +45742,10 @@ gl_PointSize=pointSize;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/logDepthVertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/logDepthVertex.js
 var name99, shader99, logDepthVertex;
 var init_logDepthVertex2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/logDepthVertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/logDepthVertex.js"() {
     init_shaderStore();
     name99 = "logDepthVertex";
     shader99 = `#ifdef LOGARITHMICDEPTH
@@ -45759,14 +45759,14 @@ vFragmentDepth=1.0+gl_Position.w;gl_Position.z=log2(max(0.000001,vFragmentDepth)
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/default.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/default.vertex.js
 var default_vertex_exports2 = {};
 __export(default_vertex_exports2, {
   defaultVertexShader: () => defaultVertexShader
 });
 var name100, shader100, includes3, defaultVertexShader;
 var init_default_vertex2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/default.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/default.vertex.js"() {
     init_shaderStore();
     init_decalVertexDeclaration();
     init_defaultVertexDeclaration();
@@ -45973,10 +45973,10 @@ vMainUV2=uv2Updated;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/decalFragmentDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/decalFragmentDeclaration.js
 var name101, shader101, decalFragmentDeclaration;
 var init_decalFragmentDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/decalFragmentDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/decalFragmentDeclaration.js"() {
     init_shaderStore();
     name101 = "decalFragmentDeclaration";
     shader101 = `#ifdef DECAL
@@ -45990,10 +45990,10 @@ uniform vec4 vDecalInfos;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/defaultFragmentDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/defaultFragmentDeclaration.js
 var name102, shader102, defaultFragmentDeclaration;
 var init_defaultFragmentDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/defaultFragmentDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/defaultFragmentDeclaration.js"() {
     init_shaderStore();
     init_decalFragmentDeclaration();
     name102 = "defaultFragmentDeclaration";
@@ -46076,10 +46076,10 @@ uniform vec4 vTextureRepetitionHexTilingParams;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/prePassDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/prePassDeclaration.js
 var name103, shader103, prePassDeclaration;
 var init_prePassDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/prePassDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/prePassDeclaration.js"() {
     init_shaderStore();
     name103 = "prePassDeclaration";
     shader103 = `#ifdef PREPASS
@@ -46106,10 +46106,10 @@ varying highp vec4 vCurrentPosition;varying highp vec4 vPreviousPosition;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/oitDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/oitDeclaration.js
 var name104, shader104, oitDeclaration;
 var init_oitDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/oitDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/oitDeclaration.js"() {
     init_shaderStore();
     name104 = "oitDeclaration";
     shader104 = `#ifdef ORDER_INDEPENDENT_TRANSPARENCY
@@ -46127,10 +46127,10 @@ highp vec4 gl_FragColor;uniform sampler2D oitDepthSampler;uniform sampler2D oitF
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightFragmentDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightFragmentDeclaration.js
 var name105, shader105, lightFragmentDeclaration;
 var init_lightFragmentDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightFragmentDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightFragmentDeclaration.js"() {
     init_shaderStore();
     name105 = "lightFragmentDeclaration";
     shader105 = `#ifdef LIGHT{X}
@@ -46215,10 +46215,10 @@ uniform vec2 vSliceData{X};uniform vec2 vSliceRanges{X}[CLUSTLIGHT_SLICES];unifo
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightUboDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightUboDeclaration.js
 var name106, shader106, lightUboDeclaration;
 var init_lightUboDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightUboDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightUboDeclaration.js"() {
     init_shaderStore();
     name106 = "lightUboDeclaration";
     shader106 = `#ifdef LIGHT{X}
@@ -46301,10 +46301,10 @@ uniform mat4 lightMatrix{X};
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/ltcHelperFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/ltcHelperFunctions.js
 var name107, shader107, ltcHelperFunctions;
 var init_ltcHelperFunctions2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/ltcHelperFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/ltcHelperFunctions.js"() {
     init_shaderStore();
     name107 = "ltcHelperFunctions";
     shader107 = `vec2 LTCUv( const in vec3 N,const in vec3 V,const in float roughness ) {const float LUTSIZE=64.0;const float LUTSCALE=( LUTSIZE-1.0 )/LUTSIZE;const float LUTBIAS=0.5/LUTSIZE;float dotNV=saturate( dot( N,V ) );vec2 uv=vec2( roughness,sqrt( 1.0-dotNV ) );uv=uv*LUTSCALE+LUTBIAS;return uv;}
@@ -46353,10 +46353,10 @@ result.Diffuse=LTCEvaluateWithEmission( normal,viewDir,position,mat3( 1.0 ),rect
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/clusteredLightingFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/clusteredLightingFunctions.js
 var name108, shader108, clusteredLightingFunctions;
 var init_clusteredLightingFunctions2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/clusteredLightingFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/clusteredLightingFunctions.js"() {
     init_shaderStore();
     name108 = "clusteredLightingFunctions";
     shader108 = `struct ClusteredLight {vec4 vLightData;vec4 vLightDiffuse;vec4 vLightSpecular;vec4 vLightDirection;vec4 vLightFalloff;};
@@ -46377,10 +46377,10 @@ int getClusteredSliceIndex(vec2 sliceData,float viewDepth) {return int(log(viewD
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightsFragmentFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightsFragmentFunctions.js
 var name109, shader109, lightsFragmentFunctions;
 var init_lightsFragmentFunctions2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightsFragmentFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightsFragmentFunctions.js"() {
     init_shaderStore();
     init_ltcHelperFunctions2();
     init_clusteredLightingFunctions2();
@@ -46497,10 +46497,10 @@ return result;}
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowsFragmentFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowsFragmentFunctions.js
 var name110, shader110, shadowsFragmentFunctions;
 var init_shadowsFragmentFunctions2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowsFragmentFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowsFragmentFunctions.js"() {
     init_shaderStore();
     name110 = "shadowsFragmentFunctions";
     shader110 = `#ifdef SHADOWS
@@ -46854,10 +46854,10 @@ float computeShadowWithCSMPCSS64(float layer,vec4 vPositionFromLight,float depth
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/samplerFragmentDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/samplerFragmentDeclaration.js
 var name111, shader111, samplerFragmentDeclaration;
 var init_samplerFragmentDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/samplerFragmentDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/samplerFragmentDeclaration.js"() {
     init_shaderStore();
     name111 = "samplerFragmentDeclaration";
     shader111 = `#ifdef _DEFINENAME_
@@ -46886,10 +46886,10 @@ uniform sampler2D _SAMPLERNAME_Sampler;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/fresnelFunction.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/fresnelFunction.js
 var name112, shader112, fresnelFunction;
 var init_fresnelFunction2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/fresnelFunction.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/fresnelFunction.js"() {
     init_shaderStore();
     name112 = "fresnelFunction";
     shader112 = `#ifdef FRESNEL
@@ -46904,10 +46904,10 @@ float computeFresnelTerm(vec3 viewDirection,vec3 worldNormal,float bias,float po
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/reflectionFunction.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/reflectionFunction.js
 var name113, shader113, reflectionFunction;
 var init_reflectionFunction2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/reflectionFunction.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/reflectionFunction.js"() {
     init_shaderStore();
     name113 = "reflectionFunction";
     shader113 = `vec3 computeFixedEquirectangularCoords(vec4 worldPos,vec3 worldNormal,vec3 direction)
@@ -46980,10 +46980,10 @@ return vec3(0,0,0);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/imageProcessingDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/imageProcessingDeclaration.js
 var name114, shader114, imageProcessingDeclaration;
 var init_imageProcessingDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/imageProcessingDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/imageProcessingDeclaration.js"() {
     init_shaderStore();
     name114 = "imageProcessingDeclaration";
     shader114 = `#ifdef EXPOSURE
@@ -47020,10 +47020,10 @@ uniform float ditherIntensity;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/imageProcessingFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/imageProcessingFunctions.js
 var name115, shader115, imageProcessingFunctions;
 var init_imageProcessingFunctions2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/imageProcessingFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/imageProcessingFunctions.js"() {
     init_shaderStore();
     name115 = "imageProcessingFunctions";
     shader115 = `#if defined(COLORGRADING) && !defined(COLORGRADING3D)
@@ -47122,10 +47122,10 @@ return result;}`;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/textureRepetitionFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/textureRepetitionFunctions.js
 var name116, shader116, textureRepetitionFunctions;
 var init_textureRepetitionFunctions2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/textureRepetitionFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/textureRepetitionFunctions.js"() {
     init_shaderStore();
     name116 = "textureRepetitionFunctions";
     shader116 = `#if TEXTURE_REPETITION_MODE>0
@@ -47177,10 +47177,10 @@ float mean=0.3;vec4 res=mean+(va-wt*mean)/sqrt(w2);return mix(va/wt,res,0.4);}
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/bumpFragmentMainFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/bumpFragmentMainFunctions.js
 var name117, shader117, bumpFragmentMainFunctions;
 var init_bumpFragmentMainFunctions2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/bumpFragmentMainFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/bumpFragmentMainFunctions.js"() {
     init_shaderStore();
     name117 = "bumpFragmentMainFunctions";
     shader117 = `#ifndef TEXRD_DEFINED
@@ -47256,10 +47256,10 @@ mat3 cotangent_frame(vec3 normal,vec3 p,vec2 uv,vec2 tangentSpaceParams)
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/bumpFragmentFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/bumpFragmentFunctions.js
 var name118, shader118, bumpFragmentFunctions;
 var init_bumpFragmentFunctions2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/bumpFragmentFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/bumpFragmentFunctions.js"() {
     init_shaderStore();
     init_samplerFragmentDeclaration2();
     name118 = "bumpFragmentFunctions";
@@ -47301,10 +47301,10 @@ return -texCoordOffset;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/clipPlaneFragmentDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/clipPlaneFragmentDeclaration.js
 var name119, shader119, clipPlaneFragmentDeclaration;
 var init_clipPlaneFragmentDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/clipPlaneFragmentDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/clipPlaneFragmentDeclaration.js"() {
     init_shaderStore();
     name119 = "clipPlaneFragmentDeclaration";
     shader119 = `#ifdef CLIPPLANE
@@ -47333,10 +47333,10 @@ varying float fClipDistance6;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/fogFragmentDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/fogFragmentDeclaration.js
 var name120, shader120, fogFragmentDeclaration;
 var init_fogFragmentDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/fogFragmentDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/fogFragmentDeclaration.js"() {
     init_shaderStore();
     name120 = "fogFragmentDeclaration";
     shader120 = `#ifdef FOG
@@ -47362,10 +47362,10 @@ return clamp(fogCoeff,0.0,1.0);}
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/clipPlaneFragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/clipPlaneFragment.js
 var name121, shader121, clipPlaneFragment;
 var init_clipPlaneFragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/clipPlaneFragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/clipPlaneFragment.js"() {
     init_shaderStore();
     name121 = "clipPlaneFragment";
     shader121 = `#if defined(CLIPPLANE) || defined(CLIPPLANE2) || defined(CLIPPLANE3) || defined(CLIPPLANE4) || defined(CLIPPLANE5) || defined(CLIPPLANE6)
@@ -47403,10 +47403,10 @@ else if (fClipDistance6>0.0)
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/bumpFragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/bumpFragment.js
 var name122, shader122, bumpFragment;
 var init_bumpFragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/bumpFragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/bumpFragment.js"() {
     init_shaderStore();
     name122 = "bumpFragment";
     shader122 = `vec2 uvOffset=vec2(0.0,0.0);
@@ -47469,10 +47469,10 @@ detailNormal.xy*=vDetailInfos.z;normalW=perturbNormalBase(TBN,detailNormal,vDeta
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/decalFragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/decalFragment.js
 var name123, shader123, decalFragment;
 var init_decalFragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/decalFragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/decalFragment.js"() {
     init_shaderStore();
     name123 = "decalFragment";
     shader123 = `#ifdef DECAL
@@ -47492,10 +47492,10 @@ surfaceAlbedo.rgb=mix(surfaceAlbedo.rgb,decalColor.rgb,decalColor.a);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/depthPrePass.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/depthPrePass.js
 var name124, shader124, depthPrePass;
 var init_depthPrePass2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/depthPrePass.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/depthPrePass.js"() {
     init_shaderStore();
     name124 = "depthPrePass";
     shader124 = `#ifdef DEPTHPREPASS
@@ -47509,10 +47509,10 @@ gl_FragColor=vec4(0.,0.,0.,1.0);return;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightFragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightFragment.js
 var name125, shader125, lightFragment;
 var init_lightFragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightFragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/lightFragment.js"() {
     init_shaderStore();
     name125 = "lightFragment";
     shader125 = `#ifdef LIGHT{X}
@@ -47901,10 +47901,10 @@ sheenBase+=info.sheen.rgb*shadow;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/logDepthFragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/logDepthFragment.js
 var name126, shader126, logDepthFragment;
 var init_logDepthFragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/logDepthFragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/logDepthFragment.js"() {
     init_shaderStore();
     name126 = "logDepthFragment";
     shader126 = `#ifdef LOGARITHMICDEPTH
@@ -47918,10 +47918,10 @@ gl_FragDepthEXT=log2(vFragmentDepth)*logarithmicDepthConstant*0.5;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/fogFragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/fogFragment.js
 var name127, shader127, fogFragment;
 var init_fogFragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/fogFragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/fogFragment.js"() {
     init_shaderStore();
     name127 = "fogFragment";
     shader127 = `#ifdef FOG
@@ -47939,10 +47939,10 @@ color.rgb=mix(vFogColor,color.rgb,fog);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/oitFragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/oitFragment.js
 var name128, shader128, oitFragment;
 var init_oitFragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/oitFragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/oitFragment.js"() {
     init_shaderStore();
     name128 = "oitFragment";
     shader128 = `#ifdef ORDER_INDEPENDENT_TRANSPARENCY
@@ -47978,14 +47978,14 @@ depth.rg=vec2(-fragDepth,fragDepth);return;}
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/default.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/default.fragment.js
 var default_fragment_exports2 = {};
 __export(default_fragment_exports2, {
   defaultPixelShader: () => defaultPixelShader
 });
 var name129, shader129, includes4, defaultPixelShader;
 var init_default_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/default.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/default.fragment.js"() {
     init_shaderStore();
     init_decalFragmentDeclaration();
     init_defaultFragmentDeclaration();
@@ -48386,14 +48386,14 @@ if (fragDepth==nearestDepth) {frontColor.rgb+=color.rgb*color.a*alphaMultiplier;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/postprocess.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/postprocess.vertex.js
 var postprocess_vertex_exports = {};
 __export(postprocess_vertex_exports, {
   postprocessVertexShaderWGSL: () => postprocessVertexShaderWGSL
 });
 var name130, shader130, postprocessVertexShaderWGSL;
 var init_postprocess_vertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/postprocess.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/postprocess.vertex.js"() {
     init_shaderStore();
     name130 = "postprocessVertexShader";
     shader130 = `attribute position: vec2<f32>;uniform scale: vec2<f32>;varying vUV: vec2<f32>;const madd=vec2(0.5,0.5);
@@ -48412,14 +48412,14 @@ vertexOutputs.vUV=(vertexInputs.position*madd+madd)*uniforms.scale;vertexOutputs
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/postprocess.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/postprocess.vertex.js
 var postprocess_vertex_exports2 = {};
 __export(postprocess_vertex_exports2, {
   postprocessVertexShader: () => postprocessVertexShader
 });
 var name131, shader131, postprocessVertexShader;
 var init_postprocess_vertex2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/postprocess.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/postprocess.vertex.js"() {
     init_shaderStore();
     name131 = "postprocessVertexShader";
     shader131 = `attribute vec2 position;uniform vec2 scale;varying vec2 vUV;const vec2 madd=vec2(0.5,0.5);
@@ -48436,7 +48436,7 @@ vUV=(position*madd+madd)*scale;gl_Position=vec4(position,0.0,1.0);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/postProcess.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/postProcess.pure.js
 function RegisterPostProcess() {
   if (_Registered16) {
     return;
@@ -48466,7 +48466,7 @@ function RegisterPostProcess() {
 }
 var PostProcess, _Registered16;
 var init_postProcess_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/postProcess.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/postProcess.pure.js"() {
     init_tslib_es6();
     init_smartArray();
     init_observable_pure();
@@ -49224,10 +49224,10 @@ var init_postProcess_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/pointCloudVertexDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/pointCloudVertexDeclaration.js
 var name132, shader132, pointCloudVertexDeclaration;
 var init_pointCloudVertexDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/pointCloudVertexDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/pointCloudVertexDeclaration.js"() {
     init_shaderStore();
     name132 = "pointCloudVertexDeclaration";
     shader132 = `#ifdef POINTSIZE
@@ -49241,14 +49241,14 @@ uniform float pointSize;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/depth.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/depth.vertex.js
 var depth_vertex_exports = {};
 __export(depth_vertex_exports, {
   depthVertexShader: () => depthVertexShader
 });
 var name133, shader133, includes5, depthVertexShader;
 var init_depth_vertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/depth.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/depth.vertex.js"() {
     init_shaderStore();
     init_bonesDeclaration2();
     init_bakedVertexAnimationDeclaration2();
@@ -49337,15 +49337,15 @@ vUV=vec2(diffuseMatrix*vec4(uv2Updated,1.0,0.0));
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/postProcess.types.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/postProcess.types.js
 var init_postProcess_types = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/postProcess.types.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/postProcess.types.js"() {
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/postProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/postProcess.js
 var init_postProcess = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/postProcess.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/postProcess.js"() {
     init_postProcess_types();
     init_postProcess_pure();
     init_postProcess_pure();
@@ -49353,14 +49353,14 @@ var init_postProcess = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/imageProcessing.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/imageProcessing.fragment.js
 var imageProcessing_fragment_exports = {};
 __export(imageProcessing_fragment_exports, {
   imageProcessingPixelShaderWGSL: () => imageProcessingPixelShaderWGSL
 });
 var name137, shader137, includes7, imageProcessingPixelShaderWGSL;
 var init_imageProcessing_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/imageProcessing.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/imageProcessing.fragment.js"() {
     init_shaderStore();
     init_imageProcessingDeclaration();
     init_helperFunctions();
@@ -49397,14 +49397,14 @@ fragmentOutputs.color=result;}`;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/imageProcessing.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/imageProcessing.fragment.js
 var imageProcessing_fragment_exports2 = {};
 __export(imageProcessing_fragment_exports2, {
   imageProcessingPixelShader: () => imageProcessingPixelShader
 });
 var name138, shader138, includes8, imageProcessingPixelShader;
 var init_imageProcessing_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/imageProcessing.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/imageProcessing.fragment.js"() {
     init_shaderStore();
     init_imageProcessingDeclaration2();
     init_helperFunctions2();
@@ -49441,19 +49441,19 @@ gl_FragColor=result;}`;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/effectRenderer.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/effectRenderer.js
 var init_effectRenderer = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/effectRenderer.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/effectRenderer.js"() {
     init_effectRenderer_pure();
     init_postprocess_vertex2();
     init_postprocess_vertex();
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/harmonicsFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/harmonicsFunctions.js
 var name139, shader139, harmonicsFunctionsWGSL;
 var init_harmonicsFunctions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/harmonicsFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/harmonicsFunctions.js"() {
     init_shaderStore();
     name139 = "harmonicsFunctions";
     shader139 = `#ifdef USESPHERICALFROMREFLECTIONMAP
@@ -49479,14 +49479,14 @@ fn computeEnvironmentIrradiance(normal: vec3f)->vec3f {var Nx: f32=normal.x;var 
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/geometry.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/geometry.vertex.js
 var geometry_vertex_exports = {};
 __export(geometry_vertex_exports, {
   geometryVertexShaderWGSL: () => geometryVertexShaderWGSL
 });
 var name140, shader140, includes9, geometryVertexShaderWGSL;
 var init_geometry_vertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/geometry.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/geometry.vertex.js"() {
     init_shaderStore();
     init_bonesDeclaration();
     init_bakedVertexAnimationDeclaration();
@@ -49729,10 +49729,10 @@ vertexOutputs.vEnvironmentIrradiance=computeEnvironmentIrradiance(reflectionVect
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/pbrFragmentReflectionDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/pbrFragmentReflectionDeclaration.js
 var name141, shader141, pbrFragmentReflectionDeclarationWGSL;
 var init_pbrFragmentReflectionDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/pbrFragmentReflectionDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/pbrFragmentReflectionDeclaration.js"() {
     init_shaderStore();
     name141 = "pbrFragmentReflectionDeclaration";
     shader141 = `#ifdef REFLECTION
@@ -49771,10 +49771,10 @@ varying vDirectionW: vec3f;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/pbrBRDFFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/pbrBRDFFunctions.js
 var name142, shader142, pbrBRDFFunctionsWGSL;
 var init_pbrBRDFFunctions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/pbrBRDFFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/pbrBRDFFunctions.js"() {
     init_shaderStore();
     name142 = "pbrBRDFFunctions";
     shader142 = `#define FRESNEL_MAXIMUM_ON_ROUGH 0.25
@@ -49957,10 +49957,10 @@ fn computeWrappedDiffuseNdotL(NdotL: f32,w: f32)->f32 {var t: f32=1.0+w;var invt
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/openpbrDielectricReflectance.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/openpbrDielectricReflectance.js
 var name143, shader143, openpbrDielectricReflectanceWGSL;
 var init_openpbrDielectricReflectance = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/openpbrDielectricReflectance.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/openpbrDielectricReflectance.js"() {
     init_shaderStore();
     name143 = "openpbrDielectricReflectance";
     shader143 = `struct ReflectanceParams
@@ -49993,10 +49993,10 @@ outParams.coloredF90=dielectricColorF90;return outParams;}
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/pbrIBLFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/pbrIBLFunctions.js
 var name144, shader144, pbrIBLFunctionsWGSL;
 var init_pbrIBLFunctions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/pbrIBLFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/pbrIBLFunctions.js"() {
     init_shaderStore();
     name144 = "pbrIBLFunctions";
     shader144 = `#if defined(REFLECTION) || defined(SS_REFRACTION)
@@ -50021,10 +50021,10 @@ fn getLodFromAlphaGNdotV(cubeMapDimensionPixels: f32,alphaG: f32,NdotV: f32)->f3
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/openpbrGeometryInfo.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/openpbrGeometryInfo.js
 var name145, shader145, openpbrGeometryInfoWGSL;
 var init_openpbrGeometryInfo = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/openpbrGeometryInfo.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/openpbrGeometryInfo.js"() {
     init_shaderStore();
     name145 = "openpbrGeometryInfo";
     shader145 = `struct geometryInfoOutParams
@@ -50072,10 +50072,10 @@ normalW: vec3f,viewDirectionW: vec3f,roughness: f32,geometricNormalW: vec3f
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/openpbrIblFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/openpbrIblFunctions.js
 var name146, shader146, openpbrIblFunctionsWGSL;
 var init_openpbrIblFunctions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/openpbrIblFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/openpbrIblFunctions.js"() {
     init_shaderStore();
     name146 = "openpbrIblFunctions";
     shader146 = `#ifdef REFLECTION
@@ -50304,10 +50304,10 @@ return getReflectanceFromBRDFLookup(reflectance.coloredF0,reflectance.coloredF90
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/openpbrSubsurfaceLayerData.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/openpbrSubsurfaceLayerData.js
 var name147, shader147, openpbrSubsurfaceLayerDataWGSL;
 var init_openpbrSubsurfaceLayerData = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/openpbrSubsurfaceLayerData.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/openpbrSubsurfaceLayerData.js"() {
     init_shaderStore();
     name147 = "openpbrSubsurfaceLayerData";
     shader147 = `var subsurface_weight: f32=uniforms.vSubsurfaceWeight;var subsurface_color: vec3f=uniforms.vSubsurfaceColor.rgb;var subsurface_radius: f32=uniforms.vSubsurfaceRadius;var subsurface_radius_scale: vec3f=uniforms.vSubsurfaceRadiusScale;var subsurface_scatter_anisotropy: f32=clamp(uniforms.vSubsurfaceScatterAnisotropy,-0.9999f,0.9999f);
@@ -50346,10 +50346,10 @@ subsurface_radius_scale*=subsurfaceRadiusScaleFromTexture.rgb;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/openpbrTransmissionLayerData.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/openpbrTransmissionLayerData.js
 var name148, shader148, openpbrTransmissionLayerDataWGSL;
 var init_openpbrTransmissionLayerData = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/openpbrTransmissionLayerData.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/openpbrTransmissionLayerData.js"() {
     init_shaderStore();
     name148 = "openpbrTransmissionLayerData";
     shader148 = `var transmission_weight: f32=uniforms.vTransmissionWeight;var transmission_color: vec3f=uniforms.vTransmissionColor.rgb;var transmission_depth: f32=uniforms.vTransmissionDepth;var transmission_scatter: vec3f=uniforms.vTransmissionScatter.rgb;var transmission_scatter_anisotropy: f32=clamp(uniforms.vTransmissionScatterAnisotropy,-0.9999f,0.9999f);var transmission_dispersion_scale: f32=uniforms.vTransmissionDispersionScale;var transmission_dispersion_abbe_number: f32=uniforms.vTransmissionDispersionAbbeNumber;
@@ -50396,14 +50396,14 @@ transmission_dispersion_scale*=transmissionDispersionScaleFromTexture.r;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/geometry.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/geometry.fragment.js
 var geometry_fragment_exports = {};
 __export(geometry_fragment_exports, {
   geometryPixelShaderWGSL: () => geometryPixelShaderWGSL
 });
 var name149, shader149, includes10, geometryPixelShaderWGSL;
 var init_geometry_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/geometry.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/geometry.fragment.js"() {
     init_shaderStore();
     init_clipPlaneFragmentDeclaration();
     init_bumpFragmentMainFunctions();
@@ -50698,10 +50698,10 @@ fragmentOutputs.fragData7=fragData[7];
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/geometryVertexDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/geometryVertexDeclaration.js
 var name150, shader150, geometryVertexDeclaration;
 var init_geometryVertexDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/geometryVertexDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/geometryVertexDeclaration.js"() {
     init_shaderStore();
     name150 = "geometryVertexDeclaration";
     shader150 = `uniform mat4 viewProjection;uniform mat4 view;`;
@@ -50712,10 +50712,10 @@ var init_geometryVertexDeclaration = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/geometryUboDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/geometryUboDeclaration.js
 var name151, shader151, geometryUboDeclaration;
 var init_geometryUboDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/geometryUboDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/geometryUboDeclaration.js"() {
     init_shaderStore();
     init_sceneUboDeclaration2();
     name151 = "geometryUboDeclaration";
@@ -50728,10 +50728,10 @@ var init_geometryUboDeclaration = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/harmonicsFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/harmonicsFunctions.js
 var name152, shader152, harmonicsFunctions;
 var init_harmonicsFunctions2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/harmonicsFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/harmonicsFunctions.js"() {
     init_shaderStore();
     name152 = "harmonicsFunctions";
     shader152 = `#ifdef USESPHERICALFROMREFLECTIONMAP
@@ -50757,14 +50757,14 @@ vec3 computeEnvironmentIrradiance(vec3 normal) {float Nx=normal.x;float Ny=norma
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/geometry.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/geometry.vertex.js
 var geometry_vertex_exports2 = {};
 __export(geometry_vertex_exports2, {
   geometryVertexShader: () => geometryVertexShader
 });
 var name153, shader153, includes11, geometryVertexShader;
 var init_geometry_vertex2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/geometry.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/geometry.vertex.js"() {
     init_shaderStore();
     init_bonesDeclaration2();
     init_bakedVertexAnimationDeclaration2();
@@ -51010,10 +51010,10 @@ vEnvironmentIrradiance=computeEnvironmentIrradiance(reflectionVector)*vReflectio
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/mrtFragmentDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/mrtFragmentDeclaration.js
 var name154, shader154, mrtFragmentDeclaration;
 var init_mrtFragmentDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/mrtFragmentDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/mrtFragmentDeclaration.js"() {
     init_shaderStore();
     name154 = "mrtFragmentDeclaration";
     shader154 = `#if defined(WEBGL2) || defined(WEBGPU) || defined(NATIVE)
@@ -51027,10 +51027,10 @@ layout(location=0) out vec4 glFragData[{X}];
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/pbrFragmentReflectionDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/pbrFragmentReflectionDeclaration.js
 var name155, shader155, pbrFragmentReflectionDeclaration;
 var init_pbrFragmentReflectionDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/pbrFragmentReflectionDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/pbrFragmentReflectionDeclaration.js"() {
     init_shaderStore();
     name155 = "pbrFragmentReflectionDeclaration";
     shader155 = `#ifdef REFLECTION
@@ -51073,10 +51073,10 @@ varying vec3 vDirectionW;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/sceneFragmentDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/sceneFragmentDeclaration.js
 var name156, shader156, sceneFragmentDeclaration;
 var init_sceneFragmentDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/sceneFragmentDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/sceneFragmentDeclaration.js"() {
     init_shaderStore();
     name156 = "sceneFragmentDeclaration";
     shader156 = `uniform mat4 viewProjection;
@@ -51092,10 +51092,10 @@ uniform mat4 view;uniform mat4 projection;uniform vec4 vEyePosition;uniform mat4
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/pbrBRDFFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/pbrBRDFFunctions.js
 var name157, shader157, pbrBRDFFunctions;
 var init_pbrBRDFFunctions2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/pbrBRDFFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/pbrBRDFFunctions.js"() {
     init_shaderStore();
     name157 = "pbrBRDFFunctions";
     shader157 = `#define FRESNEL_MAXIMUM_ON_ROUGH 0.25
@@ -51279,10 +51279,10 @@ float computeWrappedDiffuseNdotL(float NdotL,float w) {float t=1.0+w;float invt2
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/openpbrDielectricReflectance.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/openpbrDielectricReflectance.js
 var name158, shader158, openpbrDielectricReflectance;
 var init_openpbrDielectricReflectance2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/openpbrDielectricReflectance.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/openpbrDielectricReflectance.js"() {
     init_shaderStore();
     name158 = "openpbrDielectricReflectance";
     shader158 = `struct ReflectanceParams
@@ -51311,10 +51311,10 @@ outParams.F90=mix(f90Scale_NoSpec,f90Scale,specularWeight);outParams.coloredF0=m
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/pbrIBLFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/pbrIBLFunctions.js
 var name159, shader159, pbrIBLFunctions;
 var init_pbrIBLFunctions2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/pbrIBLFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/pbrIBLFunctions.js"() {
     init_shaderStore();
     name159 = "pbrIBLFunctions";
     shader159 = `#if defined(REFLECTION) || defined(SS_REFRACTION)
@@ -51339,10 +51339,10 @@ float getLodFromAlphaG(float cubeMapDimensionPixels,float alphaG,float NdotV) {f
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/openpbrGeometryInfo.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/openpbrGeometryInfo.js
 var name160, shader160, openpbrGeometryInfo;
 var init_openpbrGeometryInfo2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/openpbrGeometryInfo.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/openpbrGeometryInfo.js"() {
     init_shaderStore();
     name160 = "openpbrGeometryInfo";
     shader160 = `struct geometryInfoOutParams
@@ -51382,10 +51382,10 @@ in vec3 normalW,in vec3 viewDirectionW,in float roughness,in vec3 geometricNorma
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/openpbrIblFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/openpbrIblFunctions.js
 var name161, shader161, openpbrIblFunctions;
 var init_openpbrIblFunctions2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/openpbrIblFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/openpbrIblFunctions.js"() {
     init_shaderStore();
     name161 = "openpbrIblFunctions";
     shader161 = `#ifdef REFLECTION
@@ -51618,10 +51618,10 @@ return getReflectanceFromBRDFLookup(reflectance.coloredF0,reflectance.coloredF90
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/openpbrSubsurfaceLayerData.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/openpbrSubsurfaceLayerData.js
 var name162, shader162, openpbrSubsurfaceLayerData;
 var init_openpbrSubsurfaceLayerData2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/openpbrSubsurfaceLayerData.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/openpbrSubsurfaceLayerData.js"() {
     init_shaderStore();
     name162 = "openpbrSubsurfaceLayerData";
     shader162 = `float subsurface_weight=vSubsurfaceWeight;vec3 subsurface_color=vSubsurfaceColor.rgb;float subsurface_radius=vSubsurfaceRadius;vec3 subsurface_radius_scale=vSubsurfaceRadiusScale;float subsurface_scatter_anisotropy=clamp(vSubsurfaceScatterAnisotropy,-0.9999,0.9999);
@@ -51660,10 +51660,10 @@ subsurface_radius_scale*=subsurfaceRadiusScaleFromTexture.rgb;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/openpbrTransmissionLayerData.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/openpbrTransmissionLayerData.js
 var name163, shader163, openpbrTransmissionLayerData;
 var init_openpbrTransmissionLayerData2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/openpbrTransmissionLayerData.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/openpbrTransmissionLayerData.js"() {
     init_shaderStore();
     name163 = "openpbrTransmissionLayerData";
     shader163 = `float transmission_weight=vTransmissionWeight;vec3 transmission_color=vTransmissionColor.rgb;float transmission_depth=vTransmissionDepth;vec3 transmission_scatter=vTransmissionScatter.rgb;float transmission_scatter_anisotropy=clamp(vTransmissionScatterAnisotropy,-0.9999,0.9999);float transmission_dispersion_scale=vTransmissionDispersionScale;float transmission_dispersion_abbe_number=vTransmissionDispersionAbbeNumber;
@@ -51710,14 +51710,14 @@ transmission_dispersion_scale*=transmissionDispersionScaleFromTexture.r;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/geometry.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/geometry.fragment.js
 var geometry_fragment_exports2 = {};
 __export(geometry_fragment_exports2, {
   geometryPixelShader: () => geometryPixelShader
 });
 var name164, shader164, includes12, geometryPixelShader;
 var init_geometry_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/geometry.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/geometry.fragment.js"() {
     init_shaderStore();
     init_clipPlaneFragmentDeclaration2();
     init_mrtFragmentDeclaration();
@@ -51991,14 +51991,14 @@ gl_FragData[IRRADIANCE_INDEX]=vec4(irradiance,irradiance_alpha);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/depth.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/depth.vertex.js
 var depth_vertex_exports2 = {};
 __export(depth_vertex_exports2, {
   depthVertexShaderWGSL: () => depthVertexShaderWGSL
 });
 var name165, shader165, includes13, depthVertexShaderWGSL;
 var init_depth_vertex2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/depth.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/depth.vertex.js"() {
     init_shaderStore();
     init_bonesDeclaration();
     init_bakedVertexAnimationDeclaration();
@@ -52083,10 +52083,10 @@ vertexOutputs.vUV= (uniforms.diffuseMatrix* vec4f(uv2Updated,1.0,0.0)).xy;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/packingFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/packingFunctions.js
 var name166, shader166, packingFunctionsWGSL;
 var init_packingFunctions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/packingFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/packingFunctions.js"() {
     init_shaderStore();
     name166 = "packingFunctions";
     shader166 = `fn pack(depth: f32)->vec4f
@@ -52100,14 +52100,14 @@ fn unpack(color: vec4f)->f32
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/depth.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/depth.fragment.js
 var depth_fragment_exports = {};
 __export(depth_fragment_exports, {
   depthPixelShaderWGSL: () => depthPixelShaderWGSL
 });
 var name167, shader167, includes14, depthPixelShaderWGSL;
 var init_depth_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/depth.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/depth.fragment.js"() {
     init_shaderStore();
     init_clipPlaneFragmentDeclaration();
     init_packingFunctions();
@@ -52166,10 +52166,10 @@ fragmentOutputs.color= vec4f(input.vDepthMetric,0.0,0.0,1.0);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/packingFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/packingFunctions.js
 var name168, shader168, packingFunctions;
 var init_packingFunctions2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/packingFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/packingFunctions.js"() {
     init_shaderStore();
     name168 = "packingFunctions";
     shader168 = `vec4 pack(float depth)
@@ -52183,14 +52183,14 @@ float unpack(vec4 color)
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/depth.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/depth.fragment.js
 var depth_fragment_exports2 = {};
 __export(depth_fragment_exports2, {
   depthPixelShader: () => depthPixelShader
 });
 var name169, shader169, includes15, depthPixelShader;
 var init_depth_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/depth.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/depth.fragment.js"() {
     init_shaderStore();
     init_clipPlaneFragmentDeclaration2();
     init_packingFunctions2();
@@ -52250,10 +52250,10 @@ gl_FragColor=vec4(vDepthMetric,0.0,0.0,1.0);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/screenSpaceRayTrace.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/screenSpaceRayTrace.js
 var name170, shader170, screenSpaceRayTraceWGSL;
 var init_screenSpaceRayTrace = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/screenSpaceRayTrace.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/screenSpaceRayTrace.js"() {
     init_shaderStore();
     name170 = "screenSpaceRayTrace";
     shader170 = `fn distanceSquared(a: vec2f,b: vec2f)->f32 { 
@@ -52423,14 +52423,14 @@ var w=1.0;var ndc=vec4f(xy,z,w);var eyePos: vec4f=invProjectionMatrix*ndc;var re
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/screenSpaceReflection2.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/screenSpaceReflection2.fragment.js
 var screenSpaceReflection2_fragment_exports = {};
 __export(screenSpaceReflection2_fragment_exports, {
   screenSpaceReflection2PixelShaderWGSL: () => screenSpaceReflection2PixelShaderWGSL
 });
 var name171, shader171, includes16, screenSpaceReflection2PixelShaderWGSL;
 var init_screenSpaceReflection2_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/screenSpaceReflection2.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/screenSpaceReflection2.fragment.js"() {
     init_shaderStore();
     init_helperFunctions();
     init_pbrBRDFFunctions();
@@ -52607,10 +52607,10 @@ fragmentOutputs.color=textureSampleLevel(textureSampler,textureSamplerSampler,in
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/screenSpaceRayTrace.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/screenSpaceRayTrace.js
 var name172, shader172, screenSpaceRayTrace;
 var init_screenSpaceRayTrace2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/screenSpaceRayTrace.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/screenSpaceRayTrace.js"() {
     init_shaderStore();
     name172 = "screenSpaceRayTrace";
     shader172 = `float distanceSquared(vec2 a,vec2 b) { a-=b; return dot(a,a); }
@@ -52776,14 +52776,14 @@ ndc.w=1.0;vec4 eyePos=invProjectionMatrix*ndc;eyePos.xyz/=eyePos.w;return eyePos
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/screenSpaceReflection2.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/screenSpaceReflection2.fragment.js
 var screenSpaceReflection2_fragment_exports2 = {};
 __export(screenSpaceReflection2_fragment_exports2, {
   screenSpaceReflection2PixelShader: () => screenSpaceReflection2PixelShader
 });
 var name173, shader173, includes17, screenSpaceReflection2PixelShader;
 var init_screenSpaceReflection2_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/screenSpaceReflection2.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/screenSpaceReflection2.fragment.js"() {
     init_shaderStore();
     init_helperFunctions2();
     init_pbrBRDFFunctions2();
@@ -52967,14 +52967,14 @@ gl_FragColor=TEXTUREFUNC(textureSampler,vUV,0.0);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/screenSpaceReflection2Blur.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/screenSpaceReflection2Blur.fragment.js
 var screenSpaceReflection2Blur_fragment_exports = {};
 __export(screenSpaceReflection2Blur_fragment_exports, {
   screenSpaceReflection2BlurPixelShaderWGSL: () => screenSpaceReflection2BlurPixelShaderWGSL
 });
 var name174, shader174, screenSpaceReflection2BlurPixelShaderWGSL;
 var init_screenSpaceReflection2Blur_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/screenSpaceReflection2Blur.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/screenSpaceReflection2Blur.fragment.js"() {
     init_shaderStore();
     name174 = "screenSpaceReflection2BlurPixelShader";
     shader174 = `var textureSamplerSampler: sampler;var textureSampler: texture_2d<f32>;varying vUV: vec2f;uniform texelOffsetScale: vec2f;const weights: array<f32,8>=array<f32,8>(0.071303,0.131514,0.189879,0.321392,0.452906, 0.584419,0.715932,0.847445);fn processSample(uv: vec2f,i: f32,stepSize: vec2f,accumulator: ptr<function,vec4f>,denominator: ptr<function,f32>)
@@ -52991,14 +52991,14 @@ var stepSize: vec2f=uniforms.texelOffsetScale.xy*blurRadius;var accumulator: vec
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/screenSpaceReflection2Blur.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/screenSpaceReflection2Blur.fragment.js
 var screenSpaceReflection2Blur_fragment_exports2 = {};
 __export(screenSpaceReflection2Blur_fragment_exports2, {
   screenSpaceReflection2BlurPixelShader: () => screenSpaceReflection2BlurPixelShader
 });
 var name175, shader175, screenSpaceReflection2BlurPixelShader;
 var init_screenSpaceReflection2Blur_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/screenSpaceReflection2Blur.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/screenSpaceReflection2Blur.fragment.js"() {
     init_shaderStore();
     name175 = "screenSpaceReflection2BlurPixelShader";
     shader175 = `#if defined(WEBGL2) || defined(WEBGPU) || defined(NATIVE)
@@ -53020,14 +53020,14 @@ vec2 stepSize=texelOffsetScale.xy*blurRadius;vec4 accumulator=TEXTUREFUNC(textur
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/screenSpaceReflection2BlurCombiner.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/screenSpaceReflection2BlurCombiner.fragment.js
 var screenSpaceReflection2BlurCombiner_fragment_exports = {};
 __export(screenSpaceReflection2BlurCombiner_fragment_exports, {
   screenSpaceReflection2BlurCombinerPixelShaderWGSL: () => screenSpaceReflection2BlurCombinerPixelShaderWGSL
 });
 var name176, shader176, includes18, screenSpaceReflection2BlurCombinerPixelShaderWGSL;
 var init_screenSpaceReflection2BlurCombiner_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/screenSpaceReflection2BlurCombiner.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/screenSpaceReflection2BlurCombiner.fragment.js"() {
     init_shaderStore();
     init_helperFunctions();
     init_pbrBRDFFunctions();
@@ -53097,14 +53097,14 @@ fragmentOutputs.color= vec4f(finalColor,color.a);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/screenSpaceReflection2BlurCombiner.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/screenSpaceReflection2BlurCombiner.fragment.js
 var screenSpaceReflection2BlurCombiner_fragment_exports2 = {};
 __export(screenSpaceReflection2BlurCombiner_fragment_exports2, {
   screenSpaceReflection2BlurCombinerPixelShader: () => screenSpaceReflection2BlurCombinerPixelShader
 });
 var name177, shader177, includes19, screenSpaceReflection2BlurCombinerPixelShader;
 var init_screenSpaceReflection2BlurCombiner_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/screenSpaceReflection2BlurCombiner.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/screenSpaceReflection2BlurCombiner.fragment.js"() {
     init_shaderStore();
     init_helperFunctions2();
     init_pbrBRDFFunctions2();
@@ -53174,14 +53174,14 @@ gl_FragColor=vec4(finalColor,color.a);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/pass.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/pass.fragment.js
 var pass_fragment_exports2 = {};
 __export(pass_fragment_exports2, {
   passPixelShaderWGSL: () => passPixelShaderWGSL
 });
 var name178, shader178, passPixelShaderWGSL;
 var init_pass_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/pass.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/pass.fragment.js"() {
     init_shaderStore();
     name178 = "passPixelShader";
     shader178 = `varying vUV: vec2f;var textureSamplerSampler: sampler;var textureSampler: texture_2d<f32>;
@@ -53195,14 +53195,14 @@ fn main(input: FragmentInputs)->FragmentOutputs {fragmentOutputs.color=textureSa
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/passCube.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/passCube.fragment.js
 var passCube_fragment_exports = {};
 __export(passCube_fragment_exports, {
   passCubePixelShaderWGSL: () => passCubePixelShaderWGSL
 });
 var name179, shader179, passCubePixelShaderWGSL;
 var init_passCube_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/passCube.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/passCube.fragment.js"() {
     init_shaderStore();
     name179 = "passCubePixelShader";
     shader179 = `varying vUV: vec2f;var textureSamplerSampler: sampler;var textureSampler: texture_cube<f32>;
@@ -53235,14 +53235,14 @@ fragmentOutputs.color=textureSample(textureSampler,textureSamplerSampler,vec3f(u
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/passCube.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/passCube.fragment.js
 var passCube_fragment_exports2 = {};
 __export(passCube_fragment_exports2, {
   passCubePixelShader: () => passCubePixelShader
 });
 var name180, shader180, passCubePixelShader;
 var init_passCube_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/passCube.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/passCube.fragment.js"() {
     init_shaderStore();
     name180 = "passCubePixelShader";
     shader180 = `varying vec2 vUV;uniform samplerCube textureSampler;
@@ -53275,10 +53275,10 @@ gl_FragColor=textureCube(textureSampler,vec3(uv,-1.001));
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/thinPassPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/thinPassPostProcess.js
 var ThinPassPostProcess, ThinPassCubePostProcess;
 var init_thinPassPostProcess = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/thinPassPostProcess.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/thinPassPostProcess.js"() {
     init_effectRenderer();
     init_engineStore();
     ThinPassPostProcess = class _ThinPassPostProcess extends EffectWrapper {
@@ -53390,7 +53390,7 @@ var init_thinPassPostProcess = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/passPostProcess.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/passPostProcess.pure.js
 function RegisterPassPostProcess() {
   if (_Registered29) {
     return;
@@ -53403,7 +53403,7 @@ function RegisterPassPostProcess() {
 }
 var PassPostProcess, PassCubePostProcess, _Registered29;
 var init_passPostProcess_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/passPostProcess.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/passPostProcess.pure.js"() {
     init_tslib_es6();
     init_postProcess_pure();
     init_abstractEngine_pure();
@@ -53528,14 +53528,14 @@ var init_passPostProcess_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/taa.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/taa.fragment.js
 var taa_fragment_exports = {};
 __export(taa_fragment_exports, {
   taaPixelShaderWGSL: () => taaPixelShaderWGSL
 });
 var name181, shader181, taaPixelShaderWGSL;
 var init_taa_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/taa.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/taa.fragment.js"() {
     init_shaderStore();
     name181 = "taaPixelShader";
     shader181 = `varying vUV: vec2f;var textureSampler: texture_2d<f32>;var historySampler: texture_2d<f32>;
@@ -53562,14 +53562,14 @@ fragmentOutputs.color= mix(h,c,uniforms.factor);}
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/taa.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/taa.fragment.js
 var taa_fragment_exports2 = {};
 __export(taa_fragment_exports2, {
   taaPixelShader: () => taaPixelShader
 });
 var name182, shader182, taaPixelShader;
 var init_taa_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/taa.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/taa.fragment.js"() {
     init_shaderStore();
     name182 = "taaPixelShader";
     shader182 = `varying vec2 vUV;uniform sampler2D textureSampler;uniform sampler2D historySampler;
@@ -53595,14 +53595,14 @@ gl_FragColor=mix(h,c,factor);}
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ssao2.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ssao2.fragment.js
 var ssao2_fragment_exports = {};
 __export(ssao2_fragment_exports, {
   ssao2PixelShaderWGSL: () => ssao2PixelShaderWGSL
 });
 var name183, shader183, ssao2PixelShaderWGSL;
 var init_ssao2_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ssao2.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ssao2.fragment.js"() {
     init_shaderStore();
     name183 = "ssao2PixelShader";
     shader183 = `varying vUV: vec2f;var textureSamplerSampler: sampler;var textureSampler: texture_2d<f32>;
@@ -53680,14 +53680,14 @@ fragmentOutputs.color=vec4f(result,result,result,1.0);}
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ssao2.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ssao2.fragment.js
 var ssao2_fragment_exports2 = {};
 __export(ssao2_fragment_exports2, {
   ssao2PixelShader: () => ssao2PixelShader
 });
 var name184, shader184, ssao2PixelShader;
 var init_ssao2_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ssao2.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ssao2.fragment.js"() {
     init_shaderStore();
     name184 = "ssao2PixelShader";
     shader184 = `precision highp float;uniform sampler2D textureSampler;varying vec2 vUV;
@@ -53765,14 +53765,14 @@ gl_FragColor.rgb=vec3(result);gl_FragColor.a=1.0;}
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ssaoCombine.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ssaoCombine.fragment.js
 var ssaoCombine_fragment_exports = {};
 __export(ssaoCombine_fragment_exports, {
   ssaoCombinePixelShaderWGSL: () => ssaoCombinePixelShaderWGSL
 });
 var name185, shader185, ssaoCombinePixelShaderWGSL;
 var init_ssaoCombine_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ssaoCombine.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ssaoCombine.fragment.js"() {
     init_shaderStore();
     name185 = "ssaoCombinePixelShader";
     shader185 = `varying vUV: vec2f;var textureSamplerSampler: sampler;var textureSampler: texture_2d<f32>;var originalColorSampler: sampler;var originalColor: texture_2d<f32>;uniform viewport: vec4f;
@@ -53791,14 +53791,14 @@ var uv: vec2f=uniforms.viewport.xy+input.vUV*uniforms.viewport.zw;var ssaoColor:
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ssaoCombine.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ssaoCombine.fragment.js
 var ssaoCombine_fragment_exports2 = {};
 __export(ssaoCombine_fragment_exports2, {
   ssaoCombinePixelShader: () => ssaoCombinePixelShader
 });
 var name186, shader186, ssaoCombinePixelShader;
 var init_ssaoCombine_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ssaoCombine.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ssaoCombine.fragment.js"() {
     init_shaderStore();
     name186 = "ssaoCombinePixelShader";
     shader186 = `uniform sampler2D textureSampler;uniform sampler2D originalColor;uniform vec4 viewport;varying vec2 vUV;
@@ -53816,14 +53816,14 @@ vec2 uv=viewport.xy+vUV*viewport.zw;vec4 ssaoColor=texture2D(textureSampler,uv);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/motionBlur.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/motionBlur.fragment.js
 var motionBlur_fragment_exports = {};
 __export(motionBlur_fragment_exports, {
   motionBlurPixelShaderWGSL: () => motionBlurPixelShaderWGSL
 });
 var name187, shader187, motionBlurPixelShaderWGSL;
 var init_motionBlur_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/motionBlur.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/motionBlur.fragment.js"() {
     init_shaderStore();
     name187 = "motionBlurPixelShader";
     shader187 = `varying vUV: vec2f;var textureSamplerSampler: sampler;var textureSampler: texture_2d<f32>;uniform motionStrength: f32;uniform motionScale: f32;uniform screenSize: vec2f;
@@ -53860,14 +53860,14 @@ fragmentOutputs.color=textureSample(textureSampler,textureSamplerSampler, input.
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/motionBlur.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/motionBlur.fragment.js
 var motionBlur_fragment_exports2 = {};
 __export(motionBlur_fragment_exports2, {
   motionBlurPixelShader: () => motionBlurPixelShader
 });
 var name188, shader188, motionBlurPixelShader;
 var init_motionBlur_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/motionBlur.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/motionBlur.fragment.js"() {
     init_shaderStore();
     name188 = "motionBlurPixelShader";
     shader188 = `varying vec2 vUV;uniform sampler2D textureSampler;uniform float motionStrength;uniform float motionScale;uniform vec2 screenSize;
@@ -53904,10 +53904,10 @@ gl_FragColor=texture2D(textureSampler,vUV);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/kernelBlurVaryingDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/kernelBlurVaryingDeclaration.js
 var name189, shader189, kernelBlurVaryingDeclarationWGSL;
 var init_kernelBlurVaryingDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/kernelBlurVaryingDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/kernelBlurVaryingDeclaration.js"() {
     init_shaderStore();
     name189 = "kernelBlurVaryingDeclaration";
     shader189 = `varying sampleCoord{X}: vec2f;`;
@@ -53918,10 +53918,10 @@ var init_kernelBlurVaryingDeclaration = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/kernelBlurFragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/kernelBlurFragment.js
 var name190, shader190, kernelBlurFragmentWGSL;
 var init_kernelBlurFragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/kernelBlurFragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/kernelBlurFragment.js"() {
     init_shaderStore();
     name190 = "kernelBlurFragment";
     shader190 = `#ifdef DOF
@@ -53943,10 +53943,10 @@ blend+=textureSample(textureSampler,textureSamplerSampler,fragmentInputs.sampleC
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/kernelBlurFragment2.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/kernelBlurFragment2.js
 var name191, shader191, kernelBlurFragment2WGSL;
 var init_kernelBlurFragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/kernelBlurFragment2.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/kernelBlurFragment2.js"() {
     init_shaderStore();
     name191 = "kernelBlurFragment2";
     shader191 = `#ifdef DOF
@@ -53967,14 +53967,14 @@ blend+=textureSample(textureSampler,textureSamplerSampler,fragmentInputs.sampleC
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/kernelBlur.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/kernelBlur.fragment.js
 var kernelBlur_fragment_exports = {};
 __export(kernelBlur_fragment_exports, {
   kernelBlurPixelShaderWGSL: () => kernelBlurPixelShaderWGSL
 });
 var name192, shader192, includes20, kernelBlurPixelShaderWGSL;
 var init_kernelBlur_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/kernelBlur.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/kernelBlur.fragment.js"() {
     init_shaderStore();
     init_kernelBlurVaryingDeclaration();
     init_packingFunctions();
@@ -54030,10 +54030,10 @@ fragmentOutputs.color/=sumOfWeights;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/kernelBlurVertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/kernelBlurVertex.js
 var name193, shader193, kernelBlurVertexWGSL;
 var init_kernelBlurVertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/kernelBlurVertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/kernelBlurVertex.js"() {
     init_shaderStore();
     name193 = "kernelBlurVertex";
     shader193 = `vertexOutputs.sampleCoord{X}=vertexOutputs.sampleCenter+uniforms.delta*KERNEL_OFFSET{X};`;
@@ -54044,14 +54044,14 @@ var init_kernelBlurVertex = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/kernelBlur.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/kernelBlur.vertex.js
 var kernelBlur_vertex_exports = {};
 __export(kernelBlur_vertex_exports, {
   kernelBlurVertexShaderWGSL: () => kernelBlurVertexShaderWGSL
 });
 var name194, shader194, includes21, kernelBlurVertexShaderWGSL;
 var init_kernelBlur_vertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/kernelBlur.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/kernelBlur.vertex.js"() {
     init_shaderStore();
     init_kernelBlurVaryingDeclaration();
     init_kernelBlurVertex();
@@ -54080,10 +54080,10 @@ vertexOutputs.position= vec4f(vertexInputs.position,0.0,1.0);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/kernelBlurVaryingDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/kernelBlurVaryingDeclaration.js
 var name195, shader195, kernelBlurVaryingDeclaration;
 var init_kernelBlurVaryingDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/kernelBlurVaryingDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/kernelBlurVaryingDeclaration.js"() {
     init_shaderStore();
     name195 = "kernelBlurVaryingDeclaration";
     shader195 = `varying vec2 sampleCoord{X};`;
@@ -54094,10 +54094,10 @@ var init_kernelBlurVaryingDeclaration2 = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/kernelBlurFragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/kernelBlurFragment.js
 var name196, shader196, kernelBlurFragment;
 var init_kernelBlurFragment3 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/kernelBlurFragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/kernelBlurFragment.js"() {
     init_shaderStore();
     name196 = "kernelBlurFragment";
     shader196 = `#ifdef DOF
@@ -54119,10 +54119,10 @@ blend+=texture2D(textureSampler,sampleCoord{X})*computedWeight;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/kernelBlurFragment2.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/kernelBlurFragment2.js
 var name197, shader197, kernelBlurFragment2;
 var init_kernelBlurFragment22 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/kernelBlurFragment2.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/kernelBlurFragment2.js"() {
     init_shaderStore();
     name197 = "kernelBlurFragment2";
     shader197 = `#ifdef DOF
@@ -54143,14 +54143,14 @@ blend+=texture2D(textureSampler,sampleCenter+delta*KERNEL_DEP_OFFSET{X})*compute
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/kernelBlur.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/kernelBlur.fragment.js
 var kernelBlur_fragment_exports2 = {};
 __export(kernelBlur_fragment_exports2, {
   kernelBlurPixelShader: () => kernelBlurPixelShader
 });
 var name198, shader198, includes22, kernelBlurPixelShader;
 var init_kernelBlur_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/kernelBlur.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/kernelBlur.fragment.js"() {
     init_shaderStore();
     init_kernelBlurVaryingDeclaration2();
     init_packingFunctions2();
@@ -54206,10 +54206,10 @@ gl_FragColor/=sumOfWeights;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/kernelBlurVertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/kernelBlurVertex.js
 var name199, shader199, kernelBlurVertex;
 var init_kernelBlurVertex2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/kernelBlurVertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/kernelBlurVertex.js"() {
     init_shaderStore();
     name199 = "kernelBlurVertex";
     shader199 = `sampleCoord{X}=sampleCenter+delta*KERNEL_OFFSET{X};`;
@@ -54220,14 +54220,14 @@ var init_kernelBlurVertex2 = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/kernelBlur.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/kernelBlur.vertex.js
 var kernelBlur_vertex_exports2 = {};
 __export(kernelBlur_vertex_exports2, {
   kernelBlurVertexShader: () => kernelBlurVertexShader
 });
 var name200, shader200, includes23, kernelBlurVertexShader;
 var init_kernelBlur_vertex2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/kernelBlur.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/kernelBlur.vertex.js"() {
     init_shaderStore();
     init_kernelBlurVaryingDeclaration2();
     init_kernelBlurVertex2();
@@ -54256,14 +54256,14 @@ gl_Position=vec4(position,0.0,1.0);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/glowMapMerge.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/glowMapMerge.fragment.js
 var glowMapMerge_fragment_exports = {};
 __export(glowMapMerge_fragment_exports, {
   glowMapMergePixelShaderWGSL: () => glowMapMergePixelShaderWGSL
 });
 var name201, shader201, glowMapMergePixelShaderWGSL;
 var init_glowMapMerge_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/glowMapMerge.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/glowMapMerge.fragment.js"() {
     init_shaderStore();
     name201 = "glowMapMergePixelShader";
     shader201 = `varying vUV: vec2f;var textureSamplerSampler: sampler;var textureSampler: texture_2d<f32>;
@@ -54298,14 +54298,14 @@ fragmentOutputs.color=baseColor;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/glowMapMerge.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/glowMapMerge.vertex.js
 var glowMapMerge_vertex_exports = {};
 __export(glowMapMerge_vertex_exports, {
   glowMapMergeVertexShaderWGSL: () => glowMapMergeVertexShaderWGSL
 });
 var name202, shader202, glowMapMergeVertexShaderWGSL;
 var init_glowMapMerge_vertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/glowMapMerge.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/glowMapMerge.vertex.js"() {
     init_shaderStore();
     name202 = "glowMapMergeVertexShader";
     shader202 = `attribute position: vec2f;varying vUV: vec2f;
@@ -54323,14 +54323,14 @@ vertexOutputs.vUV=vertexInputs.position*madd+madd;vertexOutputs.position= vec4f(
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/glowBlurPostProcess.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/glowBlurPostProcess.fragment.js
 var glowBlurPostProcess_fragment_exports = {};
 __export(glowBlurPostProcess_fragment_exports, {
   glowBlurPostProcessPixelShaderWGSL: () => glowBlurPostProcessPixelShaderWGSL
 });
 var name203, shader203, glowBlurPostProcessPixelShaderWGSL;
 var init_glowBlurPostProcess_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/glowBlurPostProcess.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/glowBlurPostProcess.fragment.js"() {
     init_shaderStore();
     name203 = "glowBlurPostProcessPixelShader";
     shader203 = `varying vUV: vec2f;var textureSamplerSampler: sampler;var textureSampler: texture_2d<f32>;uniform screenSize: vec2f;uniform direction: vec2f;uniform blurWidth: f32;fn getLuminance(color: vec3f)->f32
@@ -54347,14 +54347,14 @@ fragmentOutputs.color=baseColor;}`;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/glowMapMerge.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/glowMapMerge.fragment.js
 var glowMapMerge_fragment_exports2 = {};
 __export(glowMapMerge_fragment_exports2, {
   glowMapMergePixelShader: () => glowMapMergePixelShader
 });
 var name204, shader204, glowMapMergePixelShader;
 var init_glowMapMerge_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/glowMapMerge.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/glowMapMerge.fragment.js"() {
     init_shaderStore();
     name204 = "glowMapMergePixelShader";
     shader204 = `varying vec2 vUV;uniform sampler2D textureSampler;
@@ -54387,14 +54387,14 @@ gl_FragColor=baseColor;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/glowMapMerge.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/glowMapMerge.vertex.js
 var glowMapMerge_vertex_exports2 = {};
 __export(glowMapMerge_vertex_exports2, {
   glowMapMergeVertexShader: () => glowMapMergeVertexShader
 });
 var name205, shader205, glowMapMergeVertexShader;
 var init_glowMapMerge_vertex2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/glowMapMerge.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/glowMapMerge.vertex.js"() {
     init_shaderStore();
     name205 = "glowMapMergeVertexShader";
     shader205 = `attribute vec2 position;varying vec2 vUV;const vec2 madd=vec2(0.5,0.5);
@@ -54411,14 +54411,14 @@ vUV=position*madd+madd;gl_Position=vec4(position,0.0,1.0);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/glowBlurPostProcess.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/glowBlurPostProcess.fragment.js
 var glowBlurPostProcess_fragment_exports2 = {};
 __export(glowBlurPostProcess_fragment_exports2, {
   glowBlurPostProcessPixelShader: () => glowBlurPostProcessPixelShader
 });
 var name206, shader206, glowBlurPostProcessPixelShader;
 var init_glowBlurPostProcess_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/glowBlurPostProcess.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/glowBlurPostProcess.fragment.js"() {
     init_shaderStore();
     name206 = "glowBlurPostProcessPixelShader";
     shader206 = `varying vec2 vUV;uniform sampler2D textureSampler;uniform vec2 screenSize;uniform vec2 direction;uniform float blurWidth;float getLuminance(vec3 color)
@@ -54435,14 +54435,14 @@ gl_FragColor=baseColor;}`;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/glowMapGeneration.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/glowMapGeneration.vertex.js
 var glowMapGeneration_vertex_exports = {};
 __export(glowMapGeneration_vertex_exports, {
   glowMapGenerationVertexShaderWGSL: () => glowMapGenerationVertexShaderWGSL
 });
 var name207, shader207, includes24, glowMapGenerationVertexShaderWGSL;
 var init_glowMapGeneration_vertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/glowMapGeneration.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/glowMapGeneration.vertex.js"() {
     init_shaderStore();
     init_bonesDeclaration();
     init_bakedVertexAnimationDeclaration();
@@ -54545,14 +54545,14 @@ vertexOutputs.vColor=vertexInputs.color;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/glowMapGeneration.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/glowMapGeneration.fragment.js
 var glowMapGeneration_fragment_exports = {};
 __export(glowMapGeneration_fragment_exports, {
   glowMapGenerationPixelShaderWGSL: () => glowMapGenerationPixelShaderWGSL
 });
 var name208, shader208, includes25, glowMapGenerationPixelShaderWGSL;
 var init_glowMapGeneration_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/glowMapGeneration.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/glowMapGeneration.fragment.js"() {
     init_shaderStore();
     init_helperFunctions();
     init_clipPlaneFragmentDeclaration();
@@ -54634,14 +54634,14 @@ fragmentOutputs.color=vec4f(fragmentOutputs.color.rgb,uniforms.glowColor.a);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/glowMapGeneration.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/glowMapGeneration.vertex.js
 var glowMapGeneration_vertex_exports2 = {};
 __export(glowMapGeneration_vertex_exports2, {
   glowMapGenerationVertexShader: () => glowMapGenerationVertexShader
 });
 var name209, shader209, includes26, glowMapGenerationVertexShader;
 var init_glowMapGeneration_vertex2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/glowMapGeneration.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/glowMapGeneration.vertex.js"() {
     init_shaderStore();
     init_bonesDeclaration2();
     init_bakedVertexAnimationDeclaration2();
@@ -54744,14 +54744,14 @@ vColor=color;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/glowMapGeneration.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/glowMapGeneration.fragment.js
 var glowMapGeneration_fragment_exports2 = {};
 __export(glowMapGeneration_fragment_exports2, {
   glowMapGenerationPixelShader: () => glowMapGenerationPixelShader
 });
 var name210, shader210, includes27, glowMapGenerationPixelShader;
 var init_glowMapGeneration_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/glowMapGeneration.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/glowMapGeneration.fragment.js"() {
     init_shaderStore();
     init_helperFunctions2();
     init_clipPlaneFragmentDeclaration2();
@@ -54833,14 +54833,14 @@ gl_FragColor.a=glowColor.a;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/sharpen.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/sharpen.fragment.js
 var sharpen_fragment_exports = {};
 __export(sharpen_fragment_exports, {
   sharpenPixelShaderWGSL: () => sharpenPixelShaderWGSL
 });
 var name211, shader211, sharpenPixelShaderWGSL;
 var init_sharpen_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/sharpen.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/sharpen.fragment.js"() {
     init_shaderStore();
     name211 = "sharpenPixelShader";
     shader211 = `varying vUV: vec2f;var textureSamplerSampler: sampler;var textureSampler: texture_2d<f32>;uniform screenSize: vec2f;uniform sharpnessAmounts: vec2f;
@@ -54858,14 +54858,14 @@ color*4.0;fragmentOutputs.color=max(vec4f(color.rgb*uniforms.sharpnessAmounts.y,
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/sharpen.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/sharpen.fragment.js
 var sharpen_fragment_exports2 = {};
 __export(sharpen_fragment_exports2, {
   sharpenPixelShader: () => sharpenPixelShader
 });
 var name212, shader212, sharpenPixelShader;
 var init_sharpen_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/sharpen.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/sharpen.fragment.js"() {
     init_shaderStore();
     name212 = "sharpenPixelShader";
     shader212 = `varying vec2 vUV;uniform sampler2D textureSampler;uniform vec2 screenSize;uniform vec2 sharpnessAmounts;
@@ -54883,14 +54883,14 @@ color*4.0;gl_FragColor=max(vec4(color.rgb*sharpnessAmounts.y,color.a)-(sharpness
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/chromaticAberration.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/chromaticAberration.fragment.js
 var chromaticAberration_fragment_exports = {};
 __export(chromaticAberration_fragment_exports, {
   chromaticAberrationPixelShaderWGSL: () => chromaticAberrationPixelShaderWGSL
 });
 var name213, shader213, chromaticAberrationPixelShaderWGSL;
 var init_chromaticAberration_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/chromaticAberration.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/chromaticAberration.fragment.js"() {
     init_shaderStore();
     name213 = "chromaticAberrationPixelShader";
     shader213 = `varying vUV: vec2f;var textureSamplerSampler: sampler;var textureSampler: texture_2d<f32>;uniform chromatic_aberration: f32;uniform radialIntensity: f32;uniform direction: vec2f;uniform centerPosition: vec2f;uniform screen_width: f32;uniform screen_height: f32;
@@ -54906,14 +54906,14 @@ var radius2: f32=centered_screen_pos.x*centered_screen_pos.x
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/chromaticAberration.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/chromaticAberration.fragment.js
 var chromaticAberration_fragment_exports2 = {};
 __export(chromaticAberration_fragment_exports2, {
   chromaticAberrationPixelShader: () => chromaticAberrationPixelShader
 });
 var name214, shader214, chromaticAberrationPixelShader;
 var init_chromaticAberration_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/chromaticAberration.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/chromaticAberration.fragment.js"() {
     init_shaderStore();
     name214 = "chromaticAberrationPixelShader";
     shader214 = `uniform sampler2D textureSampler; 
@@ -54930,14 +54930,14 @@ float radius2=centered_screen_pos.x*centered_screen_pos.x
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/grain.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/grain.fragment.js
 var grain_fragment_exports = {};
 __export(grain_fragment_exports, {
   grainPixelShaderWGSL: () => grainPixelShaderWGSL
 });
 var name215, shader215, includes28, grainPixelShaderWGSL;
 var init_grain_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/grain.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/grain.fragment.js"() {
     init_shaderStore();
     init_helperFunctions();
     name215 = "grainPixelShader";
@@ -54959,14 +54959,14 @@ fn main(input: FragmentInputs)->FragmentOutputs {fragmentOutputs.color=textureSa
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/grain.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/grain.fragment.js
 var grain_fragment_exports2 = {};
 __export(grain_fragment_exports2, {
   grainPixelShader: () => grainPixelShader
 });
 var name216, shader216, includes29, grainPixelShader;
 var init_grain_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/grain.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/grain.fragment.js"() {
     init_shaderStore();
     init_helperFunctions2();
     name216 = "grainPixelShader";
@@ -54989,14 +54989,14 @@ void main(void)
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/fxaa.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/fxaa.fragment.js
 var fxaa_fragment_exports = {};
 __export(fxaa_fragment_exports, {
   fxaaPixelShaderWGSL: () => fxaaPixelShaderWGSL
 });
 var name217, shader217, fxaaPixelShaderWGSL;
 var init_fxaa_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/fxaa.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/fxaa.fragment.js"() {
     init_shaderStore();
     name217 = "fxaaPixelShader";
     shader217 = `varying vUV: vec2f;var textureSamplerSampler: sampler;var textureSampler: texture_2d<f32>;uniform texelSize: vec2f;varying sampleCoordS: vec2f;varying sampleCoordE: vec2f;varying sampleCoordN: vec2f;varying sampleCoordW: vec2f;varying sampleCoordNW: vec2f;varying sampleCoordSE: vec2f;varying sampleCoordNE: vec2f;varying sampleCoordSW: vec2f;const fxaaQualitySubpix: f32=1.0;const fxaaQualityEdgeThreshold: f32=0.166;const fxaaQualityEdgeThresholdMin: f32=0.0833;const kLumaCoefficients: vec3f= vec3f(0.2126,0.7152,0.0722);fn FxaaLuma(rgba: vec4f)->f32 {return dot(rgba.rgb,kLumaCoefficients);} 
@@ -55061,14 +55061,14 @@ fragmentOutputs.color=textureSampleLevel(textureSampler,textureSamplerSampler,po
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/fxaa.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/fxaa.vertex.js
 var fxaa_vertex_exports = {};
 __export(fxaa_vertex_exports, {
   fxaaVertexShaderWGSL: () => fxaaVertexShaderWGSL
 });
 var name218, shader218, fxaaVertexShaderWGSL;
 var init_fxaa_vertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/fxaa.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/fxaa.vertex.js"() {
     init_shaderStore();
     name218 = "fxaaVertexShader";
     shader218 = `attribute position: vec2f;uniform texelSize: vec2f;varying vUV: vec2f;varying sampleCoordS: vec2f;varying sampleCoordE: vec2f;varying sampleCoordN: vec2f;varying sampleCoordW: vec2f;varying sampleCoordNW: vec2f;varying sampleCoordSE: vec2f;varying sampleCoordNE: vec2f;varying sampleCoordSW: vec2f;const madd: vec2f= vec2f(0.5,0.5);
@@ -55086,14 +55086,14 @@ vertexOutputs.vUV=(vertexInputs.position*madd+madd);vertexOutputs.sampleCoordS=v
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/fxaa.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/fxaa.fragment.js
 var fxaa_fragment_exports2 = {};
 __export(fxaa_fragment_exports2, {
   fxaaPixelShader: () => fxaaPixelShader
 });
 var name219, shader219, fxaaPixelShader;
 var init_fxaa_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/fxaa.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/fxaa.fragment.js"() {
     init_shaderStore();
     name219 = "fxaaPixelShader";
     shader219 = `#if defined(WEBGL2) || defined(WEBGPU) || defined(NATIVE)
@@ -55156,14 +55156,14 @@ gl_FragColor=TEXTUREFUNC(textureSampler,posM,0.0);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/fxaa.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/fxaa.vertex.js
 var fxaa_vertex_exports2 = {};
 __export(fxaa_vertex_exports2, {
   fxaaVertexShader: () => fxaaVertexShader
 });
 var name220, shader220, fxaaVertexShader;
 var init_fxaa_vertex2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/fxaa.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/fxaa.vertex.js"() {
     init_shaderStore();
     name220 = "fxaaVertexShader";
     shader220 = `attribute vec2 position;uniform vec2 texelSize;varying vec2 vUV;varying vec2 sampleCoordS;varying vec2 sampleCoordE;varying vec2 sampleCoordN;varying vec2 sampleCoordW;varying vec2 sampleCoordNW;varying vec2 sampleCoordSE;varying vec2 sampleCoordNE;varying vec2 sampleCoordSW;const vec2 madd=vec2(0.5,0.5);
@@ -55180,14 +55180,14 @@ vUV=(position*madd+madd);sampleCoordS=vUV+vec2( 0.0,1.0)*texelSize;sampleCoordE=
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/circleOfConfusion.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/circleOfConfusion.fragment.js
 var circleOfConfusion_fragment_exports = {};
 __export(circleOfConfusion_fragment_exports, {
   circleOfConfusionPixelShaderWGSL: () => circleOfConfusionPixelShaderWGSL
 });
 var name221, shader221, circleOfConfusionPixelShaderWGSL;
 var init_circleOfConfusion_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/circleOfConfusion.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/circleOfConfusion.fragment.js"() {
     init_shaderStore();
     name221 = "circleOfConfusionPixelShader";
     shader221 = `varying vUV: vec2f;var depthSamplerSampler: sampler;var depthSampler: texture_2d<f32>;
@@ -55214,14 +55214,14 @@ var coc: f32=abs(uniforms.cocPrecalculation*((uniforms.focusDistance-pixelDistan
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/circleOfConfusion.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/circleOfConfusion.fragment.js
 var circleOfConfusion_fragment_exports2 = {};
 __export(circleOfConfusion_fragment_exports2, {
   circleOfConfusionPixelShader: () => circleOfConfusionPixelShader
 });
 var name222, shader222, circleOfConfusionPixelShader;
 var init_circleOfConfusion_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/circleOfConfusion.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/circleOfConfusion.fragment.js"() {
     init_shaderStore();
     name222 = "circleOfConfusionPixelShader";
     shader222 = `uniform sampler2D depthSampler;varying vec2 vUV;
@@ -55248,14 +55248,14 @@ float coc=abs(cocPrecalculation*((focusDistance-pixelDistance)/pixelDistance));c
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/depthOfFieldMerge.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/depthOfFieldMerge.fragment.js
 var depthOfFieldMerge_fragment_exports = {};
 __export(depthOfFieldMerge_fragment_exports, {
   depthOfFieldMergePixelShaderWGSL: () => depthOfFieldMergePixelShaderWGSL
 });
 var name223, shader223, depthOfFieldMergePixelShaderWGSL;
 var init_depthOfFieldMerge_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/depthOfFieldMerge.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/depthOfFieldMerge.fragment.js"() {
     init_shaderStore();
     name223 = "depthOfFieldMergePixelShader";
     shader223 = `varying vUV: vec2f;var textureSamplerSampler: sampler;var textureSampler: texture_2d<f32>;var circleOfConfusionSamplerSampler: sampler;var circleOfConfusionSampler: texture_2d<f32>;var blurStep0Sampler: sampler;var blurStep0: texture_2d<f32>;
@@ -55286,14 +55286,14 @@ if(coc<0.33){var original: vec4f=textureSampleLevel(textureSampler,textureSample
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/depthOfFieldMerge.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/depthOfFieldMerge.fragment.js
 var depthOfFieldMerge_fragment_exports2 = {};
 __export(depthOfFieldMerge_fragment_exports2, {
   depthOfFieldMergePixelShader: () => depthOfFieldMergePixelShader
 });
 var name224, shader224, depthOfFieldMergePixelShader;
 var init_depthOfFieldMerge_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/depthOfFieldMerge.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/depthOfFieldMerge.fragment.js"() {
     init_shaderStore();
     name224 = "depthOfFieldMergePixelShader";
     shader224 = `#if defined(WEBGL2) || defined(WEBGPU) || defined(NATIVE)
@@ -55329,14 +55329,14 @@ if(coc<0.33){vec4 original=TEXTUREFUNC(textureSampler,vUV,0.0);vec4 blurred2=TEX
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/extractHighlights.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/extractHighlights.fragment.js
 var extractHighlights_fragment_exports = {};
 __export(extractHighlights_fragment_exports, {
   extractHighlightsPixelShaderWGSL: () => extractHighlightsPixelShaderWGSL
 });
 var name225, shader225, includes30, extractHighlightsPixelShaderWGSL;
 var init_extractHighlights_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/extractHighlights.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/extractHighlights.fragment.js"() {
     init_shaderStore();
     init_helperFunctions();
     name225 = "extractHighlightsPixelShader";
@@ -55358,14 +55358,14 @@ fn main(input: FragmentInputs)->FragmentOutputs {fragmentOutputs.color=textureSa
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/extractHighlights.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/extractHighlights.fragment.js
 var extractHighlights_fragment_exports2 = {};
 __export(extractHighlights_fragment_exports2, {
   extractHighlightsPixelShader: () => extractHighlightsPixelShader
 });
 var name226, shader226, includes31, extractHighlightsPixelShader;
 var init_extractHighlights_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/extractHighlights.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/extractHighlights.fragment.js"() {
     init_shaderStore();
     init_helperFunctions2();
     name226 = "extractHighlightsPixelShader";
@@ -55387,14 +55387,14 @@ void main(void)
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/bloomMerge.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/bloomMerge.fragment.js
 var bloomMerge_fragment_exports = {};
 __export(bloomMerge_fragment_exports, {
   bloomMergePixelShaderWGSL: () => bloomMergePixelShaderWGSL
 });
 var name227, shader227, bloomMergePixelShaderWGSL;
 var init_bloomMerge_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/bloomMerge.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/bloomMerge.fragment.js"() {
     init_shaderStore();
     name227 = "bloomMergePixelShader";
     shader227 = `varying vUV: vec2f;var textureSamplerSampler: sampler;var textureSampler: texture_2d<f32>;var bloomBlurSampler: sampler;var bloomBlur: texture_2d<f32>;uniform bloomWeight: f32;
@@ -55409,14 +55409,14 @@ fn main(input: FragmentInputs)->FragmentOutputs {fragmentOutputs.color=textureSa
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/bloomMerge.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/bloomMerge.fragment.js
 var bloomMerge_fragment_exports2 = {};
 __export(bloomMerge_fragment_exports2, {
   bloomMergePixelShader: () => bloomMergePixelShader
 });
 var name228, shader228, bloomMergePixelShader;
 var init_bloomMerge_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/bloomMerge.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/bloomMerge.fragment.js"() {
     init_shaderStore();
     name228 = "bloomMergePixelShader";
     shader228 = `uniform sampler2D textureSampler;uniform sampler2D bloomBlur;varying vec2 vUV;uniform float bloomWeight;
@@ -55431,14 +55431,14 @@ void main(void)
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/particles.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/particles.vertex.js
 var particles_vertex_exports = {};
 __export(particles_vertex_exports, {
   particlesVertexShaderWGSL: () => particlesVertexShaderWGSL
 });
 var name229, shader229, includes32, particlesVertexShaderWGSL;
 var init_particles_vertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/particles.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/particles.vertex.js"() {
     init_shaderStore();
     init_clipPlaneVertexDeclaration();
     init_fogVertexDeclaration();
@@ -55541,14 +55541,14 @@ vertexOutputs.vPositionW=vPositionW;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/particles.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/particles.fragment.js
 var particles_fragment_exports = {};
 __export(particles_fragment_exports, {
   particlesPixelShaderWGSL: () => particlesPixelShaderWGSL
 });
 var name230, shader230, includes33, particlesPixelShaderWGSL;
 var init_particles_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/particles.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/particles.fragment.js"() {
     init_shaderStore();
     init_clipPlaneFragmentDeclaration();
     init_imageProcessingDeclaration();
@@ -55607,14 +55607,14 @@ fragmentOutputs.color=baseColor;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/particles.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/particles.vertex.js
 var particles_vertex_exports2 = {};
 __export(particles_vertex_exports2, {
   particlesVertexShader: () => particlesVertexShader
 });
 var name231, shader231, includes34, particlesVertexShader;
 var init_particles_vertex2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/particles.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/particles.vertex.js"() {
     init_shaderStore();
     init_clipPlaneVertexDeclaration2();
     init_fogVertexDeclaration2();
@@ -55717,14 +55717,14 @@ vec4 worldPos=vec4(vPositionW,1.0);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/particles.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/particles.fragment.js
 var particles_fragment_exports2 = {};
 __export(particles_fragment_exports2, {
   particlesPixelShader: () => particlesPixelShader
 });
 var name232, shader232, includes35, particlesPixelShader;
 var init_particles_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/particles.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/particles.fragment.js"() {
     init_shaderStore();
     init_clipPlaneFragmentDeclaration2();
     init_imageProcessingDeclaration2();
@@ -55785,14 +55785,14 @@ gl_FragColor=baseColor;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/lod3D.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/lod3D.fragment.js
 var lod3D_fragment_exports = {};
 __export(lod3D_fragment_exports, {
   lod3DPixelShader: () => lod3DPixelShader
 });
 var name237, shader237, lod3DPixelShader;
 var init_lod3D_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/lod3D.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/lod3D.fragment.js"() {
     init_shaderStore();
     name237 = "lod3DPixelShader";
     shader237 = `precision highp float;precision highp sampler3D;const float GammaEncodePowerApprox=1.0/2.2;varying vec2 vUV;uniform sampler3D textureSampler;uniform float lod;uniform float slice;uniform int gamma;void main(void)
@@ -55805,14 +55805,14 @@ var init_lod3D_fragment = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/lodCube.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/lodCube.fragment.js
 var lodCube_fragment_exports = {};
 __export(lodCube_fragment_exports, {
   lodCubePixelShader: () => lodCubePixelShader
 });
 var name238, shader238, lodCubePixelShader;
 var init_lodCube_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/lodCube.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/lodCube.fragment.js"() {
     init_shaderStore();
     name238 = "lodCubePixelShader";
     shader238 = `precision highp float;const float GammaEncodePowerApprox=1.0/2.2;varying vec2 vUV;uniform samplerCube textureSampler;uniform float lod;uniform int gamma;void main(void)
@@ -55844,14 +55844,14 @@ if (gamma==0) {gl_FragColor.rgb=pow(gl_FragColor.rgb,vec3(GammaEncodePowerApprox
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/lod.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/lod.fragment.js
 var lod_fragment_exports = {};
 __export(lod_fragment_exports, {
   lodPixelShader: () => lodPixelShader
 });
 var name239, shader239, lodPixelShader;
 var init_lod_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/lod.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/lod.fragment.js"() {
     init_shaderStore();
     name239 = "lodPixelShader";
     shader239 = `precision highp float;const float GammaEncodePowerApprox=1.0/2.2;varying vec2 vUV;uniform sampler2D textureSampler;uniform float lod;uniform vec2 texSize;uniform int gamma;void main(void)
@@ -55864,14 +55864,14 @@ var init_lod_fragment = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/lod3D.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/lod3D.fragment.js
 var lod3D_fragment_exports2 = {};
 __export(lod3D_fragment_exports2, {
   lod3DPixelShaderWGSL: () => lod3DPixelShaderWGSL
 });
 var name240, shader240, lod3DPixelShaderWGSL;
 var init_lod3D_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/lod3D.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/lod3D.fragment.js"() {
     init_shaderStore();
     name240 = "lod3DPixelShader";
     shader240 = `const GammaEncodePowerApprox=1.0/2.2;varying vUV: vec2f;var textureSampler: texture_3d<f32>;uniform lod: f32;uniform slice: f32;uniform gamma: i32;@fragment
@@ -55884,14 +55884,14 @@ fn main(input: FragmentInputs)->FragmentOutputs {let textureSize=textureDimensio
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/lodCube.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/lodCube.fragment.js
 var lodCube_fragment_exports2 = {};
 __export(lodCube_fragment_exports2, {
   lodCubePixelShaderWGSL: () => lodCubePixelShaderWGSL
 });
 var name241, shader241, lodCubePixelShaderWGSL;
 var init_lodCube_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/lodCube.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/lodCube.fragment.js"() {
     init_shaderStore();
     name241 = "lodCubePixelShader";
     shader241 = `const GammaEncodePowerApprox=1.0/2.2;varying vUV: vec2f;var textureSamplerSampler: sampler;var textureSampler: texture_cube<f32>;uniform lod: f32;uniform gamma: i32;@fragment
@@ -55923,14 +55923,14 @@ if (uniforms.gamma==0) {fragmentOutputs.color=vec4f(pow(fragmentOutputs.color.rg
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/lod.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/lod.fragment.js
 var lod_fragment_exports2 = {};
 __export(lod_fragment_exports2, {
   lodPixelShaderWGSL: () => lodPixelShaderWGSL
 });
 var name242, shader242, lodPixelShaderWGSL;
 var init_lod_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/lod.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/lod.fragment.js"() {
     init_shaderStore();
     name242 = "lodPixelShader";
     shader242 = `const GammaEncodePowerApprox=1.0/2.2;varying vUV: vec2f;var textureSampler: texture_2d<f32>;uniform lod: f32;uniform gamma: i32;@fragment
@@ -55943,16 +55943,16 @@ fn main(input: FragmentInputs)->FragmentOutputs {let textureSize=textureDimensio
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/passPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/passPostProcess.js
 var init_passPostProcess = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/passPostProcess.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/passPostProcess.js"() {
     init_passPostProcess_pure();
     init_passPostProcess_pure();
     RegisterPassPostProcess();
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/textureTools.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/textureTools.js
 function CreateResizedCopy(texture, width, height, useBilinearMode = true) {
   const scene = texture.getScene();
   const engine = scene.getEngine();
@@ -56289,7 +56289,7 @@ async function GetTextureDataAsync(texture, width, height, face = 0, lod = 0, fo
 }
 var floatView, int32View, TextureTools;
 var init_textureTools = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/textureTools.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/textureTools.js"() {
     init_texture();
     init_renderTargetTexture();
     init_passPostProcess();
@@ -56351,14 +56351,14 @@ var init_textureTools = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/layer.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/layer.vertex.js
 var layer_vertex_exports = {};
 __export(layer_vertex_exports, {
   layerVertexShaderWGSL: () => layerVertexShaderWGSL
 });
 var name243, shader243, layerVertexShaderWGSL;
 var init_layer_vertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/layer.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/layer.vertex.js"() {
     init_shaderStore();
     name243 = "layerVertexShader";
     shader243 = `attribute position: vec2f;uniform scale: vec2f;uniform offset: vec2f;uniform textureMatrix: mat4x4f;varying vUV: vec2f;const madd: vec2f= vec2f(0.5,0.5);
@@ -56376,14 +56376,14 @@ var shiftedPosition: vec2f=vertexInputs.position*uniforms.scale+uniforms.offset;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/layer.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/layer.fragment.js
 var layer_fragment_exports = {};
 __export(layer_fragment_exports, {
   layerPixelShaderWGSL: () => layerPixelShaderWGSL
 });
 var name244, shader244, includes38, layerPixelShaderWGSL;
 var init_layer_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/layer.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/layer.fragment.js"() {
     init_shaderStore();
     init_helperFunctions();
     name244 = "layerPixelShader";
@@ -56418,14 +56418,14 @@ fragmentOutputs.color=baseColor*uniforms.color;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/layer.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/layer.vertex.js
 var layer_vertex_exports2 = {};
 __export(layer_vertex_exports2, {
   layerVertexShader: () => layerVertexShader
 });
 var name245, shader245, layerVertexShader;
 var init_layer_vertex2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/layer.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/layer.vertex.js"() {
     init_shaderStore();
     name245 = "layerVertexShader";
     shader245 = `attribute vec2 position;uniform vec2 scale;uniform vec2 offset;uniform mat4 textureMatrix;varying vec2 vUV;const vec2 madd=vec2(0.5,0.5);
@@ -56442,14 +56442,14 @@ vec2 shiftedPosition=position*scale+offset;vUV=vec2(textureMatrix*vec4(shiftedPo
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/layer.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/layer.fragment.js
 var layer_fragment_exports2 = {};
 __export(layer_fragment_exports2, {
   layerPixelShader: () => layerPixelShader
 });
 var name246, shader246, includes39, layerPixelShader;
 var init_layer_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/layer.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/layer.fragment.js"() {
     init_shaderStore();
     init_helperFunctions2();
     name246 = "layerPixelShader";
@@ -56484,7 +56484,7 @@ gl_FragColor=baseColor*color;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/tga.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/tga.js
 function GetTGAHeader(data) {
   let offset = 0;
   const header = {
@@ -56709,7 +56709,7 @@ function GetImageDataGrey16bits(header, palettes, pixel_data, y_start, y_step, y
 }
 var _TYPE_INDEXED, _TYPE_RGB, _TYPE_GREY, _TYPE_RLE_INDEXED, _TYPE_RLE_RGB, _TYPE_RLE_GREY, _ORIGIN_MASK, _ORIGIN_SHIFT, _ORIGIN_BL, _ORIGIN_BR, _ORIGIN_UL, _ORIGIN_UR, TGATools;
 var init_tga = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/tga.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/tga.js"() {
     init_logger();
     _TYPE_INDEXED = 1;
     _TYPE_RGB = 2;
@@ -56759,10 +56759,10 @@ var init_tga = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bayerDitherFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bayerDitherFunctions.js
 var name247, shader247, bayerDitherFunctionsWGSL;
 var init_bayerDitherFunctions = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bayerDitherFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/bayerDitherFunctions.js"() {
     init_shaderStore();
     name247 = "bayerDitherFunctions";
     shader247 = `fn bayerDither2(_P: vec2f)->f32 {return ((2.0*_P.y+_P.x+1.0)%(4.0));}
@@ -56781,10 +56781,10 @@ return 4.0*(4.0*bayerDither2(P1)+bayerDither2(P2))+bayerDither2(P4);}
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapFragmentExtraDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapFragmentExtraDeclaration.js
 var name248, shader248, shadowMapFragmentExtraDeclarationWGSL;
 var init_shadowMapFragmentExtraDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapFragmentExtraDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapFragmentExtraDeclaration.js"() {
     init_shaderStore();
     init_packingFunctions();
     init_bayerDitherFunctions();
@@ -56812,10 +56812,10 @@ varying zSM: f32;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapFragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapFragment.js
 var name249, shader249, shadowMapFragmentWGSL;
 var init_shadowMapFragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapFragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapFragment.js"() {
     init_shaderStore();
     name249 = "shadowMapFragment";
     shader249 = `var depthSM: f32=fragmentInputs.vDepthMetricSM;
@@ -56854,14 +56854,14 @@ fragmentOutputs.color=pack(depthSM);
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/shadowMap.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/shadowMap.fragment.js
 var shadowMap_fragment_exports = {};
 __export(shadowMap_fragment_exports, {
   shadowMapPixelShaderWGSL: () => shadowMapPixelShaderWGSL
 });
 var name250, shader250, includes40, shadowMapPixelShaderWGSL;
 var init_shadowMap_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/shadowMap.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/shadowMap.fragment.js"() {
     init_shaderStore();
     init_packingFunctions();
     init_bayerDitherFunctions();
@@ -56910,10 +56910,10 @@ if ((bayerDither8(floor(((fragmentInputs.position.xy)%(8.0)))))/64.0>=uniforms.s
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapVertexExtraDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapVertexExtraDeclaration.js
 var name251, shader251, shadowMapVertexExtraDeclarationWGSL;
 var init_shadowMapVertexExtraDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapVertexExtraDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapVertexExtraDeclaration.js"() {
     init_shaderStore();
     name251 = "shadowMapVertexExtraDeclaration";
     shader251 = `#if SM_NORMALBIAS==1
@@ -56934,10 +56934,10 @@ varying zSM: f32;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapVertexNormalBias.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapVertexNormalBias.js
 var name252, shader252, shadowMapVertexNormalBiasWGSL;
 var init_shadowMapVertexNormalBias = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapVertexNormalBias.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapVertexNormalBias.js"() {
     init_shaderStore();
     name252 = "shadowMapVertexNormalBias";
     shader252 = `#if SM_NORMALBIAS==1
@@ -56956,10 +56956,10 @@ var ndlSM: f32=dot(vNormalW,worldLightDirSM);var sinNLSM: f32=sqrt(1.0-ndlSM*ndl
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapVertexMetric.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapVertexMetric.js
 var name253, shader253, shadowMapVertexMetricWGSL;
 var init_shadowMapVertexMetric = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapVertexMetric.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapVertexMetric.js"() {
     init_shaderStore();
     name253 = "shadowMapVertexMetric";
     shader253 = `#if SM_USEDISTANCE==1
@@ -56994,14 +56994,14 @@ vertexOutputs.vDepthMetricSM=(vertexOutputs.position.z+uniforms.depthValuesSM.x)
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/shadowMap.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/shadowMap.vertex.js
 var shadowMap_vertex_exports = {};
 __export(shadowMap_vertex_exports, {
   shadowMapVertexShaderWGSL: () => shadowMapVertexShaderWGSL
 });
 var name254, shader254, includes41, shadowMapVertexShaderWGSL;
 var init_shadowMap_vertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/shadowMap.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/shadowMap.vertex.js"() {
     init_shaderStore();
     init_bonesDeclaration();
     init_bakedVertexAnimationDeclaration();
@@ -57101,14 +57101,14 @@ vertexOutputs.vUV= (uniforms.diffuseMatrix* vec4f(uv2Updated,1.0,0.0)).xy;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/depthBoxBlur.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/depthBoxBlur.fragment.js
 var depthBoxBlur_fragment_exports = {};
 __export(depthBoxBlur_fragment_exports, {
   depthBoxBlurPixelShaderWGSL: () => depthBoxBlurPixelShaderWGSL
 });
 var name255, shader255, depthBoxBlurPixelShaderWGSL;
 var init_depthBoxBlur_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/depthBoxBlur.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/depthBoxBlur.fragment.js"() {
     init_shaderStore();
     name255 = "depthBoxBlurPixelShader";
     shader255 = `varying vUV: vec2f;var textureSamplerSampler: sampler;var textureSampler: texture_2d<f32>;uniform screenSize: vec2f;
@@ -57123,14 +57123,14 @@ fragmentOutputs.color=(colorDepth/ f32((OFFSET*2+1)*(OFFSET*2+1)));}`;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapFragmentSoftTransparentShadow.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapFragmentSoftTransparentShadow.js
 var shadowMapFragmentSoftTransparentShadow_exports = {};
 __export(shadowMapFragmentSoftTransparentShadow_exports, {
   shadowMapFragmentSoftTransparentShadowWGSL: () => shadowMapFragmentSoftTransparentShadowWGSL
 });
 var name256, shader256, shadowMapFragmentSoftTransparentShadowWGSL;
 var init_shadowMapFragmentSoftTransparentShadow = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapFragmentSoftTransparentShadow.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/shadowMapFragmentSoftTransparentShadow.js"() {
     init_shaderStore();
     name256 = "shadowMapFragmentSoftTransparentShadow";
     shader256 = `#if SM_SOFTTRANSPARENTSHADOW==1
@@ -57144,10 +57144,10 @@ if ((bayerDither8(floor(((fragmentInputs.position.xy)%(8.0)))))/64.0>=uniforms.s
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/bayerDitherFunctions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/bayerDitherFunctions.js
 var name257, shader257, bayerDitherFunctions;
 var init_bayerDitherFunctions2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/bayerDitherFunctions.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/bayerDitherFunctions.js"() {
     init_shaderStore();
     name257 = "bayerDitherFunctions";
     shader257 = `float bayerDither2(vec2 _P) {return mod(2.0*_P.y+_P.x+1.0,4.0);}
@@ -57166,10 +57166,10 @@ return 4.0*(4.0*bayerDither2(P1)+bayerDither2(P2))+bayerDither2(P4);}
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapFragmentExtraDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapFragmentExtraDeclaration.js
 var name258, shader258, shadowMapFragmentExtraDeclaration;
 var init_shadowMapFragmentExtraDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapFragmentExtraDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapFragmentExtraDeclaration.js"() {
     init_shaderStore();
     init_packingFunctions2();
     init_bayerDitherFunctions2();
@@ -57197,10 +57197,10 @@ varying float zSM;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapFragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapFragment.js
 var name259, shader259, shadowMapFragment;
 var init_shadowMapFragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapFragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapFragment.js"() {
     init_shaderStore();
     name259 = "shadowMapFragment";
     shader259 = `float depthSM=vDepthMetricSM;
@@ -57239,14 +57239,14 @@ return;`;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/shadowMap.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/shadowMap.fragment.js
 var shadowMap_fragment_exports2 = {};
 __export(shadowMap_fragment_exports2, {
   shadowMapPixelShader: () => shadowMapPixelShader
 });
 var name260, shader260, includes42, shadowMapPixelShader;
 var init_shadowMap_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/shadowMap.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/shadowMap.fragment.js"() {
     init_shaderStore();
     init_packingFunctions2();
     init_bayerDitherFunctions2();
@@ -57296,10 +57296,10 @@ if ((bayerDither8(floor(mod(gl_FragCoord.xy,8.0))))/64.0>=softTransparentShadowS
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/sceneVertexDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/sceneVertexDeclaration.js
 var name261, shader261, sceneVertexDeclaration;
 var init_sceneVertexDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/sceneVertexDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/sceneVertexDeclaration.js"() {
     init_shaderStore();
     name261 = "sceneVertexDeclaration";
     shader261 = `uniform mat4 viewProjection;
@@ -57315,10 +57315,10 @@ uniform mat4 view;uniform mat4 projection;uniform vec4 vEyePosition;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/meshVertexDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/meshVertexDeclaration.js
 var name262, shader262, meshVertexDeclaration;
 var init_meshVertexDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/meshVertexDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/meshVertexDeclaration.js"() {
     init_shaderStore();
     name262 = "meshVertexDeclaration";
     shader262 = `uniform mat4 world;uniform float visibility;
@@ -57330,10 +57330,10 @@ var init_meshVertexDeclaration = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapVertexDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapVertexDeclaration.js
 var name263, shader263, shadowMapVertexDeclaration;
 var init_shadowMapVertexDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapVertexDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapVertexDeclaration.js"() {
     init_shaderStore();
     init_sceneVertexDeclaration();
     init_meshVertexDeclaration();
@@ -57348,10 +57348,10 @@ var init_shadowMapVertexDeclaration = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapUboDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapUboDeclaration.js
 var name264, shader264, shadowMapUboDeclaration;
 var init_shadowMapUboDeclaration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapUboDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapUboDeclaration.js"() {
     init_shaderStore();
     init_sceneUboDeclaration2();
     init_meshUboDeclaration2();
@@ -57367,10 +57367,10 @@ var init_shadowMapUboDeclaration = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapVertexExtraDeclaration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapVertexExtraDeclaration.js
 var name265, shader265, shadowMapVertexExtraDeclaration;
 var init_shadowMapVertexExtraDeclaration2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapVertexExtraDeclaration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapVertexExtraDeclaration.js"() {
     init_shaderStore();
     name265 = "shadowMapVertexExtraDeclaration";
     shader265 = `#if SM_NORMALBIAS==1
@@ -57391,10 +57391,10 @@ varying float zSM;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapVertexNormalBias.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapVertexNormalBias.js
 var name266, shader266, shadowMapVertexNormalBias;
 var init_shadowMapVertexNormalBias2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapVertexNormalBias.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapVertexNormalBias.js"() {
     init_shaderStore();
     name266 = "shadowMapVertexNormalBias";
     shader266 = `#if SM_NORMALBIAS==1
@@ -57413,10 +57413,10 @@ float ndlSM=dot(vNormalW,worldLightDirSM);float sinNLSM=sqrt(1.0-ndlSM*ndlSM);fl
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapVertexMetric.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapVertexMetric.js
 var name267, shader267, shadowMapVertexMetric;
 var init_shadowMapVertexMetric2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapVertexMetric.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapVertexMetric.js"() {
     init_shaderStore();
     name267 = "shadowMapVertexMetric";
     shader267 = `#if SM_USEDISTANCE==1
@@ -57451,14 +57451,14 @@ vDepthMetricSM=(gl_Position.z+depthValuesSM.x)/depthValuesSM.y+biasAndScaleSM.x;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/shadowMap.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/shadowMap.vertex.js
 var shadowMap_vertex_exports2 = {};
 __export(shadowMap_vertex_exports2, {
   shadowMapVertexShader: () => shadowMapVertexShader
 });
 var name268, shader268, includes43, shadowMapVertexShader;
 var init_shadowMap_vertex2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/shadowMap.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/shadowMap.vertex.js"() {
     init_shaderStore();
     init_bonesDeclaration2();
     init_bakedVertexAnimationDeclaration2();
@@ -57561,14 +57561,14 @@ vUV=vec2(diffuseMatrix*vec4(uv2Updated,1.0,0.0));
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/depthBoxBlur.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/depthBoxBlur.fragment.js
 var depthBoxBlur_fragment_exports2 = {};
 __export(depthBoxBlur_fragment_exports2, {
   depthBoxBlurPixelShader: () => depthBoxBlurPixelShader
 });
 var name269, shader269, depthBoxBlurPixelShader;
 var init_depthBoxBlur_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/depthBoxBlur.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/depthBoxBlur.fragment.js"() {
     init_shaderStore();
     name269 = "depthBoxBlurPixelShader";
     shader269 = `varying vec2 vUV;uniform sampler2D textureSampler;uniform vec2 screenSize;
@@ -57584,14 +57584,14 @@ colorDepth+=texture2D(textureSampler,vUV+vec2(x,y)/screenSize);gl_FragColor=(col
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapFragmentSoftTransparentShadow.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapFragmentSoftTransparentShadow.js
 var shadowMapFragmentSoftTransparentShadow_exports2 = {};
 __export(shadowMapFragmentSoftTransparentShadow_exports2, {
   shadowMapFragmentSoftTransparentShadow: () => shadowMapFragmentSoftTransparentShadow
 });
 var name270, shader270, shadowMapFragmentSoftTransparentShadow;
 var init_shadowMapFragmentSoftTransparentShadow2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapFragmentSoftTransparentShadow.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapFragmentSoftTransparentShadow.js"() {
     init_shaderStore();
     name270 = "shadowMapFragmentSoftTransparentShadow";
     shader270 = `#if SM_SOFTTRANSPARENTSHADOW==1
@@ -57605,14 +57605,14 @@ if ((bayerDither8(floor(mod(gl_FragCoord.xy,8.0))))/64.0>=softTransparentShadowS
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/lightProxy.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/lightProxy.vertex.js
 var lightProxy_vertex_exports = {};
 __export(lightProxy_vertex_exports, {
   lightProxyVertexShaderWGSL: () => lightProxyVertexShaderWGSL
 });
 var name271, shader271, includes44, lightProxyVertexShaderWGSL;
 var init_lightProxy_vertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/lightProxy.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/lightProxy.vertex.js"() {
     init_shaderStore();
     init_sceneUboDeclaration();
     init_clusteredLightingFunctions();
@@ -57643,14 +57643,14 @@ let projX=scene.projection*vec4f(rotatedX.x,0,rotatedX.y,1);let projY=scene.proj
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/lightProxy.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/lightProxy.fragment.js
 var lightProxy_fragment_exports = {};
 __export(lightProxy_fragment_exports, {
   lightProxyPixelShaderWGSL: () => lightProxyPixelShaderWGSL
 });
 var name272, shader272, lightProxyPixelShaderWGSL;
 var init_lightProxy_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/lightProxy.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/lightProxy.fragment.js"() {
     init_shaderStore();
     name272 = "lightProxyPixelShader";
     shader272 = `flat varying vOffset: u32;flat varying vMask: u32;uniform tileMaskResolution: vec3f;var<storage,read_write> tileMaskBuffer: array<atomic<u32>>;@fragment
@@ -57663,14 +57663,14 @@ fn main(input: FragmentInputs)->FragmentOutputs {let maskResolution=vec2u(unifor
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/lightProxy.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/lightProxy.vertex.js
 var lightProxy_vertex_exports2 = {};
 __export(lightProxy_vertex_exports2, {
   lightProxyVertexShader: () => lightProxyVertexShader
 });
 var name273, shader273, includes45, lightProxyVertexShader;
 var init_lightProxy_vertex2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/lightProxy.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/lightProxy.vertex.js"() {
     init_shaderStore();
     init_sceneVertexDeclaration();
     init_sceneUboDeclaration2();
@@ -57701,14 +57701,14 @@ vec4 projX=projection*vec4(rotatedX.x,0,rotatedX.y,1);vec4 projY=projection*vec4
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/lightProxy.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/lightProxy.fragment.js
 var lightProxy_fragment_exports2 = {};
 __export(lightProxy_fragment_exports2, {
   lightProxyPixelShader: () => lightProxyPixelShader
 });
 var name274, shader274, lightProxyPixelShader;
 var init_lightProxy_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/lightProxy.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/lightProxy.fragment.js"() {
     init_shaderStore();
     name274 = "lightProxyPixelShader";
     shader274 = `flat varying vec2 vLimits;flat varying highp uint vMask;void main(void) {if (gl_FragCoord.y<vLimits.x || gl_FragCoord.y>vLimits.y) {discard;}
@@ -57721,10 +57721,10 @@ gl_FragColor=vec4(vMask,0,0,1);}
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.path.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.path.js
 var Orientation, BezierCurve, Angle, Arc2, Path2, Path3D, Curve3;
 var init_math_path = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.path.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.path.js"() {
     init_math_scalar_functions();
     init_math_vector();
     init_math_constants();
@@ -58736,10 +58736,10 @@ var init_math_path = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.vertexFormat.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.vertexFormat.js
 var PositionNormalVertex, PositionNormalTextureVertex;
 var init_math_vertexFormat = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.vertexFormat.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.vertexFormat.js"() {
     init_math_vector();
     PositionNormalVertex = class _PositionNormalVertex {
       static {
@@ -58788,9 +58788,9 @@ var init_math_vertexFormat = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.js
 var init_math = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.js"() {
     init_math_axis();
     init_math_color();
     init_math_constants();
@@ -58804,10 +58804,10 @@ var init_math = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/sphericalPolynomial.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/sphericalPolynomial.pure.js
 var SH3ylmBasisConstants, SH3ylmBasisTrigonometricTerms, applySH3, SHCosKernelConvolution, SphericalHarmonics, SphericalPolynomial;
 var init_sphericalPolynomial_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/sphericalPolynomial.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/sphericalPolynomial.pure.js"() {
     init_math_vector_pure();
     init_math();
     SH3ylmBasisConstants = [
@@ -59151,17 +59151,17 @@ var init_sphericalPolynomial_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/sphericalPolynomial.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/sphericalPolynomial.js
 var init_sphericalPolynomial = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/sphericalPolynomial.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/sphericalPolynomial.js"() {
     init_sphericalPolynomial_pure();
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/HighDynamicRange/cubemapToSphericalPolynomial.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/HighDynamicRange/cubemapToSphericalPolynomial.js
 var FileFaceOrientation, CubeMapToSphericalPolynomialTools;
 var init_cubemapToSphericalPolynomial = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/HighDynamicRange/cubemapToSphericalPolynomial.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/HighDynamicRange/cubemapToSphericalPolynomial.js"() {
     init_math_vector();
     init_math_scalar_functions();
     init_sphericalPolynomial();
@@ -59418,7 +59418,7 @@ var init_cubemapToSphericalPolynomial = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/dds.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/dds.pure.js
 function FourCCToInt32(value) {
   return value.charCodeAt(0) + (value.charCodeAt(1) << 8) + (value.charCodeAt(2) << 16) + (value.charCodeAt(3) << 24);
 }
@@ -59427,7 +59427,7 @@ function Int32ToFourCC(value) {
 }
 var DDS_MAGIC, DDSD_MIPMAPCOUNT, DDSCAPS2_CUBEMAP, DDPF_FOURCC, DDPF_RGB, DDPF_LUMINANCE, FOURCC_DXT1, FOURCC_DXT3, FOURCC_DXT5, FOURCC_DX10, FOURCC_D3DFMT_R16G16B16A16F, FOURCC_D3DFMT_R32G32B32A32F, DXGI_FORMAT_R32G32B32A32_FLOAT, DXGI_FORMAT_R16G16B16A16_FLOAT, DXGI_FORMAT_B8G8R8X8_UNORM, headerLengthInt, off_magic, off_size, off_flags, off_height, off_width, off_mipmapCount, off_pfFlags, off_pfFourCC, off_RGBbpp, off_RMask, off_GMask, off_BMask, off_AMask, off_caps2, off_dxgiFormat, DDSTools;
 var init_dds_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/dds.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/dds.pure.js"() {
     init_math_scalar_functions();
     init_logger();
     init_cubemapToSphericalPolynomial();
@@ -59912,13 +59912,13 @@ var init_dds_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.cubeTexture.types.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.cubeTexture.types.js
 var init_abstractEngine_cubeTexture_types = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.cubeTexture.types.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.cubeTexture.types.js"() {
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Lights/IES/iesLoader.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Lights/IES/iesLoader.js
 function LineToArray(line) {
   return line.split(" ").filter((x) => x !== "").map((x) => parseFloat(x));
 }
@@ -60040,7 +60040,7 @@ function LoadIESData(uint8Array) {
   };
 }
 var init_iesLoader = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Lights/IES/iesLoader.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Lights/IES/iesLoader.js"() {
     init_math_scalar_functions();
     __name(LineToArray, "LineToArray");
     __name(ReadArray, "ReadArray");
@@ -60049,14 +60049,14 @@ var init_iesLoader = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/iesTextureLoader.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/iesTextureLoader.js
 var iesTextureLoader_exports = {};
 __export(iesTextureLoader_exports, {
   _IESTextureLoader: () => _IESTextureLoader
 });
 var _IESTextureLoader;
 var init_iesTextureLoader = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/iesTextureLoader.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/iesTextureLoader.js"() {
     init_iesLoader();
     _IESTextureLoader = class {
       static {
@@ -60092,14 +60092,14 @@ var init_iesTextureLoader = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/ddsTextureLoader.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/ddsTextureLoader.js
 var ddsTextureLoader_exports = {};
 __export(ddsTextureLoader_exports, {
   _DDSTextureLoader: () => _DDSTextureLoader
 });
 var _DDSTextureLoader;
 var init_ddsTextureLoader = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/ddsTextureLoader.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/ddsTextureLoader.js"() {
     init_sphericalPolynomial();
     init_dds();
     _DDSTextureLoader = class {
@@ -60178,7 +60178,7 @@ var init_ddsTextureLoader = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/basisWorker.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/basisWorker.js
 function workerFunction() {
   const _BASIS_FORMAT = {
     cTFETC1: 0,
@@ -60375,14 +60375,14 @@ async function initializeWebWorker(worker, wasmBinary, moduleUrl) {
   });
 }
 var init_basisWorker = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/basisWorker.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/basisWorker.js"() {
     init_tools();
     __name(workerFunction, "workerFunction");
     __name(initializeWebWorker, "initializeWebWorker");
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/basis.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/basis.pure.js
 function RegisterBasis() {
   if (_Registered74) {
     return;
@@ -60407,7 +60407,7 @@ function RegisterBasis() {
 }
 var BasisFileInfo, TranscodeResult, BasisTranscodeConfiguration, BASIS_FORMATS, BasisToolsOptions, GetInternalFormatFromBasisFormat, WorkerPromise, LocalWorker, ActionId, IgnoreSupportedFormats, CreateWorkerAsync, SetBasisTranscoderWorker, TranscodeAsync, BindTexture, LoadTextureFromTranscodeResult, BasisTools, _Registered74;
 var init_basis_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/basis.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/basis.pure.js"() {
     init_tools_pure();
     init_logger();
     init_texture_pure();
@@ -60634,23 +60634,23 @@ var init_basis_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/basis.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/basis.js
 var init_basis = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/basis.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/basis.js"() {
     init_basis_pure();
     init_basis_pure();
     RegisterBasis();
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/basisTextureLoader.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/basisTextureLoader.js
 var basisTextureLoader_exports = {};
 __export(basisTextureLoader_exports, {
   _BasisTextureLoader: () => _BasisTextureLoader
 });
 var _BasisTextureLoader;
 var init_basisTextureLoader = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/basisTextureLoader.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/basisTextureLoader.js"() {
     init_basis();
     init_tools();
     _BasisTextureLoader = class {
@@ -60737,14 +60737,14 @@ var init_basisTextureLoader = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/rgbdDecode.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/rgbdDecode.fragment.js
 var rgbdDecode_fragment_exports = {};
 __export(rgbdDecode_fragment_exports, {
   rgbdDecodePixelShaderWGSL: () => rgbdDecodePixelShaderWGSL
 });
 var name275, shader275, includes46, rgbdDecodePixelShaderWGSL;
 var init_rgbdDecode_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/rgbdDecode.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/rgbdDecode.fragment.js"() {
     init_shaderStore();
     init_helperFunctions();
     name275 = "rgbdDecodePixelShader";
@@ -60766,14 +60766,14 @@ fn main(input: FragmentInputs)->FragmentOutputs {fragmentOutputs.color=vec4f(fro
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/rgbdDecode.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/rgbdDecode.fragment.js
 var rgbdDecode_fragment_exports2 = {};
 __export(rgbdDecode_fragment_exports2, {
   rgbdDecodePixelShader: () => rgbdDecodePixelShader
 });
 var name276, shader276, includes47, rgbdDecodePixelShader;
 var init_rgbdDecode_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/rgbdDecode.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/rgbdDecode.fragment.js"() {
     init_shaderStore();
     init_helperFunctions2();
     name276 = "rgbdDecodePixelShader";
@@ -60795,14 +60795,14 @@ void main(void)
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/rgbdEncode.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/rgbdEncode.fragment.js
 var rgbdEncode_fragment_exports = {};
 __export(rgbdEncode_fragment_exports, {
   rgbdEncodePixelShader: () => rgbdEncodePixelShader
 });
 var name277, shader277, includes48, rgbdEncodePixelShader;
 var init_rgbdEncode_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/rgbdEncode.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/rgbdEncode.fragment.js"() {
     init_shaderStore();
     init_helperFunctions2();
     name277 = "rgbdEncodePixelShader";
@@ -60824,14 +60824,14 @@ void main(void)
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/rgbdEncode.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/rgbdEncode.fragment.js
 var rgbdEncode_fragment_exports2 = {};
 __export(rgbdEncode_fragment_exports2, {
   rgbdEncodePixelShaderWGSL: () => rgbdEncodePixelShaderWGSL
 });
 var name278, shader278, includes49, rgbdEncodePixelShaderWGSL;
 var init_rgbdEncode_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/rgbdEncode.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/rgbdEncode.fragment.js"() {
     init_shaderStore();
     init_helperFunctions();
     name278 = "rgbdEncodePixelShader";
@@ -60853,10 +60853,10 @@ fn main(input: FragmentInputs)->FragmentOutputs {fragmentOutputs.color=toRGBD(te
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/rgbdTextureTools.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/rgbdTextureTools.js
 var RGBDTextureTools;
 var init_rgbdTextureTools = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/rgbdTextureTools.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/rgbdTextureTools.js"() {
     init_postProcess();
     init_textureTools();
     RGBDTextureTools = class {
@@ -60953,7 +60953,7 @@ var init_rgbdTextureTools = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/environmentTextureTools.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/environmentTextureTools.pure.js
 function GetEnvInfo(data) {
   const dataView = new DataView(data.buffer, data.byteOffset, data.byteLength);
   let pos = 0;
@@ -61471,7 +61471,7 @@ function _UpdateRGBDAsync(internalTexture, data, sphericalPolynomial, lodScale, 
 }
 var DefaultEnvironmentTextureImageType, CurrentVersion, MagicBytes, EnvironmentTextureTools;
 var init_environmentTextureTools_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/environmentTextureTools.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/environmentTextureTools.pure.js"() {
     init_tools_functions();
     init_math_vector_pure();
     init_math_scalar_functions();
@@ -61566,13 +61566,13 @@ var init_environmentTextureTools_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/baseTexture.polynomial.types.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/baseTexture.polynomial.types.js
 var init_baseTexture_polynomial_types = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/baseTexture.polynomial.types.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/baseTexture.polynomial.types.js"() {
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/baseTexture.polynomial.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/baseTexture.polynomial.pure.js
 function RegisterBaseTexturePolynomial() {
   if (_Registered75) {
     return;
@@ -61620,7 +61620,7 @@ function RegisterBaseTexturePolynomial() {
 }
 var _Registered75;
 var init_baseTexture_polynomial_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/baseTexture.polynomial.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/baseTexture.polynomial.pure.js"() {
     init_cubemapToSphericalPolynomial();
     init_baseTexture_pure();
     _Registered75 = false;
@@ -61628,9 +61628,9 @@ var init_baseTexture_polynomial_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/baseTexture.polynomial.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/baseTexture.polynomial.js
 var init_baseTexture_polynomial = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/baseTexture.polynomial.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/baseTexture.polynomial.js"() {
     init_baseTexture_polynomial_types();
     init_baseTexture_polynomial_pure();
     init_baseTexture_polynomial_pure();
@@ -61638,22 +61638,22 @@ var init_baseTexture_polynomial = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/environmentTextureTools.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/environmentTextureTools.js
 var init_environmentTextureTools = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/environmentTextureTools.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/environmentTextureTools.js"() {
     init_environmentTextureTools_pure();
     init_baseTexture_polynomial();
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/envTextureLoader.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/envTextureLoader.js
 var envTextureLoader_exports = {};
 __export(envTextureLoader_exports, {
   _ENVTextureLoader: () => _ENVTextureLoader
 });
 var _ENVTextureLoader;
 var init_envTextureLoader = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/envTextureLoader.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/envTextureLoader.js"() {
     init_environmentTextureTools();
     _ENVTextureLoader = class {
       static {
@@ -61707,10 +61707,10 @@ var init_envTextureLoader = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/HighDynamicRange/panoramaToCubemap.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/HighDynamicRange/panoramaToCubemap.js
 var PanoramaToCubeMapTools;
 var init_panoramaToCubemap = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/HighDynamicRange/panoramaToCubemap.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/HighDynamicRange/panoramaToCubemap.js"() {
     init_math_vector();
     PanoramaToCubeMapTools = class {
       static {
@@ -61835,7 +61835,7 @@ var init_panoramaToCubemap = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/HighDynamicRange/hdr.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/HighDynamicRange/hdr.js
 function Ldexp(mantissa, exponent) {
   if (exponent > 1023) {
     return mantissa * Math.pow(2, 1023) * Math.pow(2, exponent - 1023);
@@ -61999,7 +61999,7 @@ function ReadRGBEPixelsNotRLE(uint8array, hdrInfo) {
 }
 var HDRTools;
 var init_hdr = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/HighDynamicRange/hdr.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/HighDynamicRange/hdr.js"() {
     init_panoramaToCubemap();
     __name(Ldexp, "Ldexp");
     __name(Rgbe2float, "Rgbe2float");
@@ -62020,14 +62020,14 @@ var init_hdr = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/hdrTextureLoader.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/hdrTextureLoader.js
 var hdrTextureLoader_exports = {};
 __export(hdrTextureLoader_exports, {
   _HDRTextureLoader: () => _HDRTextureLoader
 });
 var _HDRTextureLoader;
 var init_hdrTextureLoader = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/hdrTextureLoader.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/hdrTextureLoader.js"() {
     init_hdr();
     _HDRTextureLoader = class {
       static {
@@ -62073,10 +62073,10 @@ var init_hdrTextureLoader = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/khronosTextureContainer.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/khronosTextureContainer.js
 var KhronosTextureContainer;
 var init_khronosTextureContainer = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/khronosTextureContainer.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/khronosTextureContainer.js"() {
     init_logger();
     KhronosTextureContainer = class _KhronosTextureContainer {
       static {
@@ -62192,10 +62192,10 @@ var init_khronosTextureContainer = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/workerPool.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/workerPool.js
 var WorkerPool, AutoReleaseWorkerPool;
 var init_workerPool = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/workerPool.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/workerPool.js"() {
     WorkerPool = class {
       static {
         __name(this, "WorkerPool");
@@ -62309,10 +62309,10 @@ var init_workerPool = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/ktx2decoderTypes.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/ktx2decoderTypes.js
 var SourceTextureFormat, TranscodeTarget, EngineFormat;
 var init_ktx2decoderTypes = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/ktx2decoderTypes.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/ktx2decoderTypes.js"() {
     (function(SourceTextureFormat2) {
       SourceTextureFormat2[SourceTextureFormat2["ETC1S"] = 0] = "ETC1S";
       SourceTextureFormat2[SourceTextureFormat2["UASTC4x4"] = 1] = "UASTC4x4";
@@ -62348,7 +62348,7 @@ var init_ktx2decoderTypes = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/khronosTextureContainer2Worker.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/khronosTextureContainer2Worker.js
 function applyConfig(urls, binariesAndModulesContainer) {
   const KTX2DecoderModule = binariesAndModulesContainer?.jsDecoderModule || KTX2DECODER;
   if (urls) {
@@ -62484,17 +62484,17 @@ async function initializeWebWorker2(worker, wasmBinaries, urls) {
   });
 }
 var init_khronosTextureContainer2Worker = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/khronosTextureContainer2Worker.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/khronosTextureContainer2Worker.js"() {
     __name(applyConfig, "applyConfig");
     __name(workerFunction2, "workerFunction");
     __name(initializeWebWorker2, "initializeWebWorker");
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/khronosTextureContainer2.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/khronosTextureContainer2.js
 var DefaultKTX2DecoderOptions, KhronosTextureContainer2;
 var init_khronosTextureContainer2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/khronosTextureContainer2.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/khronosTextureContainer2.js"() {
     init_workerPool();
     init_tools();
     init_ktx2decoderTypes();
@@ -62856,7 +62856,7 @@ var init_khronosTextureContainer2 = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/ktxTextureLoader.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/ktxTextureLoader.js
 var ktxTextureLoader_exports = {};
 __export(ktxTextureLoader_exports, {
   _KTXTextureLoader: () => _KTXTextureLoader
@@ -62910,7 +62910,7 @@ function MapSRGBToLinear(format) {
 }
 var _KTXTextureLoader;
 var init_ktxTextureLoader = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/ktxTextureLoader.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/ktxTextureLoader.js"() {
     init_khronosTextureContainer();
     init_khronosTextureContainer2();
     init_logger();
@@ -62991,14 +62991,14 @@ var init_ktxTextureLoader = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/tgaTextureLoader.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/tgaTextureLoader.js
 var tgaTextureLoader_exports = {};
 __export(tgaTextureLoader_exports, {
   _TGATextureLoader: () => _TGATextureLoader
 });
 var _TGATextureLoader;
 var init_tgaTextureLoader = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/tgaTextureLoader.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/tgaTextureLoader.js"() {
     init_tga();
     _TGATextureLoader = class {
       static {
@@ -63030,10 +63030,10 @@ var init_tgaTextureLoader = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.interfaces.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.interfaces.js
 var INT32_SIZE, FLOAT32_SIZE, INT8_SIZE, INT16_SIZE, ULONG_SIZE, USHORT_RANGE, BITMAP_SIZE, HUF_ENCBITS, HUF_DECBITS, HUF_ENCSIZE, HUF_DECSIZE, HUF_DECMASK, SHORT_ZEROCODE_RUN, LONG_ZEROCODE_RUN, SHORTEST_LONG_RUN;
 var init_exrLoader_interfaces = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.interfaces.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.interfaces.js"() {
     INT32_SIZE = 4;
     FLOAT32_SIZE = 4;
     INT8_SIZE = 1;
@@ -63052,7 +63052,7 @@ var init_exrLoader_interfaces = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.core.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.core.js
 function GenerateTables() {
   const buffer = new ArrayBuffer(4);
   const floatView2 = new Float32Array(buffer);
@@ -63332,7 +63332,7 @@ function InterleaveScalar(source, out) {
 }
 var CompressionCodes, LineOrders, Tables;
 var init_exrLoader_core = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.core.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.core.js"() {
     init_math_scalar_functions();
     init_exrLoader_interfaces();
     (function(CompressionCodes2) {
@@ -63377,7 +63377,7 @@ var init_exrLoader_core = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.header.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.header.js
 function GetExrHeader(dataView, offset) {
   if (dataView.getUint32(0, true) != EXR_MAGIC) {
     throw new Error("Incorrect OpenEXR format");
@@ -63415,7 +63415,7 @@ function GetExrHeader(dataView, offset) {
 }
 var EXR_MAGIC;
 var init_exrLoader_header = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.header.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.header.js"() {
     init_logger();
     init_exrLoader_core();
     EXR_MAGIC = 20000630;
@@ -63423,7 +63423,7 @@ var init_exrLoader_header = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.compression.huf.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.compression.huf.js
 function ReverseLutFromBitmap(bitmap, lut) {
   let k = 0;
   for (let i = 0; i < USHORT_RANGE; ++i) {
@@ -63802,7 +63802,7 @@ function ApplyLut(lut, data, nData) {
 }
 var NBITS, A_OFFSET, MOD_MASK, HufTableBuffer;
 var init_exrLoader_compression_huf = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.compression.huf.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.compression.huf.js"() {
     init_exrLoader_core();
     init_exrLoader_interfaces();
     NBITS = 16;
@@ -63830,7 +63830,7 @@ var init_exrLoader_compression_huf = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.compression.rle.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.compression.rle.js
 function DecodeRunLength(source) {
   let size = source.byteLength;
   const out = [];
@@ -63856,12 +63856,12 @@ function DecodeRunLength(source) {
   return out;
 }
 var init_exrLoader_compression_rle = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.compression.rle.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.compression.rle.js"() {
     __name(DecodeRunLength, "DecodeRunLength");
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.compression.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.compression.js
 function UncompressRAW(decoder) {
   return new DataView(decoder.array.buffer, decoder.offset.value, decoder.size);
 }
@@ -63973,7 +63973,7 @@ function UncompressPIZ(decoder) {
   return new DataView(tmpBuffer.buffer);
 }
 var init_exrLoader_compression = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.compression.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.compression.js"() {
     init_exrLoader_compression_huf();
     init_exrLoader_compression_rle();
     init_exrLoader_core();
@@ -63986,10 +63986,10 @@ var init_exrLoader_compression = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.configuration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.configuration.js
 var EXROutputType, ExrLoaderGlobalConfiguration;
 var init_exrLoader_configuration = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.configuration.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.configuration.js"() {
     (function(EXROutputType2) {
       EXROutputType2[EXROutputType2["Float"] = 0] = "Float";
       EXROutputType2[EXROutputType2["HalfFloat"] = 1] = "HalfFloat";
@@ -64004,7 +64004,7 @@ var init_exrLoader_configuration = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.decoder.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.decoder.js
 async function CreateDecoderAsync(header, dataView, offset, outputType) {
   const decoder = {
     size: 0,
@@ -64208,7 +64208,7 @@ function ScanData(decoder, header, dataView, offset) {
   }
 }
 var init_exrLoader_decoder = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.decoder.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/EXR/exrLoader.decoder.js"() {
     init_exrLoader_core();
     init_exrLoader_compression();
     init_exrLoader_interfaces();
@@ -64219,7 +64219,7 @@ var init_exrLoader_decoder = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/exrTextureLoader.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/exrTextureLoader.js
 var exrTextureLoader_exports = {};
 __export(exrTextureLoader_exports, {
   ReadExrDataAsync: () => ReadExrDataAsync,
@@ -64248,7 +64248,7 @@ async function ReadExrDataAsync(data) {
 }
 var _ExrTextureLoader;
 var init_exrTextureLoader = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/exrTextureLoader.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/exrTextureLoader.js"() {
     init_exrLoader_header();
     init_exrLoader_decoder();
     init_exrLoader_configuration();
@@ -64306,7 +64306,7 @@ var init_exrTextureLoader = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/textureLoaderManager.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/textureLoaderManager.js
 function registerTextureLoader(extension, loaderFactory) {
   if (unregisterTextureLoader(extension)) {
     Logger.Warn(`Extension with the name '${extension}' already exists`);
@@ -64352,7 +64352,7 @@ function _GetCompatibleTextureLoader(extension, mimeType) {
 }
 var RegisteredTextureLoaders;
 var init_textureLoaderManager = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/Loaders/textureLoaderManager.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/Loaders/textureLoaderManager.js"() {
     init_logger();
     RegisteredTextureLoaders = /* @__PURE__ */ new Map();
     __name(registerTextureLoader, "registerTextureLoader");
@@ -64361,7 +64361,7 @@ var init_textureLoaderManager = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/urlTools.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/urlTools.js
 function GetExtensionFromUrl(url) {
   const urlWithoutUriParams = url.split("?")[0];
   const lastDot = urlWithoutUriParams.lastIndexOf(".");
@@ -64369,12 +64369,12 @@ function GetExtensionFromUrl(url) {
   return extension;
 }
 var init_urlTools = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/urlTools.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/urlTools.js"() {
     __name(GetExtensionFromUrl, "GetExtensionFromUrl");
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.cubeTexture.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.cubeTexture.pure.js
 function RegisterAbstractEngineCubeTexture() {
   if (_Registered76) {
     return;
@@ -64516,7 +64516,7 @@ function RegisterAbstractEngineCubeTexture() {
 }
 var _Registered76;
 var init_abstractEngine_cubeTexture_pure = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.cubeTexture.pure.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.cubeTexture.pure.js"() {
     init_internalTexture();
     init_logger();
     init_fileTools_pure();
@@ -64529,9 +64529,9 @@ var init_abstractEngine_cubeTexture_pure = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.cubeTexture.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.cubeTexture.js
 var init_abstractEngine_cubeTexture = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.cubeTexture.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.cubeTexture.js"() {
     init_abstractEngine_cubeTexture_types();
     init_abstractEngine_cubeTexture_pure();
     init_abstractEngine_cubeTexture_pure();
@@ -64539,26 +64539,26 @@ var init_abstractEngine_cubeTexture = __esm({
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/dds.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/dds.js
 var dds_exports = {};
 __export(dds_exports, {
   DDSTools: () => DDSTools
 });
 var init_dds = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/dds.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/dds.js"() {
     init_dds_pure();
     init_abstractEngine_cubeTexture();
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/sprites.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/sprites.vertex.js
 var sprites_vertex_exports = {};
 __export(sprites_vertex_exports, {
   spritesVertexShaderWGSL: () => spritesVertexShaderWGSL
 });
 var name281, shader281, includes52, spritesVertexShaderWGSL;
 var init_sprites_vertex = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/sprites.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/sprites.vertex.js"() {
     init_shaderStore();
     init_fogVertexDeclaration();
     init_logDepthDeclaration();
@@ -64593,10 +64593,10 @@ vertexOutputs.vFogDistance=viewPos;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/imageProcessingCompatibility.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/imageProcessingCompatibility.js
 var name282, shader282, imageProcessingCompatibilityWGSL;
 var init_imageProcessingCompatibility = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/imageProcessingCompatibility.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/ShadersInclude/imageProcessingCompatibility.js"() {
     init_shaderStore();
     name282 = "imageProcessingCompatibility";
     shader282 = `#ifdef IMAGEPROCESSINGPOSTPROCESS
@@ -64610,14 +64610,14 @@ fragmentOutputs.color=vec4f(pow(fragmentOutputs.color.rgb, vec3f(2.2)),fragmentO
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/sprites.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/sprites.fragment.js
 var sprites_fragment_exports = {};
 __export(sprites_fragment_exports, {
   spritesPixelShaderWGSL: () => spritesPixelShaderWGSL
 });
 var name283, shader283, includes53, spritesPixelShaderWGSL;
 var init_sprites_fragment = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/ShadersWGSL/sprites.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/ShadersWGSL/sprites.fragment.js"() {
     init_shaderStore();
     init_fogFragmentDeclaration();
     init_logDepthDeclaration();
@@ -64662,14 +64662,14 @@ fragmentOutputs.color=color;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/sprites.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/sprites.vertex.js
 var sprites_vertex_exports2 = {};
 __export(sprites_vertex_exports2, {
   spritesVertexShader: () => spritesVertexShader
 });
 var name284, shader284, includes54, spritesVertexShader;
 var init_sprites_vertex2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/sprites.vertex.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/sprites.vertex.js"() {
     init_shaderStore();
     init_fogVertexDeclaration2();
     init_logDepthDeclaration2();
@@ -64703,10 +64703,10 @@ vFogDistance=viewPos;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/imageProcessingCompatibility.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/imageProcessingCompatibility.js
 var name285, shader285, imageProcessingCompatibility;
 var init_imageProcessingCompatibility2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/imageProcessingCompatibility.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/imageProcessingCompatibility.js"() {
     init_shaderStore();
     name285 = "imageProcessingCompatibility";
     shader285 = `#ifdef IMAGEPROCESSINGPOSTPROCESS
@@ -64720,14 +64720,14 @@ gl_FragColor.rgb=pow(gl_FragColor.rgb,vec3(2.2));
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/sprites.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/sprites.fragment.js
 var sprites_fragment_exports2 = {};
 __export(sprites_fragment_exports2, {
   spritesPixelShader: () => spritesPixelShader
 });
 var name286, shader286, includes55, spritesPixelShader;
 var init_sprites_fragment2 = __esm({
-  "../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/sprites.fragment.js"() {
+  "../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/sprites.fragment.js"() {
     init_shaderStore();
     init_fogFragmentDeclaration2();
     init_logDepthDeclaration2();
@@ -64775,14 +64775,14 @@ gl_FragColor=color;
   }
 });
 
-// ../../PROJECTS/BABYLON_JS/project_002/src/scripts/box.ts
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/src/scripts/box.ts
 var box_exports = {};
 __export(box_exports, {
   default: () => SceneComponent
 });
 module.exports = __toCommonJS(box_exports);
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/constants.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/constants.js
 var Constants = class {
   static {
     __name(this, "Constants");
@@ -65141,12 +65141,12 @@ Constants.ShadowMaxZ = 1e4;
 Constants.OUTLINELAYER_SAMPLING_TRIDIRECTIONAL = 0;
 Constants.OUTLINELAYER_SAMPLING_OCTADIRECTIONAL = 1;
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/scene.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/scene.js
 init_scene_pure();
 init_scene_pure();
 RegisterScene();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Loading/sceneLoaderFlags.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Loading/sceneLoaderFlags.js
 var SceneLoaderFlags = class _SceneLoaderFlags {
   static {
     __name(this, "SceneLoaderFlags");
@@ -65196,12 +65196,12 @@ SceneLoaderFlags._ShowLoadingScreen = true;
 SceneLoaderFlags._CleanBoneMatrixWeights = false;
 SceneLoaderFlags._LoggingLevel = 0;
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/fileTools.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/fileTools.js
 init_fileTools_pure();
 init_fileTools_pure();
 RegisterFileTools();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/webRequest.fetch.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/webRequest.fetch.js
 init_webRequest();
 async function _FetchAsync(url, options) {
   const method = options.method || "GET";
@@ -65228,7 +65228,7 @@ async function _FetchAsync(url, options) {
 }
 __name(_FetchAsync, "_FetchAsync");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Loading/sceneLoader.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Loading/sceneLoader.js
 init_tools();
 init_observable();
 init_engineStore();
@@ -66192,7 +66192,7 @@ SceneLoader.SUMMARY_LOGGING = 2;
 SceneLoader.DETAILED_LOGGING = 3;
 SceneLoader.OnPluginActivatedObservable = onPluginActivatedObservable;
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/tools/guards.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/tools/guards.js
 function isAbstractMesh(object) {
   switch (object.getClassName?.()) {
     case "Mesh":
@@ -66325,7 +66325,7 @@ function isSoundNode(object) {
 }
 __name(isSoundNode, "isSoundNode");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/tools/node.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/tools/node.js
 function isNodeFromStaticGroup(node) {
   let parent = node;
   while (parent) {
@@ -66338,7 +66338,7 @@ function isNodeFromStaticGroup(node) {
 }
 __name(isNodeFromStaticGroup, "isNodeFromStaticGroup");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/tools/mesh.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/tools/mesh.js
 function configureMeshDistanceOrScreenCoverage(scene) {
   scene.meshes.forEach((mesh) => {
     if (!isMesh(mesh)) {
@@ -66392,7 +66392,7 @@ function setStaticDecalsEnabled(enabled, scene) {
 }
 __name(setStaticDecalsEnabled, "setStaticDecalsEnabled");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/tools/scalar.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/tools/scalar.js
 function getPowerOfTwoUntil(limit) {
   let size = 1;
   while (size <= limit) {
@@ -66402,7 +66402,7 @@ function getPowerOfTwoUntil(limit) {
 }
 __name(getPowerOfTwoUntil, "getPowerOfTwoUntil");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/tools/light.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/tools/light.js
 init_math_vector();
 init_renderTargetTexture();
 function configureShadowMapRenderListPredicate(scene) {
@@ -66456,7 +66456,7 @@ function applyShadowsQuality(quality, scene) {
 }
 __name(applyShadowsQuality, "applyShadowsQuality");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/coroutine.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/coroutine.js
 function inlineScheduler(coroutine, onStep, onError) {
   try {
     const step = coroutine.next();
@@ -66546,7 +66546,7 @@ function makeAsyncFunction(coroutineFactory, scheduler, abortSignal) {
 }
 __name(makeAsyncFunction, "makeAsyncFunction");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Collisions/intersectionInfo.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Collisions/intersectionInfo.js
 var IntersectionInfo = class {
   static {
     __name(this, "IntersectionInfo");
@@ -66561,7 +66561,7 @@ var IntersectionInfo = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Culling/boundingBox.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Culling/boundingBox.js
 init_arrayTools();
 init_math_vector();
 init_math_constants();
@@ -66815,7 +66815,7 @@ var BoundingBox = class _BoundingBox {
 };
 BoundingBox._TmpVector3 = BuildArray(3, Vector3.Zero);
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Culling/boundingSphere.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Culling/boundingSphere.js
 init_arrayTools();
 init_math_vector();
 var BoundingSphere = class _BoundingSphere {
@@ -66966,7 +66966,7 @@ var BoundingSphere = class _BoundingSphere {
 };
 BoundingSphere._TmpVector3 = BuildArray(3, Vector3.Zero);
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Culling/boundingInfo.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Culling/boundingInfo.js
 init_arrayTools();
 init_math_vector();
 var _Result0 = { min: 0, max: 0 };
@@ -67229,7 +67229,7 @@ var BoundingInfo = class _BoundingInfo {
 };
 BoundingInfo._TmpVector3 = BuildArray(2, Vector3.Zero);
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/math.functions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/math.functions.js
 init_tslib_es6();
 init_math_vector();
 init_decorators();
@@ -67339,7 +67339,7 @@ function FixFlippedFaces(positions, indices) {
 }
 __name(FixFlippedFaces, "FixFlippedFaces");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Meshes/subMesh.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Meshes/subMesh.pure.js
 init_buffer_pure();
 init_drawWrapper();
 init_devTools();
@@ -67935,7 +67935,7 @@ var SubMesh = class _SubMesh {
 };
 (_a8 = SubMesh.prototype).projectToRef ?? (_a8.projectToRef = _MissingSideEffect("SubMesh", "projectToRef"));
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Meshes/mesh.vertexData.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Meshes/mesh.vertexData.js
 init_tslib_es6();
 init_math_vector();
 init_buffer();
@@ -69563,7 +69563,7 @@ __decorate([
   nativeOverride.filter((...args) => !Array.isArray(args[0]))
 ], VertexData, "_FlipFaces", null);
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/node.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/node.js
 init_tslib_es6();
 init_math_vector();
 init_decorators();
@@ -70342,7 +70342,7 @@ __decorate([
   serialize()
 ], Node.prototype, "metadata", void 0);
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Meshes/transformNode.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Meshes/transformNode.pure.js
 init_tslib_es6();
 init_decorators();
 init_decorators_serialization();
@@ -71674,7 +71674,7 @@ if (!Object.getOwnPropertyDescriptor(TransformNode.prototype, "physicsBody")) {
   Object.defineProperty(TransformNode.prototype, "physicsBody", _MissingSideEffectProperty("TransformNode", "physicsBody"));
 }
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Collisions/meshCollisionData.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Collisions/meshCollisionData.js
 init_math_vector();
 var _MeshCollisionData = class {
   static {
@@ -71692,7 +71692,7 @@ var _MeshCollisionData = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Meshes/abstractMesh.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Meshes/abstractMesh.pure.js
 init_tslib_es6();
 init_observable_pure();
 init_math_vector_pure();
@@ -73856,7 +73856,7 @@ if (!Object.getOwnPropertyDescriptor(AbstractMesh.prototype, "renderOverlay")) {
   Object.defineProperty(AbstractMesh.prototype, "renderOverlay", _MissingSideEffectProperty("AbstractMesh", "renderOverlay"));
 }
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/materialStencilState.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/materialStencilState.js
 init_tslib_es6();
 init_decorators_serialization();
 init_decorators();
@@ -74063,7 +74063,7 @@ __decorate([
   serialize()
 ], MaterialStencilState.prototype, "enabled", null);
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/clipPlaneMaterialHelper.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/clipPlaneMaterialHelper.js
 init_floatingOriginMatrixOverrides();
 init_math_vector();
 function AddClipPlaneUniforms(uniforms) {
@@ -74172,7 +74172,7 @@ function SetClipPlane(effect, uniformName, clipPlane) {
 }
 __name(SetClipPlane, "SetClipPlane");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/materialFlags.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/materialFlags.js
 var MaterialFlags = class {
   static {
     __name(this, "MaterialFlags");
@@ -74529,7 +74529,7 @@ MaterialFlags._TranslucencyIntensityTextureEnabled = true;
 MaterialFlags._TranslucencyColorTextureEnabled = true;
 MaterialFlags._IridescenceTextureEnabled = true;
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/materialHelper.functions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/materialHelper.functions.js
 init_logger();
 init_engineStore();
 init_lightConstants();
@@ -75565,7 +75565,7 @@ function PrepareUniformLayoutForIBL(ubo, supportTextureInfo = false, supportLoca
 }
 __name(PrepareUniformLayoutForIBL, "PrepareUniformLayoutForIBL");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/material.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/material.pure.js
 init_tslib_es6();
 init_decorators();
 init_tools_pure();
@@ -77086,7 +77086,7 @@ if (!Object.getOwnPropertyDescriptor(Material.prototype, "pluginManager")) {
   Object.defineProperty(Material.prototype, "pluginManager", _MissingSideEffectProperty("Material", "pluginManager"));
 }
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/prePassConfiguration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/prePassConfiguration.js
 var PrePassConfiguration = class {
   static {
     __name(this, "PrePassConfiguration");
@@ -77145,7 +77145,7 @@ var PrePassConfiguration = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/materialDefines.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/materialDefines.js
 var MaterialDefines = class {
   static {
     __name(this, "MaterialDefines");
@@ -77367,7 +77367,7 @@ var MaterialDefines = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/imageProcessingConfiguration.defines.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/imageProcessingConfiguration.defines.js
 function ImageProcessingDefinesMixin(base) {
   return class extends base {
     constructor() {
@@ -77416,7 +77416,7 @@ var ImageProcessingConfigurationDefines = class extends MaterialDefines {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/pushMaterial.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/pushMaterial.js
 init_math_vector();
 var PushMaterial = class extends Material {
   static {
@@ -77491,7 +77491,7 @@ var PushMaterial = class extends Material {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/effectFallbacks.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/effectFallbacks.js
 var EffectFallbacks = class {
   static {
     __name(this, "EffectFallbacks");
@@ -77593,7 +77593,7 @@ var EffectFallbacks = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/materialPluginManager.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/materialPluginManager.pure.js
 init_engineStore();
 init_shaderProcessor();
 init_shaderStore();
@@ -78009,7 +78009,7 @@ function UnregisterAllMaterialPlugins() {
 }
 __name(UnregisterAllMaterialPlugins, "UnregisterAllMaterialPlugins");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/materialPluginBase.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/materialPluginBase.pure.js
 init_tslib_es6();
 init_decorators();
 init_decorators_serialization();
@@ -78277,10 +78277,10 @@ function RegisterMaterialPluginBase() {
 }
 __name(RegisterMaterialPluginBase, "RegisterMaterialPluginBase");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/materialPluginBase.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/materialPluginBase.js
 RegisterMaterialPluginBase();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/material.detailMapConfiguration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/material.detailMapConfiguration.js
 init_tslib_es6();
 init_decorators();
 var MaterialDetailMapDefines = class extends MaterialDefines {
@@ -78425,7 +78425,7 @@ __decorate([
   expandToProperty("_markAllSubMeshesAsTexturesDirty")
 ], DetailMapConfiguration.prototype, "isEnabled", void 0);
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/vertexPullingHelper.functions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/vertexPullingHelper.functions.js
 var _VertexPullingMetadataCache = /* @__PURE__ */ new WeakMap();
 function PrepareVertexPullingUniforms(geometry) {
   const vertexBuffers = geometry.getVertexBuffers();
@@ -78474,7 +78474,7 @@ function BindVertexPullingUniforms(effect, metadata) {
 }
 __name(BindVertexPullingUniforms, "BindVertexPullingUniforms");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/materialHelper.geometryrendering.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/materialHelper.geometryrendering.js
 init_math_vector();
 var GeometryRenderingTextureClearType;
 (function(GeometryRenderingTextureClearType2) {
@@ -78738,7 +78738,7 @@ MaterialHelperGeometryRendering.GeometryTextureDescriptions = [
 ];
 MaterialHelperGeometryRendering._Configurations = {};
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/uv.defines.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/uv.defines.js
 function UVDefinesMixin(base) {
   return class extends base {
     constructor() {
@@ -78760,7 +78760,7 @@ function UVDefinesMixin(base) {
 }
 __name(UVDefinesMixin, "UVDefinesMixin");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/prepass.defines.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/prepass.defines.js
 function PrepassDefinesMixin(base) {
   return class extends base {
     constructor() {
@@ -78803,7 +78803,7 @@ function PrepassDefinesMixin(base) {
 }
 __name(PrepassDefinesMixin, "PrepassDefinesMixin");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/imageProcessing.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/imageProcessing.js
 init_decorators();
 function ImageProcessingMixin(base) {
   return class extends base {
@@ -78954,7 +78954,7 @@ function ImageProcessingMixin(base) {
 }
 __name(ImageProcessingMixin, "ImageProcessingMixin");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/standardMaterial.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/standardMaterial.pure.js
 init_tslib_es6();
 init_decorators();
 init_smartArray();
@@ -80472,7 +80472,7 @@ if (!Object.getOwnPropertyDescriptor(StandardMaterial.prototype, "decalMap")) {
   Object.defineProperty(StandardMaterial.prototype, "decalMap", _MissingSideEffectProperty("StandardMaterial", "decalMap"));
 }
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.renderPass.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.renderPass.pure.js
 init_abstractEngine_pure();
 var _Registered17 = false;
 function RegisterAbstractEngineRenderPass() {
@@ -80510,7 +80510,7 @@ function RegisterAbstractEngineRenderPass() {
 }
 __name(RegisterAbstractEngineRenderPass, "RegisterAbstractEngineRenderPass");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Cameras/camera.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Cameras/camera.pure.js
 init_tslib_es6();
 init_decorators();
 init_smartArray();
@@ -81600,7 +81600,7 @@ function RegisterCamera() {
 }
 __name(RegisterCamera, "RegisterCamera");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Meshes/geometry.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Meshes/geometry.js
 init_math_vector();
 init_math_color();
 init_buffer();
@@ -82919,7 +82919,7 @@ var Geometry = class _Geometry {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/multiMaterial.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/multiMaterial.pure.js
 init_tags();
 init_typeStore();
 var MultiMaterial = class _MultiMaterial extends Material {
@@ -83145,7 +83145,7 @@ function RegisterMultiMaterial() {
 }
 __name(RegisterMultiMaterial, "RegisterMultiMaterial");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Meshes/meshLODLevel.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Meshes/meshLODLevel.js
 var MeshLODLevel = class {
   static {
     __name(this, "MeshLODLevel");
@@ -83161,7 +83161,7 @@ var MeshLODLevel = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Meshes/mesh.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Meshes/mesh.pure.js
 init_observable_pure();
 init_tools_pure();
 init_fileTools_pure();
@@ -87626,7 +87626,7 @@ if (!Object.getOwnPropertyDescriptor(Mesh.prototype, "thinInstanceCount")) {
   Object.defineProperty(Mesh.prototype, "thinInstanceCount", _MissingSideEffectProperty("Mesh", "thinInstanceCount"));
 }
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Meshes/Builders/planeBuilder.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Meshes/Builders/planeBuilder.pure.js
 init_compatibilityOptions();
 function CreatePlaneVertexData(options) {
   const indices = [];
@@ -87702,7 +87702,7 @@ function RegisterPlaneBuilder() {
 }
 __name(RegisterPlaneBuilder, "RegisterPlaneBuilder");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/volumetricLightScatteringPostProcess.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/volumetricLightScatteringPostProcess.pure.js
 init_tslib_es6();
 init_decorators();
 init_logger();
@@ -88168,7 +88168,7 @@ function RegisterVolumetricLightScatteringPostProcess() {
 }
 __name(RegisterVolumetricLightScatteringPostProcess, "RegisterVolumetricLightScatteringPostProcess");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/volumetricLightScattering.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/volumetricLightScattering.fragment.js
 init_shaderStore();
 var name134 = "volumetricLightScatteringPixelShader";
 var shader134 = `uniform sampler2D textureSampler;uniform sampler2D lightScatteringSampler;uniform float decay;uniform float exposure;uniform float weight;uniform float density;uniform vec2 meshPositionOnScreen;varying vec2 vUV;
@@ -88185,7 +88185,7 @@ if (!ShaderStore.ShadersStore[name134]) {
 }
 var volumetricLightScatteringPixelShader = { name: name134, shader: shader134 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/volumetricLightScatteringPass.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/volumetricLightScatteringPass.vertex.js
 init_shaderStore();
 init_bonesDeclaration2();
 init_bakedVertexAnimationDeclaration2();
@@ -88250,7 +88250,7 @@ for (const inc of includes6) {
 }
 var volumetricLightScatteringPassVertexShader = { name: name135, shader: shader135 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/volumetricLightScatteringPass.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/volumetricLightScatteringPass.fragment.js
 init_shaderStore();
 var name136 = "volumetricLightScatteringPassPixelShader";
 var shader136 = `#if defined(ALPHATEST) || defined(NEED_UV)
@@ -88273,11 +88273,11 @@ if (!ShaderStore.ShadersStore[name136]) {
 }
 var volumetricLightScatteringPassPixelShader = { name: name136, shader: shader136 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/volumetricLightScatteringPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/volumetricLightScatteringPostProcess.js
 init_depth_vertex();
 RegisterVolumetricLightScatteringPostProcess();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/rendering/vls.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/rendering/vls.js
 init_math_vector();
 init_texture();
 var vlsPostProcess = null;
@@ -88339,7 +88339,7 @@ function parseVLSPostProcess(scene, data) {
 }
 __name(parseVLSPostProcess, "parseVLSPostProcess");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/postProcessRenderPipelineManagerSceneComponent.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/postProcessRenderPipelineManagerSceneComponent.pure.js
 init_sceneComponent();
 init_scene_pure();
 var _PostProcessRenderPipelineManagerClass;
@@ -88411,7 +88411,7 @@ function RegisterPostProcessRenderPipelineManagerSceneComponent(pipelineManagerC
 }
 __name(RegisterPostProcessRenderPipelineManagerSceneComponent, "RegisterPostProcessRenderPipelineManagerSceneComponent");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/postProcessRenderPipeline.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/postProcessRenderPipeline.js
 init_tslib_es6();
 init_tools();
 init_decorators();
@@ -88617,7 +88617,7 @@ __decorate([
   serialize()
 ], PostProcessRenderPipeline.prototype, "_name", void 0);
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/postProcessRenderEffect.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/postProcessRenderEffect.js
 init_tools();
 var PostProcessRenderEffect = class {
   static {
@@ -88786,7 +88786,7 @@ var PostProcessRenderEffect = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Rendering/screenSpaceReflections2Configuration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Rendering/screenSpaceReflections2Configuration.js
 var ScreenSpaceReflections2Configuration = class {
   static {
     __name(this, "ScreenSpaceReflections2Configuration");
@@ -88802,7 +88802,7 @@ var ScreenSpaceReflections2Configuration = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/multiRenderTarget.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/multiRenderTarget.pure.js
 init_texture_pure();
 init_renderTargetTexture_pure();
 var MultiRenderTarget = class extends RenderTargetTexture {
@@ -89206,7 +89206,7 @@ var MultiRenderTarget = class extends RenderTargetTexture {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.multiRender.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.multiRender.pure.js
 init_internalTexture();
 init_logger();
 init_thinEngine_pure();
@@ -89583,20 +89583,20 @@ function RegisterEnginesExtensionsEngineMultiRender() {
 }
 __name(RegisterEnginesExtensionsEngineMultiRender, "RegisterEnginesExtensionsEngineMultiRender");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.multiRender.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.multiRender.js
 RegisterEnginesExtensionsEngineMultiRender();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/colorCurves.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/colorCurves.js
 init_colorCurves_pure();
 init_colorCurves_pure();
 RegisterColorCurves();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/imageProcessingConfiguration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/imageProcessingConfiguration.js
 init_imageProcessingConfiguration_pure();
 init_imageProcessingConfiguration_pure();
 RegisterImageProcessingConfiguration();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/thinImageProcessingPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/thinImageProcessingPostProcess.js
 init_effectRenderer();
 init_engineStore();
 var ThinImageProcessingPostProcess = class _ThinImageProcessingPostProcess extends EffectWrapper {
@@ -90038,7 +90038,7 @@ var ThinImageProcessingPostProcess = class _ThinImageProcessingPostProcess exten
 };
 ThinImageProcessingPostProcess.FragmentUrl = "imageProcessing";
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/imageProcessingPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/imageProcessingPostProcess.js
 init_tslib_es6();
 init_decorators();
 init_postProcess();
@@ -90367,7 +90367,7 @@ __decorate([
   serialize()
 ], ImageProcessingPostProcess.prototype, "fromLinearSpace", null);
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/prePassRenderTarget.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/prePassRenderTarget.js
 var PrePassRenderTarget = class extends MultiRenderTarget {
   static {
     __name(this, "PrePassRenderTarget");
@@ -90445,7 +90445,7 @@ var PrePassRenderTarget = class extends MultiRenderTarget {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Rendering/geometryBufferRendererSceneComponent.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Rendering/geometryBufferRendererSceneComponent.pure.js
 init_scene_pure();
 init_sceneComponent();
 var GeometryBufferRendererSceneComponent = class {
@@ -90528,7 +90528,7 @@ function RegisterGeometryBufferRendererSceneComponent(geometryBufferRendererClas
 }
 __name(RegisterGeometryBufferRendererSceneComponent, "RegisterGeometryBufferRendererSceneComponent");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Rendering/geometryBufferRenderer.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Rendering/geometryBufferRenderer.pure.js
 init_math_vector_pure();
 init_buffer_pure();
 init_texture_pure();
@@ -91769,7 +91769,7 @@ function RegisterGeometryBufferRenderer() {
 }
 __name(RegisterGeometryBufferRenderer, "RegisterGeometryBufferRenderer");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Rendering/prePassRendererSceneComponent.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Rendering/prePassRendererSceneComponent.pure.js
 init_scene_pure();
 init_sceneComponent();
 init_logger();
@@ -91909,7 +91909,7 @@ function RegisterPrePassRendererSceneComponent(prePassRendererClass) {
 }
 __name(RegisterPrePassRendererSceneComponent, "RegisterPrePassRendererSceneComponent");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Rendering/prePassRenderer.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Rendering/prePassRenderer.pure.js
 init_devTools();
 init_math_color_pure();
 var PrePassRenderer = class _PrePassRenderer {
@@ -92676,7 +92676,7 @@ PrePassRenderer.TextureFormats = [
   }
 ];
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Rendering/depthRendererSceneComponent.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Rendering/depthRendererSceneComponent.pure.js
 init_scene_pure();
 init_sceneComponent();
 var DepthRendererSceneComponent = class {
@@ -92803,7 +92803,7 @@ function RegisterDepthRendererSceneComponent(depthRendererClass) {
 }
 __name(RegisterDepthRendererSceneComponent, "RegisterDepthRendererSceneComponent");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Rendering/depthRenderer.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Rendering/depthRenderer.pure.js
 init_math_color_pure();
 init_buffer_pure();
 init_texture_pure();
@@ -93261,7 +93261,7 @@ DepthRenderer._SceneComponentInitialization = (_) => {
   throw _WarnImport("DepthRendererSceneComponent");
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/thinSSRPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/thinSSRPostProcess.js
 init_effectRenderer();
 init_math_vector();
 var Trs = Matrix.Compose(new Vector3(0.5, 0.5, 0.5), Quaternion.Identity(), new Vector3(0.5, 0.5, 0.5));
@@ -93668,7 +93668,7 @@ ThinSSRPostProcess.Uniforms = [
 ];
 ThinSSRPostProcess.Samplers = ["textureSampler", "normalSampler", "reflectivitySampler", "depthSampler", "envCubeSampler", "backDepthSampler"];
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/thinSSRBlurPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/thinSSRBlurPostProcess.js
 init_effectRenderer();
 init_engineStore();
 init_math_vector();
@@ -93715,7 +93715,7 @@ ThinSSRBlurPostProcess.FragmentUrl = "screenSpaceReflection2Blur";
 ThinSSRBlurPostProcess.Uniforms = ["texelOffsetScale"];
 ThinSSRBlurPostProcess.Samplers = ["textureSampler"];
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/thinSSRBlurCombinerPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/thinSSRBlurCombinerPostProcess.js
 init_effectRenderer();
 init_engineStore();
 init_math_vector();
@@ -93899,7 +93899,7 @@ ThinSSRBlurCombinerPostProcess.Uniforms = [
 ];
 ThinSSRBlurCombinerPostProcess.Samplers = ["textureSampler", "depthSampler", "normalSampler", "mainSampler", "reflectivitySampler"];
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/thinSSRRenderingPipeline.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/thinSSRRenderingPipeline.js
 init_math_vector();
 var ThinSSRRenderingPipeline = class {
   static {
@@ -94261,7 +94261,7 @@ var ThinSSRRenderingPipeline = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/ssrRenderingPipeline.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/ssrRenderingPipeline.pure.js
 init_tslib_es6();
 init_decorators();
 init_decorators_serialization();
@@ -95123,10 +95123,10 @@ function RegisterSsrRenderingPipeline() {
 }
 __name(RegisterSsrRenderingPipeline, "RegisterSsrRenderingPipeline");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/ssrRenderingPipeline.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/ssrRenderingPipeline.js
 RegisterSsrRenderingPipeline();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/rendering/ssr.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/rendering/ssr.js
 var ssrRenderingPipeline = null;
 var ssrRenderingPipelineCameraConfigurations = /* @__PURE__ */ new Map();
 function getSSRRenderingPipeline() {
@@ -95209,10 +95209,10 @@ function parseSSRRenderingPipeline(scene, camera, data) {
 }
 __name(parseSSRRenderingPipeline, "parseSSRRenderingPipeline");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Cameras/camera.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Cameras/camera.js
 RegisterCamera();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Maths/halton2DSequence.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Maths/halton2DSequence.js
 var Halton2DSequence = class {
   static {
     __name(this, "Halton2DSequence");
@@ -95286,7 +95286,7 @@ var Halton2DSequence = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/taaMaterialManager.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/taaMaterialManager.pure.js
 init_math_vector_pure();
 init_typeStore();
 var TAAJitterMaterialDefines = class extends MaterialDefines {
@@ -95451,10 +95451,10 @@ function RegisterTaaMaterialManager() {
 }
 __name(RegisterTaaMaterialManager, "RegisterTaaMaterialManager");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/taaMaterialManager.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/taaMaterialManager.js
 RegisterTaaMaterialManager();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/thinTAAPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/thinTAAPostProcess.js
 init_math_vector();
 init_effectRenderer();
 var ThinTAAPostProcess = class _ThinTAAPostProcess extends EffectWrapper {
@@ -95656,7 +95656,7 @@ ThinTAAPostProcess.FragmentUrl = "taa";
 ThinTAAPostProcess.Uniforms = ["factor"];
 ThinTAAPostProcess.Samplers = ["historySampler"];
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/taaRenderingPipeline.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/taaRenderingPipeline.pure.js
 init_tslib_es6();
 init_decorators();
 init_decorators_serialization();
@@ -95996,10 +95996,10 @@ function RegisterTaaRenderingPipeline() {
 }
 __name(RegisterTaaRenderingPipeline, "RegisterTaaRenderingPipeline");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/taaRenderingPipeline.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/taaRenderingPipeline.js
 RegisterTaaRenderingPipeline();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/rendering/taa.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/rendering/taa.js
 var taaRenderingPipeline = null;
 var taaRenderingPipelineCameraConfigurations = /* @__PURE__ */ new Map();
 function getTAARenderingPipeline() {
@@ -96050,7 +96050,7 @@ function parseTAARenderingPipeline(scene, camera, data) {
 }
 __name(parseTAARenderingPipeline, "parseTAARenderingPipeline");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Rendering/ssao2Configuration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Rendering/ssao2Configuration.js
 var SSAO2Configuration = class {
   static {
     __name(this, "SSAO2Configuration");
@@ -96062,7 +96062,7 @@ var SSAO2Configuration = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/rawTexture.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/rawTexture.js
 init_texture();
 var RawTexture = class _RawTexture extends Texture {
   static {
@@ -96262,7 +96262,7 @@ var RawTexture = class _RawTexture extends Texture {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/thinSSAO2PostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/thinSSAO2PostProcess.js
 init_effectRenderer();
 init_math_vector();
 init_math_scalar_functions();
@@ -96480,7 +96480,7 @@ ThinSSAO2PostProcess.Uniforms = [
 ];
 ThinSSAO2PostProcess.Samplers = ["randomSampler", "depthSampler", "normalSampler"];
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/thinSSAO2BlurPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/thinSSAO2BlurPostProcess.js
 init_effectRenderer();
 init_engineStore();
 var ThinSSAO2BlurPostProcess = class _ThinSSAO2BlurPostProcess extends EffectWrapper {
@@ -96561,7 +96561,7 @@ ThinSSAO2BlurPostProcess.FragmentUrl = "ssao2";
 ThinSSAO2BlurPostProcess.Uniforms = ["outSize", "samples", "soften", "tolerance"];
 ThinSSAO2BlurPostProcess.Samplers = ["textureSampler", "depthSampler"];
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/thinSSAO2CombinePostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/thinSSAO2CombinePostProcess.js
 init_effectRenderer();
 init_engineStore();
 init_math_vector();
@@ -96608,7 +96608,7 @@ ThinSSAO2CombinePostProcess.FragmentUrl = "ssaoCombine";
 ThinSSAO2CombinePostProcess.Uniforms = ["viewport"];
 ThinSSAO2CombinePostProcess.Samplers = ["originalColor"];
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/thinSSAO2RenderingPipeline.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/thinSSAO2RenderingPipeline.js
 var ThinSSAO2RenderingPipeline = class {
   static {
     __name(this, "ThinSSAO2RenderingPipeline");
@@ -96799,7 +96799,7 @@ var ThinSSAO2RenderingPipeline = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/ssao2RenderingPipeline.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/ssao2RenderingPipeline.pure.js
 init_tslib_es6();
 init_logger();
 init_decorators();
@@ -97277,10 +97277,10 @@ function RegisterSsao2RenderingPipeline() {
 }
 __name(RegisterSsao2RenderingPipeline, "RegisterSsao2RenderingPipeline");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/ssao2RenderingPipeline.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/ssao2RenderingPipeline.js
 RegisterSsao2RenderingPipeline();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/rendering/ssao.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/rendering/ssao.js
 var ssaoRenderingPipeline = null;
 var ssaoRenderingPipelineCameraConfigurations = /* @__PURE__ */ new Map();
 function getSSAO2RenderingPipeline() {
@@ -97345,7 +97345,7 @@ function parseSSAO2RenderingPipeline(scene, camera, data) {
 }
 __name(parseSSAO2RenderingPipeline, "parseSSAO2RenderingPipeline");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Rendering/motionBlurConfiguration.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Rendering/motionBlurConfiguration.js
 var MotionBlurConfiguration = class {
   static {
     __name(this, "MotionBlurConfiguration");
@@ -97357,7 +97357,7 @@ var MotionBlurConfiguration = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/thinMotionBlurPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/thinMotionBlurPostProcess.js
 init_effectRenderer();
 init_math_vector();
 var ThinMotionBlurPostProcess = class _ThinMotionBlurPostProcess extends EffectWrapper {
@@ -97463,7 +97463,7 @@ ThinMotionBlurPostProcess.Uniforms = ["motionStrength", "motionScale", "screenSi
 ThinMotionBlurPostProcess.Samplers = ["velocitySampler", "depthSampler"];
 ThinMotionBlurPostProcess.Defines = "#define GEOMETRY_SUPPORTED\n#define SAMPLES 64.0\n#define OBJECT_BASED";
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/motionBlurPostProcess.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/motionBlurPostProcess.pure.js
 init_tslib_es6();
 init_logger();
 init_postProcess_pure();
@@ -97717,10 +97717,10 @@ function RegisterMotionBlurPostProcess() {
 }
 __name(RegisterMotionBlurPostProcess, "RegisterMotionBlurPostProcess");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/motionBlurPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/motionBlurPostProcess.js
 RegisterMotionBlurPostProcess();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/rendering/motion-blur.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/rendering/motion-blur.js
 var motionBlurPostProcess = null;
 var motionBlurPostProcessCameraConfigurations = /* @__PURE__ */ new Map();
 function getMotionBlurPostProcess() {
@@ -97768,7 +97768,7 @@ function parseMotionBlurPostProcess(scene, camera, data) {
 }
 __name(parseMotionBlurPostProcess, "parseMotionBlurPostProcess");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/colorGradingTexture.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/colorGradingTexture.pure.js
 init_math_vector_pure();
 init_baseTexture_pure();
 init_typeStore();
@@ -97990,10 +97990,10 @@ function RegisterColorGradingTexture() {
 }
 __name(RegisterColorGradingTexture, "RegisterColorGradingTexture");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/colorGradingTexture.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/colorGradingTexture.js
 RegisterColorGradingTexture();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/thinBlurPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/thinBlurPostProcess.js
 init_effectRenderer();
 init_engineStore();
 var ThinBlurPostProcess = class _ThinBlurPostProcess extends EffectWrapper {
@@ -98207,7 +98207,7 @@ ThinBlurPostProcess.FragmentUrl = "kernelBlur";
 ThinBlurPostProcess.Uniforms = ["delta", "direction"];
 ThinBlurPostProcess.Samplers = ["circleOfConfusionSampler"];
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/blurPostProcess.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/blurPostProcess.pure.js
 init_tslib_es6();
 init_postProcess_pure();
 init_texture_pure();
@@ -98341,7 +98341,7 @@ function RegisterBlurPostProcess() {
 }
 __name(RegisterBlurPostProcess, "RegisterBlurPostProcess");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Layers/thinEffectLayer.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Layers/thinEffectLayer.js
 init_observable();
 init_math_color();
 init_engineStore();
@@ -99084,7 +99084,7 @@ var ThinEffectLayer = class _ThinEffectLayer {
 };
 ThinEffectLayer.ForceGLSL = false;
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Layers/thinGlowLayer.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Layers/thinGlowLayer.js
 init_math_vector();
 init_buffer();
 init_math_color();
@@ -99368,7 +99368,7 @@ var ThinGlowLayer = class _ThinGlowLayer extends ThinEffectLayer {
 ThinGlowLayer.EffectName = "GlowLayer";
 ThinGlowLayer.DefaultBlurKernelSize = 32;
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Loading/Plugins/babylonFileParser.function.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Loading/Plugins/babylonFileParser.function.js
 var BabylonFileParsers = {};
 var IndividualBabylonFileParsers = {};
 function AddParser(name287, parser) {
@@ -99402,7 +99402,7 @@ function Parse(jsonData, scene, container, rootUrl) {
 }
 __name(Parse, "Parse");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Layers/effectLayerSceneComponent.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Layers/effectLayerSceneComponent.pure.js
 init_sceneComponent();
 init_engineStore();
 var EffectLayerSceneComponent = class {
@@ -99600,7 +99600,7 @@ function RegisterEffectLayerSceneComponent(effectLayerClass) {
 }
 __name(RegisterEffectLayerSceneComponent, "RegisterEffectLayerSceneComponent");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Layers/effectLayer.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Layers/effectLayer.js
 init_tslib_es6();
 init_decorators();
 init_tools();
@@ -100050,7 +100050,7 @@ __decorate([
   serialize()
 ], EffectLayer.prototype, "disableBoundingBoxesFromEffectLayer", null);
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Layers/glowLayer.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Layers/glowLayer.pure.js
 init_tslib_es6();
 init_decorators();
 init_scene_pure();
@@ -100484,7 +100484,7 @@ function RegisterGlowLayer() {
 }
 __name(RegisterGlowLayer, "RegisterGlowLayer");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/thinSharpenPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/thinSharpenPostProcess.js
 init_effectRenderer();
 init_engineStore();
 var ThinSharpenPostProcess = class _ThinSharpenPostProcess extends EffectWrapper {
@@ -100530,7 +100530,7 @@ var ThinSharpenPostProcess = class _ThinSharpenPostProcess extends EffectWrapper
 ThinSharpenPostProcess.FragmentUrl = "sharpen";
 ThinSharpenPostProcess.Uniforms = ["sharpnessAmounts", "screenSize"];
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/sharpenPostProcess.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/sharpenPostProcess.pure.js
 init_tslib_es6();
 init_postProcess_pure();
 init_decorators();
@@ -100622,7 +100622,7 @@ function RegisterSharpenPostProcess() {
 }
 __name(RegisterSharpenPostProcess, "RegisterSharpenPostProcess");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/thinChromaticAberrationPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/thinChromaticAberrationPostProcess.js
 init_effectRenderer();
 init_engineStore();
 init_math_vector();
@@ -100673,7 +100673,7 @@ var ThinChromaticAberrationPostProcess = class _ThinChromaticAberrationPostProce
 ThinChromaticAberrationPostProcess.FragmentUrl = "chromaticAberration";
 ThinChromaticAberrationPostProcess.Uniforms = ["chromatic_aberration", "screen_width", "screen_height", "direction", "radialIntensity", "centerPosition"];
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/chromaticAberrationPostProcess.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/chromaticAberrationPostProcess.pure.js
 init_tslib_es6();
 init_postProcess_pure();
 init_decorators();
@@ -100809,7 +100809,7 @@ function RegisterChromaticAberrationPostProcess() {
 }
 __name(RegisterChromaticAberrationPostProcess, "RegisterChromaticAberrationPostProcess");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/thinGrainPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/thinGrainPostProcess.js
 init_effectRenderer();
 init_engineStore();
 var ThinGrainPostProcess = class _ThinGrainPostProcess extends EffectWrapper {
@@ -100852,7 +100852,7 @@ var ThinGrainPostProcess = class _ThinGrainPostProcess extends EffectWrapper {
 ThinGrainPostProcess.FragmentUrl = "grain";
 ThinGrainPostProcess.Uniforms = ["intensity", "animatedSeed"];
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/grainPostProcess.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/grainPostProcess.pure.js
 init_tslib_es6();
 init_postProcess_pure();
 init_decorators();
@@ -100940,7 +100940,7 @@ function RegisterGrainPostProcess() {
 }
 __name(RegisterGrainPostProcess, "RegisterGrainPostProcess");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/thinFXAAPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/thinFXAAPostProcess.js
 init_effectRenderer();
 init_engineStore();
 init_math_vector();
@@ -100998,7 +100998,7 @@ ThinFXAAPostProcess.VertexUrl = "fxaa";
 ThinFXAAPostProcess.FragmentUrl = "fxaa";
 ThinFXAAPostProcess.Uniforms = ["texelSize"];
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/fxaaPostProcess.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/fxaaPostProcess.pure.js
 init_texture_pure();
 init_postProcess_pure();
 init_decorators_serialization();
@@ -101052,7 +101052,7 @@ function RegisterFxaaPostProcess() {
 }
 __name(RegisterFxaaPostProcess, "RegisterFxaaPostProcess");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/thinCircleOfConfusionPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/thinCircleOfConfusionPostProcess.js
 init_effectRenderer();
 init_engineStore();
 var ThinCircleOfConfusionPostProcess = class _ThinCircleOfConfusionPostProcess extends EffectWrapper {
@@ -101108,7 +101108,7 @@ ThinCircleOfConfusionPostProcess.Uniforms = ["cameraMinMaxZ", "focusDistance", "
 ThinCircleOfConfusionPostProcess.Samplers = ["depthSampler"];
 ThinCircleOfConfusionPostProcess.DefinesDepthNotNormalized = "#define COC_DEPTH_NOT_NORMALIZED";
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/circleOfConfusionPostProcess.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/circleOfConfusionPostProcess.pure.js
 init_tslib_es6();
 init_postProcess_pure();
 init_logger();
@@ -101231,10 +101231,10 @@ function RegisterCircleOfConfusionPostProcess() {
 }
 __name(RegisterCircleOfConfusionPostProcess, "RegisterCircleOfConfusionPostProcess");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/circleOfConfusionPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/circleOfConfusionPostProcess.js
 RegisterCircleOfConfusionPostProcess();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/thinDepthOfFieldBlurPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/thinDepthOfFieldBlurPostProcess.js
 var ThinDepthOfFieldBlurPostProcess = class extends ThinBlurPostProcess {
   static {
     __name(this, "ThinDepthOfFieldBlurPostProcess");
@@ -101248,7 +101248,7 @@ var ThinDepthOfFieldBlurPostProcess = class extends ThinBlurPostProcess {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/depthOfFieldBlurPostProcess.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/depthOfFieldBlurPostProcess.pure.js
 init_texture_pure();
 init_typeStore();
 var DepthOfFieldBlurPostProcess = class extends BlurPostProcess {
@@ -101317,10 +101317,10 @@ function RegisterDepthOfFieldBlurPostProcess() {
 }
 __name(RegisterDepthOfFieldBlurPostProcess, "RegisterDepthOfFieldBlurPostProcess");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/depthOfFieldBlurPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/depthOfFieldBlurPostProcess.js
 RegisterDepthOfFieldBlurPostProcess();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/thinDepthOfFieldMergePostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/thinDepthOfFieldMergePostProcess.js
 init_effectRenderer();
 init_engineStore();
 var ThinDepthOfFieldMergePostProcess = class _ThinDepthOfFieldMergePostProcess extends EffectWrapper {
@@ -101350,7 +101350,7 @@ var ThinDepthOfFieldMergePostProcess = class _ThinDepthOfFieldMergePostProcess e
 ThinDepthOfFieldMergePostProcess.FragmentUrl = "depthOfFieldMerge";
 ThinDepthOfFieldMergePostProcess.Samplers = ["circleOfConfusionSampler", "blurStep0", "blurStep1", "blurStep2"];
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/depthOfFieldMergePostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/depthOfFieldMergePostProcess.js
 init_postProcess();
 var DepthOfFieldMergePostProcess = class extends PostProcess {
   static {
@@ -101426,7 +101426,7 @@ var DepthOfFieldMergePostProcess = class extends PostProcess {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/thinDepthOfFieldEffect.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/thinDepthOfFieldEffect.js
 init_math_vector();
 var ThinDepthOfFieldEffectBlurLevel;
 (function(ThinDepthOfFieldEffectBlurLevel2) {
@@ -101528,7 +101528,7 @@ var ThinDepthOfFieldEffect = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/depthOfFieldEffect.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/depthOfFieldEffect.js
 init_texture();
 var DepthOfFieldEffectBlurLevel;
 (function(DepthOfFieldEffectBlurLevel2) {
@@ -101686,7 +101686,7 @@ var DepthOfFieldEffect = class extends PostProcessRenderEffect {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/thinExtractHighlightsPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/thinExtractHighlightsPostProcess.js
 init_effectRenderer();
 init_math_constants();
 init_engineStore();
@@ -101731,7 +101731,7 @@ var ThinExtractHighlightsPostProcess = class _ThinExtractHighlightsPostProcess e
 ThinExtractHighlightsPostProcess.FragmentUrl = "extractHighlights";
 ThinExtractHighlightsPostProcess.Uniforms = ["threshold", "exposure"];
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/extractHighlightsPostProcess.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/extractHighlightsPostProcess.pure.js
 init_tslib_es6();
 init_postProcess_pure();
 init_decorators();
@@ -101802,13 +101802,13 @@ function RegisterExtractHighlightsPostProcess() {
 }
 __name(RegisterExtractHighlightsPostProcess, "RegisterExtractHighlightsPostProcess");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/extractHighlightsPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/extractHighlightsPostProcess.js
 RegisterExtractHighlightsPostProcess();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/blurPostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/blurPostProcess.js
 RegisterBlurPostProcess();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/thinBloomMergePostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/thinBloomMergePostProcess.js
 init_effectRenderer();
 init_engineStore();
 var ThinBloomMergePostProcess = class _ThinBloomMergePostProcess extends EffectWrapper {
@@ -101845,7 +101845,7 @@ ThinBloomMergePostProcess.FragmentUrl = "bloomMerge";
 ThinBloomMergePostProcess.Uniforms = ["bloomWeight"];
 ThinBloomMergePostProcess.Samplers = ["bloomBlur"];
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/bloomMergePostProcess.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/bloomMergePostProcess.pure.js
 init_tslib_es6();
 init_postProcess_pure();
 init_decorators();
@@ -101924,10 +101924,10 @@ function RegisterBloomMergePostProcess() {
 }
 __name(RegisterBloomMergePostProcess, "RegisterBloomMergePostProcess");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/bloomMergePostProcess.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/bloomMergePostProcess.js
 RegisterBloomMergePostProcess();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/thinBloomEffect.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/thinBloomEffect.js
 init_math_vector();
 var ThinBloomEffect = class {
   static {
@@ -101984,7 +101984,7 @@ var ThinBloomEffect = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/bloomEffect.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/bloomEffect.js
 init_texture();
 var BloomEffect = class extends PostProcessRenderEffect {
   static {
@@ -102104,7 +102104,7 @@ var BloomEffect = class extends PostProcessRenderEffect {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/defaultRenderingPipeline.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/defaultRenderingPipeline.pure.js
 init_tslib_es6();
 init_decorators();
 init_decorators_serialization();
@@ -102744,10 +102744,10 @@ function RegisterDefaultRenderingPipeline() {
 }
 __name(RegisterDefaultRenderingPipeline, "RegisterDefaultRenderingPipeline");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/defaultRenderingPipeline.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/PostProcesses/RenderPipeline/Pipelines/defaultRenderingPipeline.js
 RegisterDefaultRenderingPipeline();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/rendering/default-pipeline.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/rendering/default-pipeline.js
 init_math_color();
 init_math_vector();
 init_texture();
@@ -102931,7 +102931,7 @@ function parseDefaultRenderingPipeline(scene, camera, data, rootUrl) {
 }
 __name(parseDefaultRenderingPipeline, "parseDefaultRenderingPipeline");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/rendering/tools.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/rendering/tools.js
 function saveRenderingConfigurationForCamera(camera) {
   ssaoRenderingPipelineCameraConfigurations.set(camera, serializeSSAO2RenderingPipeline());
   vlsPostProcessCameraConfigurations.set(camera, serializeVLSPostProcess());
@@ -102975,7 +102975,7 @@ function applyRenderingConfigurationForCamera(camera, rootUrl, options) {
 }
 __name(applyRenderingConfigurationForCamera, "applyRenderingConfigurationForCamera");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Physics/v2/IPhysicsEnginePlugin.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Physics/v2/IPhysicsEnginePlugin.js
 var PhysicsConstraintAxisLimitMode;
 (function(PhysicsConstraintAxisLimitMode2) {
   PhysicsConstraintAxisLimitMode2[PhysicsConstraintAxisLimitMode2["FREE"] = 0] = "FREE";
@@ -103046,7 +103046,7 @@ var PhysicsActivationControl;
   PhysicsActivationControl2[PhysicsActivationControl2["ALWAYS_INACTIVE"] = 2] = "ALWAYS_INACTIVE";
 })(PhysicsActivationControl || (PhysicsActivationControl = {}));
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Physics/v2/physicsBody.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Physics/v2/physicsBody.js
 init_math_vector();
 var PhysicsBody = class _PhysicsBody {
   static {
@@ -103653,7 +103653,7 @@ var PhysicsBody = class _PhysicsBody {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Physics/v2/physicsShape.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Physics/v2/physicsShape.js
 init_math_vector();
 var PhysicsShape = class {
   static {
@@ -104049,7 +104049,7 @@ var PhysicsShapeGroundMesh = class extends PhysicsShape {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Physics/v2/physicsAggregate.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Physics/v2/physicsAggregate.js
 init_logger();
 init_math_vector();
 init_math_scalar_functions();
@@ -104185,7 +104185,7 @@ var PhysicsAggregate = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/loading/physics.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/loading/physics.js
 init_math_vector();
 function configurePhysicsAggregate(transformNode) {
   const data = transformNode.metadata?.physicsAggregate;
@@ -104216,7 +104216,7 @@ function configurePhysicsAggregate(transformNode) {
 }
 __name(configurePhysicsAggregate, "configurePhysicsAggregate");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/loading/rendering.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/loading/rendering.js
 function applyRenderingConfigurations(scene, rendering) {
   const postProcessConfigurations = Array.isArray(rendering) ? rendering : [];
   postProcessConfigurations.forEach((configuration) => {
@@ -104246,7 +104246,7 @@ function applyRenderingConfigurations(scene, rendering) {
 }
 __name(applyRenderingConfigurations, "applyRenderingConfigurations");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Meshes/Builders/sphereBuilder.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Meshes/Builders/sphereBuilder.pure.js
 init_math_vector_pure();
 init_compatibilityOptions();
 function CreateSphereVertexData(options) {
@@ -104349,10 +104349,10 @@ function RegisterSphereBuilder() {
 }
 __name(RegisterSphereBuilder, "RegisterSphereBuilder");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Meshes/Builders/sphereBuilder.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Meshes/Builders/sphereBuilder.js
 RegisterSphereBuilder();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/gradients.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/gradients.js
 init_math_color();
 var ColorGradient = class {
   static {
@@ -104452,7 +104452,7 @@ var GradientHelper = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/EmitterTypes/boxParticleEmitter.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/EmitterTypes/boxParticleEmitter.js
 init_math_vector();
 init_math_scalar_functions();
 init_deepCopier();
@@ -104575,7 +104575,7 @@ var BoxParticleEmitter = class _BoxParticleEmitter {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/EmitterTypes/pointParticleEmitter.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/EmitterTypes/pointParticleEmitter.js
 init_deepCopier();
 init_math_vector();
 init_math_scalar_functions();
@@ -104681,7 +104681,7 @@ var PointParticleEmitter = class _PointParticleEmitter {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/EmitterTypes/hemisphericParticleEmitter.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/EmitterTypes/hemisphericParticleEmitter.js
 init_deepCopier();
 init_math_vector();
 init_math_scalar_functions();
@@ -104807,7 +104807,7 @@ var HemisphericParticleEmitter = class _HemisphericParticleEmitter {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/EmitterTypes/sphereParticleEmitter.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/EmitterTypes/sphereParticleEmitter.js
 init_math_vector();
 init_math_scalar_functions();
 init_deepCopier();
@@ -105028,7 +105028,7 @@ var SphereDirectedParticleEmitter = class _SphereDirectedParticleEmitter extends
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/EmitterTypes/cylinderParticleEmitter.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/EmitterTypes/cylinderParticleEmitter.js
 init_math_vector();
 init_math_scalar_functions();
 init_deepCopier();
@@ -105262,7 +105262,7 @@ var CylinderDirectedParticleEmitter = class _CylinderDirectedParticleEmitter ext
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/EmitterTypes/coneParticleEmitter.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/EmitterTypes/coneParticleEmitter.js
 init_math_vector();
 init_deepCopier();
 init_math_scalar_functions();
@@ -105525,7 +105525,7 @@ var ConeDirectedParticleEmitter = class _ConeDirectedParticleEmitter extends Con
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/EmitterTypes/meshParticleEmitter.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/EmitterTypes/meshParticleEmitter.js
 init_deepCopier();
 init_math_vector();
 init_math_scalar_functions();
@@ -105698,7 +105698,7 @@ var MeshParticleEmitter = class _MeshParticleEmitter {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/particleSystem.functions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/particleSystem.functions.js
 init_math_vector();
 function CreatePointEmitter(direction1, direction2) {
   const particleEmitter = new PointParticleEmitter();
@@ -105744,7 +105744,7 @@ function CreateMeshEmitter(mesh = null) {
 }
 __name(CreateMeshEmitter, "CreateMeshEmitter");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/baseParticleSystem.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/baseParticleSystem.pure.js
 init_math_vector_pure();
 init_math_color_pure();
 init_typeStore();
@@ -106381,7 +106381,7 @@ function RegisterBaseParticleSystem() {
 }
 __name(RegisterBaseParticleSystem, "RegisterBaseParticleSystem");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/particle.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/particle.js
 init_math_vector();
 init_math_color();
 init_math_scalar_functions();
@@ -106610,7 +106610,7 @@ var Particle = class _Particle {
 };
 Particle._Count = 0;
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Animations/animationRange.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Animations/animationRange.js
 var AnimationRange = class _AnimationRange {
   static {
     __name(this, "AnimationRange");
@@ -106635,7 +106635,7 @@ var AnimationRange = class _AnimationRange {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Animations/animation.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Animations/animation.pure.js
 init_math_vector_pure();
 init_math_color_pure();
 init_math_scalar_functions();
@@ -107805,10 +107805,10 @@ function RegisterAnimation() {
 }
 __name(RegisterAnimation, "RegisterAnimation");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Animations/animation.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Animations/animation.js
 RegisterAnimation();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Animations/runtimeAnimation.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Animations/runtimeAnimation.js
 init_math_vector();
 var RuntimeAnimation = class {
   static {
@@ -108350,7 +108350,7 @@ var RuntimeAnimation = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Animations/animatable.core.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Animations/animatable.core.js
 init_observable();
 init_precisionDate();
 init_math_vector();
@@ -109152,7 +109152,7 @@ function AddAnimationExtensions(sceneClass, boneClass) {
 }
 __name(AddAnimationExtensions, "AddAnimationExtensions");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Bones/bone.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Bones/bone.pure.js
 init_math_vector_pure();
 init_arrayTools();
 init_devTools();
@@ -110110,7 +110110,7 @@ Bone._TmpQuat = /* @__PURE__ */ Quaternion.Identity();
 Bone._TmpMats = /* @__PURE__ */ BuildArray(5, Matrix.Identity);
 (_a12 = Bone.prototype).copyAnimationRange ?? (_a12.copyAnimationRange = _MissingSideEffect("Bone", "copyAnimationRange"));
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Animations/animatable.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Animations/animatable.pure.js
 init_scene_pure();
 var _Registered50 = false;
 function RegisterAnimatable() {
@@ -110122,7 +110122,7 @@ function RegisterAnimatable() {
 }
 __name(RegisterAnimatable, "RegisterAnimatable");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/thinParticleSystem.function.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/thinParticleSystem.function.js
 init_math_color();
 init_math_scalar_functions();
 init_math_vector();
@@ -110442,7 +110442,7 @@ function _CreateSheetData(particle, system) {
 }
 __name(_CreateSheetData, "_CreateSheetData");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Queue/executionQueue.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Queue/executionQueue.js
 function _ConnectBefore(newOne, activeOne) {
   newOne.previousItem = activeOne.previousItem;
   newOne.nextItem = activeOne;
@@ -110481,7 +110481,7 @@ function _RemoveFromQueue(item) {
 }
 __name(_RemoveFromQueue, "_RemoveFromQueue");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/thinParticleSystem.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/thinParticleSystem.pure.js
 init_observable_pure();
 init_math_vector_pure();
 init_buffer_pure();
@@ -112243,7 +112243,7 @@ var ThinParticleSystem = class _ThinParticleSystem extends BaseParticleSystem {
 };
 ThinParticleSystem.ForceGLSL = false;
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/subEmitter.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/subEmitter.js
 init_math_vector();
 init_devTools();
 init_typeStore();
@@ -112337,7 +112337,7 @@ var SubEmitter = class _SubEmitter {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/EmitterTypes/customParticleEmitter.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/EmitterTypes/customParticleEmitter.js
 init_math_vector();
 init_deepCopier();
 var EmptyGeneratorFunc = /* @__PURE__ */ __name(() => {
@@ -112461,7 +112461,7 @@ var CustomParticleEmitter = class _CustomParticleEmitter {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/attractor.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/attractor.js
 init_math_vector();
 var ToAttractor = Vector3.Zero();
 var Force = Vector3.Zero();
@@ -112494,7 +112494,7 @@ var Attractor = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/particleSystem.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/particleSystem.pure.js
 init_math_color_pure();
 init_math_vector_pure();
 init_abstractEngine_pure();
@@ -113348,7 +113348,7 @@ function RegisterParticleSystem() {
 }
 __name(RegisterParticleSystem, "RegisterParticleSystem");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/gpuParticleSystem.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/gpuParticleSystem.pure.js
 init_observable_pure();
 init_math_vector_pure();
 init_math_color_pure();
@@ -115430,7 +115430,7 @@ var GPUParticleSystem = class _GPUParticleSystem extends BaseParticleSystem {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Misc/performanceMonitor.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Misc/performanceMonitor.js
 init_precisionDate();
 var PerformanceMonitor = class {
   static {
@@ -115600,7 +115600,7 @@ var RollingAverage = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/engine.common.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/engine.common.js
 init_domManagement();
 init_engineStore();
 function DisableTouchAction(canvas) {
@@ -115797,7 +115797,7 @@ function ExitPointerlock() {
 }
 __name(ExitPointerlock, "ExitPointerlock");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.dom.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.dom.pure.js
 init_abstractEngine_pure();
 var _Registered52 = false;
 function RegisterAbstractEngineDom() {
@@ -115833,7 +115833,7 @@ function RegisterAbstractEngineDom() {
 }
 __name(RegisterAbstractEngineDom, "RegisterAbstractEngineDom");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/engine.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/engine.pure.js
 init_internalTexture();
 init_engineStore();
 init_thinEngine_pure();
@@ -116627,7 +116627,7 @@ Engine.SCALEMODE_CEILING = 3;
 (_k4 = Engine.prototype).bindTransformFeedbackBuffer ?? (_k4.bindTransformFeedbackBuffer = _MissingSideEffect("Engine", "bindTransformFeedbackBuffer"));
 (_l4 = Engine.prototype).readTransformFeedbackBuffer ?? (_l4.readTransformFeedbackBuffer = _MissingSideEffect("Engine", "readTransformFeedbackBuffer"));
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.transformFeedback.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.transformFeedback.pure.js
 var _forceTransformFeedbackToBundle = true;
 var _Registered53 = false;
 function RegisterEngineTransformFeedback() {
@@ -116666,10 +116666,10 @@ function RegisterEngineTransformFeedback() {
 }
 __name(RegisterEngineTransformFeedback, "RegisterEngineTransformFeedback");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.transformFeedback.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.transformFeedback.js
 RegisterEngineTransformFeedback();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/clipPlaneFragmentDeclaration2.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/clipPlaneFragmentDeclaration2.js
 init_shaderStore();
 var name233 = "clipPlaneFragmentDeclaration2";
 var shader233 = `#ifdef CLIPPLANE
@@ -116696,7 +116696,7 @@ if (!ShaderStore.IncludesShadersStore[name233]) {
 }
 var clipPlaneFragmentDeclaration2 = { name: name233, shader: shader233 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/gpuRenderParticles.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/gpuRenderParticles.fragment.js
 init_shaderStore();
 init_imageProcessingDeclaration2();
 init_logDepthDeclaration2();
@@ -116746,7 +116746,7 @@ for (const inc of includes36) {
 }
 var gpuRenderParticlesPixelShader = { name: name234, shader: shader234 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/ShadersInclude/clipPlaneVertexDeclaration2.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/ShadersInclude/clipPlaneVertexDeclaration2.js
 init_shaderStore();
 var name235 = "clipPlaneVertexDeclaration2";
 var shader235 = `#ifdef CLIPPLANE
@@ -116773,7 +116773,7 @@ if (!ShaderStore.IncludesShadersStore[name235]) {
 }
 var clipPlaneVertexDeclaration2 = { name: name235, shader: shader235 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/gpuRenderParticles.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/gpuRenderParticles.vertex.js
 init_shaderStore();
 init_fogVertexDeclaration2();
 init_logDepthDeclaration2();
@@ -116903,13 +116903,13 @@ for (const inc of includes37) {
 }
 var gpuRenderParticlesVertexShader = { name: name236, shader: shader236 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/particleSystem.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/particleSystem.js
 RegisterParticleSystem();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/standardMaterial.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/standardMaterial.js
 RegisterStandardMaterial();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/particleSystemSet.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/particleSystemSet.js
 init_math_color();
 init_engineStore();
 var ParticleSystemSetEmitterCreationOptions = class {
@@ -117051,7 +117051,7 @@ var ParticleSystemSet = class _ParticleSystemSet {
 };
 ParticleSystemSet.BaseAssetsUrl = "https://assets.babylonjs.com/particles";
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Decorators/nodeDecorator.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Decorators/nodeDecorator.js
 var PropertyTypeForEdition;
 (function(PropertyTypeForEdition2) {
   PropertyTypeForEdition2[PropertyTypeForEdition2["Boolean"] = 0] = "Boolean";
@@ -117088,7 +117088,7 @@ function editableInPropertyPage(displayName, propertyType = 0, groupName = "PROP
 }
 __name(editableInPropertyPage, "editableInPropertyPage");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Node/Enums/nodeParticleBlockConnectionPointTypes.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Node/Enums/nodeParticleBlockConnectionPointTypes.js
 var NodeParticleBlockConnectionPointTypes;
 (function(NodeParticleBlockConnectionPointTypes2) {
   NodeParticleBlockConnectionPointTypes2[NodeParticleBlockConnectionPointTypes2["Int"] = 1] = "Int";
@@ -117110,7 +117110,7 @@ var NodeParticleBlockConnectionPointTypes;
   NodeParticleBlockConnectionPointTypes2[NodeParticleBlockConnectionPointTypes2["All"] = 65535] = "All";
 })(NodeParticleBlockConnectionPointTypes || (NodeParticleBlockConnectionPointTypes = {}));
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Node/nodeParticleBlockConnectionPoint.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Node/nodeParticleBlockConnectionPoint.js
 init_observable();
 var NodeParticleConnectionPointCompatibilityStates;
 (function(NodeParticleConnectionPointCompatibilityStates2) {
@@ -117390,7 +117390,7 @@ var NodeParticleConnectionPoint = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Node/nodeParticleBlock.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Node/nodeParticleBlock.js
 init_tslib_es6();
 init_decorators();
 init_uniqueIdGenerator();
@@ -117739,7 +117739,7 @@ __decorate([
   serialize("comment")
 ], NodeParticleBlock.prototype, "comments", void 0);
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Node/Enums/nodeParticleContextualSources.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Node/Enums/nodeParticleContextualSources.js
 var NodeParticleContextualSources;
 (function(NodeParticleContextualSources2) {
   NodeParticleContextualSources2[NodeParticleContextualSources2["None"] = 0] = "None";
@@ -117765,7 +117765,7 @@ var NodeParticleContextualSources;
   NodeParticleContextualSources2[NodeParticleContextualSources2["DirectionScale"] = 32] = "DirectionScale";
 })(NodeParticleContextualSources || (NodeParticleContextualSources = {}));
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Node/Enums/nodeParticleSystemSources.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Node/Enums/nodeParticleSystemSources.js
 var NodeParticleSystemSources;
 (function(NodeParticleSystemSources2) {
   NodeParticleSystemSources2[NodeParticleSystemSources2["None"] = 0] = "None";
@@ -117775,7 +117775,7 @@ var NodeParticleSystemSources;
   NodeParticleSystemSources2[NodeParticleSystemSources2["CameraPosition"] = 4] = "CameraPosition";
 })(NodeParticleSystemSources || (NodeParticleSystemSources = {}));
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Node/nodeParticleBuildState.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Node/nodeParticleBuildState.js
 init_math_color();
 init_math_vector();
 var NodeParticleBuildState = class {
@@ -117952,7 +117952,7 @@ var NodeParticleBuildState = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Node/Blocks/Triggers/triggerTools.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Node/Blocks/Triggers/triggerTools.js
 function _TriggerSubEmitter(template, scene, location2) {
   const newState = new NodeParticleBuildState();
   newState.scene = scene;
@@ -117965,7 +117965,7 @@ function _TriggerSubEmitter(template, scene, location2) {
 }
 __name(_TriggerSubEmitter, "_TriggerSubEmitter");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Node/Blocks/systemBlock.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Node/Blocks/systemBlock.pure.js
 init_tslib_es6();
 init_devTools();
 init_math_vector_pure();
@@ -118265,10 +118265,10 @@ function RegisterSystemBlock() {
 }
 __name(RegisterSystemBlock, "RegisterSystemBlock");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Node/Blocks/systemBlock.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Node/Blocks/systemBlock.js
 RegisterSystemBlock();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Node/Blocks/particleInputBlock.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Node/Blocks/particleInputBlock.pure.js
 init_observable_pure();
 init_typeStore();
 init_math_vector_pure();
@@ -118551,10 +118551,10 @@ function RegisterParticleInputBlock() {
 }
 __name(RegisterParticleInputBlock, "RegisterParticleInputBlock");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Node/Blocks/particleInputBlock.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Node/Blocks/particleInputBlock.js
 RegisterParticleInputBlock();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Node/Blocks/particleSourceTextureBlock.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Node/Blocks/particleSourceTextureBlock.pure.js
 init_texture_pure();
 init_textureTools();
 init_typeStore();
@@ -118922,10 +118922,10 @@ function RegisterParticleSourceTextureBlock() {
 }
 __name(RegisterParticleSourceTextureBlock, "RegisterParticleSourceTextureBlock");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Node/Blocks/particleSourceTextureBlock.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Node/Blocks/particleSourceTextureBlock.js
 RegisterParticleSourceTextureBlock();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Node/Blocks/Update/updatePositionBlock.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Node/Blocks/Update/updatePositionBlock.pure.js
 init_typeStore();
 var UpdatePositionBlock = class extends NodeParticleBlock {
   static {
@@ -119003,10 +119003,10 @@ function RegisterUpdatePositionBlock() {
 }
 __name(RegisterUpdatePositionBlock, "RegisterUpdatePositionBlock");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Node/Blocks/Update/updatePositionBlock.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Node/Blocks/Update/updatePositionBlock.js
 RegisterUpdatePositionBlock();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Node/Blocks/particleMathBlock.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Node/Blocks/particleMathBlock.pure.js
 init_tslib_es6();
 init_math_vector_pure();
 init_math_color_pure();
@@ -119305,10 +119305,10 @@ function RegisterParticleMathBlock() {
 }
 __name(RegisterParticleMathBlock, "RegisterParticleMathBlock");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Node/Blocks/particleMathBlock.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Node/Blocks/particleMathBlock.js
 RegisterParticleMathBlock();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Node/Blocks/Emitters/emitters.functions.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Node/Blocks/Emitters/emitters.functions.js
 function _CreateLocalPositionData(particle) {
   if (!particle._properties.localPosition) {
     particle._properties.localPosition = particle.position.clone();
@@ -119318,7 +119318,7 @@ function _CreateLocalPositionData(particle) {
 }
 __name(_CreateLocalPositionData, "_CreateLocalPositionData");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Node/Blocks/Emitters/boxShapeBlock.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Node/Blocks/Emitters/boxShapeBlock.pure.js
 init_math_vector_pure();
 init_math_scalar_functions();
 init_typeStore();
@@ -119431,10 +119431,10 @@ function RegisterBoxShapeBlock() {
 }
 __name(RegisterBoxShapeBlock, "RegisterBoxShapeBlock");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Node/Blocks/Emitters/boxShapeBlock.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Node/Blocks/Emitters/boxShapeBlock.js
 RegisterBoxShapeBlock();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Node/Blocks/Emitters/createParticleBlock.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Node/Blocks/Emitters/createParticleBlock.pure.js
 init_math_color_pure();
 init_math_vector_pure();
 init_typeStore();
@@ -119573,10 +119573,10 @@ function RegisterCreateParticleBlock() {
 }
 __name(RegisterCreateParticleBlock, "RegisterCreateParticleBlock");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Node/Blocks/Emitters/createParticleBlock.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Node/Blocks/Emitters/createParticleBlock.js
 RegisterCreateParticleBlock();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Particles/Node/nodeParticleSystemSet.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Particles/Node/nodeParticleSystemSet.js
 init_tslib_es6();
 init_decorators();
 init_decorators_serialization();
@@ -120052,7 +120052,7 @@ __decorate([
   serialize("comment")
 ], NodeParticleSystemSet.prototype, "comment", void 0);
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Events/clipboardEvents.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Events/clipboardEvents.js
 var ClipboardEventTypes = class {
   static {
     __name(this, "ClipboardEventTypes");
@@ -120094,7 +120094,7 @@ var ClipboardInfo = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/Textures/dynamicTexture.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/Textures/dynamicTexture.pure.js
 init_logger();
 init_texture_pure();
 var DynamicTexture = class _DynamicTexture extends Texture {
@@ -120294,7 +120294,7 @@ var DynamicTexture = class _DynamicTexture extends Texture {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.dynamicTexture.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.dynamicTexture.pure.js
 init_tools_functions();
 init_thinEngine_pure();
 init_internalTexture();
@@ -120360,10 +120360,10 @@ function RegisterEnginesExtensionsEngineDynamicTexture() {
 }
 __name(RegisterEnginesExtensionsEngineDynamicTexture, "RegisterEnginesExtensionsEngineDynamicTexture");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.dynamicTexture.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.dynamicTexture.js
 RegisterEnginesExtensionsEngineDynamicTexture();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Layers/layerSceneComponent.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Layers/layerSceneComponent.js
 init_sceneComponent();
 init_engineStore();
 var LayerSceneComponent = class {
@@ -120493,7 +120493,7 @@ var LayerSceneComponent = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Layers/layer.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Layers/layer.js
 init_observable();
 init_math_vector();
 init_math_color();
@@ -120721,7 +120721,7 @@ var Layer = class _Layer {
 };
 Layer.ForceGLSL = false;
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/gui/2D/valueAndUnit.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/gui/2D/valueAndUnit.js
 init_observable();
 var ValueAndUnit = class _ValueAndUnit {
   static {
@@ -120901,7 +120901,7 @@ ValueAndUnit._Regex = /(^-?\d*(\.\d+)?)(%|px)?/;
 ValueAndUnit._UNITMODE_PERCENTAGE = 0;
 ValueAndUnit._UNITMODE_PIXEL = 1;
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/gui/2D/measure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/gui/2D/measure.js
 init_math_vector();
 var TmpRect = [new Vector2(0, 0), new Vector2(0, 0), new Vector2(0, 0), new Vector2(0, 0)];
 var TmpRect2 = [new Vector2(0, 0), new Vector2(0, 0), new Vector2(0, 0), new Vector2(0, 0)];
@@ -121032,7 +121032,7 @@ var Measure = class _Measure {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/gui/2D/math2D.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/gui/2D/math2D.js
 init_math_vector();
 init_math_constants();
 var Vector2WithInfo = class extends Vector2 {
@@ -121260,7 +121260,7 @@ var MathTools = class _MathTools {
 };
 MathTools.DefaultRoundingPrecision = 100;
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/gui/2D/controls/control.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/gui/2D/controls/control.js
 init_tslib_es6();
 init_observable();
 init_math_vector();
@@ -123531,7 +123531,7 @@ __decorate([
 ], Control.prototype, "overlapDeltaMultiplier", void 0);
 RegisterClass("BABYLON.GUI.Control", Control);
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/gui/2D/controls/container.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/gui/2D/controls/container.js
 init_tslib_es6();
 init_logger();
 init_typeStore();
@@ -124111,7 +124111,7 @@ __decorate([
 ], Container.prototype, "backgroundGradient", null);
 RegisterClass("BABYLON.GUI.Container", Container);
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/gui/2D/style.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/gui/2D/style.js
 init_observable();
 var Style = class {
   static {
@@ -124186,7 +124186,7 @@ var Style = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/gui/2D/advancedDynamicTexture.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/gui/2D/advancedDynamicTexture.js
 init_observable();
 init_math_vector();
 init_tools();
@@ -125540,7 +125540,7 @@ var AdvancedDynamicTexture = class _AdvancedDynamicTexture extends DynamicTextur
 AdvancedDynamicTexture.SnippetUrl = Constants.SnippetUrl;
 AdvancedDynamicTexture.AllowGPUOptimizations = true;
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/tools/request.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/tools/request.js
 init_webRequest();
 function loadFile(url, responseType, progressCallback) {
   return new Promise((resolve, reject) => {
@@ -125567,7 +125567,7 @@ async function loadJsonFile(url, progressCallback) {
 }
 __name(loadJsonFile, "loadJsonFile");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/tools/scene.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/tools/scene.js
 function getNodeByName(name287, scene) {
   const node = scene.getNodeByName(name287);
   if (node) {
@@ -125599,7 +125599,7 @@ function getNodeById(id, scene) {
 }
 __name(getNodeById, "getNodeById");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/tools/vector.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/tools/vector.js
 init_math_axis();
 init_math_vector();
 function parseAxis(axis) {
@@ -125617,7 +125617,7 @@ function parseAxis(axis) {
 }
 __name(parseAxis, "parseAxis");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/tools/ragdoll.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/tools/ragdoll.js
 function parseRagdollConfiguration(configuration) {
   configuration.runtimeConfiguration.forEach((config) => {
     if (config.rotationAxis) {
@@ -125654,7 +125654,7 @@ function copyAndParseRagdollConfiguration(configuration) {
 }
 __name(copyAndParseRagdollConfiguration, "copyAndParseRagdollConfiguration");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/tools/tools.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/tools/tools.js
 function waitMs(timeMs) {
   return new Promise((resolve) => {
     setTimeout(() => resolve(), timeMs);
@@ -125675,7 +125675,7 @@ function cloneJSObject(source) {
 }
 __name(cloneJSObject, "cloneJSObject");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Offline/database.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Offline/database.pure.js
 init_timingTools();
 init_logger();
 init_tga();
@@ -126260,10 +126260,10 @@ function RegisterDatabase() {
 }
 __name(RegisterDatabase, "RegisterDatabase");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Offline/database.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Offline/database.js
 RegisterDatabase();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/soundState.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/soundState.js
 var SoundState;
 (function(SoundState2) {
   SoundState2[SoundState2["Stopping"] = 0] = "Stopping";
@@ -126274,7 +126274,7 @@ var SoundState;
   SoundState2[SoundState2["Paused"] = 5] = "Paused";
 })(SoundState || (SoundState = {}));
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/abstractAudio/abstractAudioNode.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/abstractAudio/abstractAudioNode.js
 init_observable();
 var AudioNodeType;
 (function(AudioNodeType2) {
@@ -126408,7 +126408,7 @@ var AbstractNamedAudioNode = class extends AbstractAudioNode {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/abstractAudio/subNodes/abstractAudioSubNode.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/abstractAudio/subNodes/abstractAudioSubNode.js
 var _AbstractAudioSubNode = class extends AbstractNamedAudioNode {
   static {
     __name(this, "_AbstractAudioSubNode");
@@ -126448,7 +126448,7 @@ var _AbstractAudioSubNode = class extends AbstractNamedAudioNode {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/abstractAudio/subNodes/volumeAudioSubNode.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/abstractAudio/subNodes/volumeAudioSubNode.js
 var _VolumeAudioDefaults = {
   volume: 1
 };
@@ -126479,7 +126479,7 @@ function _GetVolumeAudioProperty(subGraph, property) {
 }
 __name(_GetVolumeAudioProperty, "_GetVolumeAudioProperty");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/abstractAudio/subProperties/abstractAudioAnalyzer.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/abstractAudio/subProperties/abstractAudioAnalyzer.js
 var _AudioAnalyzerDefaults = {
   fftSize: 2048,
   minDecibels: -100,
@@ -126502,7 +126502,7 @@ var AbstractAudioAnalyzer = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/abstractAudio/subNodes/audioAnalyzerSubNode.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/abstractAudio/subNodes/audioAnalyzerSubNode.js
 var _AudioAnalyzerSubNode = class extends _AbstractAudioSubNode {
   static {
     __name(this, "_AudioAnalyzerSubNode");
@@ -126532,7 +126532,7 @@ function _SetAudioAnalyzerProperty(subGraph, property, value) {
 }
 __name(_SetAudioAnalyzerProperty, "_SetAudioAnalyzerProperty");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/abstractAudio/subProperties/audioAnalyzer.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/abstractAudio/subProperties/audioAnalyzer.js
 init_logger();
 var EmptyByteFrequencyData = null;
 var EmptyFloatFrequencyData = null;
@@ -126639,7 +126639,7 @@ var _AudioAnalyzer = class extends AbstractAudioAnalyzer {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/abstractAudio/abstractAudioOutNode.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/abstractAudio/abstractAudioOutNode.js
 var AbstractAudioOutNode = class extends AbstractNamedAudioNode {
   static {
     __name(this, "AbstractAudioOutNode");
@@ -126692,7 +126692,7 @@ var AbstractAudioOutNode = class extends AbstractNamedAudioNode {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/abstractAudio/abstractSoundSource.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/abstractAudio/abstractSoundSource.js
 var AbstractSoundSource = class extends AbstractAudioOutNode {
   static {
     __name(this, "AbstractSoundSource");
@@ -126781,7 +126781,7 @@ var AbstractSoundSource = class extends AbstractAudioOutNode {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/abstractAudio/abstractSound.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/abstractAudio/abstractSound.js
 init_observable();
 var AbstractSound = class extends AbstractSoundSource {
   static {
@@ -126954,7 +126954,7 @@ var AbstractSound = class extends AbstractSoundSource {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/abstractAudio/staticSound.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/abstractAudio/staticSound.js
 var StaticSound = class extends AbstractSound {
   static {
     __name(this, "StaticSound");
@@ -127069,7 +127069,7 @@ var StaticSound = class extends AbstractSound {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/abstractAudio/staticSoundBuffer.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/abstractAudio/staticSoundBuffer.js
 var StaticSoundBufferId = 1;
 var StaticSoundBuffer = class {
   static {
@@ -127081,7 +127081,7 @@ var StaticSoundBuffer = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/abstractAudio/abstractSoundInstance.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/abstractAudio/abstractSoundInstance.js
 init_observable();
 var _AbstractSoundInstance = class extends AbstractAudioNode {
   static {
@@ -127122,14 +127122,14 @@ var _AbstractSoundInstance = class extends AbstractAudioNode {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/abstractAudio/staticSoundInstance.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/abstractAudio/staticSoundInstance.js
 var _StaticSoundInstance = class extends _AbstractSoundInstance {
   static {
     __name(this, "_StaticSoundInstance");
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/abstractAudio/subProperties/abstractSpatialAudio.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/abstractAudio/subProperties/abstractSpatialAudio.js
 init_math_vector();
 var _SpatialAudioDefaults = {
   coneInnerAngle: 6.28318530718,
@@ -127156,7 +127156,7 @@ var AbstractSpatialAudio = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/abstractAudio/subProperties/abstractStereoAudio.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/abstractAudio/subProperties/abstractStereoAudio.js
 var _StereoAudioDefaults = {
   pan: 0
 };
@@ -127170,7 +127170,7 @@ var AbstractStereoAudio = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/abstractAudio/subNodes/stereoAudioSubNode.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/abstractAudio/subNodes/stereoAudioSubNode.js
 var _StereoAudioSubNode = class extends _AbstractAudioSubNode {
   static {
     __name(this, "_StereoAudioSubNode");
@@ -127197,7 +127197,7 @@ function _SetStereoAudioProperty(subGraph, property, value) {
 }
 __name(_SetStereoAudioProperty, "_SetStereoAudioProperty");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/abstractAudio/subProperties/stereoAudio.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/abstractAudio/subProperties/stereoAudio.js
 var _StereoAudio = class extends AbstractStereoAudio {
   static {
     __name(this, "_StereoAudio");
@@ -127218,7 +127218,7 @@ var _StereoAudio = class extends AbstractStereoAudio {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/audioUtils.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/audioUtils.js
 init_logger();
 init_webRequest();
 var _FileExtensionRegex = new RegExp("\\.(\\w{3,4})($|\\?)");
@@ -127307,7 +127307,7 @@ async function _LoadArrayBufferFromUrlAsync(url) {
 }
 __name(_LoadArrayBufferFromUrlAsync, "_LoadArrayBufferFromUrlAsync");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/webAudio/components/webAudioParameterComponent.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/webAudio/components/webAudioParameterComponent.js
 init_logger();
 var MinRampDuration = 1e-6;
 var Warn = true;
@@ -127378,7 +127378,7 @@ var _WebAudioParameterComponent = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/abstractAudio/components/spatialAudioAttacherComponent.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/abstractAudio/components/spatialAudioAttacherComponent.js
 init_math_vector();
 var _SpatialAudioAttacherComponent = class {
   static {
@@ -127459,7 +127459,7 @@ var _SpatialAudioAttacherComponent = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/abstractAudio/subNodes/spatialAudioSubNode.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/abstractAudio/subNodes/spatialAudioSubNode.js
 var _SpatialAudioSubNode = class extends _AbstractAudioSubNode {
   static {
     __name(this, "_SpatialAudioSubNode");
@@ -127538,7 +127538,7 @@ function _SetSpatialAudioProperty(subGraph, property, value) {
 }
 __name(_SetSpatialAudioProperty, "_SetSpatialAudioProperty");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/webAudio/subNodes/spatialWebAudioSubNode.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/webAudio/subNodes/spatialWebAudioSubNode.js
 init_math_vector();
 var TmpMatrix = Matrix.Zero();
 var TmpQuaternion = new Quaternion();
@@ -127786,7 +127786,7 @@ var _SpatialWebAudioSubNode = class extends _SpatialAudioSubNode {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/webAudio/subNodes/stereoWebAudioSubNode.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/webAudio/subNodes/stereoWebAudioSubNode.js
 async function _CreateStereoAudioSubNodeAsync(engine) {
   return new _StereoWebAudioSubNode(engine);
 }
@@ -127848,7 +127848,7 @@ var _StereoWebAudioSubNode = class extends _StereoAudioSubNode {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/abstractAudio/subNodes/abstractAudioSubGraph.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/abstractAudio/subNodes/abstractAudioSubGraph.js
 var _AbstractAudioSubGraph = class {
   static {
     __name(this, "_AbstractAudioSubGraph");
@@ -127964,7 +127964,7 @@ var _AbstractAudioSubGraph = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/webAudio/subNodes/volumeWebAudioSubNode.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/webAudio/subNodes/volumeWebAudioSubNode.js
 async function _CreateVolumeAudioSubNodeAsync(engine) {
   return new _VolumeWebAudioSubNode(engine);
 }
@@ -128030,7 +128030,7 @@ var _VolumeWebAudioSubNode = class extends _VolumeAudioSubNode {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/webAudio/subNodes/webAudioAnalyzerSubNode.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/webAudio/subNodes/webAudioAnalyzerSubNode.js
 async function _CreateAudioAnalyzerSubNodeAsync(engine) {
   return new _WebAudioAnalyzerSubNode(engine);
 }
@@ -128116,7 +128116,7 @@ var _WebAudioAnalyzerSubNode = class extends _AudioAnalyzerSubNode {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/webAudio/subNodes/webAudioBaseSubGraph.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/webAudio/subNodes/webAudioBaseSubGraph.js
 var _WebAudioBaseSubGraph = class extends _AbstractAudioSubGraph {
   static {
     __name(this, "_WebAudioBaseSubGraph");
@@ -128196,7 +128196,7 @@ var _WebAudioBaseSubGraph = class extends _AbstractAudioSubGraph {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/webAudio/subNodes/webAudioBusAndSoundSubGraph.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/webAudio/subNodes/webAudioBusAndSoundSubGraph.js
 var _WebAudioBusAndSoundSubGraph = class extends _WebAudioBaseSubGraph {
   static {
     __name(this, "_WebAudioBusAndSoundSubGraph");
@@ -128317,7 +128317,7 @@ var _WebAudioBusAndSoundSubGraph = class extends _WebAudioBaseSubGraph {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/abstractAudio/subProperties/spatialAudio.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/abstractAudio/subProperties/spatialAudio.js
 var _SpatialAudio = class extends AbstractSpatialAudio {
   static {
     __name(this, "_SpatialAudio");
@@ -128544,7 +128544,7 @@ var _SpatialAudio = class extends AbstractSpatialAudio {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/webAudio/components/spatialWebAudioUpdaterComponent.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/webAudio/components/spatialWebAudioUpdaterComponent.js
 init_precisionDate();
 var _SpatialWebAudioUpdaterComponent = class {
   static {
@@ -128584,7 +128584,7 @@ var _SpatialWebAudioUpdaterComponent = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/webAudio/subProperties/spatialWebAudio.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/webAudio/subProperties/spatialWebAudio.js
 var _SpatialWebAudio = class extends _SpatialAudio {
   static {
     __name(this, "_SpatialWebAudio");
@@ -128610,7 +128610,7 @@ var _SpatialWebAudio = class extends _SpatialAudio {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/webAudio/webAudioStaticSound.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/webAudio/webAudioStaticSound.js
 var _WebAudioStaticSound = class __WebAudioStaticSound extends StaticSound {
   static {
     __name(this, "_WebAudioStaticSound");
@@ -129030,7 +129030,7 @@ var _WebAudioStaticSoundInstance = class extends _StaticSoundInstance {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/AudioV2/abstractAudio/audioEngineV2.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/AudioV2/abstractAudio/audioEngineV2.js
 var Instances = [];
 function LastCreatedAudioEngine() {
   if (Instances.length === 0) {
@@ -129198,7 +129198,7 @@ function CreateStreamingSoundAsync(name287, source, options = {}, engine = null)
 }
 __name(CreateStreamingSoundAsync, "CreateStreamingSoundAsync");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/loading/sound.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/loading/sound.js
 var registered = false;
 var registeredUpdateObserver = null;
 var soundInstances = [];
@@ -129357,7 +129357,7 @@ function registerAudioParser() {
 }
 __name(registerAudioParser, "registerAudioParser");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/loading/transform-node.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/loading/transform-node.js
 function configureTransformNodes(scene) {
   const computedMaterials = /* @__PURE__ */ new Set();
   scene.transformNodes.forEach((transformNode) => {
@@ -129383,7 +129383,7 @@ function configureTransformNodes(scene) {
 }
 __name(configureTransformNodes, "configureTransformNodes");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/loading/container/entries.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/loading/container/entries.js
 var AdvancedAssetContainerInstantiatedEntries = class {
   static {
     __name(this, "AdvancedAssetContainerInstantiatedEntries");
@@ -129472,7 +129472,7 @@ var AdvancedAssetContainerInstantiatedEntries = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/loading/container/container.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/loading/container/container.js
 init_tools();
 var AdvancedAssetContainer = class {
   static {
@@ -129626,7 +129626,7 @@ var AdvancedAssetContainer = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/loading/script/preload/scene.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/loading/script/preload/scene.js
 async function preloadSceneScriptAsset(key, rootUrl, scene) {
   const iblIntensity = scene.environmentIntensity;
   const filename = key.split("/").pop();
@@ -129645,13 +129645,13 @@ async function preloadSceneScriptAsset(key, rootUrl, scene) {
 }
 __name(preloadSceneScriptAsset, "preloadSceneScriptAsset");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/loading/script/preload/common.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/loading/script/preload/common.js
 async function preloadCommonScriptAsset(key, rootUrl) {
   return loadJsonFile(`${rootUrl}${key}`);
 }
 __name(preloadCommonScriptAsset, "preloadCommonScriptAsset");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/loading/script/preload.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/loading/script/preload.js
 var scriptAssetsCache = /* @__PURE__ */ new Map();
 var scriptAssetsParsers = /* @__PURE__ */ new Map();
 function registerScriptAssetParser(extension, parser) {
@@ -129730,7 +129730,7 @@ async function _preloadScriptsAssets(rootUrl, scene, scriptsMap) {
 }
 __name(_preloadScriptsAssets, "_preloadScriptsAssets");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/decorators/apply.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/decorators/apply.js
 init_math_color();
 init_texture();
 init_math_vector();
@@ -129964,7 +129964,7 @@ function applyDecorators(scene, object, script, instance, rootUrl) {
 }
 __name(applyDecorators, "applyDecorators");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/loading/script/apply.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/loading/script/apply.js
 function _applyScriptsForObject(scene, object, scriptsMap, rootUrl) {
   if (!object.metadata?.scripts) {
     return;
@@ -130068,7 +130068,7 @@ function getScriptByClassForObject(object, classType) {
 }
 __name(getScriptByClassForObject, "getScriptByClassForObject");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/tools/texture.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/tools/texture.js
 function configureEngineToUseCompressedTextures(engine) {
   engine.setCompressedTextureExclusions([".env", ".hdr", ".dds"]);
   engine.setTextureFormatToUse(["-dxt.ktx", "-astc.ktx", "-pvrtc.ktx", "-etc1.ktx", "-etc2.ktx"]);
@@ -130143,7 +130143,7 @@ function getTextureUrl(sourceProperty, scene) {
 }
 __name(getTextureUrl, "getTextureUrl");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/loading/texture.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/loading/texture.js
 init_decorators_serialization();
 var registered2 = false;
 function registerTextureParser() {
@@ -130168,7 +130168,7 @@ function registerTextureParser() {
 }
 __name(registerTextureParser, "registerTextureParser");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Lights/light.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Lights/light.js
 init_tslib_es6();
 init_decorators();
 init_math_vector();
@@ -130874,7 +130874,7 @@ __decorate([
   serialize("lightmapMode")
 ], Light.prototype, "_lightmapMode", void 0);
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Lights/Shadows/shadowGeneratorSceneComponent.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Lights/Shadows/shadowGeneratorSceneComponent.pure.js
 init_sceneComponent();
 var ShadowGeneratorSceneComponent = class {
   static {
@@ -130993,7 +130993,7 @@ function RegisterShadowGeneratorSceneComponent(shadowGeneratorClass) {
 }
 __name(RegisterShadowGeneratorSceneComponent, "RegisterShadowGeneratorSceneComponent");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Lights/Shadows/shadowGenerator.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Lights/Shadows/shadowGenerator.js
 init_math_vector();
 init_math_color();
 init_buffer();
@@ -132586,7 +132586,7 @@ ShadowGenerator._SceneComponentInitialization = (_) => {
 };
 ShadowGenerator._CascadedShadowGeneratorParser = null;
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/loading/shadows.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/loading/shadows.js
 init_sceneComponent();
 var registered3 = false;
 function registerShadowGeneratorParser() {
@@ -132631,7 +132631,7 @@ function registerShadowGeneratorParser() {
 }
 __name(registerShadowGeneratorParser, "registerShadowGeneratorParser");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/loading/morph-target-manager.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/loading/morph-target-manager.js
 init_webRequest();
 var registered4 = false;
 function registerMorphTargetManagerParser() {
@@ -132711,7 +132711,7 @@ function registerMorphTargetManagerParser() {
 }
 __name(registerMorphTargetManagerParser, "registerMorphTargetManagerParser");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Buffers/storageBuffer.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Buffers/storageBuffer.js
 var StorageBuffer = class {
   static {
     __name(this, "StorageBuffer");
@@ -132792,7 +132792,7 @@ var StorageBuffer = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Materials/shaderMaterial.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Materials/shaderMaterial.pure.js
 init_decorators_serialization();
 init_scene_pure();
 init_math_vector_pure();
@@ -134193,7 +134193,7 @@ function RegisterShaderMaterial() {
 }
 __name(RegisterShaderMaterial, "RegisterShaderMaterial");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Lights/Clustered/clusteredLightingSceneComponent.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Lights/Clustered/clusteredLightingSceneComponent.pure.js
 init_sceneComponent();
 init_lightConstants();
 var ClusteredLightingSceneComponent = class {
@@ -134247,7 +134247,7 @@ function RegisterClusteredLightingSceneComponent(clusteredLightContainerClass) {
 }
 __name(RegisterClusteredLightingSceneComponent, "RegisterClusteredLightingSceneComponent");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Lights/Clustered/clusteredLightContainer.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Lights/Clustered/clusteredLightContainer.pure.js
 init_tslib_es6();
 init_renderTargetTexture_pure();
 init_uniformBuffer();
@@ -134772,10 +134772,10 @@ function RegisterClusteredLightContainer() {
 }
 __name(RegisterClusteredLightContainer, "RegisterClusteredLightContainer");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Lights/Clustered/clusteredLightContainer.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Lights/Clustered/clusteredLightContainer.js
 RegisterClusteredLightContainer();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/loading/light.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/loading/light.js
 function configureLights(scene, clusteredLightContainer) {
   clusteredLightContainer ??= new ClusteredLightContainer("Clustered Light Container", [], scene);
   const clusteredLight = scene.metadata?.clusteredLight;
@@ -134797,7 +134797,7 @@ function configureLights(scene, clusteredLightContainer) {
 }
 __name(configureLights, "configureLights");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.alpha.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.alpha.pure.js
 init_thinEngine_pure();
 var _Registered67 = false;
 function RegisterEnginesExtensionsEngineAlpha() {
@@ -134826,10 +134826,10 @@ function RegisterEnginesExtensionsEngineAlpha() {
 }
 __name(RegisterEnginesExtensionsEngineAlpha, "RegisterEnginesExtensionsEngineAlpha");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.alpha.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.alpha.js
 RegisterEnginesExtensionsEngineAlpha();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.rawTexture.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.rawTexture.pure.js
 init_internalTexture();
 init_logger();
 init_thinEngine_pure();
@@ -135181,10 +135181,10 @@ function RegisterEnginesExtensionsEngineRawTexture() {
 }
 __name(RegisterEnginesExtensionsEngineRawTexture, "RegisterEnginesExtensionsEngineRawTexture");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.rawTexture.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.rawTexture.js
 RegisterEnginesExtensionsEngineRawTexture();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.readTexture.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.readTexture.pure.js
 init_abstractEngine_functions();
 init_thinEngine_pure();
 var _Registered69 = false;
@@ -135245,15 +135245,15 @@ function RegisterEnginesExtensionsEngineReadTexture() {
 }
 __name(RegisterEnginesExtensionsEngineReadTexture, "RegisterEnginesExtensionsEngineReadTexture");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.readTexture.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.readTexture.js
 RegisterEnginesExtensionsEngineReadTexture();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.dynamicBuffer.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.dynamicBuffer.js
 init_engine_dynamicBuffer_pure();
 init_engine_dynamicBuffer_pure();
 RegisterEngineDynamicBuffer();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.cubeTexture.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.cubeTexture.pure.js
 init_thinEngine_pure();
 init_internalTexture();
 init_logger();
@@ -135373,10 +135373,10 @@ function RegisterEnginesExtensionsEngineCubeTexture() {
 }
 __name(RegisterEnginesExtensionsEngineCubeTexture, "RegisterEnginesExtensionsEngineCubeTexture");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.cubeTexture.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.cubeTexture.js
 RegisterEnginesExtensionsEngineCubeTexture();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/renderTargetWrapper.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/renderTargetWrapper.js
 init_textureHelper_functions();
 var RenderTargetWrapper = class {
   static {
@@ -135865,7 +135865,7 @@ var RenderTargetWrapper = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/WebGL/webGLRenderTargetWrapper.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/WebGL/webGLRenderTargetWrapper.js
 init_textureHelper_functions();
 var WebGLRenderTargetWrapper = class extends RenderTargetWrapper {
   static {
@@ -136090,7 +136090,7 @@ var WebGLRenderTargetWrapper = class extends RenderTargetWrapper {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.renderTarget.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.renderTarget.pure.js
 init_internalTexture();
 init_logger();
 init_thinEngine_pure();
@@ -136299,10 +136299,10 @@ function RegisterEnginesExtensionsEngineRenderTarget() {
 }
 __name(RegisterEnginesExtensionsEngineRenderTarget, "RegisterEnginesExtensionsEngineRenderTarget");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.renderTarget.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.renderTarget.js
 RegisterEnginesExtensionsEngineRenderTarget();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.renderTargetTexture.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.renderTargetTexture.pure.js
 init_thinEngine_pure();
 var _Registered72 = false;
 function RegisterEnginesExtensionsEngineRenderTargetTexture() {
@@ -136326,10 +136326,10 @@ function RegisterEnginesExtensionsEngineRenderTargetTexture() {
 }
 __name(RegisterEnginesExtensionsEngineRenderTargetTexture, "RegisterEnginesExtensionsEngineRenderTargetTexture");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.renderTargetTexture.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.renderTargetTexture.js
 RegisterEnginesExtensionsEngineRenderTargetTexture();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.renderTargetCube.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.renderTargetCube.pure.js
 init_internalTexture();
 init_logger();
 init_thinEngine_pure();
@@ -136402,10 +136402,10 @@ function RegisterEnginesExtensionsEngineRenderTargetCube() {
 }
 __name(RegisterEnginesExtensionsEngineRenderTargetCube, "RegisterEnginesExtensionsEngineRenderTargetCube");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.renderTargetCube.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.renderTargetCube.js
 RegisterEnginesExtensionsEngineRenderTargetCube();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.prefilteredCubeTexture.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.prefilteredCubeTexture.pure.js
 init_thinEngine_pure();
 init_internalTexture();
 init_logger();
@@ -136498,10 +136498,10 @@ function RegisterEnginePrefilteredCubeTexture() {
 }
 __name(RegisterEnginePrefilteredCubeTexture, "RegisterEnginePrefilteredCubeTexture");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.prefilteredCubeTexture.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.prefilteredCubeTexture.js
 RegisterEnginePrefilteredCubeTexture();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.uniformBuffer.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.uniformBuffer.pure.js
 init_webGLDataBuffer();
 init_thinEngine_pure();
 var _Registered78 = false;
@@ -136578,10 +136578,10 @@ function RegisterEngineUniformBuffer() {
 }
 __name(RegisterEngineUniformBuffer, "RegisterEngineUniformBuffer");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/Extensions/engine.uniformBuffer.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/Extensions/engine.uniformBuffer.js
 RegisterEngineUniformBuffer();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.loadingScreen.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.loadingScreen.pure.js
 init_domManagement();
 init_abstractEngine_pure();
 var _Registered79 = false;
@@ -136638,13 +136638,13 @@ function RegisterAbstractEngineLoadingScreen() {
 }
 __name(RegisterAbstractEngineLoadingScreen, "RegisterAbstractEngineLoadingScreen");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.loadingScreen.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.loadingScreen.js
 RegisterAbstractEngineLoadingScreen();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.dom.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.dom.js
 RegisterAbstractEngineDom();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.states.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.states.pure.js
 init_abstractEngine_pure();
 var _Registered80 = false;
 function RegisterAbstractEngineStates() {
@@ -136691,10 +136691,10 @@ function RegisterAbstractEngineStates() {
 }
 __name(RegisterAbstractEngineStates, "RegisterAbstractEngineStates");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.states.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.states.js
 RegisterAbstractEngineStates();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.stencil.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.stencil.pure.js
 init_abstractEngine_pure();
 var _Registered81 = false;
 function RegisterAbstractEngineStencil() {
@@ -136795,13 +136795,13 @@ function RegisterAbstractEngineStencil() {
 }
 __name(RegisterAbstractEngineStencil, "RegisterAbstractEngineStencil");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.stencil.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.stencil.js
 RegisterAbstractEngineStencil();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.renderPass.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.renderPass.js
 RegisterAbstractEngineRenderPass();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.texture.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.texture.pure.js
 init_abstractEngine_pure();
 var _Registered82 = false;
 function RegisterAbstractEngineTexture() {
@@ -136820,10 +136820,10 @@ function RegisterAbstractEngineTexture() {
 }
 __name(RegisterAbstractEngineTexture, "RegisterAbstractEngineTexture");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.texture.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.texture.js
 RegisterAbstractEngineTexture();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.loadFile.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.loadFile.pure.js
 init_abstractEngine_pure();
 var _Registered83 = false;
 function RegisterAbstractEngineLoadFile() {
@@ -136843,14 +136843,14 @@ function RegisterAbstractEngineLoadFile() {
 }
 __name(RegisterAbstractEngineLoadFile, "RegisterAbstractEngineLoadFile");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.loadFile.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.loadFile.js
 RegisterAbstractEngineLoadFile();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.textureLoaders.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Engines/AbstractEngine/abstractEngine.textureLoaders.js
 init_textureLoaderManager();
 AbstractEngine.GetCompatibleTextureLoader = _GetCompatibleTextureLoader;
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Sprites/spriteMap.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Sprites/spriteMap.pure.js
 init_math_vector_pure();
 init_texture_pure();
 init_effect_pure();
@@ -137268,7 +137268,7 @@ var SpriteMap = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/spriteMap.fragment.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/spriteMap.fragment.js
 init_shaderStore();
 init_fogFragmentDeclaration2();
 init_logDepthDeclaration2();
@@ -137329,7 +137329,7 @@ for (const inc of includes50) {
 }
 var spriteMapPixelShader = { name: name279, shader: shader279 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Shaders/spriteMap.vertex.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Shaders/spriteMap.vertex.js
 init_shaderStore();
 init_fogVertexDeclaration2();
 init_logDepthDeclaration2();
@@ -137357,7 +137357,7 @@ for (const inc of includes51) {
 }
 var spriteMapVertexShader = { name: name280, shader: shader280 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/tools/sprite.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/tools/sprite.js
 function normalizeAtlasJson(data) {
   if (!Array.isArray(data.frames)) {
     const frames = [];
@@ -137381,7 +137381,7 @@ function playSpriteAnimationFromName(sprite, animationName, onAnimationEnd) {
 }
 __name(playSpriteAnimationFromName, "playSpriteAnimationFromName");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/loading/sprite-map.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/loading/sprite-map.js
 init_tools();
 init_webRequest();
 init_texture();
@@ -137438,7 +137438,7 @@ function registerSpriteMapParser() {
 }
 __name(registerSpriteMapParser, "registerSpriteMapParser");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Sprites/thinSprite.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Sprites/thinSprite.js
 var ThinSprite = class {
   static {
     __name(this, "ThinSprite");
@@ -137541,7 +137541,7 @@ var ThinSprite = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Sprites/sprite.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Sprites/sprite.js
 init_math_vector();
 init_math_color();
 init_observable();
@@ -137708,7 +137708,7 @@ var Sprite = class _Sprite extends ThinSprite {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Culling/ray.core.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Culling/ray.core.js
 init_math_constants();
 init_math_vector();
 init_arrayTools();
@@ -138542,7 +138542,7 @@ function AddRayExtensions(sceneClass, cameraClass) {
 }
 __name(AddRayExtensions, "AddRayExtensions");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Sprites/spriteSceneComponent.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Sprites/spriteSceneComponent.pure.js
 init_observable_pure();
 init_scene_pure();
 init_pickingInfo();
@@ -138827,10 +138827,10 @@ function RegisterSpriteSceneComponent() {
 }
 __name(RegisterSpriteSceneComponent, "RegisterSpriteSceneComponent");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Sprites/spriteSceneComponent.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Sprites/spriteSceneComponent.js
 RegisterSpriteSceneComponent();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Sprites/spriteRenderer.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Sprites/spriteRenderer.js
 init_buffer();
 init_drawWrapper();
 init_logger();
@@ -139209,7 +139209,7 @@ var SpriteRenderer = class _SpriteRenderer {
 };
 SpriteRenderer.ForceGLSL = false;
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Sprites/spriteManager.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Sprites/spriteManager.js
 init_observable();
 init_math_vector();
 init_pickingInfo();
@@ -139800,7 +139800,7 @@ var SpriteManager = class _SpriteManager {
 SpriteManager.SnippetUrl = `https://snippet.babylonjs.com`;
 SpriteManager.CreateFromSnippetAsync = SpriteManager.ParseFromSnippetAsync;
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/loading/sprite-manager.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/loading/sprite-manager.js
 init_tools();
 init_webRequest();
 function parseSerializedSpriteManager(spriteManager, parsedSpriteManager) {
@@ -139880,7 +139880,7 @@ function registerSpriteManagerParser() {
 }
 __name(registerSpriteManagerParser, "registerSpriteManagerParser");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/loading/node-particle-system-set.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/loading/node-particle-system-set.js
 var registered7 = false;
 function registerNodeParticleSystemSetParser() {
   if (registered7) {
@@ -139928,7 +139928,7 @@ function registerNodeParticleSystemSetParser() {
 }
 __name(registerNodeParticleSystemSetParser, "registerNodeParticleSystemSetParser");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/loading/loader.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/loading/loader.js
 init_math_vector();
 var sceneConfigurationMap = /* @__PURE__ */ new Map();
 async function waitForWaitingItems(scene, onProgress) {
@@ -140022,7 +140022,7 @@ async function loadScene(rootUrl, sceneFilename, scene, scriptsMap, options) {
 }
 __name(loadScene, "loadScene");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/loading/material.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/loading/material.js
 init_tools();
 async function loadMaterialFromFile(rootUrl, relativePath, scene) {
   const data = await loadJsonFile(rootUrl + relativePath);
@@ -140049,7 +140049,7 @@ function forceCompileAllSceneMaterials(scene) {
 }
 __name(forceCompileAllSceneMaterials, "forceCompileAllSceneMaterials");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/tools/animation.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/tools/animation.js
 function getAnimationTypeForObject(effectiveProperty) {
   if (!isNaN(parseFloat(effectiveProperty)) && isFinite(effectiveProperty)) {
     return Animation.ANIMATIONTYPE_FLOAT;
@@ -140074,7 +140074,7 @@ function getAnimationTypeForObject(effectiveProperty) {
 }
 __name(getAnimationTypeForObject, "getAnimationTypeForObject");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/decorators/inspector.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/decorators/inspector.js
 function visibleAsBoolean(label, configuration) {
   return function(target, propertyKey) {
     const ctor = target.constructor;
@@ -140243,7 +140243,7 @@ function visibleAsAsset(assetType, label, configuration) {
 }
 __name(visibleAsAsset, "visibleAsAsset");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/cinematic/tools.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/cinematic/tools.js
 function cloneKey(dataType, key) {
   let value;
   switch (dataType) {
@@ -140294,7 +140294,7 @@ function registerAfterAnimationCallback(cinematic, scene, callback) {
 }
 __name(registerAfterAnimationCallback, "registerAfterAnimationCallback");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/cinematic/parse.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/cinematic/parse.js
 init_math_color();
 init_math_vector();
 function parseCinematic(data, scene) {
@@ -140419,7 +140419,7 @@ function parseKeyFrameAnimations(keyFrameAnimations, animationType) {
 }
 __name(parseKeyFrameAnimations, "parseKeyFrameAnimations");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Animations/animationEvent.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Animations/animationEvent.js
 var AnimationEvent = class _AnimationEvent {
   static {
     __name(this, "AnimationEvent");
@@ -140442,19 +140442,19 @@ var AnimationEvent = class _AnimationEvent {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/cinematic/events/event.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/cinematic/events/event.js
 function handleApplyEvent(cinematic, eventData) {
   cinematic.onEventObservable.notifyObservers(eventData.eventName);
 }
 __name(handleApplyEvent, "handleApplyEvent");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/cinematic/events/set-enabled.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/cinematic/events/set-enabled.js
 function handleSetEnabledEvent(config) {
   config.node?.setEnabled(config.value);
 }
 __name(handleSetEnabledEvent, "handleSetEnabledEvent");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/cinematic/events/apply-impulse.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/cinematic/events/apply-impulse.js
 init_math_vector();
 var zeroVector = Vector3.Zero();
 function handleApplyImpulseEvent(scene, config) {
@@ -140477,7 +140477,7 @@ function handleApplyImpulseEvent(scene, config) {
 }
 __name(handleApplyImpulseEvent, "handleApplyImpulseEvent");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Animations/animationGroup.pure.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Animations/animationGroup.pure.js
 init_observable_pure();
 init_engineStore();
 init_tags();
@@ -141425,13 +141425,13 @@ function RegisterAnimationGroup() {
 }
 __name(RegisterAnimationGroup, "RegisterAnimationGroup");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Animations/animatable.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Animations/animatable.js
 RegisterAnimatable();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/@babylonjs/core/Animations/animationGroup.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/@babylonjs/core/Animations/animationGroup.js
 RegisterAnimationGroup();
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/cinematic/cinematic.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/cinematic/cinematic.js
 init_observable();
 var Cinematic = class extends AnimationGroup {
   static {
@@ -141455,7 +141455,7 @@ var Cinematic = class extends AnimationGroup {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/cinematic/guards.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/cinematic/guards.js
 function isCinematicKey(key) {
   return key.type === "key";
 }
@@ -141477,7 +141477,7 @@ function isCinematicSound(key) {
 }
 __name(isCinematicSound, "isCinematicSound");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/cinematic/generate.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/cinematic/generate.js
 function generateCinematicAnimationGroup(cinematic, scene, options) {
   const result = new Cinematic(cinematic.name, scene);
   cinematic.tracks.forEach((track) => {
@@ -141667,7 +141667,7 @@ function generateCinematicAnimationGroup(cinematic, scene, options) {
 }
 __name(generateCinematicAnimationGroup, "generateCinematicAnimationGroup");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/loading/database/indexdb.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/loading/database/indexdb.js
 async function openIndexDB(name287, upgradeNeeded) {
   return new Promise((resolve, reject) => {
     const request = indexedDB.open(name287, 1);
@@ -141709,7 +141709,7 @@ async function putInIndexDB(database, storeName, data) {
 }
 __name(putInIndexDB, "putInIndexDB");
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/loading/database/database.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/loading/database/database.js
 function setupOfflineProvider(name287) {
   AbstractEngine.OfflineProviderFactory = (urlToScene, callbackManifestChecked, disableManifestCheck = false) => {
     return new Database2(name287, urlToScene, callbackManifestChecked, disableManifestCheck);
@@ -141887,7 +141887,7 @@ var Database2 = class {
   }
 };
 
-// ../../PROJECTS/BABYLON_JS/project_002/node_modules/babylonjs-editor-tools/build/src/loading/database/preload.js
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/node_modules/babylonjs-editor-tools/build/src/loading/database/preload.js
 var supportedJsonExtensions = ["babylon", "json"];
 var supportedImageExtensions = ["jpg", "jpeg", "png", "bmp", "webp"];
 var supportedBinaryExtensions = ["bin", "babylonbinarymeshdata", "mp3", "wav", "ktx", "ktx2"];
@@ -141962,7 +141962,7 @@ async function preloadAssetsToDatabase(databaseName, rootUrl, options) {
 }
 __name(preloadAssetsToDatabase, "preloadAssetsToDatabase");
 
-// ../../PROJECTS/BABYLON_JS/project_002/src/scripts/box.ts
+// ../../PROJECTS/BABYLON_JS/project_002_github/3DGS_webViewer/src/scripts/box.ts
 init_math_vector();
 var SceneComponent = class {
   constructor(mesh) {
