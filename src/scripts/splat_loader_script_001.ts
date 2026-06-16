@@ -79,10 +79,10 @@ export default class SplatLoaderScript {
                 const splatRoot = new TransformNode("SplatRoot", scene);
 
                 splatRoot.position = new Vector3(0, 0, 2);
-                splatRoot.rotation.x = Math.PI;
+                // splatRoot.rotation.x = Math.PI;
 
                 // scale ONLY the splat container (safe)
-                splatRoot.scaling.setAll(5);
+                splatMesh.scaling = new Vector3(5, 5, 5);
 
                 // attach splat under it
                 splatMesh.parent = splatRoot;
