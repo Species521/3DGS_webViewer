@@ -21,9 +21,8 @@ export default class SplatLoaderScript {
         const scene = this._attachedNode.getScene();
 
         // --------------------------------------------------
-        // Babylon GUI FPS Counter
+        // FPS UI
         // --------------------------------------------------
-
         const gui = AdvancedDynamicTexture.CreateFullscreenUI(
             "FPS_UI",
             true,
@@ -44,15 +43,13 @@ export default class SplatLoaderScript {
         scene.onAfterRenderObservable.add(() => {
             if (this._fpsText) {
                 this._fpsText.text =
-                    "FPS: " +
-                    scene.getEngine().getFps().toFixed(1);
+                    "FPS: " + scene.getEngine().getFps().toFixed(1);
             }
         });
 
         // --------------------------------------------------
-        // Slow camera movement
+        // Camera speed tweak (unchanged)
         // --------------------------------------------------
-
         if (scene.activeCamera) {
             scene.activeCamera.speed = 0.1;
             console.log(
@@ -63,7 +60,6 @@ export default class SplatLoaderScript {
         // --------------------------------------------------
         // Load Splat
         // --------------------------------------------------
-
         try {
             const result = await ImportMeshAsync(
                 targetUrl,
@@ -76,14 +72,23 @@ export default class SplatLoaderScript {
 
             if (splatMesh) {
                 splatMesh.name = "ClusterFly_Splat";
-                splatMesh.parent = this._attachedNode;
 
-                splatMesh.position = new Vector3(0, 0, 2);
-                splatMesh.scaling.setAll(1);
-                splatMesh.rotation.x = Math.PI;
+                // --------------------------------------------------
+                // IMPORTANT: create an independent world container
+                // --------------------------------------------------
+                const splatRoot = new TransformNode("SplatRoot", scene);
+
+                splatRoot.position = new Vector3(0, 0, 2);
+                splatRoot.rotation.x = Math.PI;
+
+                // scale ONLY the splat container (safe)
+                splatRoot.scaling.setAll(5);
+
+                // attach splat under it
+                splatMesh.parent = splatRoot;
 
                 console.log(
-                    ">>> Fly splat spawned at 5x scale at (0,0,2)."
+                    ">>> Splat spawned safely at 5x scale in world space."
                 );
             }
         } catch (error) {
