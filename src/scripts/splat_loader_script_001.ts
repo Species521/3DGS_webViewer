@@ -85,6 +85,8 @@ export default class SplatLoaderScript {
                 // scale ONLY the splat (safe now)
                 splatMesh.scaling.setAll(5);
 
+                 splatMesh.rotation.x = Math.PI;
+
                 console.log(">>> Splat loaded with isolated world root.");
             }
         } catch (error) {
