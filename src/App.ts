@@ -94,45 +94,45 @@ export class App {
         // XR SETUP (RESTORED EXACTLY AS ORIGINAL)
         // --------------------------------------------------
         try {
-    const xrSupported = await WebXRSessionManager.IsSessionSupportedAsync("immersive-ar");
-    if (!xrSupported) return;
+            const xrSupported = await WebXRSessionManager.IsSessionSupportedAsync("immersive-ar");
+            if (!xrSupported) return;
 
-    const xrHelper = await this._scene.createDefaultXRExperienceAsync({
-        uiOptions: {
-            sessionMode: "immersive-ar",
-            referenceSpaceType: "local-floor",
-        },
-        disableDefaultUI: false,
-    });
+            const xrHelper = await this._scene.createDefaultXRExperienceAsync({
+                uiOptions: {
+                    sessionMode: "immersive-ar",
+                    referenceSpaceType: "local-floor",
+                },
+                disableDefaultUI: false,
+            });
 
-    // WebXR places the camera inside a container node (the reference space experience)
-    const xrCameraReferenceSpace = xrHelper.baseExperience.featuresManager; 
-    const movementScale = 3.0; // Hardcoded scaling factor (1 physical meter = 3 virtual meters)
+            // WebXR places the camera inside a container node (the reference space experience)
+            const xrCameraReferenceSpace = xrHelper.baseExperience.featuresManager; 
+            const movementScale = 1; // Hardcoded scaling factor (1 physical meter = 3 virtual meters)
 
-    let initialPhysicalPos: Vector3 | null = null;
+            let initialPhysicalPos: Vector3 | null = null;
 
-    this._scene.onBeforeRenderObservable.add(() => {
-        const xrCam = xrHelper.baseExperience.camera;
-        if (!xrCam) return;
+            this._scene.onBeforeRenderObservable.add(() => {
+                const xrCam = xrHelper.baseExperience.camera;
+                if (!xrCam) return;
 
-        // 1. Get the raw position from the phone's hardware tracking
-        const currentPhysicalPos = xrCam.position; 
+                // 1. Get the raw position from the phone's hardware tracking
+                const currentPhysicalPos = xrCam.position; 
 
-        // 2. Set the first frame as the starting anchor point
-        if (!initialPhysicalPos) {
-            initialPhysicalPos = currentPhysicalPos.clone();
-            return;
-        }
+                // 2. Set the first frame as the starting anchor point
+                if (!initialPhysicalPos) {
+                    initialPhysicalPos = currentPhysicalPos.clone();
+                    return;
+                }
 
-        // 3. Calculate exactly how far you have physically walked from the start
-        const physicalDeltaX = currentPhysicalPos.x - initialPhysicalPos.x;
-        const physicalDeltaZ = currentPhysicalPos.z - initialPhysicalPos.z;
+                // 3. Calculate exactly how far you have physically walked from the start
+                const physicalDeltaX = currentPhysicalPos.x - initialPhysicalPos.x;
+                const physicalDeltaZ = currentPhysicalPos.z - initialPhysicalPos.z;
 
-        // 4. Multiply that walking distance and offset the XR rig container
-        // This shifts your virtual eyes further than your physical feet moved
-        xrCam.position.x = initialPhysicalPos.x + (physicalDeltaX * movementScale);
-        xrCam.position.z = initialPhysicalPos.z + (physicalDeltaZ * movementScale);
-    });
+                // 4. Multiply that walking distance and offset the XR rig container
+                // This shifts your virtual eyes further than your physical feet moved
+                xrCam.position.x = initialPhysicalPos.x + (physicalDeltaX * movementScale);
+                xrCam.position.z = initialPhysicalPos.z + (physicalDeltaZ * movementScale);
+            });
 
     console.log(">>> XR + Working Movement Gain active.");
 } catch (e) {
