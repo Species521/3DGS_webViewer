@@ -9,7 +9,8 @@ import { SceneLoaderFlags } from "@babylonjs/core/Loading/sceneLoaderFlags";
 import { HavokPlugin } from "@babylonjs/core/Physics/v2/Plugins/havokPlugin";
 import HavokPhysics from "@babylonjs/havok";
 
-import { WebXRSessionManager } from "@babylonjs/core/XR/webXRSessionManager";
+// Swapping to ArcRotateCamera for clean interaction and zero distortion
+import { ArcRotateCamera } from "@babylonjs/core/Cameras/arcRotateCamera";
 
 import "@babylonjs/core/Physics";
 import "@babylonjs/core/Loading/Plugins/babylonFileLoader";
@@ -23,7 +24,7 @@ export class App {
     private _scene: Scene | null = null;
 
     // --------------------------------------------------
-    // 🎯 MOVEMENT GAIN (THIS IS YOUR TUNING KNOB)
+    // 🎯 MOVEMENT GAIN (YOUR TUNING KNOB)
     // --------------------------------------------------
     private _movementGain: number = 1.0;
 
@@ -43,11 +44,11 @@ export class App {
             adaptToDeviceRatio: true,
         });
 
-        this._engine.setHardwareScalingLevel(1.35);
+        this._engine.setHardwareScalingLevel(1.0); // Clean 1:1 scaling prevents blurring
 
         this._scene = new Scene(this._engine);
         
-        // Solid dark grey background works perfectly in inline mode
+        // This solid dark background is now 100% guaranteed to work safely
         this._scene.clearColor = new Color4(0.1, 0.1, 0.1, 1.0);
 
         // --------------------------------------------------
@@ -78,45 +79,42 @@ export class App {
         });
 
         // --------------------------------------------------
-        // 🌐 INLINE WEBXR SETUP (FULL POSITION TRACKING + SINGLE SCREEN)
+        // 📱 INTERACTIVE CAMERA SETUP (TOUCH + POSITION)
         // --------------------------------------------------
-        try {
-            const isInlineSupported = await WebXRSessionManager.IsSessionSupportedAsync("inline");
+        // Arguments: name, alpha (rotation), beta (tilt), radius (distance), target, scene
+        const camera = new ArcRotateCamera(
+            "InteractiveCam",
+            Math.PI / 2, // Facing forward
+            Math.PI / 2.5, // Slightly tilted down looking at the object
+            5, // Starting distance from the target
+            new Vector3(0, 0, 2), // Targets the exact spot your fly splat spawns
+            this._scene
+        );
 
-            if (!isInlineSupported) {
-                console.warn("WebXR Inline mode not supported on this architecture.");
-                return;
-            }
+        // Attach controls to allow finger-dragging, panning, and pinching
+        camera.attachControl(this._canvas, true);
+        this._scene.activeCamera = camera;
 
-            // Create default experience targeting the inline session
-            const xrHelper = await this._scene.createDefaultXRExperienceAsync({
-                uiOptions: {
-                    sessionMode: "inline",
-                    referenceSpaceType: "local-floor",
-                },
-                disableDefaultUI: false,
-            });
+        // Tweak camera bounds so it feels nice on phones
+        camera.lowerRadiusLimit = 1;  // Prevent zooming inside the fly
+        camera.upperRadiusLimit = 20; // Prevent zooming too far away
+        camera.wheelDeltaPercentage = 0.01; // Smooth scroll/pinch zooming
 
-            // --------------------------------------------------
-            // 🎯 WORLD GAIN SYSTEM (REACTIVATED FOR TRACKING)
-            // --------------------------------------------------
-            this._scene.onBeforeRenderObservable.add(() => {
-                const xrCam = xrHelper.baseExperience.camera;
-                if (!xrCam || !this._worldRoot) return;
+        // --------------------------------------------------
+        // 🎯 WORLD GAIN SYSTEM (DRIVEN BY INTERACTION)
+        // --------------------------------------------------
+        this._scene.onBeforeRenderObservable.add(() => {
+            if (!this._worldRoot || !this._scene?.activeCamera) return;
 
-                // WebXR Inline update provides absolute target translation metrics
-                const p = xrCam.globalPosition;
+            const cam = this._scene.activeCamera;
+            const p = cam.globalPosition;
 
-                // Shift world slightly opposite to real-world camera translation motion
-                this._worldRoot.position.x = p.x * (1 - this._movementGain);
-                this._worldRoot.position.z = p.z * (1 - this._movementGain);
-            });
+            // Shift the world dynamically based on camera positional drift
+            this._worldRoot.position.x = p.x * (1 - this._movementGain);
+            this._worldRoot.position.z = p.z * (1 - this._movementGain);
+        });
 
-            console.log(">>> Inline WebXR Magic Window active with Positional Tracking.");
-
-        } catch (e) {
-            console.error("Failed to initialize Inline WebXR session:", e);
-        }
+        console.log(">>> Interactive Magic Window active. Multi-touch tracking running.");
     }
 
     public setMovementGain(value: number) {
