@@ -111,6 +111,8 @@ export class App {
             scene
         );
 
+        touchCam.minZ = 0.01;     
+        touchCam.maxZ = 1000.0;
         // Lower values increase response speed on touch screens
         touchCam.angularSensibilityX = 1500; // 1-finger rotation speed
         touchCam.angularSensibilityY = 1500;
