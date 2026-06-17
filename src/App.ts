@@ -1,13 +1,14 @@
-﻿import { Scene } from "@babylonjs/core/scene";
-import { Engine } from "@babylonjs/core/Engines/engine";
+﻿import { Engine } from "@babylonjs/core/Engines/engine";
+import { Scene } from "@babylonjs/core/scene";
 
-import { TransformNode } from "@babylonjs/core/Meshes/transformNode";
-import { Color4, Color3 } from "@babylonjs/core/Maths/math.color";
+import { Color3, Color4 } from "@babylonjs/core/Maths/math.color";
 import { Vector3 } from "@babylonjs/core/Maths/math.vector";
+
 import { MeshBuilder } from "@babylonjs/core/Meshes/meshBuilder";
 import { StandardMaterial } from "@babylonjs/core/Materials/standardMaterial";
 
 import { SceneLoaderFlags } from "@babylonjs/core/Loading/sceneLoaderFlags";
+
 import { HavokPlugin } from "@babylonjs/core/Physics/v2/Plugins/havokPlugin";
 import HavokPhysics from "@babylonjs/havok";
 
@@ -16,7 +17,9 @@ import "@babylonjs/core/Physics";
 import "@babylonjs/core/Loading/Plugins/babylonFileLoader";
 
 import { WebXRSessionManager } from "@babylonjs/core/XR/webXRSessionManager";
+
 import { loadScene } from "babylonjs-editor-tools";
+
 import { scriptsMap } from "./scripts";
 
 export class App {
@@ -24,17 +27,18 @@ export class App {
     private _engine: Engine | null = null;
     private _scene: Scene | null = null;
 
-    // --------------------------------------------------
-    // 🎯 MOVEMENT GAIN (THIS IS YOUR TUNING KNOB)
-    // --------------------------------------------------
-    private _movementGain: number = 1.0;
+    private _movementGain = 1.0;
 
-    private _worldRoot: TransformNode | null = null;
+    constructor() {
+        const canvas = document.getElementById(
+            "canvas"
+        ) as HTMLCanvasElement;
 
-    public constructor() {
-        const canvasElement = document.getElementById("canvas") as HTMLCanvasElement;
-        if (!canvasElement) throw new Error("Canvas not found");
-        this._canvas = canvasElement;
+        if (!canvas) {
+            throw new Error("Canvas not found");
+        }
+
+        this._canvas = canvas;
     }
 
     public async init(): Promise<void> {
@@ -48,17 +52,20 @@ export class App {
         this._engine.setHardwareScalingLevel(1.35);
 
         this._scene = new Scene(this._engine);
-        this._scene.clearColor = new Color4(0.1, 0.1, 0.1, 1.0);
 
-        // --------------------------------------------------
-        // CREATE WORLD ROOT (IMPORTANT)
-        // --------------------------------------------------
-        this._worldRoot = new TransformNode("WorldRoot", this._scene);
-        this._worldRoot.scaling.setAll(1);
+        this._scene.clearColor = new Color4(
+            0.1,
+            0.1,
+            0.1,
+            1
+        );
 
         await this._handleLoad();
 
-        window.addEventListener("resize", () => this._engine?.resize());
+        window.addEventListener(
+            "resize",
+            () => this._engine?.resize()
+        );
 
         this._engine.runRenderLoop(() => {
             this._scene?.render();
@@ -66,87 +73,155 @@ export class App {
     }
 
     private async _handleLoad(): Promise<void> {
-        if (!this._scene) return;
+        if (!this._scene) {
+            return;
+        }
+
+        const scene = this._scene;
+
+        // Physics
 
         const havok = await HavokPhysics();
-        this._scene.enablePhysics(new Vector3(0, -9.81, 0), new HavokPlugin(true, havok));
 
-        SceneLoaderFlags.ForceFullSceneLoadingForIncremental = true;
+        scene.enablePhysics(
+            new Vector3(0, -9.81, 0),
+            new HavokPlugin(true, havok)
+        );
 
-        await loadScene("./scene/", "example.babylon", this._scene, scriptsMap, {
-            quality: "high",
-        });
+        // Load Babylon Editor scene
 
-        // --------------------------------------------------
-        // 🧱 VISUAL BLOCKER LAYER
-        // --------------------------------------------------
-        // Since immersive-ar forces the canvas background to be transparent, 
-        // we place a massive inverted sphere around the scene to act as a dark grey solid background.
-        const bgShield = MeshBuilder.CreateSphere("bgShield", { diameter: 500, segments: 16 }, this._scene);
-        const shieldMat = new StandardMaterial("shieldMat", this._scene);
-        shieldMat.diffuseColor = new Color3(0.1, 0.1, 0.1);
-        shieldMat.specularColor = new Color3(0, 0, 0);
-        shieldMat.backFaceCulling = false; // Ensures it renders on the inside faces
-        shieldMat.disableLighting = true;  // Keeps the dark grey completely flat and unlit
+        SceneLoaderFlags.ForceFullSceneLoadingForIncremental =
+            true;
+
+        await loadScene(
+            "./scene/",
+            "example.babylon",
+            scene,
+            scriptsMap,
+            {
+                quality: "high",
+            }
+        );
+
+        // Dark background sphere
+
+        const bgShield = MeshBuilder.CreateSphere(
+            "bgShield",
+            {
+                diameter: 500,
+                segments: 16,
+            },
+            scene
+        );
+
+        const shieldMat = new StandardMaterial(
+            "shieldMat",
+            scene
+        );
+
+        shieldMat.diffuseColor = new Color3(
+            0.1,
+            0.1,
+            0.1
+        );
+
+        shieldMat.specularColor = new Color3(
+            0,
+            0,
+            0
+        );
+
+        shieldMat.backFaceCulling = false;
+        shieldMat.disableLighting = true;
+
         bgShield.material = shieldMat;
 
-        // --------------------------------------------------
-        // XR SETUP (RESTORED EXACTLY AS ORIGINAL)
-        // --------------------------------------------------
+        // WebXR
+
         try {
-            const xrSupported = await WebXRSessionManager.IsSessionSupportedAsync("immersive-ar");
-            if (!xrSupported) return;
+            const xrSupported =
+                await WebXRSessionManager.IsSessionSupportedAsync(
+                    "immersive-ar"
+                );
 
-            const xrHelper = await this._scene.createDefaultXRExperienceAsync({
-                uiOptions: {
-                    sessionMode: "immersive-ar",
-                    referenceSpaceType: "local-floor",
-                },
-                disableDefaultUI: false,
-            });
+            if (!xrSupported) {
+                return;
+            }
 
-            // WebXR places the camera inside a container node (the reference space experience)
-            const xrCameraReferenceSpace = xrHelper.baseExperience.featuresManager; 
-            const movementScale = 0; // Hardcoded scaling factor (1 physical meter = 3 virtual meters)
+            const xrHelper =
+                await scene.createDefaultXRExperienceAsync({
+                    uiOptions: {
+                        sessionMode: "immersive-ar",
+                        referenceSpaceType: "local-floor",
+                    },
 
-            let initialPhysicalPos: Vector3 | null = null;
+                    disableDefaultUI: false,
+                });
 
-            this._scene.onBeforeRenderObservable.add(() => {
-                const xrCam = xrHelper.baseExperience.camera;
-                if (!xrCam) return;
+            const movementScale = 0;
 
-                // 1. Get the raw position from the phone's hardware tracking
-                const currentPhysicalPos = xrCam.position; 
+            let initialPhysicalPos: Vector3 | null =
+                null;
 
-                // 2. Set the first frame as the starting anchor point
-                if (!initialPhysicalPos) {
-                    initialPhysicalPos = currentPhysicalPos.clone();
+            scene.onBeforeRenderObservable.add(() => {
+                const xrCam =
+                    xrHelper.baseExperience.camera;
+
+                if (!xrCam) {
                     return;
                 }
 
-                // 3. Calculate exactly how far you have physically walked from the start
-                const physicalDeltaX = currentPhysicalPos.x - initialPhysicalPos.x;
-                const physicalDeltaZ = currentPhysicalPos.z - initialPhysicalPos.z;
+                const currentPhysicalPos =
+                    xrCam.position;
 
-                // 4. Multiply that walking distance and offset the XR rig container
-                // This shifts your virtual eyes further than your physical feet moved
-                xrCam.position.x = initialPhysicalPos.x + (physicalDeltaX * movementScale);
-                xrCam.position.z = initialPhysicalPos.z + (physicalDeltaZ * movementScale);
+                if (!initialPhysicalPos) {
+                    initialPhysicalPos =
+                        currentPhysicalPos.clone();
+
+                    return;
+                }
+
+                const physicalDeltaX =
+                    currentPhysicalPos.x -
+                    initialPhysicalPos.x;
+
+                const physicalDeltaZ =
+                    currentPhysicalPos.z -
+                    initialPhysicalPos.z;
+
+                xrCam.position.x =
+                    initialPhysicalPos.x +
+                    physicalDeltaX *
+                        movementScale;
+
+                xrCam.position.z =
+                    initialPhysicalPos.z +
+                    physicalDeltaZ *
+                        movementScale;
             });
 
-    console.log(">>> XR + Working Movement Gain active.");
-} catch (e) {
-    console.error("XR init error:", e);
-}
-
-        if (this._scene.activeCamera) {
-            this._scene.activeCamera.attachControl();
+            console.log(
+                ">>> XR + Working Movement Gain active."
+            );
+        } catch (e) {
+            console.error(
+                "XR init error:",
+                e
+            );
         }
+
+        scene.activeCamera?.attachControl();
     }
 
-    public setMovementGain(value: number) {
-        this._movementGain = -2000;
-        console.log("Movement gain hard-coded to:", this._movementGain);
+    public setMovementGain(
+        value: number
+    ): void {
+        this._movementGain = value;
+
+        console.log(
+            "Movement gain:",
+            this._movementGain
+        );
     }
 
     public dispose(): void {
