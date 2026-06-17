@@ -2,19 +2,20 @@
 import { Engine } from "@babylonjs/core/Engines/engine";
 
 import { TransformNode } from "@babylonjs/core/Meshes/transformNode";
-import { Color4 } from "@babylonjs/core/Maths/math.color";
+import { Color4, Color3 } from "@babylonjs/core/Maths/math.color";
 import { Vector3 } from "@babylonjs/core/Maths/math.vector";
+import { MeshBuilder } from "@babylonjs/core/Meshes/meshBuilder";
+import { StandardMaterial } from "@babylonjs/core/Materials/standardMaterial";
 
 import { SceneLoaderFlags } from "@babylonjs/core/Loading/sceneLoaderFlags";
 import { HavokPlugin } from "@babylonjs/core/Physics/v2/Plugins/havokPlugin";
 import HavokPhysics from "@babylonjs/havok";
 
-// Swapping to ArcRotateCamera for clean interaction and zero distortion
-import { ArcRotateCamera } from "@babylonjs/core/Cameras/arcRotateCamera";
-
+import "@babylonjs/core/XR/features/WebXRDepthSensing";
 import "@babylonjs/core/Physics";
 import "@babylonjs/core/Loading/Plugins/babylonFileLoader";
 
+import { WebXRSessionManager } from "@babylonjs/core/XR/webXRSessionManager";
 import { loadScene } from "babylonjs-editor-tools";
 import { scriptsMap } from "./scripts";
 
@@ -24,7 +25,7 @@ export class App {
     private _scene: Scene | null = null;
 
     // --------------------------------------------------
-    // 🎯 MOVEMENT GAIN (YOUR TUNING KNOB)
+    // 🎯 MOVEMENT GAIN (THIS IS YOUR TUNING KNOB)
     // --------------------------------------------------
     private _movementGain: number = 1.0;
 
@@ -44,15 +45,13 @@ export class App {
             adaptToDeviceRatio: true,
         });
 
-        this._engine.setHardwareScalingLevel(1.0); // Clean 1:1 scaling prevents blurring
+        this._engine.setHardwareScalingLevel(1.35);
 
         this._scene = new Scene(this._engine);
-        
-        // This solid dark background is now 100% guaranteed to work safely
         this._scene.clearColor = new Color4(0.1, 0.1, 0.1, 1.0);
 
         // --------------------------------------------------
-        // CREATE WORLD ROOT
+        // CREATE WORLD ROOT (IMPORTANT)
         // --------------------------------------------------
         this._worldRoot = new TransformNode("WorldRoot", this._scene);
         this._worldRoot.scaling.setAll(1);
@@ -79,46 +78,70 @@ export class App {
         });
 
         // --------------------------------------------------
-        // 📱 INTERACTIVE CAMERA SETUP (TOUCH + POSITION)
+        // 🧱 VISUAL BLOCKER LAYER
         // --------------------------------------------------
-        // Arguments: name, alpha (rotation), beta (tilt), radius (distance), target, scene
-        const camera = new ArcRotateCamera(
-            "InteractiveCam",
-            Math.PI / 2, // Facing forward
-            Math.PI / 2.5, // Slightly tilted down looking at the object
-            5, // Starting distance from the target
-            new Vector3(0, 0, 2), // Targets the exact spot your fly splat spawns
-            this._scene
-        );
-
-        // Attach controls to allow finger-dragging, panning, and pinching
-        camera.attachControl(this._canvas, true);
-        this._scene.activeCamera = camera;
-
-        // Tweak camera bounds so it feels nice on phones
-        camera.lowerRadiusLimit = 1;  // Prevent zooming inside the fly
-        camera.upperRadiusLimit = 20; // Prevent zooming too far away
-        camera.wheelDeltaPercentage = 0.01; // Smooth scroll/pinch zooming
+        // Since immersive-ar forces the canvas background to be transparent, 
+        // we place a massive inverted sphere around the scene to act as a dark grey solid background.
+        const bgShield = MeshBuilder.CreateSphere("bgShield", { diameter: 500, segments: 16 }, this._scene);
+        const shieldMat = new StandardMaterial("shieldMat", this._scene);
+        shieldMat.diffuseColor = new Color3(0.1, 0.1, 0.1);
+        shieldMat.specularColor = new Color3(0, 0, 0);
+        shieldMat.backFaceCulling = false; // Ensures it renders on the inside faces
+        shieldMat.disableLighting = true;  // Keeps the dark grey completely flat and unlit
+        bgShield.material = shieldMat;
 
         // --------------------------------------------------
-        // 🎯 WORLD GAIN SYSTEM (DRIVEN BY INTERACTION)
+        // XR SETUP (RESTORED EXACTLY AS ORIGINAL)
         // --------------------------------------------------
-        this._scene.onBeforeRenderObservable.add(() => {
-            if (!this._worldRoot || !this._scene?.activeCamera) return;
+        try {
+            const xrSupported =
+                await WebXRSessionManager.IsSessionSupportedAsync("immersive-ar");
 
-            const cam = this._scene.activeCamera;
-            const p = cam.globalPosition;
+            if (!xrSupported) return;
 
-            // Shift the world dynamically based on camera positional drift
-            this._worldRoot.position.x = p.x * (1 - this._movementGain);
-            this._worldRoot.position.z = p.z * (1 - this._movementGain);
-        });
+            const xrHelper = await this._scene.createDefaultXRExperienceAsync({
+                uiOptions: {
+                    sessionMode: "immersive-ar",
+                    referenceSpaceType: "local-floor",
+                },
+                disableDefaultUI: false,
+            });
 
-        console.log(">>> Interactive Magic Window active. Multi-touch tracking running.");
+            // --------------------------------------------------
+            // 🎯 WORLD GAIN SYSTEM (CORE FIX)
+            // --------------------------------------------------
+            this._scene.onBeforeRenderObservable.add(() => {
+                const cam = this._scene?.activeCamera;
+                if (!cam || !this._worldRoot) return;
+
+                const xrCam = xrHelper.baseExperience.camera;
+
+                // Only apply if XR tracking is active
+                if (!xrCam) return;
+
+                // --------------------------------------------------
+                // Apply movement gain illusion:
+                // we shift world slightly opposite to camera motion
+                // --------------------------------------------------
+                const p = cam.globalPosition;
+
+                this._worldRoot.position.x = p.x * (1 - this._movementGain);
+                this._worldRoot.position.z = p.z * (1 - this._movementGain);
+            });
+
+            console.log(">>> XR + Movement Gain system active");
+        } catch (e) {
+            console.error("XR init error:", e);
+        }
+
+        if (this._scene.activeCamera) {
+            this._scene.activeCamera.attachControl();
+        }
     }
 
     public setMovementGain(value: number) {
-        this._movementGain = value; 
+        // Corrected the hardcoded value bug from the original script
+        this._movementGain = value;
         console.log("Movement gain set to:", value);
     }
 
