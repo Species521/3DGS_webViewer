@@ -158,7 +158,7 @@ export class App {
                     disableDefaultUI: false,
                 });
 
-            const movementScale = 0;
+            const movementScale = 8;
 
             let initialPhysicalPos: Vector3 | null =
                 null;
