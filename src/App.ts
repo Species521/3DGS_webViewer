@@ -9,7 +9,7 @@ import { SceneLoaderFlags } from "@babylonjs/core/Loading/sceneLoaderFlags";
 import { HavokPlugin } from "@babylonjs/core/Physics/v2/Plugins/havokPlugin";
 import HavokPhysics from "@babylonjs/havok";
 
-import { DeviceOrientationCamera } from "@babylonjs/core/Cameras/deviceOrientationCamera";
+import { WebXRSessionManager } from "@babylonjs/core/XR/webXRSessionManager";
 
 import "@babylonjs/core/Physics";
 import "@babylonjs/core/Loading/Plugins/babylonFileLoader";
@@ -47,7 +47,7 @@ export class App {
 
         this._scene = new Scene(this._engine);
         
-        // Solid dark grey background remains visible (no WebXR passthrough overriding it)
+        // Solid dark grey background works perfectly in inline mode
         this._scene.clearColor = new Color4(0.1, 0.1, 0.1, 1.0);
 
         // --------------------------------------------------
@@ -78,37 +78,48 @@ export class App {
         });
 
         // --------------------------------------------------
-        // 📱 MAGIC WINDOW SETUP (DEVICE ORIENTATION)
+        // 🌐 INLINE WEBXR SETUP (FULL POSITION TRACKING + SINGLE SCREEN)
         // --------------------------------------------------
-        const magicWindowCam = new DeviceOrientationCamera(
-            "MagicWindowCam",
-            new Vector3(0, 1.6, 0), // Positioned at standard standing eye height
-            this._scene
-        );
+        try {
+            const isInlineSupported = await WebXRSessionManager.IsSessionSupportedAsync("inline");
 
-        // Enable gyroscope tracking based on device rotation
-        magicWindowCam.attachControl(this._canvas, true);
-        this._scene.activeCamera = magicWindowCam;
+            if (!isInlineSupported) {
+                console.warn("WebXR Inline mode not supported on this architecture.");
+                return;
+            }
 
-        // --------------------------------------------------
-        // 🎯 WORLD GAIN SYSTEM (ADAPTED FOR MAGIC WINDOW)
-        // --------------------------------------------------
-        this._scene.onBeforeRenderObservable.add(() => {
-            if (!this._worldRoot || !this._scene?.activeCamera) return;
+            // Create default experience targeting the inline session
+            const xrHelper = await this._scene.createDefaultXRExperienceAsync({
+                uiOptions: {
+                    sessionMode: "inline",
+                    referenceSpaceType: "local-floor",
+                },
+                disableDefaultUI: false,
+            });
 
-            const cam = this._scene.activeCamera;
-            const p = cam.globalPosition;
+            // --------------------------------------------------
+            // 🎯 WORLD GAIN SYSTEM (REACTIVATED FOR TRACKING)
+            // --------------------------------------------------
+            this._scene.onBeforeRenderObservable.add(() => {
+                const xrCam = xrHelper.baseExperience.camera;
+                if (!xrCam || !this._worldRoot) return;
 
-            // Shift world slightly opposite to camera translation motion
-            this._worldRoot.position.x = p.x * (1 - this._movementGain);
-            this._worldRoot.position.z = p.z * (1 - this._movementGain);
-        });
+                // WebXR Inline update provides absolute target translation metrics
+                const p = xrCam.globalPosition;
 
-        console.log(">>> Magic Window + Movement Gain system active");
+                // Shift world slightly opposite to real-world camera translation motion
+                this._worldRoot.position.x = p.x * (1 - this._movementGain);
+                this._worldRoot.position.z = p.z * (1 - this._movementGain);
+            });
+
+            console.log(">>> Inline WebXR Magic Window active with Positional Tracking.");
+
+        } catch (e) {
+            console.error("Failed to initialize Inline WebXR session:", e);
+        }
     }
 
     public setMovementGain(value: number) {
-        // Keeping your tuning parameter logic, fixed the hardcoded 323 assignment
         this._movementGain = value; 
         console.log("Movement gain set to:", value);
     }
