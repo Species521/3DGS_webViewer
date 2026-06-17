@@ -94,45 +94,50 @@ export class App {
         // XR SETUP (RESTORED EXACTLY AS ORIGINAL)
         // --------------------------------------------------
         try {
-            const xrSupported =
-                await WebXRSessionManager.IsSessionSupportedAsync("immersive-ar");
+    const xrSupported = await WebXRSessionManager.IsSessionSupportedAsync("immersive-ar");
+    if (!xrSupported) return;
 
-            if (!xrSupported) return;
+    const xrHelper = await this._scene.createDefaultXRExperienceAsync({
+        uiOptions: {
+            sessionMode: "immersive-ar",
+            referenceSpaceType: "local-floor",
+        },
+        disableDefaultUI: false,
+    });
 
-            const xrHelper = await this._scene.createDefaultXRExperienceAsync({
-                uiOptions: {
-                    sessionMode: "immersive-ar",
-                    referenceSpaceType: "local-floor",
-                },
-                disableDefaultUI: false,
-            });
+    // WebXR places the camera inside a container node (the reference space experience)
+    const xrCameraReferenceSpace = xrHelper.baseExperience.featuresManager; 
+    const movementScale = 3.0; // Hardcoded scaling factor (1 physical meter = 3 virtual meters)
 
-            // --------------------------------------------------
-            // 🎯 WORLD GAIN SYSTEM (CORE FIX)
-            // --------------------------------------------------
-            this._scene.onBeforeRenderObservable.add(() => {
-                const cam = this._scene?.activeCamera;
-                if (!cam || !this._worldRoot) return;
+    let initialPhysicalPos: Vector3 | null = null;
 
-                const xrCam = xrHelper.baseExperience.camera;
+    this._scene.onBeforeRenderObservable.add(() => {
+        const xrCam = xrHelper.baseExperience.camera;
+        if (!xrCam) return;
 
-                // Only apply if XR tracking is active
-                if (!xrCam) return;
+        // 1. Get the raw position from the phone's hardware tracking
+        const currentPhysicalPos = xrCam.position; 
 
-                // --------------------------------------------------
-                // Apply movement gain illusion:
-                // we shift world slightly opposite to camera motion
-                // --------------------------------------------------
-                const p = cam.globalPosition;
-
-                this._worldRoot.position.x = p.x * (1 - this._movementGain);
-                this._worldRoot.position.z = p.z * (1 - this._movementGain);
-            });
-
-            console.log(">>> XR + Movement Gain system active");
-        } catch (e) {
-            console.error("XR init error:", e);
+        // 2. Set the first frame as the starting anchor point
+        if (!initialPhysicalPos) {
+            initialPhysicalPos = currentPhysicalPos.clone();
+            return;
         }
+
+        // 3. Calculate exactly how far you have physically walked from the start
+        const physicalDeltaX = currentPhysicalPos.x - initialPhysicalPos.x;
+        const physicalDeltaZ = currentPhysicalPos.z - initialPhysicalPos.z;
+
+        // 4. Multiply that walking distance and offset the XR rig container
+        // This shifts your virtual eyes further than your physical feet moved
+        xrCam.position.x = initialPhysicalPos.x + (physicalDeltaX * movementScale);
+        xrCam.position.z = initialPhysicalPos.z + (physicalDeltaZ * movementScale);
+    });
+
+    console.log(">>> XR + Working Movement Gain active.");
+} catch (e) {
+    console.error("XR init error:", e);
+}
 
         if (this._scene.activeCamera) {
             this._scene.activeCamera.attachControl();
