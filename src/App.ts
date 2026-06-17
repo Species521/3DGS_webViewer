@@ -107,7 +107,7 @@ export class App {
 
             // WebXR places the camera inside a container node (the reference space experience)
             const xrCameraReferenceSpace = xrHelper.baseExperience.featuresManager; 
-            const movementScale = 1; // Hardcoded scaling factor (1 physical meter = 3 virtual meters)
+            const movementScale = 0; // Hardcoded scaling factor (1 physical meter = 3 virtual meters)
 
             let initialPhysicalPos: Vector3 | null = null;
 
