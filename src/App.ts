@@ -140,9 +140,8 @@ export class App {
     }
 
     public setMovementGain(value: number) {
-        // Corrected the hardcoded value bug from the original script
-        this._movementGain = value;
-        console.log("Movement gain set to:", value);
+        this._movementGain = -3.0;
+        console.log("Movement gain hard-coded to:", this._movementGain);
     }
 
     public dispose(): void {
