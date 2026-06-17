@@ -8,6 +8,7 @@ import { MeshBuilder } from "@babylonjs/core/Meshes/meshBuilder";
 import { StandardMaterial } from "@babylonjs/core/Materials/standardMaterial";
 
 import { SceneLoaderFlags } from "@babylonjs/core/Loading/sceneLoaderFlags";
+import { ArcRotateCamera } from "@babylonjs/core/Cameras/arcRotateCamera";
 
 import { HavokPlugin } from "@babylonjs/core/Physics/v2/Plugins/havokPlugin";
 import HavokPhysics from "@babylonjs/havok";
@@ -80,19 +81,14 @@ export class App {
         const scene = this._scene;
 
         // Physics
-
         const havok = await HavokPhysics();
-
         scene.enablePhysics(
             new Vector3(0, -9.81, 0),
             new HavokPlugin(true, havok)
         );
 
         // Load Babylon Editor scene
-
-        SceneLoaderFlags.ForceFullSceneLoadingForIncremental =
-            true;
-
+        SceneLoaderFlags.ForceFullSceneLoadingForIncremental = true;
         await loadScene(
             "./scene/",
             "example.babylon",
@@ -103,8 +99,33 @@ export class App {
             }
         );
 
-        // Dark background sphere
+        // ---------------------------------------------------------------------
+        // Flat-Screen Multi-Touch Controls (Before AR mode)
+        // ---------------------------------------------------------------------
+        const touchCam = new ArcRotateCamera(
+            "flatScreenCamera",
+            Math.PI / 2,          // Horizontal rotation angle
+            Math.PI / 2.5,        // Vertical rotation angle
+            5,                    // Distance from target
+            new Vector3(0, 0, 2), // Target point (where the splat spawns)
+            scene
+        );
 
+        // Lower values increase response speed on touch screens
+        touchCam.angularSensibilityX = 1500; // 1-finger rotation speed
+        touchCam.angularSensibilityY = 1500;
+        touchCam.pinchPrecision = 60;        // 2-finger pinch zoom speed
+        touchCam.panningSensibility = 1000;  // 2-finger drag pan speed
+
+        // Clamp distance constraints to avoid clipping inside the asset
+        touchCam.lowerRadiusLimit = 1.5;
+        touchCam.upperRadiusLimit = 20;
+
+        // Establish as active camera and bind the HTML canvas listeners
+        scene.activeCamera = touchCam;
+        touchCam.attachControl(this._canvas, true);
+
+        // Dark background sphere
         const bgShield = MeshBuilder.CreateSphere(
             "bgShield",
             {
@@ -137,7 +158,6 @@ export class App {
         bgShield.material = shieldMat;
 
         // WebXR
-
         try {
             const xrSupported =
                 await WebXRSessionManager.IsSessionSupportedAsync(
@@ -209,8 +229,9 @@ export class App {
                 e
             );
         }
-
-        scene.activeCamera?.attachControl();
+        
+        // Removed the original generic attachControl call from here,
+        // since touchCam handles explicit registration above.
     }
 
     public setMovementGain(
