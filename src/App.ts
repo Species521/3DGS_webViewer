@@ -9,11 +9,11 @@ import { SceneLoaderFlags } from "@babylonjs/core/Loading/sceneLoaderFlags";
 import { HavokPlugin } from "@babylonjs/core/Physics/v2/Plugins/havokPlugin";
 import HavokPhysics from "@babylonjs/havok";
 
-import "@babylonjs/core/XR/features/WebXRDepthSensing";
+import { DeviceOrientationCamera } from "@babylonjs/core/Cameras/deviceOrientationCamera";
+
 import "@babylonjs/core/Physics";
 import "@babylonjs/core/Loading/Plugins/babylonFileLoader";
 
-import { WebXRSessionManager } from "@babylonjs/core/XR/webXRSessionManager";
 import { loadScene } from "babylonjs-editor-tools";
 import { scriptsMap } from "./scripts";
 
@@ -46,10 +46,12 @@ export class App {
         this._engine.setHardwareScalingLevel(1.35);
 
         this._scene = new Scene(this._engine);
+        
+        // Solid dark grey background remains visible (no WebXR passthrough overriding it)
         this._scene.clearColor = new Color4(0.1, 0.1, 0.1, 1.0);
 
         // --------------------------------------------------
-        // CREATE WORLD ROOT (IMPORTANT)
+        // CREATE WORLD ROOT
         // --------------------------------------------------
         this._worldRoot = new TransformNode("WorldRoot", this._scene);
         this._worldRoot.scaling.setAll(1);
@@ -76,56 +78,38 @@ export class App {
         });
 
         // --------------------------------------------------
-        // XR SETUP
+        // 📱 MAGIC WINDOW SETUP (DEVICE ORIENTATION)
         // --------------------------------------------------
-        try {
-            const xrSupported =
-                await WebXRSessionManager.IsSessionSupportedAsync("immersive-ar");
+        const magicWindowCam = new DeviceOrientationCamera(
+            "MagicWindowCam",
+            new Vector3(0, 1.6, 0), // Positioned at standard standing eye height
+            this._scene
+        );
 
-            if (!xrSupported) return;
+        // Enable gyroscope tracking based on device rotation
+        magicWindowCam.attachControl(this._canvas, true);
+        this._scene.activeCamera = magicWindowCam;
 
-            const xrHelper = await this._scene.createDefaultXRExperienceAsync({
-                uiOptions: {
-                    sessionMode: "immersive-ar",
-                    referenceSpaceType: "local-floor",
-                },
-                disableDefaultUI: false,
-            });
+        // --------------------------------------------------
+        // 🎯 WORLD GAIN SYSTEM (ADAPTED FOR MAGIC WINDOW)
+        // --------------------------------------------------
+        this._scene.onBeforeRenderObservable.add(() => {
+            if (!this._worldRoot || !this._scene?.activeCamera) return;
 
-            // --------------------------------------------------
-            // 🎯 WORLD GAIN SYSTEM (CORE FIX)
-            // --------------------------------------------------
-            this._scene.onBeforeRenderObservable.add(() => {
-                const cam = this._scene?.activeCamera;
-                if (!cam || !this._worldRoot) return;
+            const cam = this._scene.activeCamera;
+            const p = cam.globalPosition;
 
-                const xrCam = xrHelper.baseExperience.camera;
+            // Shift world slightly opposite to camera translation motion
+            this._worldRoot.position.x = p.x * (1 - this._movementGain);
+            this._worldRoot.position.z = p.z * (1 - this._movementGain);
+        });
 
-                // Only apply if XR tracking is active
-                if (!xrCam) return;
-
-                // --------------------------------------------------
-                // Apply movement gain illusion:
-                // we shift world slightly opposite to camera motion
-                // --------------------------------------------------
-                const p = cam.globalPosition;
-
-                this._worldRoot.position.x = p.x * (1 - this._movementGain);
-                this._worldRoot.position.z = p.z * (1 - this._movementGain);
-            });
-
-            console.log(">>> XR + Movement Gain system active");
-        } catch (e) {
-            console.error("XR init error:", e);
-        }
-
-        if (this._scene.activeCamera) {
-            this._scene.activeCamera.attachControl();
-        }
+        console.log(">>> Magic Window + Movement Gain system active");
     }
 
     public setMovementGain(value: number) {
-        this._movementGain = 323;
+        // Keeping your tuning parameter logic, fixed the hardcoded 323 assignment
+        this._movementGain = value; 
         console.log("Movement gain set to:", value);
     }
 
